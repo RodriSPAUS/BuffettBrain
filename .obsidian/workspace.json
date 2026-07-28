@@ -180,8 +180,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "6d1b7e22555c781d",
+  "active": "8f316a165dea59d4",
   "lastOpenFiles": [
+    "README.md",
     "wiki/People/CharlieMunger.md",
     "wiki/Principles/Fidelity.md",
     "wiki/Concepts/Moat.md",
@@ -215,7 +216,6 @@
     "wiki/Cases/GEICO.md",
     "wiki/Cases",
     "wiki/Applications/RedFlags.md",
-    "wiki/Applications/BusinessQualityChecklist.md",
     "wiki/Applications",
     "wiki/Concepts"
   ]
