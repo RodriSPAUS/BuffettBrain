@@ -1,10 +1,12 @@
 # Warren Buffett Financial Brain — Schema
 
-*This is the authoritative configuration file for the LLM-maintained wiki. It defines conventions, workflows, and rules for ingestion, linking, and maintenance.*
+*This file defines how the wiki is **shaped**: directory layout, page structure, frontmatter, and linking conventions. It is the authority on how to write a page.*
+
+*How the agent **behaves** — the Ingest / Query / Lint operations and the citation-integrity rules — is defined in `AGENT.md`. The two files do not overlap; consult that one when deciding what to do, this one when writing.*
 
 ## ✅ Core Principles
 
-- **Source fidelity first**: Every claim must be traceable to an original source (e.g., `Source: [[Sources/2024ltr]]`, `Source: [[Sources/DUKE2024]]`). Never paraphrase without attribution.
+- **Source fidelity first**: Every claim must be traceable to an original source (e.g., `Source: [[Sources/2024ltr]]`, `Source: [[Sources/DUKE2024]]`). Never paraphrase without attribution, and never present as a quotation any text that is not verbatim in the cited `Raw/` file — see *Citation Integrity* in `AGENT.md`.
 - **Obsidian-native**: All links use `[[wikilink]]` syntax. No external URLs in content — only `[[PageName]]` or `[[Sources/2024ltr]]`.
 - **Concept-first organization**: Pages represent *ideas*, not just sources — e.g., `Concepts/Moat.md`, `Concepts/IntrinsicValue.md`, `Concepts/CapitalAllocation.md`. Source summaries (`Sources/2024ltr.md`) exist to feed and update these.
 - **No human edits to wiki/**: This directory is LLM-owned. You curate `Raw/`; the LLM maintains `wiki/`.
@@ -15,7 +17,7 @@
 wiki/
 ├── index.md              # Catalog of all pages (auto-updated on ingest)
 ├── log.md                # Append-only chronological log (e.g., "## [2026-07-27] ingest | Sources/2024ltr")
-├── SCHEMA.md             # This file — the single source of truth for wiki rules
+├── SCHEMA.md             # This file — wiki structure and page conventions
 ├── Sources/              # Source summaries (structured by year/content type)
 │   ├── 1977ltr.md        # Source summary page for 1977 annual letter
 │   ├── DUKE2024.md       # Source summary page for Duke University speech 2024
@@ -49,6 +51,7 @@ wiki/
 ## 📝 Page Conventions
 
 ### Source Summary Pages (e.g., `Sources/2024ltr.md`, `Sources/DUKE2024.md`)
+
 - YAML frontmatter required:
   ```yaml
   ---
@@ -60,9 +63,10 @@ wiki/
   ---
   ```
 - Content sections: `## Key Themes`, `## Notable Quotes`, `## Investment Decisions`, `## Cross-References`
-- Each quote or insight must cite its location (e.g., "[[Sources/2024ltr#p5]]", "[[Sources/DUKE2024#section3]]") if available.
+- Each quote or insight cites the source page it came from (e.g., `[[Sources/2024ltr]]`), and the quoted text itself acts as the locator. Do **not** append positional anchors such as `#p5` or `#section3`: `Raw/` files carry no headings or block IDs, so those anchors resolve to nothing and imply a precision the citation does not have. Use an anchor only once the target file genuinely contains it.
 
 ### Concept Pages (e.g., `Concepts/Moat.md`)
+
 - YAML frontmatter:
   ```yaml
   ---
@@ -78,6 +82,7 @@ wiki/
 - Every example links to its source: e.g., `Coca-Cola (1988) — [[Sources/1988ltr]]`
 
 ### Synthesis Pages (e.g., `Synthesis/MoatEvolution.md`)
+
 - YAML frontmatter:
   ```yaml
   ---
@@ -103,9 +108,8 @@ wiki/
 
 ## 🧹 Maintenance Workflow
 
-- On ingest of new source: update `index.md`, `log.md`, relevant concept pages, and create new entity pages as needed.
-- On query: synthesize answer from existing wiki pages; if answer reveals a gap (e.g., no `Concepts/CircleOfCompetence.md`), create stub and log it.
-- Weekly lint: check for orphaned pages, broken links, contradictions, and stale claims.
+The Ingest, Query, and Lint operations are specified in `AGENT.md` and are not repeated here.
+This file governs what a page must look like once one of those operations decides to write it.
 
 ## 🌐 External Tools (Optional but Recommended)
 
