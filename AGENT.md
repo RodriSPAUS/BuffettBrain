@@ -1,68 +1,84 @@
-# Warren Buffett Financial Brain
+# Warren Buffett Second Brain - LLM Agent Instructions
 
-*This knowledge base organizes Warren Buffett's investment philosophy, principles, and case studies extracted from his annual shareholder letters. Each concept is linked to its original source for reference.*
+This file contains the instructions for maintaining and expanding the Warren Buffett second brain knowledge according to the Karpathy pattern.
 
-## Core Investment Principles
+## System Architecture
 
-### 1. Value Investing Fundamentals
-- **Definition**: Investing based on intrinsic value rather than market trends.
-  - *Source*: [[1997.html]], [[1996.html]]
-- **Margin of Safety**: The principle of purchasing securities at a significant discount to their intrinsic value.
-  - *Source*: [[1995.html]]
+**Layer 1 - Raw Sources**: 
+- Directory `Raw/` contains markdown files of various Buffett-related materials (1977-2024)
+- Naming convention: `YYYYltr.md` for annual letters, `EventNameYYYY.md` for speeches/interviews/articles
+- Examples: `1977ltr.md`, `DUKE2024.md`, `CNBCInterview.md`, `ShareholderMeeting2023.md`
 
-### 2. Economic Moats
-- **Definition**: Sustainable competitive advantages that protect a business from competitors.
-  - *Source*: [[1997.html]]
-- **Types of Moats**:
-  - Brand Moats (e.g., Coca-Cola) - [[1996.html]]
-  - Cost Advantages - [[1994.html]]
-  - Network Effects - [[1993.html]]
+**Layer 2 - Wiki**:
+- Directory `wiki/` with PascalCase subdirectories
+- `wiki/Sources/` - structured summaries by source type and date
+- `wiki/Concepts/` - thematic concepts (Moat, ManagementQuality, etc.)
+- `wiki/Applications/`, `wiki/Cases/`, `wiki/People/`, `wiki/Principles/`, `wiki/Synthesis/`
 
-### 3. Management Evaluation
-- **Key Criteria**:
-  - Rationality - [[1997.html]]
-  - Candidness with shareholders - [[1995.html]]
-  - Resisting "institutional imperative" - [[1993.html]]
+**Layer 3 - Schema**:
+- `wiki/SCHEMA.md` defines maintenance rules
+- This file ([AGENT.md](file://c:\Users\rbaron\OneDrive%20-%20sice.com\Documentos\Cartera\Brain\AGENT.md)) contains LLM agent instructions
 
-## Capital Allocation Framework
+## Main Operations
 
-### 1. Prioritization of Capital
-- **Rule**: "Don't lose money" as the primary objective.
-  - *Source*: [[1997.html]]
-- **Reinvestment vs. Share Buybacks**: Criteria for optimal capital deployment.
-  - *Source*: [[1996.html]]
+### Ingesting New Sources
+1. Add file to `Raw/` with appropriate name (not limited to annual letters)
+2. Process with `type: source-summary` and corresponding frontmatter
+3. Update `wiki/index.md` and `wiki/log.md`
 
-## Risk Management
+### Updating Concepts
+1. Maintain files in `wiki/Concepts/` with standard format
+2. Use frontmatter: `type: concept`, `stability: high/medium/low`
+3. Include sections: `## Definition`, `## Examples from Letters`, `## Contrasts & Nuances`
 
-### 1. Understanding Risk
-- **Buffett's View**: Risk arises from ignorance of what you're doing, not volatility.
-  - *Source*: [[1993.html]]
-- **Avoiding Permanent Loss**: Focus on business quality over market timing.
-  - *Source*: [[1994.html]]
+### Cross-Source Synthesis
+1. Create files in `wiki/Synthesis/` with links to multiple `Sources/`
+2. Use `type: synthesis` in frontmatter
+3. Maintain traceability to original sources
 
-## Key Quotes
+## Standard Format
 
-> "It's far better to buy a wonderful company at a fair price than a fair company at a wonderful price." - [[1997.html]]
+### Frontmatter for Sources
+```yaml
+---
+date: YYYY-MM-DD
+source: [[Raw/SourceFileName.md]]
+tags: [annual-letter, interview, speech, article]
+type: source-summary
+year: 2024
+sourcetype: annual-letter  # annual-letter, interview, speech, article, etc.
+---
+```
 
-> "Rule No.1: Never lose money. Rule No.2: Never forget rule No.1." - [[1989.html]] *(Will add older sources later)*
+### Frontmatter for Concepts
+```yaml
+---
+title: "Concept Name"
+type: concept
+stability: high
+tags: [tag1, tag2]
+date: YYYY-MM-DD
+source: [[Sources/SourceFileName]]
+---
+```
 
-## Case Studies
+### Frontmatter for Synthesis
+```yaml
+---
+title: "Synthesis Topic"
+type: synthesis
+stability: medium
+tags: [cross-source, theme]
+date: YYYY-MM-DD
+source: [[Sources/Source1]], [[Sources/Source2]]
+---
+```
 
-### Coca-Cola
-- **Year Analyzed**: 1988
-- **Key Insights**: Moat analysis, brand strength
-- *Source*: [[1988.html]] *(Will process in next iteration)*
-
-### American Express
-- **Year Analyzed**: 1964 (referenced in later letters)
-- **Key Insights**: Recovery analysis
-- *Source*: [[1994.html]]
-
-## Source Index
-- [[1997.html]] - 1997 Letter
-- [[1996.html]] - 1996 Letter
-- [[1995.html]] - 1995 Letter
-- [[1994.html]] - 1994 Letter
-- [[1993.html]] - 1993 Letter
-
-*Note: This brain will be expanded to include all letters from 1977-1997. Starting with the 5 most recent (1993-1997) for initial validation.*
+## Important Rules
+- All file and directory names in PascalCase
+- All links must be bidirectional (`[[PageName]]`)
+- Each insight must have specific source reference (`[[Source#pX-Y]]`)
+- No content duplication between categories
+- Maintain consistency in structure and format
+- **ALL CONTENT MUST BE IN ENGLISH** - This applies to all new additions and modifications
+- Sources are not limited to annual letters - can include interviews, speeches, articles, etc.

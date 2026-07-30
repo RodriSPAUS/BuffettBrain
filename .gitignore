@@ -1,0 +1,9 @@
+# Archivos de sesión y configuración de Obsidian
+.obsidian/
+*.base
+
+# Archivos temporales
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db

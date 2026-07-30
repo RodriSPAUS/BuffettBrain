@@ -1,6 +1,6 @@
 # Berkshire Knowledge Base
 
-Welcome to the structured, interconnected knowledge base for Berkshire Hathaway’s annual letters and core investment principles.
+Welcome to the structured, interconnected knowledge base for Warren Buffett's investment philosophy and core principles, compiled from various sources including annual letters, interviews, speeches, and articles.
 
 ---
 
@@ -13,7 +13,7 @@ Welcome to the structured, interconnected knowledge base for Berkshire Hathaway�
 
 ## Source Summaries
 
-All Berkshire Hathaway annual letters (1977–2024), processed into structured, source-linked summaries:
+Materials from Warren Buffett (1977–present), processed into structured, source-linked summaries:
 
 - [[Sources/1977ltr]]
 - [[Sources/1978ltr]]
@@ -68,7 +68,7 @@ All Berkshire Hathaway annual letters (1977–2024), processed into structured, 
 
 ## Concept Library
 
-Core mental models and frameworks distilled from decades of letters:
+Core mental models and frameworks distilled from various Buffett sources:
 
 - [[Concepts/Moat]]
 - [[Concepts/ManagementQuality]]
@@ -121,14 +121,11 @@ Enduring philosophies that govern capital allocation and stewardship:
 
 ## Synthesis & Analysis
 
-Cross-year thematic analyses, timelines, and comparative insights:
+Cross-source thematic analyses, timelines, and comparative insights:
 
 - [[Synthesis/MoatEvolution]]
 - [[Synthesis/FidelityTimeline]]
 - [[Synthesis/FloatGrowth]]
-- [[Synthesis/PortfolioDiversification]]
-- [[Synthesis/InvestmentPhilosophyShifts]]
-- [[Synthesis/LeadershipImpact]]
 
 ---
 

@@ -4,64 +4,107 @@
 
 ## ✅ Core Principles
 
-- **Source fidelity first**: Every claim must be traceable to an original letter (e.g., `Source: [[2024ltr.md]]`). Never paraphrase without attribution.
-- **Obsidian-native**: All links use `[[wikilink]]` syntax. No external URLs in content — only `[[PageName]]` or `[[2024ltr.md]]`.
-- **Concept-first organization**: Pages represent *ideas*, not just sources — e.g., `Moat.md`, `Intrinsic-Value.md`, `Capital-Allocation.md`. Source summaries (`2024ltr.md`) exist to feed and update these.
+- **Source fidelity first**: Every claim must be traceable to an original source (e.g., `Source: [[Sources/2024ltr]]`, `Source: [[Sources/DUKE2024]]`). Never paraphrase without attribution.
+- **Obsidian-native**: All links use `[[wikilink]]` syntax. No external URLs in content — only `[[PageName]]` or `[[Sources/2024ltr]]`.
+- **Concept-first organization**: Pages represent *ideas*, not just sources — e.g., `Concepts/Moat.md`, `Concepts/IntrinsicValue.md`, `Concepts/CapitalAllocation.md`. Source summaries (`Sources/2024ltr.md`) exist to feed and update these.
 - **No human edits to wiki/**: This directory is LLM-owned. You curate `Raw/`; the LLM maintains `wiki/`.
 
 ## 📁 Directory Structure
 
 ```
 wiki/
-├── index.md          # Catalog of all pages (auto-updated on ingest)
-├── log.md            # Append-only chronological log (e.g., "## [2026-07-27] ingest | 2024ltr.md")
-├── SCHEMA.md         # This file — the single source of truth for wiki rules
-├── 2024ltr.md        # Source summary page for 2024 letter
-├── 2023ltr.md        # ...and so on
-├── Moat.md           # Concept page, seeded from all letters mentioning moats
-├── Margin-of-Safety.md
-├── Intrinsic-Value.md
-├── Management-Quality.md
-└── ...
+├── index.md              # Catalog of all pages (auto-updated on ingest)
+├── log.md                # Append-only chronological log (e.g., "## [2026-07-27] ingest | Sources/2024ltr")
+├── SCHEMA.md             # This file — the single source of truth for wiki rules
+├── Sources/              # Source summaries (structured by year/content type)
+│   ├── 1977ltr.md        # Source summary page for 1977 annual letter
+│   ├── DUKE2024.md       # Source summary page for Duke University speech 2024
+│   ├── CNBCInterview.md  # Source summary page for CNBC interview
+│   └── ...
+├── Concepts/             # Core mental models and frameworks
+│   ├── Moat.md           # Concept page, seeded from all sources mentioning moats
+│   ├── ManagementQuality.md
+│   ├── CapitalAllocation.md
+│   ├── Float.md
+│   └── ...
+├── Applications/         # Actionable tools and checklists
+│   ├── BusinessQualityChecklist.md
+│   └── RedFlags.md
+├── Cases/                # Deep dives into key holdings and acquisitions
+│   ├── GEICO.md
+│   ├── SeeCandies.md
+│   └── ...
+├── People/               # Profiles of key figures
+│   ├── WarrenBuffett.md
+│   └── CharlieMunger.md
+├── Principles/           # Enduring philosophies
+│   ├── OwnershipMindset.md
+│   └── Fidelity.md
+└── Synthesis/            # Cross-source thematic analyses
+    ├── MoatEvolution.md
+    ├── FidelityTimeline.md
+    └── FloatGrowth.md
 ```
 
 ## 📝 Page Conventions
 
-### Source Summary Pages (e.g., `2024ltr.md`)
+### Source Summary Pages (e.g., `Sources/2024ltr.md`, `Sources/DUKE2024.md`)
 - YAML frontmatter required:
   ```yaml
   ---
-  source: 2024ltr.md
+  source: [[Raw/2024ltr.md]]
   date: 2024-02-24
   type: source-summary
   year: 2024
+  sourcetype: annual-letter  # annual-letter, interview, speech, article, etc.
   ---
   ```
 - Content sections: `## Key Themes`, `## Notable Quotes`, `## Investment Decisions`, `## Cross-References`
-- Each quote or insight must cite its location (e.g., "p. 5", "Section: 'Market Outlook'") if available.
+- Each quote or insight must cite its location (e.g., "[[Sources/2024ltr#p5]]", "[[Sources/DUKE2024#section3]]") if available.
 
-### Concept Pages (e.g., `Moat.md`)
+### Concept Pages (e.g., `Concepts/Moat.md`)
 - YAML frontmatter:
   ```yaml
   ---
+  title: "Moat"
   type: concept
   stability: high  # low/medium/high — reflects how consistently Buffett uses this idea
+  tags: [moat, competitive advantage, economic moat]
+  date: 2026-07-27
+  source: [[Sources/2024ltr]]
   ---
   ```
-- Structure: `## Definition`, `## Types`, `## Examples from Letters`, `## Evolution Over Time`
-- Every example links to its source: e.g., `Coca-Cola (1988) — [[1988.md]]`
+- Structure: `## Definition`, `## Examples from Letters`, `## Contrasts & Nuances`
+- Every example links to its source: e.g., `Coca-Cola (1988) — [[Sources/1988ltr]]`
+
+### Synthesis Pages (e.g., `Synthesis/MoatEvolution.md`)
+- YAML frontmatter:
+  ```yaml
+  ---
+  title: "Moat Evolution"
+  type: synthesis
+  stability: medium
+  tags: [cross-source, theme, evolution]
+  date: 2026-07-27
+  source: [[Sources/1988ltr]], [[Sources/2024ltr]], [[Sources/CNBCInterview]]
+  ---
+  ```
+- Structure: Cross-source thematic analysis with explicit links to multiple sources
+- Must reference at least 2 different sources to qualify as synthesis
 
 ## 🔗 Linking Rules
 
-- Always link entities: `[[Coca-Cola]]`, `[[American-Express]]`, `[[GEICO]]`
-- Always link concepts: `[[Moat]]`, `[[Margin-of-Safety]]`, `[[Circle-of-Competence]]`
-- Always link sources: `[[2024ltr.md]]`, `[[2023ltr.md]]`
+- Always link entities: `[[Concepts/Moat]]`, `[[Concepts/ManagementQuality]]`, `[[Concepts/CapitalAllocation]]`
+- Always link sources: `[[Sources/2024ltr]]`, `[[Sources/DUKE2024]]`, `[[Sources/CNBCInterview]]`
+- Always link cases: `[[Cases/GEICO]]`, `[[Cases/SeeCandies]]`
+- Always link people: `[[People/WarrenBuffett]]`, `[[People/CharlieMunger]]`
+- Use relative paths within wiki: `[[Applications/BusinessQualityChecklist]]`, `[[Synthesis/MoatEvolution]]`
 - Never leave a named person, company, or principle unlinked — if no page exists yet, create a stub with `TODO: flesh out`.
 
 ## 🧹 Maintenance Workflow
 
 - On ingest of new source: update `index.md`, `log.md`, relevant concept pages, and create new entity pages as needed.
-- On query: synthesize answer from existing wiki pages; if answer reveals a gap (e.g., no `Circle-of-Competence.md`), create stub and log it.
+- On query: synthesize answer from existing wiki pages; if answer reveals a gap (e.g., no `Concepts/CircleOfCompetence.md`), create stub and log it.
 - Weekly lint: check for orphaned pages, broken links, contradictions, and stale claims.
 
 ## 🌐 External Tools (Optional but Recommended)
@@ -70,4 +113,4 @@ wiki/
 - Use Obsidian **Graph View** to visualize conceptual centrality (e.g., which concepts are most linked?)
 - Use Obsidian **Outliner** or **Templater** for consistent page scaffolding.
 
-> 💡 This schema evolves. If you adjust a rule (e.g., add `risk-tolerance.md`), update this file first — then instruct the LLM to reprocess the wiki.
+> 💡 This schema evolves. If you adjust a rule (e.g., add `Concepts/RiskManagement.md`), update this file first — then instruct the LLM to reprocess the wiki.

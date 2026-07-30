@@ -643,3 +643,16 @@ A chronological record of all processing, validation, and structural changes to 
 ---
 
 > "When you find a truly wonderful business, stick with it. Patience pays..." — [[Sources/2023ltr#p8]]
+
+## [2026-07-30] translation | Complete wiki translation to English
+- Translated all core files: [AGENT.md](file://c:\Users\rbaron\OneDrive - sice.com\Documentos\Cartera\Brain\AGENT.md), [SCHEMA.md](file://c:\Users\rbaron\OneDrive - sice.com\Documentos\Cartera\Brain\wiki\SCHEMA.md), [index.md](file://c:\Users\rbaron\OneDrive - sice.com\Documentos\Cartera\Brain\wiki\index.md)
+- Established English as the default language for all future additions
+- Maintained all structural integrity and cross-links during translation
+- All future content additions will be in English per new policy
+
+
+## [2026-07-30] expansion | Expanded source types beyond annual letters
+- Updated schema to support diverse Buffett-related sources (interviews, speeches, articles)
+- Modified all core documentation (SCHEMA.md, AGENT.md, index.md, README.md) to reflect broader source scope
+- Sources now include any Buffett-related material, not limited to annual shareholder letters
+
