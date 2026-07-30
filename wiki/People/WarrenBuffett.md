@@ -1,31 +1,71 @@
 ---
 title: "Warren Buffett"
 type: person
-tags: [buffett, warren, ceo, communicator]
-date: 2026-07-27
-source: [[Sources/1977ltr]]
+tags: [buffett, chairman, candour, mistakes, succession]
+date: 2026-07-30
+source: [[Sources/1989ltr]]
 ---
 
-## Executive Summary
+## As he appears in his own letters
 
-Warren Buffett is Berkshire Hathaway’s Chairman and CEO, and the primary author of its annual letters since 1977. His writing—clear, humble, and deeply analytical—has defined the language of value investing for generations. He transformed Berkshire from a textile mill into a $1T conglomerate by applying Munger’s mental models to capital allocation at scale.
+The letters are the primary record, and the most distinctive thing about them as
+a corporate document is how much space is given to error. The 1989 letter is an
+explicit inventory:
 
-> "The most important quality for an investor is temperament, not intellect." [[Sources/1977ltr]]
+> "Charlie understood this early; I was a slow learner." [[Sources/1989ltr]]
 
-## Core Principles
+> "For Berkshire's shareholders, myself included, the cost of this thumb-sucking
+> has been huge." [[Sources/1989ltr]]
 
-- **Temperament Over Intellect**: "Investing success doesn’t correlate with IQ... what matters is having the right temperament." [[Sources/1977ltr]]
-- **Owner Mindset**: "If you are a business owner, would you let your daily P&L determine your long-term decisions? Of course not." [[Sources/1987ltr]]
-- **Fidelity as Non-Negotiable**: "I never look at where a candidate has gone to school. Never!" [[Sources/2024ltr]] → prioritizes character, judgment, and alignment over credentials.
+> "But I'll make more mistakes in the future – you can bet on that."
+> [[Sources/2007ltr]]
 
-## Key Letters & Evolution
+Thirty-five years later the practice is formalised into a section heading, and
+the categories of mistake are named:
 
-- **1977 Letter**: First letter; introduced owner mindset, intrinsic value, and the importance of long-term horizons.
-- **1983 Letter**: Defined economic goodwill and moat; acquired Nebraska Furniture Mart.
-- **2024 Letter**: Formalized fidelity framework, float discipline, and climate-resilient moat evolution.
+> "Mistakes – Yes, We Make Them at Berkshire Sometimes I've made mistakes in
+> assessing the future economics of a business I've purchased for Berkshire – each
+> a case of capital allocation gone wrong." [[Sources/2024ltr]]
 
-## Legacy & Lessons
+> "At other times, I've made mistakes when assessing the abilities or fidelity of
+> the managers Berkshire is hiring." [[Sources/2024ltr]]
 
-- **Clarity as Discipline**: His letters avoid jargon, using plain English to explain complex concepts—proving that true understanding is communicable.
-- **Patience as Strategy**: "When you find a truly wonderful business, stick with it. Patience pays." [[Sources/2023ltr]] → time horizon is the ultimate competitive advantage.
-- **Stewardship Over Control**: "Our goal is to be the best steward of our shareholders’ capital—not to maximize short-term earnings." [[Sources/2024ltr]] → fidelity means acting as a trustee, not a ruler.
+Those are exactly the two judgements the rest of this wiki is organised around —
+[[Concepts/CapitalAllocation]] and [[Concepts/ManagementQuality]].
+
+## The rule about criticism
+
+> "When discussing problems at specific subsidiaries, we do, however, try to
+> follow the advice Tom Murphy gave to me 60 years ago: "praise by name, criticize
+> by category."" [[Sources/2024ltr]]
+
+## The strategy he had to be argued out of
+
+His own starting method, and the verdict on it:
+
+> "I call this the "cigar butt" approach to investing." [[Sources/1989ltr]]
+
+> "Unless you are a liquidator, that kind of approach to buying businesses is
+> foolish." [[Sources/1989ltr]]
+
+See [[People/CharlieMunger]] for who did the arguing, and
+[[Synthesis/MoatEvolution]] for where it led.
+
+## Succession
+
+> "At 94, it won't be long before Greg Abel replaces me as CEO and will be writing
+> the annual letters. Greg shares the Berkshire creed that a "report" is what a
+> Berkshire CEO annually owes to owners. And he also understands that if you start
+> fooling your shareholders, you will soon believe your own baloney and be fooling
+> yourself as well." [[Sources/2024ltr]]
+
+Abel enters the letters two decades earlier as a utility manager — see
+[[Cases/BerkshireHathawayEnergy]].
+
+## Cross-references
+
+- [[People/CharlieMunger]]
+- [[Principles/Fidelity]] — candour to owners as an obligation, not a style
+- [[Principles/OwnershipMindset]]
+- [[Concepts/MrMarket]] — the temperament the letters keep arguing for
+- [[Sources/1989ltr]], [[Sources/2007ltr]], [[Sources/2024ltr]]

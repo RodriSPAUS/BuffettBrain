@@ -1,31 +1,71 @@
 ---
 title: "Charlie Munger"
 type: person
-tags: [munger, charlie, partner, wisdom]
-date: 2026-07-27
-source: [[Sources/1972ltr]]
+tags: [munger, partner, vice-chairman, quality-over-cheapness]
+date: 2026-07-30
+source: [[Sources/2014ltr]]
 ---
 
-## Executive Summary
+## Role
 
-Charlie Munger was Warren Buffett’s business partner and intellectual co-architect of Berkshire Hathaway’s philosophy. His influence shaped the concepts of *latticework of mental models*, *inversion*, and *multidisciplinary thinking*—transforming Berkshire from a cigar-butt investment vehicle into a moat-focused enterprise.
+Vice chairman, and by Buffett's own account the author of Berkshire's investment
+strategy rather than its executor. He appears in the letters from 1980 onward as
+an operating partner:
 
-> "Charlie taught me that the best way to think is to invert—to ask what would cause failure, then avoid it." [[Sources/1972ltr]]
+> "We recommend a careful reading, and suggest that you particularly note the
+> superb job done by Louie Vincenti and Charlie Munger in repositioning Mutual
+> Savings and Loan." [[Sources/1980ltr]]
 
-## Core Contributions
+## The change he forced
 
-- **Latticework of Mental Models**: "You must have models in multiple disciplines—psychology, economics, physics, biology—to see reality clearly." [[Sources/1972ltr]]
-- **Inversion Principle**: "The great error in life is not thinking about what you want—but what you want to avoid." [[Sources/1972ltr]]
-- **Moat Definition**: "A moat isn’t just a competitive advantage—it’s a durable, compoundable, and defensible source of excess returns." [[Sources/1972ltr]]
+The single most consequential passage about Munger is in the fiftieth-anniversary
+letter:
 
-## Key Letters & Insights
+> "From my perspective, though, Charlie's most important architectur al feat was
+> the design of today's Berkshire. The blueprint he gave me was simple: Forget what
+> you know about buying fair businesses at wonderful prices; instead, buy wonderful
+> businesses at fair prices." [[Sources/2014ltr]]
 
-- **1972 Letter**: Introduced See's Candies acquisition—the first proof of moat investing; defined pricing power as moat evidence.
-- **1987 Letter**: Formalized Mr. Market metaphor and emphasized emotional discipline over technical analysis.
-- **1994 Letter**: Codified margin of safety as the cornerstone of intelligent investing.
+> "Altering my behavior is not an easy task (ask my family). I had enjoyed
+> reasonable success without Charlie's input, so whyshould I listen to a lawyer
+> whohad never spent a day in business school (when –ahem–I had attended three).
+> But Charlie never tired of repeating his maxims about business and investing to
+> me, and his logicwas irrefutable." [[Sources/2014ltr]]
 
-## Legacy & Lessons
+What he was arguing against is described in 1989:
 
-- **Fidelity Embodied**: Munger insisted on retaining See's management team—proving fidelity means trusting operators, not imposing control.
-- **Discipline Over Genius**: "I never look at where a candidate has gone to school. Never!" [[Sources/2024ltr]] → rejects credentialism, prioritizes character and judgment.
-- **Multidisciplinary Thinking**: His speeches and letters weave psychology, physics, and history—demonstrating that real-world problems require integrated frameworks, not siloed expertise.
+> "I call this the "cigar butt" approach to investing. A cigar butt found on the
+> street that has only one puff left in it may not offer much of a smoke, but the
+> "bargain purchase" will make that puff all profit. Unless you are a liquidator,
+> that kind of approach to buying businesses is foolish." [[Sources/1989ltr]]
+
+And Buffett credits him with seeing it first:
+
+> "Charlie understood this early; I was a slow learner." [[Sources/1989ltr]]
+
+The consequences run through [[Concepts/Moat]],
+[[Concepts/EconomicGoodwill]] and [[Synthesis/MoatEvolution]] — the whole shift
+from buying assets cheaply to paying for earning power.
+
+## How the partnership worked
+
+> "When we differ, Charlie usually ends theconversation by saying:"Warren, think
+> it over and you'll agree with me because you're smart and I'm right.""
+> [[Sources/2014ltr]]
+
+For the 2014 letter the two wrote separate assessments:
+
+> "For this Golden Anniversary, Warren Buffett and Charlie Munger each wrote his
+> views of what has happened at Berkshire during the past 50 years and what each
+> expects during the next 50." [[Sources/2014ltr]]
+
+## Cross-references
+
+- [[People/WarrenBuffett]]
+- [[Concepts/Moat]] — where "wonderful businesses at fair prices" leads
+- [[Concepts/EconomicGoodwill]] — the accounting consequence of the change
+- [[Synthesis/MoatEvolution]] — the arc Munger set in motion
+- [[Sources/1980ltr]], [[Sources/1989ltr]], [[Sources/2014ltr]]
+
+> TODO: Munger's own 50-year assessment begins on page 39 of the 2014 report and
+> is not yet summarised in [[Sources/2014ltr]].

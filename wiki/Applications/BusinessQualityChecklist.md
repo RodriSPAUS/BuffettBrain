@@ -10,7 +10,12 @@ source: [[Sources/2024ltr]]
 
 A rapid, evidence-based checklist to assess whether a business meets Berkshire’s threshold for high-quality ownership. Each item must be verified with *direct source evidence* from letters or financial statements—not speculation.
 
-> "The key to investing is not assessing how much an industry is going to grow, or how dynamic it will be, but rather selecting the business with the deepest moat." [[Sources/2024ltr]]
+The test Buffett actually gives for a durable advantage is observable, and it is
+the anchor for this whole checklist:
+
+> "The existence of all three conditions will be demonstrated by a company's
+> ability to regularly price its product or service aggressively and thereby to
+> earn high rates of return on capital." [[Sources/1991ltr]]
 
 ## Core Criteria
 

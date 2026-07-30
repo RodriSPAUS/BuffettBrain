@@ -1,42 +1,123 @@
 ---
 title: "Moat Evolution"
 type: synthesis
-stability: medium
-tags: [moat, evolution, timeline, concept]
-date: 2026-07-27
-source: [[Sources/1977ltr]], [[Sources/2024ltr]]
+stability: high
+tags: [cross-source, moat, franchise, quality-over-cheapness]
+date: 2026-07-30
+source: [[Sources/1982ltr]], [[Sources/1986ltr]], [[Sources/1991ltr]], [[Sources/2007ltr]], [[Sources/2014ltr]]
 ---
 
-## Executive Summary
+## What this page traces
 
-This page traces the conceptual evolution of *Moat* across Berkshire Hathaway’s 48 annual letters (1977–2024). It documents how the definition, evidence requirements, and strategic implications of moats have deepened—from a simple competitive advantage to a climate-resilient, multi-layered system of durable value creation.
+The word "moat" appears in the letters in 1986. The idea behind it takes another
+five years to reach a testable form, and the strategy it justifies takes Buffett
+roughly two decades to fully adopt. This page follows that arc through the letters
+that mark each step.
 
-> "The key to investing is not assessing how much an industry is going to grow, or how dynamic it will be, but rather selecting the business with the deepest moat." [[Sources/2024ltr]]
+## 1982 — the exception to commodity economics
 
-## Timeline of Moat Definition
+Before there is a moat there is a puzzle: how can anyone earn well in a business
+with excess capacity and no product differentiation? The answer is narrow and
+conditional.
 
-| Year | Key Insight | Source Anchor | Significance |
-|------|-------------|----------------|--------------|
-| **1977** | First mention of *economic goodwill* as intangible asset driving excess returns | [[Sources/1977ltr]] | Foundation: moat begins as brand + pricing power |
-| **1979** | Formal definition: "A moat is a durable, compoundable, and defensible source of excess returns." | [[Sources/1979ltr]] | Codification: moat = durability + compounding + defensibility |
-| **1983** | Acquisition of Nebraska Furniture Mart: moat proven through cost advantage & scale | [[Sources/1983ltr]] | Expansion: moat includes operational excellence |
-| **1994** | Float as moat amplifier: $46B float enables acquisition of moat-rich businesses | [[Sources/1994ltr]] | Amplification: moat + sovereign capital = exponential growth |
-| **2024** | Climate resilience as moat requirement: "P/C insurance pricing strengthened... reflecting damage from convective storms." | [[Sources/2024ltr]] | Evolution: moat must withstand physical, regulatory, and environmental shocks |
+> "A few producers in such industries may consistently do well if they have a cost
+> advantage that is both wide and sustainable." [[Sources/1982ltr]]
 
-## Evidence Requirements Over Time
+> "GEICO is a magnificent illustration of the high-profit exception we described
+> earlier in discussing commodity industries with over-capacity - a company with a
+> wide and sustainable cost advantage." [[Sources/1982ltr]]
 
-- **1970s–1990s**: Pricing power, brand loyalty, cost advantage, distribution control
-- **2000s–2010s**: Scale-driven data advantages, vertical integration, regulatory moats
-- **2020s**: Climate resilience, infrastructure sovereignty, digital defensibility, tax efficiency
+## 1986 — the metaphor, attached to a cost gap
 
-## Cross-Year Thematic Insights
+> "The difference between GEICO's costs and those of its competitors is a kind of
+> moat that protects a valuable and much-sought-after business castle."
+> [[Sources/1986ltr]]
 
-- **Moat Deepening**: See's Candies (1972) → GEICO (1996) → BHE (2000) → Forest River (2009) → Apple (2016) → climate-resilient assets (2024)
-- **Moat Amplifiers**: Float (1994), Tax Deferral (2024), Look-Through Earnings (2023), Five-Grove Analysis (2023)
-- **Moat Threats**: Convective storms (2024), interest rate volatility (2022), pandemic dislocations (2021), Wall Street incentives (2023)
+> "He continually widens the moat by driving down costs still more, thereby
+> defending and strengthening the economic franchise." [[Sources/1986ltr]]
 
-## Lessons Learned
+Two things are settled here and never revised: the moat is a measurable operating
+advantage, and it requires active maintenance.
 
-- **Moats Are Dynamic**: A static moat is a dying moat—evolution is required for durability.
-- **Moats Are Multi-Layered**: The strongest moats combine economic, operational, regulatory, and climate dimensions.
-- **Moats Require Stewardship**: Ownership mindset and fidelity are the human systems that protect and deepen moats over decades.
+## 1989 — the strategic consequence, admitted late
+
+The idea only matters if you are willing to pay for it, and 1989 is where Buffett
+records giving up the alternative:
+
+> "I call this the "cigar butt" approach to investing. A cigar butt found on the
+> street that has only one puff left in it may not offer much of a smoke, but the
+> "bargain purchase" will make that puff all profit. Unless you are a liquidator,
+> that kind of approach to buying businesses is foolish." [[Sources/1989ltr]]
+
+> "Charlie understood this early; I was a slow learner. But now, when buying
+> companies or common stocks, we look for first-class businesses accompanied by
+> first-class managements." [[Sources/1989ltr]]
+
+## 1991 — the definition becomes testable
+
+The franchise criteria are the point at which the concept stops being a metaphor:
+
+> "An economic franchise arises from a product or service that: (1) is needed or
+> desired; (2) is thought by its customers to have no close substitute and; (3) is
+> not subject to price regulation." [[Sources/1991ltr]]
+
+> "The existence of all three conditions will be demonstrated by a company's
+> ability to regularly price its product or service aggressively and thereby to
+> earn high rates of return on capital." [[Sources/1991ltr]]
+
+The same letter delivers the strongest available claim for why moats outrank
+managers:
+
+> "Moreover, franchises can tolerate mis-management." [[Sources/1991ltr]]
+
+## 1991 — and immediately, the counter-lesson
+
+The franchise discussion is prompted by watching a moat drain, which is what keeps
+this page from being a success story:
+
+> "The fact is that newspaper, television, and magazine properties have begun to
+> resemble businesses more than franchises in their economic behavior."
+> [[Sources/1991ltr]]
+
+> "In the business world, unfortunately, the rear-view mirror is always clearer
+> than the windshield: A few years back no one linked to the media business
+> -neither lenders, owners nor financial analysts - saw the economic deterioration
+> that was in store for the industry." [[Sources/1991ltr]]
+
+## 2007 — what a moat is worth, and what it is not
+
+By 2007 the analysis has moved past identification to limits. A moat produces high
+returns on a small asset base; it does not produce somewhere to reinvest them:
+
+> "There's no rule that you have to invest money where you've earned it. Indeed,
+> it's often a mistake to do so: Truly great businesses, earning huge returns on
+> tangible assets, can't for any extended period reinvest a large portion of their
+> earnings internally at high rates of return." [[Sources/2007ltr]]
+
+## 2014 — the arc named in one sentence
+
+> "The blueprint he gave me was simple: Forget what you know about buying fair
+> businesses at wonderful prices; instead, buy wonderful businesses at fair
+> prices." [[Sources/2014ltr]]
+
+## What changed and what did not
+
+| | 1982–86 | 1991 | 2007–14 |
+|---|---|---|---|
+| What a moat is | a wide, sustainable cost advantage | a franchise, defined by three conditions | the same, with limits acknowledged |
+| How you detect it | expense ratio versus competitors | pricing power, then return on capital | return on unleveraged tangible assets |
+| What it justifies | holding a commodity business | tolerating mis-management | paying a fair price rather than a low one |
+| What it cannot do | — | survive a structural shift (media) | absorb its own earnings |
+
+The constant throughout: a moat is an observable economic fact, checked by returns
+on capital, and it can disappear.
+
+## Cross-references
+
+- [[Concepts/Moat]] — the concept page
+- [[Concepts/EconomicGoodwill]] — the balance-sheet counterpart
+- [[Cases/GEICO]] — the cost-advantage moat
+- [[Cases/SeeCandies]] — the franchise moat
+- [[People/CharlieMunger]] — who argued for the shift
+- [[Sources/1982ltr]], [[Sources/1986ltr]], [[Sources/1989ltr]],
+  [[Sources/1991ltr]], [[Sources/2007ltr]], [[Sources/2014ltr]]

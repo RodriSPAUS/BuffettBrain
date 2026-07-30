@@ -28,4 +28,18 @@ A concise, evidence-based list of structural and behavioral red flags that signa
 - 🔍 Verification Required: Each red flag must be verified with dated source evidence—not anecdote or rumor.
 - 📉 Escalation Path: If red flag appears, escalate to full Moat + Management + Capital Allocation review before final decision.
 
-> "We paid only one cash dividend. On January 3, 1967, we disbursed our sole payment – $101,755 or 10¢ per A share." [[Sources/2024ltr]] → extreme discipline is the antidote to red-flag behavior
+The single most useful red flag in the letters is a good headline return hiding a
+bad marginal one:
+
+> "Many corporations that consistently show good returns both on equity and on
+> overall incremental capital have, indeed, employed a large portion of their
+> retained earnings on an economically unattractive, even disastrous, basis."
+> [[Sources/1984ltr]]
+
+And the standing warning about capital spending proposed as a rescue:
+
+> "And we react with great caution to suggestions that our poor businesses can be
+> restored to satisfactory profitability by major capital expenditures."
+> [[Sources/1983ltr]]
+
+See [[Concepts/CapitalAllocation]] for the framework these flags belong to.
