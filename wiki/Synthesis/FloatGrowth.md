@@ -1,6 +1,7 @@
 ---
 title: "Float Growth"
 type: synthesis
+stability: medium
 tags: [float, growth, timeline, concept]
 date: 2026-07-27
 source: [[Sources/1977ltr]], [[Sources/2024ltr]]
@@ -10,17 +11,17 @@ source: [[Sources/1977ltr]], [[Sources/2024ltr]]
 
 This page traces the conceptual and quantitative evolution of *Float* across Berkshire Hathaway’s 48 annual letters (1977–2024). It documents how float transformed from a simple insurance liability into Berkshire’s sovereign, low-cost, scalable funding source—and the primary amplifier of all other moats.
 
-> "The float is likely to grow a bit over time and, with intelligent underwriting (and some luck), has a reasonable prospect of being costless." [[Sources/2024ltr#p9]]
+> "The float is likely to grow a bit over time and, with intelligent underwriting (and some luck), has a reasonable prospect of being costless." [[Sources/2024ltr]]
 
 ## Timeline of Float Evolution
 
 | Year | Key Insight | Source Anchor | Significance |
 |------|-------------|----------------|--------------|
-| **1977** | First mention of $46M float as foundational capital source | [[Sources/1977ltr#p9]] | Foundation: float as seed capital for acquisitions |
-| **1994** | Float grew to $46B, enabling acquisition of GEICO and other moat-rich businesses | [[Sources/1994ltr#p9]] | Amplification: float as sovereign capital enabling exponential growth |
-| **2000** | Float grew to $53B, funding BHE acquisition and infrastructure investments | [[Sources/2000ltr#p9]] | Expansion: float enables climate-resilient infrastructure ownership |
-| **2016** | Float grew to $95B, funding Apple investment and equity portfolio expansion | [[Sources/2016ltr#p9]] | Diversification: float funds both operating businesses and equity holdings |
-| **2024** | Float grew to $171B, with $32B after-tax profit from underwriting since 1996 | [[Sources/2024ltr#p9]] | Sovereignty: float is now Berkshire’s largest, most scalable, lowest-cost funding source |
+| **1977** | First mention of $46M float as foundational capital source | [[Sources/1977ltr]] | Foundation: float as seed capital for acquisitions |
+| **1994** | Float grew to $46B, enabling acquisition of GEICO and other moat-rich businesses | [[Sources/1994ltr]] | Amplification: float as sovereign capital enabling exponential growth |
+| **2000** | Float grew to $53B, funding BHE acquisition and infrastructure investments | [[Sources/2000ltr]] | Expansion: float enables climate-resilient infrastructure ownership |
+| **2016** | Float grew to $95B, funding Apple investment and equity portfolio expansion | [[Sources/2016ltr]] | Diversification: float funds both operating businesses and equity holdings |
+| **2024** | Float grew to $171B, with $32B after-tax profit from underwriting since 1996 | [[Sources/2024ltr]] | Sovereignty: float is now Berkshire’s largest, most scalable, lowest-cost funding source |
 
 ## Quantitative Growth (1977–2024)
 

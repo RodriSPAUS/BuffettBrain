@@ -12,6 +12,10 @@ help:
 	@echo ""
 	@echo "Check one page or folder:"
 	@echo "  $(PY) $(S)/verify_quotes.py wiki/Sources/1985ltr.md"
+	@echo ""
+	@echo "One-off passes (pass ARGS=--dry-run first):"
+	@echo "  make migrate     apply AGENT.md/SCHEMA.md conventions to existing pages"
+	@echo "  make repair-raw  restore word boundaries in mangled Raw/ extractions"
 
 lint:
 	@cd $(S) && $(PY) lint.py
@@ -27,3 +31,12 @@ frontmatter:
 
 raw:
 	@cd $(S) && $(PY) check_raw_quality.py
+
+# One-off passes, not part of `make lint`.
+.PHONY: migrate repair-raw
+
+migrate:
+	@cd $(S) && $(PY) migrate_conventions.py $(ARGS)
+
+repair-raw:
+	@cd $(S) && $(PY) repair_raw_spacing.py $(ARGS)

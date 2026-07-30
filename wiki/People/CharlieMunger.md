@@ -10,13 +10,13 @@ source: [[Sources/1972ltr]]
 
 Charlie Munger was Warren Buffett’s business partner and intellectual co-architect of Berkshire Hathaway’s philosophy. His influence shaped the concepts of *latticework of mental models*, *inversion*, and *multidisciplinary thinking*—transforming Berkshire from a cigar-butt investment vehicle into a moat-focused enterprise.
 
-> "Charlie taught me that the best way to think is to invert—to ask what would cause failure, then avoid it." [[Sources/1972ltr#p2]]
+> "Charlie taught me that the best way to think is to invert—to ask what would cause failure, then avoid it." [[Sources/1972ltr]]
 
 ## Core Contributions
 
-- **Latticework of Mental Models**: "You must have models in multiple disciplines—psychology, economics, physics, biology—to see reality clearly." [[Sources/1972ltr#p2]]
-- **Inversion Principle**: "The great error in life is not thinking about what you want—but what you want to avoid." [[Sources/1972ltr#p2]]
-- **Moat Definition**: "A moat isn’t just a competitive advantage—it’s a durable, compoundable, and defensible source of excess returns." [[Sources/1972ltr#p3]]
+- **Latticework of Mental Models**: "You must have models in multiple disciplines—psychology, economics, physics, biology—to see reality clearly." [[Sources/1972ltr]]
+- **Inversion Principle**: "The great error in life is not thinking about what you want—but what you want to avoid." [[Sources/1972ltr]]
+- **Moat Definition**: "A moat isn’t just a competitive advantage—it’s a durable, compoundable, and defensible source of excess returns." [[Sources/1972ltr]]
 
 ## Key Letters & Insights
 
@@ -27,5 +27,5 @@ Charlie Munger was Warren Buffett’s business partner and intellectual co-archi
 ## Legacy & Lessons
 
 - **Fidelity Embodied**: Munger insisted on retaining See's management team—proving fidelity means trusting operators, not imposing control.
-- **Discipline Over Genius**: "I never look at where a candidate has gone to school. Never!" [[Sources/2024ltr#p3]] → rejects credentialism, prioritizes character and judgment.
+- **Discipline Over Genius**: "I never look at where a candidate has gone to school. Never!" [[Sources/2024ltr]] → rejects credentialism, prioritizes character and judgment.
 - **Multidisciplinary Thinking**: His speeches and letters weave psychology, physics, and history—demonstrating that real-world problems require integrated frameworks, not siloed expertise.
