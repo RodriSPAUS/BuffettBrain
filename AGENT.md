@@ -1,6 +1,12 @@
 # Warren Buffett Second Brain - LLM Agent Instructions
 
-This file contains the instructions for maintaining and expanding the Warren Buffett second brain knowledge according to the Karpathy pattern.
+This file serves as a pointer to the authoritative schema for maintaining and expanding the Warren Buffett second brain knowledge according to the Karpathy pattern.
+
+## Reference Document
+
+For all operational instructions, schema definitions, and maintenance rules, please consult: [[SCHEMA.md]]
+
+This file ([AGENT.md](file:///c:/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera/Brain/AGENT.md)) is maintained solely as a historical reference and entry point. All current schema, formatting rules, and operational procedures are defined exclusively in [[SCHEMA.md]] as the single source of truth.
 
 ## System Architecture
 
@@ -17,7 +23,7 @@ This file contains the instructions for maintaining and expanding the Warren Buf
 
 **Layer 3 - Schema**:
 - `wiki/SCHEMA.md` defines maintenance rules
-- This file ([AGENT.md](file://c:\Users\rbaron\OneDrive%20-%20sice.com\Documentos\Cartera\Brain\AGENT.md)) contains LLM agent instructions
+- This file ([AGENT.md](file:///c:/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera/Brain/AGENT.md)) contains LLM agent instructions
 
 ## Main Operations
 
