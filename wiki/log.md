@@ -2,13 +2,15 @@
 
 *Append-only chronological record of all ingestions, queries, and maintenance actions.*
 
+> 💡 Format: `## [YYYY-MM-DD] action | description`. Use consistent prefix for grep parsing.
+
 ## [2026-07-27] rename | Management-Quality.md → ManagementQuality.md
 - Updated all internal links and index references
-- Ensured compliance with PascalCase naming convention per [[85c234fa-5dd9-4263-9496-efacbc3d6f95]]
+- Ensured compliance with PascalCase naming convention per `wiki/SCHEMA.md`
 
 ## [2026-07-27] rename | Capital-Allocation.md → CapitalAllocation.md
 - Updated all internal links and index references
-- Ensured compliance with PascalCase naming convention per [[85c234fa-5dd9-4263-9496-efacbc3d6f95]]
+- Ensured compliance with PascalCase naming convention per `wiki/SCHEMA.md`
 
 ## [2026-07-27] ingest | 2024ltr.md
 - Source: `Raw/2024ltr.md`
@@ -257,10 +259,8 @@
 - Verified cross-link integrity and source attributions
 - Updated `index.md` navigation to reflect new folder structure
 
-> 💡 Format: `## [YYYY-MM-DD] action | description`. Use consistent prefix for grep parsing.
-
 ## [2026-07-30] translation | Complete wiki translation to English
-- Translated all core files: [AGENT.md](file://c:\Users\rbaron\OneDrive - sice.com\Documentos\Cartera\Brain\AGENT.md), [SCHEMA.md](file://c:\Users\rbaron\OneDrive - sice.com\Documentos\Cartera\Brain\wiki\SCHEMA.md), [index.md](file://c:\Users\rbaron\OneDrive - sice.com\Documentos\Cartera\Brain\wiki\index.md)
+- Translated all core files: `AGENT.md`, `SCHEMA.md`, `index.md`
 - Established English as the default language for all future additions
 - Maintained all structural integrity and cross-links during translation
 - All future content additions will be in English per new policy
@@ -274,3 +274,36 @@
 - Renamed files 1977.md through 1997.md to 1977ltr.md through 1997ltr.md respectively
 - Updated all source references in wiki/Sources/ files to reflect new naming convention
 - Verified all internal links remain functional after renaming
+## [2026-07-30] tooling | Executable lint suite
+- Added `scripts/` and `make lint`: citation integrity, link integrity, frontmatter, Raw/ extraction quality
+- Added GitHub Action so the checks run on every push
+- Baseline on the tree at the time: 8 unusable `Raw/` files, 297 unverifiable quotations, 978 link errors, 133 frontmatter errors
+- The rules in `AGENT.md` and `wiki/SCHEMA.md` had never been enforced; this is what changes that
+
+## [2026-07-30] repair | Raw/ word boundaries restored in 8 letters
+- 2008, 2010, 2013, 2014, 2016, 2017, 2018, 2019 had lost their spaces in PDF extraction
+- `scripts/repair_raw_spacing.py` inserted spaces only; character sequence asserted identical to the original
+- 31,240 words recovered, 162 runs left glued and reported
+- Mean word length 7.15–7.60 → 4.81–4.99, inside the range of the undamaged letters
+- These years are now quotable; previously nothing could be cited verbatim from them
+
+## [2026-07-30] migration | Link and frontmatter conventions applied
+- 200 fabricated `#pN` anchors dropped, 54 folder prefixes added, 12 frontmatter fields filled, across 28 pages
+- Excluded `wiki/Sources/` 1984 onward, which are being rewritten by hand; rerun `make migrate` without `--exclude` afterwards
+
+## [2026-07-30] rebuild | Compiled layer rewritten from verified passages
+- All of `Concepts/`, `Cases/`, `People/`, `Principles/`, `Applications/`, `Synthesis/`
+- Every quotation in these pages now appears verbatim in the letter it cites (was 74 of 119 failing)
+- Corrections of substance: Forest River acquired 2005 not 2009/2013, founder Pete not Peter Liegl; See's cited to the 2007 retrospective rather than a 1972 letter absent from `Raw/`; the moat metaphor dated to 1986 rather than a fabricated 1979 definition
+- Removed all references to `Sources/1972ltr`, which had 14 inbound links and no source file
+- Added `Cases/BNSF` as a stub
+- Pages now draw on 3–6 letters each instead of 1–2
+
+## [2026-07-30] tooling | scripts/quote.py
+- Finds a citable passage in `Raw/` and prints it unwrapped with its wikilink
+- Exists because copying from `grep` output produces quotes that fail verification, which is what drives an agent to write them from memory instead
+
+## [2026-07-30] status | Outstanding
+- `wiki/Sources/` 1984–2024 still fails `make lint`: 204 unverifiable quotations, 695 link errors, 121 frontmatter errors
+- Those summaries are being rewritten by hand; the rest of the wiki is clean
+- 35 of 48 letters are still not cited anywhere in the compiled layer — propagation is the next job

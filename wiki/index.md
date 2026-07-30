@@ -6,7 +6,9 @@ Welcome to the structured, interconnected knowledge base for Warren Buffett's in
 
 ## Navigation
 
-- [[SCHEMA]] — The authoritative configuration file defining all maintenance rules and conventions.
+- [[SCHEMA]] — How a page is shaped: directory layout, frontmatter, linking conventions.
+- `AGENT.md` — What the agent does: the Ingest / Query / Lint operations and citation rules.
+- `make lint` — Runs those rules as checks. Do this before closing an ingest.
 - [[log]] — Audit log of all ingestion, restructuring, and validation events.
 
 ---
@@ -94,10 +96,11 @@ Actionable tools and checklists for applying Berkshire principles:
 
 Deep dives into key Berkshire holdings and acquisitions:
 
-- [[Cases/GEICO]]
-- [[Cases/SeeCandies]]
-- [[Cases/BerkshireHathawayEnergy]]
-- [[Cases/ForestRiver]]
+- [[Cases/GEICO]] — the cost-advantage moat, 1980–2024
+- [[Cases/SeeCandies]] — economic goodwill, and why great businesses cannot reinvest
+- [[Cases/BerkshireHathawayEnergy]] — regulated returns on an enormous capital base
+- [[Cases/BNSF]] — the paired regulated business *(stub)*
+- [[Cases/ForestRiver]] — how Berkshire actually buys a company
 
 ---
 
@@ -129,4 +132,8 @@ Cross-source thematic analyses, timelines, and comparative insights:
 
 ---
 
-> "The most important quality for an investor is temperament, not intellect." — [[Sources/1977ltr#p1]]
+> "Mr. Market is there to serve you, not to guide you. It is his pocketbook, not
+> his wisdom, that you will find useful." — [[Sources/1987ltr]]
+
+*Every quotation in this wiki is checked against the letter it cites by
+`make lint`. See [[SCHEMA]] and `AGENT.md`.*

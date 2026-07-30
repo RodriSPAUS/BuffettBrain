@@ -111,10 +111,21 @@ wiki/
 The Ingest, Query, and Lint operations are specified in `AGENT.md` and are not repeated here.
 This file governs what a page must look like once one of those operations decides to write it.
 
+Every rule on this page is checked by `make lint` — `make frontmatter` for the frontmatter
+specifications above, `make links` for the linking rules below. Run `make quote Q="phrase"` to
+get a passage in citable form before quoting it: `Raw/` files are hard-wrapped with compounds
+split across lines, so text copied from `grep` will not match.
+
 ## 🌐 External Tools (Optional but Recommended)
 
-- Use Obsidian **Dataview** plugin with frontmatter queries (e.g., `TABLE year FROM "wiki" WHERE type = "source-summary" SORT year DESC`)
+- Use Obsidian **Dataview** plugin with frontmatter queries (e.g., `TABLE year FROM "wiki" WHERE type = "source-summary" SORT year DESC`).
+  These only return complete results while `make frontmatter` passes — a page with a missing or
+  non-canonical `type` silently drops out of every query.
 - Use Obsidian **Graph View** to visualize conceptual centrality (e.g., which concepts are most linked?)
 - Use Obsidian **Outliner** or **Templater** for consistent page scaffolding.
 
-> 💡 This schema evolves. If you adjust a rule (e.g., add `Concepts/RiskManagement.md`), update this file first — then instruct the LLM to reprocess the wiki.
+> 💡 This schema evolves. If you adjust a rule (e.g., add `Concepts/RiskManagement.md`), update
+> this file first, then update the corresponding check in `scripts/`, then reprocess the wiki.
+> A rule with no check will drift: that is how 26 pages ended up citing `[[1985ltr.md#p0]]`
+> while 10 cited `[[Sources/1985ltr]]`. `scripts/migrate_conventions.py` applies a changed
+> convention to existing pages in one pass.

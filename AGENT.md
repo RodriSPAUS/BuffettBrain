@@ -11,10 +11,29 @@ They do not overlap. Each rule lives in exactly one place.
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------------------------- |
 | `AGENT.md` (this file) | **What the agent does** — the three operations, citation integrity, standing rules of conduct                  | Deciding how to act       |
 | `wiki/SCHEMA.md`       | **How the wiki is shaped** — directory layout, page structure, frontmatter specifications, linking conventions | Writing or editing a page |
+| `scripts/` + `make lint` | **Whether the rules were actually followed** — the checks that enforce both files                           | Before closing any task   |
 
-If an agent auto-loads a different filename (some tools look for `CLAUDE.md` or `AGENTS.md`),
-keep a symlink or copy at that name pointing here, so these instructions load in every session
-without being asked for.
+`CLAUDE.md` and `AGENTS.md` in the repository root are pointers to this file, so these
+instructions load in every session without being asked for. They contain no rules of their
+own — do not duplicate anything here into them.
+
+## Tooling
+
+Rules that nothing checks are rules that drift. Every convention in this file and in
+`wiki/SCHEMA.md` has a corresponding check:
+
+| Command | What it enforces |
+| ------- | ---------------- |
+| `make lint` | all of the below; run this before closing an ingest |
+| `make quotes` | every quotation appears verbatim in the `Raw/` file it cites |
+| `make links` | no broken wikilinks, phantom sources, missing folder prefixes, fake anchors, orphans |
+| `make frontmatter` | required keys and canonical `type` values per directory |
+| `make raw` | `Raw/` text is intact enough to quote from |
+| `make quote Q="phrase"` | finds a citable passage and prints it unwrapped, with its wikilink |
+
+`make quote` is the one to reach for while writing. `Raw/` files are hard-wrapped with
+compounds broken across lines, so a sentence copied out of `grep` output looks correct and
+fails `make quotes`. That friction is what produces invented quotations; the tool removes it.
 
 ## System Architecture
 
@@ -25,7 +44,10 @@ Three layers, per the Karpathy pattern (`Karpathy_pattern.md`):
 - Markdown files of Buffett-related materials (1977–2024)
 - Naming: `YYYYltr.md` for annual letters, `EventNameYYYY.md` for speeches/interviews/articles
 - Examples: `1977ltr.md`, `DUKE2024.md`, `CNBCInterview.md`, `ShareholderMeeting2023.md`
-- **Human-curated and immutable.** The agent reads from `Raw/` and never writes to it.
+- **Human-curated and immutable.** The agent reads from `Raw/` and never writes to it. The one
+  narrow exception is a mechanical extraction repair such as `scripts/repair_raw_spacing.py`,
+  which may only insert whitespace and asserts that the character sequence is unchanged. Never
+  edit the wording of a source.
 
 **Layer 2 — The Wiki** (`wiki/`)
 
@@ -53,6 +75,8 @@ Triggered when a new file lands in `Raw/`.
 5. Where the new source contradicts or supersedes an existing claim, say so explicitly on the
    affected page rather than leaving both versions standing.
 6. Update `wiki/index.md` and append to `wiki/log.md`.
+7. **Run `make lint` and fix what it reports.** An ingest is not finished while the
+   checks are failing on the pages it touched.
 
 Ingesting one source at a time with the user involved is the default. Batch ingestion is
 acceptable when asked, but the propagation step (4) is not optional in either mode — a summary
@@ -93,20 +117,27 @@ Good answers are knowledge and belong in the wiki, not in chat history. After a 
 
 ### 3. Lint
 
-Run when asked, and after any batch ingest. Report findings to the user; never delete content
-silently.
+Run `make lint` when asked, and after any batch ingest. Report findings to the user; never
+delete content silently. The checks below are automated except where noted.
 
-- **Citation integrity** — every quoted passage in `wiki/` must appear literally in the `Raw/`
-  file it cites. Highest priority: this is the check that protects the value of everything else.
-- **Phantom sources** — every `[[Sources/X]]` must resolve to a real wiki page backed by a real
-  `Raw/` file.
-- **Broken links** — every wikilink must resolve to an existing page; fix the target or create a stub.
-- **Orphan pages** — pages with no inbound links should be linked from `wiki/index.md` and from
-  topically related pages.
-- **Frontmatter consistency** — required keys present, canonical `type` values, dates well-formed.
+- **Citation integrity** (`make quotes`) — every quoted passage in `wiki/` must appear literally
+  in the `Raw/` file it cites. Highest priority: this is the check that protects the value of
+  everything else. It separates MISATTRIBUTED (real passage, wrong letter — a one-word fix, and
+  it names the right letter) from UNSUPPORTED (in no source at all).
+- **Phantom sources** (`make links`) — every `[[Sources/X]]` must resolve to a real wiki page
+  backed by a real `Raw/` file.
+- **Broken links** (`make links`) — every wikilink must resolve to an existing page; fix the
+  target or create a stub.
+- **Orphan pages** (`make links`) — pages with no inbound links should be linked from
+  `wiki/index.md` and from topically related pages.
+- **Frontmatter consistency** (`make frontmatter`) — required keys present, canonical `type`
+  values, dates well-formed.
 - **Contradictions and stale claims** — where a newer source supersedes an older claim, update the
   page and note the change.
 - **Coverage gaps** — concepts referenced across many sources but lacking a page of their own.
+- **Source extraction quality** (`make raw`) — a `Raw/` file whose text has lost its word
+  boundaries cannot be quoted from, so an agent asked to cite it will reconstruct the wording
+  from memory. Bad extraction is a citation-integrity problem, not a cosmetic one.
 
 Log every lint pass in `wiki/log.md`.
 
@@ -116,9 +147,11 @@ The entire value of this knowledge base is that every claim is traceable to some
 actually wrote or said. A fabricated quotation destroys more value than a missing page, because it
 is indistinguishable from a real one and propagates into every synthesis built on top of it.
 
-- **A passage in quotation marks must appear verbatim in the cited `Raw/` file.** Verify before
-  writing it: `grep -n "distinctive phrase" Raw/<file>.md`. If it is not there, do not present it
-  as a quotation — paraphrase and mark it as a paraphrase, or leave it out.
+- **A passage in quotation marks must appear verbatim in the cited `Raw/` file.** Get the
+  passage with `make quote Q="distinctive phrase"`, which prints it unwrapped and ready to
+  paste, and confirm with `make quotes` before finishing. If the phrase is not in `Raw/`, the
+  tool says so — then do not present it as a quotation. Paraphrase and mark it as a paraphrase,
+  or leave it out.
 - **Never cite a source that does not exist in `Raw/`.** If a claim needs a source the collection
   does not contain, say the source is missing. Do not invent an attribution to make a page look
   complete.

@@ -12,21 +12,30 @@ This is a structured, interconnected knowledge base for Warren Buffett's investm
 - All file names and directory names
 - All comments and documentation
 
-## Structure
+## Layout
+
+- `Raw/` — the source letters, human-curated and not edited by the agent
+- `wiki/` — the compiled layer, written and maintained by the agent
+- `AGENT.md` — what the agent does; `wiki/SCHEMA.md` — how a page is shaped
+- `scripts/` — the checks that enforce both
+
+The directory structure of `wiki/` is specified in `wiki/SCHEMA.md`. It is documented in one
+place on purpose: three copies of a layout become three different layouts.
+
+## Checks
 
 ```
-wiki/
-├── index.md              # Catalog of all pages
-├── log.md                # Chronological log of all changes
-├── SCHEMA.md             # Authoritative configuration file
-├── Sources/              # Source summaries (annual letters, interviews, speeches, etc.)
-├── Concepts/             # Core mental models and frameworks
-├── Applications/         # Actionable tools and checklists
-├── Cases/                # Deep dives into key holdings
-├── People/               # Profiles of key figures
-├── Principles/           # Enduring philosophies
-└── Synthesis/            # Cross-source thematic analyses
+make lint                      # run before closing any ingest
+make quote Q="circle of competence"   # find a citable passage in Raw/
 ```
+
+`make lint` verifies that every quotation in `wiki/` appears verbatim in the letter it cites,
+that no wikilink is broken, that frontmatter matches the schema, and that the source text is
+intact enough to quote from. It runs on every push via GitHub Actions.
+
+The citation check is the important one. A fabricated quotation is indistinguishable from a
+real one once written and propagates into every synthesis built on top of it, so the wiki is
+worth exactly what that check says it is.
 
 ## Contributing
 

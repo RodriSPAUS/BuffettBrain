@@ -59,14 +59,18 @@ def main() -> int:
                 if anchor and FAKE_ANCHOR.match(anchor):
                     report.error(f"{rel}:{lineno} fabricated anchor #{anchor} -> {target}")
 
+                # Raw/ links keep their extension: SCHEMA.md specifies
+                # `source: [[Raw/2024ltr.md]]`, pointing at the file itself
+                # rather than at a wiki page.
+                if target.startswith("Raw/"):
+                    stem = target[4:-3] if target.endswith(".md") else target[4:]
+                    if stem not in raw_stems:
+                        report.error(f"{rel}:{lineno} Raw source does not exist: [[{target}]]")
+                    continue
+
                 if target.endswith(".md"):
                     report.error(f"{rel}:{lineno} link carries .md extension: [[{target}]]")
                     target = target[:-3]
-
-                if target.startswith("Raw/"):
-                    if target[4:] not in raw_stems:
-                        report.error(f"{rel}:{lineno} Raw source does not exist: [[{target}]]")
-                    continue
 
                 if target in DOC_PLACEHOLDERS:
                     continue
