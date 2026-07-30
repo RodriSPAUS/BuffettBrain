@@ -40,3 +40,8 @@ migrate:
 
 repair-raw:
 	@cd $(S) && $(PY) repair_raw_spacing.py $(ARGS)
+
+# Find a citable passage: make quote Q="circle of competence"
+.PHONY: quote
+quote:
+	@cd $(S) && $(PY) quote.py $(if $(Y),--year $(Y),) $(if $(C),--context $(C),) "$(Q)"
