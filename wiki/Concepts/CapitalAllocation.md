@@ -2,25 +2,80 @@
 title: "Capital Allocation"
 type: concept
 stability: high
-tags: [capital, allocation, reinvestment, float]
-date: 2026-07-27
-source: [[Sources/2024ltr]]
+tags: [capital-allocation, retained-earnings, reinvestment, dividends]
+date: 2026-07-30
+source: [[Sources/1987ltr]]
 ---
 
-## Definition
+## Why it is the central job
 
-*Capital allocation* is the process of deploying retained earnings and other capital across four hierarchical options: (1) reinvest in existing businesses, (2) acquire new ones, (3) repurchase shares, and (4) pay dividends. It is the CEO’s most important job—and the primary determinant of long-term shareholder value.
+Buffett's argument is that the skill is both decisive and, in most companies,
+absent — because nothing on the path to the top selects for it:
 
-> "Berkshire shareholders endorsed continuous reinvestment... enabled the company to build its taxable income." [[Sources/2024ltr]]
+> "This point can be important because the heads of many companies are not skilled
+> in capital allocation. Their inadequacy is not surprising. Most bosses rise to
+> the top because they have excelled in an area such as marketing, production,
+> engineering, administration or, sometimes, institutional politics."
+> [[Sources/1987ltr]]
 
-## Examples from Letters
+> "They now must make capital allocation decisions, a critical job that they may
+> have never tackled and that is not easily mastered." [[Sources/1987ltr]]
 
-- **Reinvestment Hierarchy**: "For sixty years, Berkshire shareholders endorsed continuous reinvestment and that enabled the company to build its taxable income." [[Sources/2024ltr]] → tax-deferred compounding as hidden moat amplifier
-- **Float as Strategic Capital**: "The float is likely to grow a bit over time and, with intelligent underwriting (and some luck), has a reasonable prospect of being costless." [[Sources/2024ltr]] → $171B float is sovereign, low-cost, scalable funding source
-- **Dividend Discipline**: "We paid only one cash dividend. On January 3, 1967, we disbursed our sole payment – $101,755 or 10¢ per A share." [[Sources/2024ltr]] → extreme discipline preserves compound growth engine
+In the same passage this is the stated advantage of owning a business outright
+rather than holding its shares:
 
-## Contrasts & Nuances
+> "First, when we control a company we get to allocate capital, whereas we are
+> likely to have little or nothing to say about this process with marketable
+> holdings." [[Sources/1987ltr]]
 
-- **GAAP vs. Economic Reality**: "Our measure excludes capital gains or losses on the stocks and bonds we own, whether realized or unrealized." [[Sources/2024ltr]] → operating earnings ($47.4B in 2024) are the true metric; GAAP net income ($96B) is distorted by volatility
-- **Scale as Constraint**: "Doubling our huge base is simply not possible within, say, a five-year period... We have no possibility of eye-popping performance." [[Sources/2023ltr]] → capital allocation must adapt to size-induced constraints
-- **Non-Controlled Ownership Strategy**: "We expect to maintain indefinitely" Coke, Amex, Occidental, and five Japanese companies [[Sources/2023ltr]] → capital deployed via passive, high-quality ownership when control isn’t required
+## Good overall returns can hide bad reinvestment
+
+The 1984 letter makes the point that a company's headline return on equity says
+nothing about what it did with the *marginal* dollar:
+
+> "Many corporations that consistently show good returns both on equity and on
+> overall incremental capital have, indeed, employed a large portion of their
+> retained earnings on an economically unattractive, even disastrous, basis."
+> [[Sources/1984ltr]]
+
+That is the analytical move underneath the whole concept: judge the increment,
+not the average.
+
+## Earnings need not be reinvested where they arose
+
+> "There's no rule that you have to invest money where you've earned it. Indeed,
+> it's often a mistake to do so: Truly great businesses, earning huge returns on
+> tangible assets, can't for any extended period reinvest a large portion of their
+> earnings internally at high rates of return." [[Sources/2007ltr]]
+
+The two poles of Berkshire's practice follow directly:
+
+- [[Cases/SeeCandies]] — high returns, almost no reinvestment room, so the cash
+  leaves and is deployed elsewhere.
+- [[Cases/BerkshireHathawayEnergy]] — modest regulated returns but an enormous
+  appetite for capital, so every dollar stays:
+
+> "(BHE has never paid a dividend to Berkshire since we assumed ownership. No
+> investor-owned utility in America comes close to matching BHE's enthusiasm for
+> reinvestment.)" [[Sources/2015ltr]]
+
+## The dividend record
+
+Berkshire's own policy is the limiting case of the same logic — retain everything
+for as long as retention beats distribution:
+
+> "On January 3, 1967, we disbursed our sole payment – $101,755 or 10¢ per A
+> share." [[Sources/2024ltr]]
+
+## Cross-references
+
+- [[Concepts/IntrinsicValue]] — growth adds value only above the cost of the
+  capital it absorbs
+- [[Concepts/Float]] — where much of the capital comes from
+- [[Concepts/ManagementQuality]] — the skill being assessed
+- [[Cases/SeeCandies]], [[Cases/BerkshireHathawayEnergy]] — the two poles
+- [[Sources/1984ltr]], [[Sources/1987ltr]], [[Sources/2007ltr]],
+  [[Sources/2015ltr]], [[Sources/2024ltr]]
+
+> TODO: share repurchases are the third option in the hierarchy and are argued at
+> length in the 1984 letter; they deserve a concept page of their own.

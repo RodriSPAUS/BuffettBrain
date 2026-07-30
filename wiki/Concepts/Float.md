@@ -2,25 +2,63 @@
 title: "Float"
 type: concept
 stability: high
-tags: [float, insurance, capital, moat]
-date: 2026-07-27
-source: [[Sources/2024ltr]]
+tags: [float, insurance, underwriting, cost-of-capital]
+date: 2026-07-30
+source: [[Sources/1994ltr]]
 ---
 
 ## Definition
 
-*Float* is the money that an insurance company holds but does not own—premiums collected upfront and claims paid later. It is a unique, low-cost, and scalable source of capital that Berkshire deploys to acquire businesses and securities, turning liability into strategic advantage.
+> "Float is money we hold but don't own." [[Sources/1994ltr]]
 
-> "When writing P/C insurance, we receive payment upfront and much later learn what our product has cost us – sometimes a moment of truth that is delayed as much as 30 or more years." [[Sources/2024ltr]]
+> "In an insurance operation, float arises because most policies require that
+> premiums be prepaid and, more importantly, because it usually takes time for an
+> insurer to hear about and resolve loss claims." [[Sources/1994ltr]]
 
-## Examples from Letters
+## The only number that matters is its cost
 
-- **Float Growth & Costlessness**: "Our float has grown from $46 billion to $171 billion. The float is likely to grow a bit over time and, with intelligent underwriting (and some luck), has a reasonable prospect of being costless." [[Sources/2024ltr]] → float is Berkshire’s most scalable, lowest-cost funding source
-- **Float as Moat Amplifier**: "Berkshire’s insurance business has generated $32 billion of after-tax profits from underwriting... Meanwhile, our float has grown from $46 billion to $171 billion." [[Sources/2024ltr]] → float amplifies moat by enabling acquisition of climate-resilient assets and R&D (e.g., Occidental’s carbon capture)
-- **Float Discipline**: "We must never write inadequately-priced policies in order to stay in the game." [[Sources/2024ltr]] → underwriting rigor protects float quality; pricing errors erode the moat
+Float is not free money. It is borrowed money whose interest rate is the
+underwriting result, and Buffett insists on measuring it that way:
 
-## Contrasts & Nuances
+> "In those years when we have had an underwriting profit, such as the last five,
+> our cost of float has been negative." [[Sources/1997ltr]]
 
-- **Float vs. Debt**: "All are at fixed rates, no 'floaters.'" [[Sources/2024ltr]] → yen-denominated debt is currency-neutral and fixed-rate, unlike floating-rate bank debt
-- **Float as Sovereign Capital**: "No private insurer has the willingness to take on the amount of risk that Berkshire can provide." [[Sources/2024ltr]] → float enables scale and risk capacity unmatched by peers
-- **Float and Tax Efficiency**: "$26.8 billion tax payment reflects massive retained earnings → tax deferral is a hidden moat amplifier" [[Sources/2024ltr]] → float-driven growth compounds tax-free until realized
+> "In 2004 our float cost us less than nothing, and I told you that we had a
+> chance – absent a mega-catastrophe – of no-cost float in 2005."
+> [[Sources/2005ltr]]
+
+Negative cost is the goal, not a given. The 1990 letter is candid about what can
+go wrong:
+
+> "In addition, these companies, like all others in the industry, are vulnerable
+> to catastrophe losses that could exceed their reinsurance protection and take
+> their cost of float right off the chart." [[Sources/1990ltr]]
+
+Tax treatment is part of the true cost:
+
+> "Though the calculation is necessarily imprecise, I would estimate that the
+> owners of the average insurance company would find the tax penalty adds about
+> one percentage point to their cost of float." [[Sources/1990ltr]]
+
+## Why it compounds
+
+Float that costs nothing and grows behaves like permanent equity that pays no
+dividend. That is what makes the insurance operation the funding layer beneath
+everything else Berkshire owns — see [[Concepts/CapitalAllocation]] and
+[[Cases/GEICO]], the largest single source.
+
+The discipline that keeps the cost negative belongs to
+[[Concepts/ManagementQuality]] and [[Applications/BusinessQualityChecklist]]: the
+willingness to write less business when prices are inadequate.
+
+## Cross-references
+
+- [[Cases/GEICO]] — the largest contributor to float
+- [[Concepts/CapitalAllocation]] — what the float is used for
+- [[Concepts/MarginOfSafety]] — the underwriting form of the same idea
+- [[Synthesis/FloatGrowth]] — the long arc across the letters
+- [[Sources/1990ltr]], [[Sources/1994ltr]], [[Sources/1997ltr]],
+  [[Sources/2005ltr]]
+
+> TODO: super-cat and reinsurance is where float turns volatile and deserves its
+> own concept page; Ajit Jain's operation runs through the letters from 1986 on.

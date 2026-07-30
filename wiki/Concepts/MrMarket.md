@@ -2,25 +2,79 @@
 title: "Mr. Market"
 type: concept
 stability: high
-tags: [mr market, market psychology, emotion, valuation]
-date: 2026-07-27
+tags: [mr-market, temperament, price-versus-value, graham]
+date: 2026-07-30
 source: [[Sources/1987ltr]]
 ---
 
 ## Definition
 
-*Mr. Market* is a metaphor for the stock market’s emotional, irrational, and often manic-depressive behavior. He offers to buy or sell shares every day at prices driven by fear and greed—not fundamentals. The intelligent investor uses Mr. Market as a servant, not a master—buying when he’s depressed (low prices) and selling when he’s euphoric (high prices).
+The parable is Ben Graham's; Buffett sets it out in full in 1987, and that is the
+canonical statement in this collection.
 
-> "Mr. Market is there to serve you, not guide you." [[Sources/1987ltr]]
+> "Ben Graham, my friend and teacher, long ago described the mental attitude
+> toward market fluctuations that I believe to be most conducive to investment
+> success. He said that you should imagine market quotations as coming from a
+> remarkably accommodating fellow named Mr. Market who is your partner in a
+> private business." [[Sources/1987ltr]]
 
-## Examples from Letters
+> "Without fail, Mr. Market appears daily and names a price at which he will
+> either buy your interest or sell you his. Even though the business that the two
+> of you own may have economic characteristics that are stable, Mr. Market's
+> quotations will be anything but." [[Sources/1987ltr]]
 
-- **2020 Pandemic Crash**: "The pandemic caused massive dislocations... but we saw no reason to alter our long-term strategy." [[Sources/2020ltr]] → ignored Mr. Market’s panic, held cash for better opportunities
-- **2022 Rate Hike Volatility**: "Interest rates rose sharply in 2022, causing widespread equity losses... but our operating earnings grew." [[Sources/2022ltr]] → focused on intrinsic value, not market price swings
-- **2024 Convective Storms**: "P/C insurance pricing strengthened during 2024, reflecting a major increase in damage from convective storms. Climate change may have been announcing its arrival." [[Sources/2024ltr]] → Mr. Market overreacted to climate risk; Berkshire doubled down on insurance float
+> "For, sad to say, the poor fellow has incurable emotional problems. At times he
+> feels euphoric and can see only the favorable factors affecting the business.
+> When in that mood, he names a very high buy-sell price because he fears that you
+> will snap up his interest and rob him of imminent gains. At other times he is
+> depressed and can see nothing but trouble ahead for both the business and the
+> world." [[Sources/1987ltr]]
 
-## Contrasts & Nuances
+## The rule that follows
 
-- **Mr. Market vs. Business Owner Mindset**: "If you are a business owner, would you let your daily P&L determine your long-term decisions? Of course not." [[Sources/1987ltr]] → ownership mindset insulates from Mr. Market’s noise
-- **Mr. Market and Float Discipline**: "We must never write inadequately-priced policies in order to stay in the game." [[Sources/2024ltr]] → underwriting discipline prevents Mr. Market from dictating capital allocation
-- **Mr. Market and Tax Deferral**: "$26.8 billion tax payment reflects massive retained earnings → tax deferral is a hidden moat amplifier" [[Sources/2024ltr]] → tax deferral allows Berkshire to ignore Mr. Market’s timing, deploying capital when *it* chooses
+> "Transactions are strictly at your option. Under these conditions, the more
+> manic-depressive his behavior, the better for you. But, like Cinderella at the
+> ball, you must heed one warning or everything will turn into pumpkins and mice:
+> Mr. Market is there to serve you, not to guide you. It is his pocketbook, not
+> his wisdom, that you will find useful. If he shows up some day in a particularly
+> foolish mood, you are free to either ignore him or to take advantage of him, but
+> it will be disastrous if you fall under his influence." [[Sources/1987ltr]]
+
+Volatility is the raw material, not the risk. That inversion is what makes the
+concept operational rather than merely consoling.
+
+## The stance it requires
+
+> "When investing, we view ourselves as business analysts - not as market
+> analysts, not as macroeconomic analysts, and not even as security analysts."
+> [[Sources/1987ltr]]
+
+> "Our approach makes an active trading market useful, since it periodically
+> presents us with mouth-watering opportunities. But by no means is it essential:
+> a prolonged suspension of trading in the securities we hold would not bother us
+> any more than does the lack of daily quotations on World Book or Fechheimer."
+> [[Sources/1987ltr]]
+
+> "Eventually, our economic fate will be determined by the economic fate of the
+> business we own, whether our ownership is partial or total." [[Sources/1987ltr]]
+
+That last sentence is the bridge to [[Principles/OwnershipMindset]].
+
+## Earlier statements of the same idea
+
+The character is named in 1987, but the diagnosis predates him:
+
+> "And fractional-interest purchases can be made in an auction market where prices
+> are set by participants with behavior patterns that sometimes resemble those of
+> an army of manic-depressive lemmings." [[Sources/1982ltr]]
+
+> "Manic-depressive personalities produce manic-depressive valuations."
+> [[Sources/1983ltr]]
+
+## Cross-references
+
+- [[Concepts/IntrinsicValue]] — the value Mr. Market's price is measured against
+- [[Concepts/MarginOfSafety]] — what you demand when he is not being foolish
+- [[Principles/OwnershipMindset]] — the stance that makes ignoring him possible
+- [[People/WarrenBuffett]] — temperament over intellect
+- [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]]

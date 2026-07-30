@@ -2,25 +2,67 @@
 title: "Intrinsic Value"
 type: concept
 stability: high
-tags: [intrinsic value, valuation, business value, book value]
-date: 2026-07-27
-source: [[Sources/2024ltr]]
+tags: [intrinsic-value, valuation, book-value, discounted-cash-flow]
+date: 2026-07-30
+source: [[Sources/1994ltr]]
 ---
 
 ## Definition
 
-*Intrinsic value* is the discounted present value of all future cash flows a business will generate over its remaining life. It is not determined by market price or accounting book value but by the underlying economics of the business—its moat, management quality, and capital allocation discipline.
+Buffett gives the definition in one sentence, and it does not change across the
+letters:
 
-> "Our view is that ‘earnings’ should be a sensible concept that Bertie will find somewhat useful – but only as a starting point – in evaluating a business." [[Sources/2023ltr]]
+> "We define intrinsic value as the discounted value of the cash that can be
+> taken out of a business during its remaining life." [[Sources/1994ltr]]
 
-## Examples from Letters
+The contrast with book value is the pairing he returns to most often:
 
-- **Intrinsic vs. Book Value**: "We abandoned book value as primary metric in 2018... intrinsic value is what matters." [[Sources/2018ltr]] → book value is backward-looking; intrinsic value is forward-looking and economic
-- **Look-Through Earnings**: "Look-through earnings include our share of undistributed earnings of major equity holdings (e.g., Apple, Coca-Cola) even when not paid as dividends." [[Sources/2023ltr]] → intrinsic value includes retained earnings of portfolio companies
-- **Five-Grove Framework**: "We estimate intrinsic value using five independent groves of analysis: (1) operating earnings, (2) float returns, (3) equity portfolio, (4) cash & equivalents, (5) intangible assets." [[Sources/2018ltr]] → multi-path validation prevents single-point failure
+> "Book value tells you what has been put in; intrinsic business value estimates
+> what can be taken out." [[Sources/1983ltr]]
 
-## Contrasts & Nuances
+## It is an estimate, and it is meant to be
 
-- **Intrinsic Value Growth Constraint**: "Doubling our huge base is simply not possible within, say, a five-year period... We have no possibility of eye-popping performance." [[Sources/2023ltr]] → intrinsic value growth slows with scale; patience replaces hyper-growth
-- **GAAP Distortion**: "GAAP net income ($96B in 2023) excludes $53.7B unrealized gains on equities, making it meaningless for valuation." [[Sources/2023ltr]] → GAAP earnings obscure intrinsic value; operating earnings ($37.4B) are the true signal
-- **Bertie as Mental Model**: "In visualizing the owners that Berkshire seeks, I am lucky to have the perfect mental model, my sister, Bertie." [[Sources/2023ltr]] → intrinsic value must be explainable to intelligent, skeptical, non-expert owners
+The concept arrives with an explicit admission of imprecision, which is what
+separates it from a formula:
+
+> "We can't tell you the exact differential because intrinsic value is
+> necessarily an estimate; Charlie and I might, in fact, differ by 10% in our
+> appraisals." [[Sources/1990ltr]]
+
+That tolerance is why [[Concepts/MarginOfSafety]] is a necessary companion: a
+number you can only bracket has to be bought at a discount to the bracket.
+
+## Growth is not automatically value
+
+> "Indeed, growth can destroy value if it requires cash inputs in the early years
+> of a project or enterprise that exceed the discounted value of the cash that
+> those assets will generate in later years." [[Sources/2000ltr]]
+
+This is the sentence that ties valuation to [[Concepts/CapitalAllocation]]:
+whether growth helps depends entirely on the return earned on the capital it
+consumes. [[Cases/SeeCandies]] is the case where growth was slight and returns
+enormous; [[Cases/BerkshireHathawayEnergy]] the case where the capital appetite
+is vast and the accepted return modest.
+
+## Why the market eventually agrees
+
+> "As Ben said: "In the short run, the market is a voting machine but in the long
+> run it is a weighing machine." The speed at which a business's success is
+> recognized, furthermore, is not that important as long as the company's
+> intrinsic value is increasing at a satisfactory rate." [[Sources/1987ltr]]
+
+See [[Concepts/MrMarket]], from the same letter, for the behavioural half of the
+argument.
+
+## Cross-references
+
+- [[Concepts/MarginOfSafety]] — what to do about an estimate you cannot pin down
+- [[Concepts/EconomicGoodwill]] — the main reason book value understates value
+- [[Concepts/MrMarket]] — price versus value, stated as a parable
+- [[Concepts/CapitalAllocation]] — growth creates value only above the cost of
+  the capital it absorbs
+- [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1990ltr]],
+  [[Sources/1994ltr]], [[Sources/2000ltr]]
+
+> TODO: Buffett drops book value as Berkshire's headline metric in the 2018
+> letter. Feed that shift in once the 2018-2024 summaries cover it.

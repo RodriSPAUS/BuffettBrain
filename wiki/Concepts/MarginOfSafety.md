@@ -2,25 +2,64 @@
 title: "Margin of Safety"
 type: concept
 stability: high
-tags: [margin of safety, risk, valuation, conservatism]
-date: 2026-07-27
-source: [[Sources/1994ltr]]
+tags: [margin-of-safety, graham, valuation, risk]
+date: 2026-07-30
+source: [[Sources/1990ltr]]
 ---
 
 ## Definition
 
-*Margin of safety* is the difference between a business’s intrinsic value and its market price. It is the buffer that protects investors from error in estimation, unforeseen events, or deteriorating fundamentals. It is not a fixed percentage but a dynamic calculation grounded in moat durability, management quality, and capital allocation discipline.
+The phrase is Graham's, and Buffett quotes the passage he takes it from:
 
-> "The margin of safety is the cornerstone of intelligent investing." [[Sources/1994ltr]]
+> "In the final chapter of The Intelligent Investor Ben Graham forcefully rejected
+> the dagger thesis: "Confronted with a challenge to distill the secret of sound
+> investment into three words, we venture the motto, Margin of Safety." Forty-two
+> years after reading that, I still think those are the right three words."
+> [[Sources/1990ltr]]
 
-## Examples from Letters
+The operational form is a rule about how large the gap has to be:
 
-- **Insurance Underwriting Discipline**: "We must never write inadequately-priced policies in order to stay in the game. That policy is corporate suicide." [[Sources/2024ltr]] → margin of safety in pricing prevents catastrophic loss
-- **GEICO Turnaround**: "GEICO was a long-held gem that needed major repolishing... Todd has worked tirelessly in getting the job done." [[Sources/2024ltr]] → margin of safety in acquisition price allowed time for operational turnaround
-- **Berkshire’s Tax Payment Record**: "$26.8 billion tax payment reflects massive retained earnings → tax deferral is a hidden moat amplifier" [[Sources/2024ltr]] → margin of safety in financial strength allows Berkshire to absorb extreme losses without distress
+> "Second, and equally important, we insist on a margin of safety in our purchase
+> price. If we calculate the value of a common stock to be only slightly higher
+> than its price, we're not interested in buying." [[Sources/1992ltr]]
 
-## Contrasts & Nuances
+## Why it is required
 
-- **Margin of Safety vs. Diversification**: "Diversification is protection against ignorance. It makes little sense for those who know what they’re doing." [[Sources/1994ltr]] → margin of safety is superior to diversification when moat and management are known
-- **Margin of Safety and Scale**: "Doubling our huge base is simply not possible within, say, a five-year period... We have no possibility of eye-popping performance." [[Sources/2023ltr]] → margin of safety grows with scale; large float and cash reserves allow Berkshire to act when others cannot
-- **Margin of Safety and Time Horizon**: "Our horizon for such commitments is almost always far longer than a single year. In many, our thinking involves decades." [[Sources/2024ltr]] → margin of safety compounds over time, turning short-term volatility into long-term advantage
+Because [[Concepts/IntrinsicValue]] is an estimate that two careful people can
+disagree about by 10%, a price only slightly below the estimate is not a bargain —
+it is inside the error bars. The margin is what makes the estimate usable.
+
+The surrounding condition is stated plainly:
+
+> "An investor needs to do very few things right as long as he or she avoids big
+> mistakes." [[Sources/1992ltr]]
+
+## It applies to underwriting, not only to buying
+
+The same discipline governs the insurance operation, where the price is the
+premium and the value is the expected loss:
+
+> "Instead, prices must provide a healthy margin of safety against the societal
+> trends that are forever springing expensive surprises on the insurance
+> industry." [[Sources/1990ltr]]
+
+That is the link to [[Concepts/Float]]: an inadequate premium is a negative margin
+of safety that reappears later as a positive cost of float.
+
+## It can disappear from a market
+
+> "Today's price levels, though, have materially eroded the "margin of safety" that
+> Ben Graham identified as the cornerstone of intelligent investing."
+> [[Sources/1997ltr]]
+
+Written near the top of the late-1990s market, this is the concept used as a
+warning rather than a screen — the discipline that produces inaction. See
+[[Concepts/MrMarket]].
+
+## Cross-references
+
+- [[Concepts/IntrinsicValue]] — the estimate the margin protects
+- [[Concepts/MrMarket]] — who supplies the price
+- [[Concepts/Float]] — the underwriting form of the same rule
+- [[Applications/RedFlags]] — what the absence of a margin looks like
+- [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]]

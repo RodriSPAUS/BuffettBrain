@@ -2,25 +2,68 @@
 title: "Management Quality"
 type: concept
 stability: high
-tags: [management, fidelity, integrity, compensation]
-date: 2026-07-27
-source: [[Sources/2024ltr]]
+tags: [management, integrity, compensation, delegation]
+date: 2026-07-30
+source: [[Sources/1989ltr]]
 ---
 
-## Definition
+## The lesson that orders everything else
 
-*Management quality* refers to the combination of fidelity (unwavering alignment with owners), operational excellence, and long-term judgment. It is not measured by credentials or pedigree but by observable behavior, capital discipline, and consistency over decades.
+Buffett's position is not that managers do not matter. It is that they cannot
+rescue bad economics, and that this took him years to accept:
 
-> "I never look at where a candidate has gone to school. Never!" [[Sources/2024ltr]]
+> "Charlie understood this early; I was a slow learner. But now, when buying
+> companies or common stocks, we look for first-class businesses accompanied by
+> first-class managements." [[Sources/1989ltr]]
 
-## Examples from Letters
+> "That leads right into a related lesson: Good jockeys will do well on good
+> horses, but not on broken-down nags." [[Sources/1989ltr]]
 
-- **Pete Liegl**: "Pete paused... then he surprised us: 'Well, I looked at Berkshire’s proxy statement and I wouldn’t want to make more than my boss, so pay me $100,000 per year.'" [[Sources/2024ltr]] → fidelity as non-negotiable; compensation capped by CEO salary signals absolute alignment
-- **Ben Rosner**: "Ben never went past 6th grade." [[Sources/2024ltr]] → innate talent and integrity trump formal education
-- **Ajit Jain**: "Under Ajit, our insurance operation has blossomed from an obscure Omaha-based company into a world leader..." [[Sources/2024ltr]] → operational excellence and risk discipline as defining traits
+The evidence is his own failures:
 
-## Contrasts & Nuances
+> "Both Berkshire's textile business and Hochschild, Kohn had able and honest
+> people running them. The same managers employed in a business with good economic
+> characteristics would have achieved fine records. But they were never going to
+> make any progress while running in quicksand." [[Sources/1989ltr]]
 
-- **Fidelity > Credentials**: "A very large portion of business talent is innate with nature swamping nurture." [[Sources/2024ltr]] → rejects credentialism as proxy for competence
-- **Bonus Tied to Performance**: "I would like an annual bonus of 10% of any earnings above what the company is now delivering." [[Sources/2024ltr]] → compensation directly linked to value creation, not tenure or title
-- **Managerial Longevity**: "The fidelity disappointments can hurt beyond their financial impact, a pain that can approach that of a failed marriage." [[Sources/2024ltr]] → fidelity is emotional and structural, not just transactional
+Read alongside [[Concepts/Moat]], where the corresponding claim is that a
+franchise "can tolerate mis-management": the two statements are the same
+observation from opposite ends.
+
+## Once hired, left alone
+
+> "At Berkshire, we do not tell .400 hitters how to swing." [[Sources/1993ltr]]
+
+The practice is visible in [[Cases/ForestRiver]], where the commitment on day one
+was "I won't be telling Pete how to manage his operation" — and still held
+nineteen years later.
+
+## What is actually screened for
+
+Not credentials:
+
+> "Jessica's reply: "Ben never went past 6th grade."" [[Sources/2024ltr]]
+
+> "I've observed, however, that a very large portion of business talent is innate
+> with nature swamping nurture." [[Sources/2024ltr]]
+
+Alignment, demonstrated by what a manager asks for rather than what he says. Pete
+Liegl's proposal for his own pay:
+
+> "Well, I looked at Berkshire's proxy statement and I wouldn't want to make more
+> than my boss, so pay me $100,000 per year." [[Sources/2024ltr]]
+
+## Why integrity is weighted so heavily
+
+> "The fidelity disappointments can hurt beyond their financial impact, a pain that
+> can approach that of a failed marriage." [[Sources/2024ltr]]
+
+See [[Principles/Fidelity]] for the full treatment.
+
+## Cross-references
+
+- [[Concepts/Moat]] — what a business must have before management can matter
+- [[Concepts/CapitalAllocation]] — the specific managerial skill Buffett grades
+- [[Principles/Fidelity]] — the integrity half of the assessment
+- [[Cases/ForestRiver]], [[Cases/GEICO]] — delegation and intervention
+- [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2024ltr]]

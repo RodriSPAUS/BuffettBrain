@@ -2,25 +2,79 @@
 title: "Economic Goodwill"
 type: concept
 stability: high
-tags: [goodwill, economic goodwill, accounting goodwill, moat]
-date: 2026-07-27
+tags: [goodwill, accounting, book-value, inflation, moat]
+date: 2026-07-30
 source: [[Sources/1983ltr]]
 ---
 
 ## Definition
 
-*Economic goodwill* is the present value of all future excess earnings a business will generate due to its durable competitive advantage (moat). It differs from *accounting goodwill*, which is a residual on the balance sheet after acquisition. Economic goodwill is real, measurable, and grows over time; accounting goodwill is static and often impaired.
+Economic goodwill is the gap between what a business is worth and what its
+tangible assets are worth. Accounting goodwill is a residue of what was paid.
+Buffett introduces the distinction in 1983 and treats it as the main reason book
+value understates [[Concepts/IntrinsicValue]]:
 
-> "Economic goodwill is what makes a business worth more than its net tangible assets." [[Sources/1983ltr]]
+> "This excess belongs in our intrinsic business value, but is not included in the
+> calculation of book value; (2) More important, we own several businesses that
+> possess economic Goodwill (which is properly includable in intrinsic business
+> value) far larger than the accounting Goodwill that is carried on our balance
+> sheet and reflected in book value." [[Sources/1983ltr]]
 
-## Examples from Letters
+> "Goodwill, both economic and accounting, is an arcane subject and requires more
+> explanation than is appropriate here. The appendix that follows this letter -
+> "Goodwill and its Amortization: The Rules and The Realities" - explains why
+> economic and accounting Goodwill can, and usually do, differ enormously."
+> [[Sources/1983ltr]]
 
-- **Nebraska Furniture Mart Acquisition**: "We paid $55 million for NFM in 1983, far more than its book value, because we recognized its economic goodwill—brand loyalty, low-cost structure, and managerial excellence." [[Sources/1983ltr]] → economic goodwill justified premium over book value
-- **GEICO’s Moat**: "GEICO was a long-held gem that needed major repolishing... Todd has worked tirelessly in getting the job done." [[Sources/2024ltr]] → brand and cost advantages represent enduring economic goodwill
-- **Coca-Cola’s Global Franchise**: "When you find a truly wonderful business, stick with it. Patience pays, and one wonderful business can offset the many mediocre decisions that are inevitable." [[Sources/2023ltr]] → global distribution and brand equity are economic goodwill generators
+> "Whether or not you wish to tackle the Appendix, you should be aware that Charlie
+> and I believe that Berkshire possesses very significant economic Goodwill value
+> above that reflected in our book value." [[Sources/1983ltr]]
 
-## Contrasts & Nuances
+## The change of mind it records
 
-- **Economic vs. Accounting Goodwill**: "Accounting goodwill is a one-time entry on the balance sheet; economic goodwill compounds annually through retained earnings and reinvestment." [[Sources/1983ltr]] → accounting is backward-looking; economic is forward-looking
-- **Moat as Goodwill Engine**: "The key to investing is not assessing how much an industry is going to grow, or how dynamic it will be, but rather selecting the business with the deepest moat." [[Sources/2024ltr]] → moat quality determines economic goodwill growth rate
-- **Goodwill and Capital Allocation**: "Berkshire shareholders endorsed continuous reinvestment... enabled the company to build its taxable income." [[Sources/2024ltr]] → reinvested earnings compound economic goodwill, unlike dividends which deplete it
+The concept marks a break with the Graham approach Buffett was trained in, and he
+says so:
+
+> "My own thinking has changed drastically from 35 years ago when I was taught to
+> favor tangible assets and to shun businesses whose value depended largely upon
+> economic Goodwill." [[Sources/1983ltr]]
+
+This is the hinge of the whole collection: the move from buying assets cheaply to
+paying up for earning power. See [[Synthesis/MoatEvolution]].
+
+## How large the gap can be
+
+The 1985 letter measures it by comparing the textile operation being liquidated
+with two of the small businesses Berkshire owned:
+
+> "Ponder this: the economic goodwill attributable to two paper routes in Buffalo
+> - or a single See's candy store - considerably exceeds the proceeds we received
+> from this massive collection of tangible assets that not too many years ago,
+> under different competitive conditions, was able to employ over 1,000 people."
+> [[Sources/1985ltr]]
+
+The measurable form is return on tangible capital:
+
+> "Some of the businesses enjoy terrific economics, measured by earnings on
+> unleveraged net tangible assets that run from 25% after-tax to more than 100%."
+> [[Sources/2010ltr]]
+
+## Why inflation makes it matter more
+
+> "The dramatic growth in earning power of these three businesses, accompanied by
+> their need for only minor amounts of capital, illustrates very well the power of
+> economic goodwill during an inflationary period (a phenomenon explained in
+> detail in the 1983 annual report)." [[Sources/1985ltr]]
+
+A business that earns a high return on few tangible assets can raise prices with
+inflation without having to fund a proportionally larger asset base. A
+capital-heavy business cannot. That asymmetry is what makes economic goodwill an
+inflation hedge rather than merely an accounting curiosity.
+
+## Cross-references
+
+- [[Concepts/IntrinsicValue]] — what economic goodwill is a component of
+- [[Concepts/Moat]] — the competitive fact that produces it
+- [[Cases/SeeCandies]] — the worked example
+- [[Synthesis/MoatEvolution]] — the shift this concept records
+- [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/2010ltr]]
