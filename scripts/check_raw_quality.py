@@ -41,8 +41,15 @@ def measure(text: str) -> tuple[float, float, int]:
         return 0.0, 0.0, 0
     mean = sum(len(w) for w in words) / len(words)
     # A lowercase letter immediately followed by an uppercase one inside a token
-    # is the fingerprint of two words with the space removed.
-    glued = len(re.findall(r"[a-z][A-Z]", prose))
+    # is the fingerprint of two words with the space removed — but it is also
+    # how the letters spell MidAmerican, NetJets, HomeServices and CenturyLink,
+    # which grow more common in the later years. A brand name carries a single
+    # internal capital and normal length; glue carries several, or runs long.
+    glued = 0
+    for token in re.findall(r"[A-Za-z][A-Za-z'’]*", prose):
+        humps = len(re.findall(r"[a-z][A-Z]", token))
+        if humps >= 2 or (humps and len(token) > 14):
+            glued += humps
     density = 1000 * glued / max(len(prose), 1)
     return mean, density, len([w for w in words if len(w) > 15])
 
