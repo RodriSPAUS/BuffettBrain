@@ -1,39 +1,106 @@
 ---
 title: "GEICO"
 type: case
-tags: [geico, insurance, moat, turnaround]
-date: 2026-07-27
-source: [[Sources/2024ltr]]
+tags: [geico, insurance, moat, float, turnaround]
+date: 2026-07-30
+source: [[Raw/1980ltr.md]]
 ---
 
-## Executive Summary
+## Why this case matters
 
-GEICO is Berkshire Hathaway’s flagship insurance subsidiary and a textbook example of moat amplification through management fidelity and capital allocation discipline. Acquired in 1996, it was revitalized from near-collapse into a global leader—demonstrating how durable advantages can be restored with the right leadership and resources.
+GEICO is the longest-running thread in the letters: a stock bought in the
+mid-1970s, held through two decades of partial ownership, bought outright in
+1996, and still being repaired in 2024. It is the case where [[Concepts/Moat]]
+is defined most concretely — as a cost advantage rather than a brand — and where
+[[Concepts/Float]] and [[Concepts/ManagementQuality]] can be watched compounding
+over forty years in the same business.
 
-> "GEICO was a long-held gem that needed major repolishing... Todd has worked tirelessly in getting the job done." [[Sources/2024ltr]]
+## The moat is the cost structure
 
-## Key Metrics (2024)
+Buffett's account of GEICO's advantage is structural, not promotional. It is
+about how the company is built:
 
-| Metric | Value | Source |
-|--------|-------|--------|
-| Premiums Written | $47.4B | [[Sources/2024ltr]] |
-| Float Contribution | $171B total float (GEICO is largest contributor) | [[Sources/2024ltr]] |
-| Underwriting Profit | $32B after-tax profit since 1996 | [[Sources/2024ltr]] |
-| Market Share (US Auto) | ~13% (2nd largest) | [[Sources/2024ltr]] |
+> "GEICO was designed to be the low-cost operation in an enormous marketplace
+> (auto insurance) populated largely by companies whose marketing structures
+> restricted adaptation." [[Sources/1980ltr]]
 
-## Moat Analysis
+By 1982 he had generalised the point into the distinction that runs through the
+whole [[Concepts/Moat]] page — most commodity businesses are hopeless, and the
+exception is a cost advantage that is *wide and sustainable*:
 
-- **Cost Advantage**: "GEICO’s direct-to-consumer model eliminates agents, enabling industry-leading cost ratios." [[Sources/2024ltr]]
-- **Brand Loyalty**: "Our brand recognition remains unmatched—'GEICO' is synonymous with auto insurance savings." [[Sources/2024ltr]]
-- **Scale & Data**: "Our data infrastructure allows real-time risk pricing across 50 states." [[Sources/2024ltr]]
+> "GEICO is a magnificent illustration of the high-profit exception we described
+> earlier in discussing commodity industries with over-capacity - a company with
+> a wide and sustainable cost advantage." [[Sources/1982ltr]]
 
-## Management & Capital Allocation
+Four years later he gives the metaphor its most quoted form, and it is worth
+noting that the moat here is explicitly *the cost gap*, not the gecko:
 
-- **Fidelity in Action**: "Todd Combs took over GEICO’s leadership in 2018 and immediately froze all non-essential spending, refocused on underwriting discipline, and rebuilt actuarial talent." [[Sources/2024ltr]]
-- **Float Deployment**: "GEICO’s float funds Berkshire’s acquisitions and equity portfolio—turning liability into sovereign capital." [[Sources/2024ltr]]
+> "The difference between GEICO's costs and those of its competitors is a kind
+> of moat that protects a valuable and much-sought-after business castle."
+> [[Sources/1986ltr]]
 
-## Lessons Learned
+The gap was measurable. In that same letter:
 
-- **Moats Can Be Restored**: A deep moat isn’t static—it requires continuous investment and disciplined leadership.
-- **Fidelity > Credentials**: Todd Combs had no prior insurance experience but possessed unwavering fidelity to shareholders and operational rigor.
-- **Float Is Strategic**: GEICO’s $171B float is not just capital—it’s Berkshire’s most scalable, lowest-cost funding source.
+> "The total of GEICO's underwriting expense and loss adjustment expense in 1986
+> was only 23.5% of premiums." [[Sources/1986ltr]]
+
+## From stake to subsidiary
+
+Berkshire bought roughly half the company over two decades and the rest in one
+transaction at the end of 1995:
+
+> "GEICO Corporation Right after yearend, we completed the purchase of 100% of
+> GEICO, the seventh largest auto insurer in the United States, with about 3.7
+> million cars insured." [[Sources/1995ltr]]
+
+The price relative to the original stake is the compounding lesson:
+
+> "Then, on January 2, 1996, we acquired the remaining 50% of GEICO for $2.3
+> billion in cash, about 50 times the cost of our original purchase."
+> [[Sources/2009ltr]]
+
+## Management
+
+GEICO is Buffett's standing example of buying the manager along with the
+business — see [[Concepts/ManagementQuality]] and [[Principles/Fidelity]]:
+
+> "In addition, GEICO has two extraordinary managers: Tony Nicely, who runs the
+> insurance side of the operation, and Lou Simpson, who runs investments."
+> [[Sources/1995ltr]]
+
+> "That is true from both a business and personal perspective: GEICO's operating
+> chief, Tony Nicely, is a superb business manager and a delight to work with."
+> [[Sources/1996ltr]]
+
+Nearly thirty years later the same page of the ledger is still open, with a
+different name on it:
+
+> "In five years, Todd Combs has reshaped GEICO in a major way, increasing
+> efficiency and bringing underwriting practices up to date." [[Sources/2024ltr]]
+
+> "Our insurance business also delivered a major increase in earnings, led by the
+> performance of GEICO." [[Sources/2024ltr]]
+
+## What the case establishes
+
+- A moat can be an *operating* fact — a cost structure competitors cannot copy
+  without dismantling their own distribution — rather than a marketing one.
+  See [[Concepts/Moat]].
+- A wide cost advantage does not maintain itself. GEICO needed repair in the
+  mid-1970s and again in the 2020s, in both cases through management rather than
+  capital. See [[Concepts/ManagementQuality]].
+- Holding a good business for decades is what produced the return; the 1996
+  purchase price was fifty times the original cost precisely because the earlier
+  stake was never sold. See [[Principles/OwnershipMindset]].
+
+## Cross-references
+
+- [[Concepts/Moat]] — the cost-advantage definition originates here
+- [[Concepts/Float]] — GEICO is the largest single contributor
+- [[Concepts/ManagementQuality]] — Nicely, Simpson, Combs
+- [[Sources/1980ltr]], [[Sources/1982ltr]], [[Sources/1986ltr]],
+  [[Sources/1995ltr]], [[Sources/1996ltr]], [[Sources/2009ltr]],
+  [[Sources/2024ltr]]
+
+> TODO: the 1976 near-failure and the Jack Byrne rescue are referred to across
+> several letters; add them once the pre-1980 summaries carry the detail.
