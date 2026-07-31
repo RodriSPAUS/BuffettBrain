@@ -33,6 +33,9 @@ Rules that nothing checks are rules that drift. Every convention in this file an
 | `make raw` | `Raw/` text is intact enough to quote from |
 | `make quote Q="phrase"` | finds a citable passage and prints it unwrapped, with its wikilink |
 
+`scripts/INGEST_PROMPT.md` is the ready-made instruction for handing a single letter to
+any agent, including a cheaper model — the checks above are what make that safe.
+
 `make quote` is the one to reach for while writing. `Raw/` files are hard-wrapped with
 compounds broken across lines, so a sentence copied out of `grep` output looks correct and
 fails `make quotes`. That friction is what produces invented quotations; the tool removes it.
