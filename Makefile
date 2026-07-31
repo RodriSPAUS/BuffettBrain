@@ -1,10 +1,14 @@
 PY := python3
 S  := scripts
 
-.PHONY: lint quotes links frontmatter raw help
+.PHONY: lint lint-strict lint-detail baseline quotes links frontmatter raw help
 
 help:
 	@echo "make lint        run every check (do this before closing an ingest)"
+	@echo "                 fails only on NEW errors, not on the known backlog"
+	@echo "make lint-strict fail on any error at all, ignoring the baseline"
+	@echo "make lint-detail show every error, including the known ones"
+	@echo "make baseline    re-record the backlog after fixing pages"
 	@echo "make quotes      verify every quotation against the Raw/ file it cites"
 	@echo "make links       broken wikilinks, phantom sources, orphans, fake anchors"
 	@echo "make frontmatter page metadata against wiki/SCHEMA.md"
@@ -19,6 +23,15 @@ help:
 
 lint:
 	@cd $(S) && $(PY) lint.py
+
+lint-strict:
+	@cd $(S) && $(PY) lint.py --strict
+
+lint-detail:
+	@cd $(S) && $(PY) verify_quotes.py; $(PY) lint_links.py; $(PY) check_frontmatter.py
+
+baseline:
+	@cd $(S) && $(PY) lint.py --record
 
 quotes:
 	@cd $(S) && $(PY) verify_quotes.py

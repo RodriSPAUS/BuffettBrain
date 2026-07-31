@@ -15,5 +15,8 @@ jobs:
           python-version: "3.11"
       # No dependencies: the checks are stdlib-only by design, so they run
       # anywhere and cannot rot.
+      # Fails only when a change introduces errors a file did not already have.
+      # The remaining backlog lives in scripts/baseline.json and shrinks as the
+      # older summaries are rewritten.
       - name: Run wiki checks
         run: make lint

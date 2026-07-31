@@ -24,7 +24,9 @@ Rules that nothing checks are rules that drift. Every convention in this file an
 
 | Command | What it enforces |
 | ------- | ---------------- |
-| `make lint` | all of the below; run this before closing an ingest |
+| `make lint` | all of the below; run this before closing an ingest. Fails only on **new** errors — the pages not yet rewritten carry a recorded backlog in `scripts/baseline.json`, and the gate can only ratchet downwards |
+| `make lint-detail` | every error, including the known backlog |
+| `make baseline` | re-record the backlog after fixing pages, tightening the gate |
 | `make quotes` | every quotation appears verbatim in the `Raw/` file it cites |
 | `make links` | no broken wikilinks, phantom sources, missing folder prefixes, fake anchors, orphans |
 | `make frontmatter` | required keys and canonical `type` values per directory |
