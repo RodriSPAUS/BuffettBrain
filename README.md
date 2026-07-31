@@ -12,6 +12,8 @@ This is a structured, interconnected knowledge base for Warren Buffett's investm
 - All file names and directory names
 - All comments and documentation
 
+However, **responses to user prompts will be provided in the same language as the user's input**. The system will detect the language of the incoming query and respond in kind, while maintaining all English content standards for the actual knowledge base entries. This allows international users to interact with the system in their native language while preserving the English standard for all stored content and documentation.
+
 ## Layout
 
 - `Raw/` — the source letters, human-curated and not edited by the agent

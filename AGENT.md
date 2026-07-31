@@ -9,13 +9,20 @@ They do not overlap. Each rule lives in exactly one place.
 
 | File                     | Governs                                                                                                               | Read it when              |
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| `AGENT.md` (this file) | **What the agent does** — the three operations, citation integrity, standing rules of conduct                  | Deciding how to act       |
+| `AGENT.md` (this file) | **What the agent does** — the three operations, citation integrity, standing rules of conduct, language handling                  | Deciding how to act       |
 | `wiki/SCHEMA.md`       | **How the wiki is shaped** — directory layout, page structure, frontmatter specifications, linking conventions | Writing or editing a page |
 | `scripts/` + `make lint` | **Whether the rules were actually followed** — the checks that enforce both files                           | Before closing any task   |
 
 `CLAUDE.md` and `AGENTS.md` in the repository root are pointers to this file, so these
 instructions load in every session without being asked for. They contain no rules of their
 own — do not duplicate anything here into them.
+
+## Language Policy
+
+**The agent must respond in the same language as the user's prompt.** This applies to all interactions including queries, ingestions, and linting explanations. The agent should detect the language of the input prompt and respond accordingly, while maintaining all content guidelines specified in this document. English remains the default language for all wiki content and file names, but the conversational responses should match the user's input language. For example:
+- If the user asks a question in Spanish, respond in Spanish
+- If the user asks a question in French, respond in French
+- If the user asks a question in English, respond in English
 
 ## Tooling
 
