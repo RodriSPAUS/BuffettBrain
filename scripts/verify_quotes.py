@@ -34,14 +34,47 @@ from wikilib import REPO, WIKI, Report, load_raw, normalize, raw_contains
 # "we believe" will match anything and proves nothing.
 MIN_QUOTE = 30
 
-# Quotes are cited either by a trailing [[Sources/X]] on the same line, or by the
+# Quotes are cited either by a [[Sources/X]] link in the same block, or by the
 # page's own identity when the page *is* the summary of that source.
 CITATION = re.compile(r"\[\[Sources/([A-Za-z0-9]+)")
 
-# Curly or straight double quotes, not spanning a line.
-QUOTED = re.compile(r'["“]([^"”\n]{%d,})["”]' % MIN_QUOTE)
+# Curly or straight double quotes. This deliberately spans newlines: wiki pages
+# are wrapped at ~80 columns, so most real quotations run over two or three lines
+# and an anchored-to-one-line pattern silently skipped 53% of them.
+#
+# The span is unbounded rather than {MIN_QUOTE,}: a length floor inside the
+# pattern makes a short quotation skip its own closing mark and swallow the prose
+# up to the next one, which desynchronizes every pair after it. Match all of
+# them, discard the short ones afterwards.
+QUOTED = re.compile(r'["“]([^"”]*?)["”]', re.S)
+
+# A wrapped blockquote carries '> ' on every continuation line, inside the span.
+# Only that: a bullet's '- ' sits before the opening quote and never lands inside
+# one, whereas Buffett's dashes routinely start a wrapped line ("the managerial
+# superstars\n- men who can recognize..."), so stripping list markers here would
+# delete real words.
+MARKUP = re.compile(r"^[ \t]*(?:>[ \t]*)+", re.M)
 
 SOURCE_STEM = re.compile(r"^(?:19|20)\d\dltr$")
+
+# Regions whose quote characters are not quotations: YAML frontmatter, fenced
+# code, and inline code spans. A delegated model once documented its own
+# verification as *Verified via `make quote Q=\"…\"`* and the escaped quotes
+# inside those backticks were reported as four fabricated citations.
+FENCE = re.compile(r"^```.*?^```", re.S | re.M)
+INLINE_CODE = re.compile(r"`[^`\n]*`")
+FRONTMATTER = re.compile(r"\A---\n.*?\n---\n", re.S)
+
+
+def blank(text: str, pattern: re.Pattern) -> str:
+    """Erase matches but keep every character position, so line numbers hold."""
+    return pattern.sub(lambda m: re.sub(r"[^\n]", " ", m.group(0)), text)
+
+
+def scannable(text: str) -> str:
+    for pattern in (FRONTMATTER, FENCE, INLINE_CODE):
+        text = blank(text, pattern)
+    return text.replace('\\"', "  ")
 
 
 def fragments(quote: str) -> list[str]:
@@ -57,41 +90,85 @@ def default_source(path: Path) -> str | None:
     return None
 
 
+def strip_markup(quote: str) -> str:
+    """Drop the markup a wrapped quotation carries on its continuation lines.
+
+    Line breaks are kept: normalize() rejoins a word the wiki wrapped with a
+    hyphen ("significantly-\\nundervalued") and needs the newline to see it.
+    Collapsing whitespace here turns a faithful quote into a false failure.
+    """
+    return MARKUP.sub("", quote)
+
+
+def oneline(text: str) -> str:
+    return " ".join(text.split())
+
+
+def cited_source(text: str, start: int, end: int, implicit: str | None) -> str | None:
+    """Which letter does this quote claim to come from?
+
+    The convention is a trailing [[Sources/X]] immediately after the quote, so
+    only the remainder of the quote's last line counts as an explicit citation —
+    on a Sources/ page the surrounding prose is full of cross-references to other
+    letters, and reading those as citations attributes the page's own quotations
+    to whichever letter it happens to mention next.
+    """
+    line_end = text.find("\n", end)
+    trailing = CITATION.search(text, end, len(text) if line_end == -1 else line_end)
+    if trailing:
+        return trailing.group(1)
+    if implicit:
+        return implicit
+    # No page identity to fall back on (Concepts/, Cases/, ...): accept a lead-in
+    # citation earlier in the same block.
+    left = text.rfind("\n\n", 0, start)
+    last = None
+    for match in CITATION.finditer(text[0 if left == -1 else left + 2 : start]):
+        last = match
+    return last.group(1) if last else None
+
+
 def collect(paths: list[Path]) -> list[dict]:
     findings = []
     raw = load_raw()
     for path in paths:
-        text = path.read_text(encoding="utf-8", errors="replace")
+        text = scannable(path.read_text(encoding="utf-8", errors="replace"))
         implicit = default_source(path)
-        for lineno, line in enumerate(text.splitlines(), 1):
-            for quote in QUOTED.findall(line):
-                cited = CITATION.search(line)
-                stem = cited.group(1) if cited else implicit
-                if stem is None:
-                    continue
-                frags = fragments(quote)
-                if not frags:
-                    continue
-                missing = [f for f in frags if not raw_contains(raw, stem, f)]
-                if not missing:
-                    continue
-                elsewhere = sorted(
-                    other
-                    for other in raw
-                    if other != stem
-                    and all(raw_contains(raw, other, f) for f in frags)
-                )
-                findings.append(
-                    {
-                        "page": path.relative_to(REPO).as_posix(),
-                        "line": lineno,
-                        "cited": stem,
-                        "quote": quote[:120],
-                        "status": "MISATTRIBUTED" if elsewhere else "UNSUPPORTED",
-                        "found_in": elsewhere,
-                        "missing_fragment": missing[0][:120],
-                    }
-                )
+        for match in QUOTED.finditer(text):
+            quote = match.group(1)
+            # A span crossing a blank line is not a quotation; it is the fallout
+            # of an unbalanced quote character somewhere above.
+            if "\n\n" in quote:
+                continue
+            quote = strip_markup(quote)
+            if len(oneline(quote)) < MIN_QUOTE:
+                continue
+            stem = cited_source(text, match.start(), match.end(), implicit)
+            if stem is None:
+                continue
+            frags = fragments(quote)
+            if not frags:
+                continue
+            missing = [f for f in frags if not raw_contains(raw, stem, f)]
+            if not missing:
+                continue
+            elsewhere = sorted(
+                other
+                for other in raw
+                if other != stem
+                and all(raw_contains(raw, other, f) for f in frags)
+            )
+            findings.append(
+                {
+                    "page": path.relative_to(REPO).as_posix(),
+                    "line": text.count("\n", 0, match.start()) + 1,
+                    "cited": stem,
+                    "quote": oneline(quote)[:120],
+                    "status": "MISATTRIBUTED" if elsewhere else "UNSUPPORTED",
+                    "found_in": elsewhere,
+                    "missing_fragment": oneline(missing[0])[:120],
+                }
+            )
     return findings
 
 

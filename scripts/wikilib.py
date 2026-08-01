@@ -89,10 +89,18 @@ def load_raw() -> dict[str, tuple[str, ...]]:
 
 
 def raw_contains(raw: dict[str, tuple[str, ...]], stem: str, fragment: str) -> bool:
+    """Is `fragment` present in the letter `stem`, ignoring presentation?
+
+    Both sides get both hyphen readings. Wiki pages are hard-wrapped just like
+    the letters, so a compound may break across lines on one side and not the
+    other: 'significantly-\\nundervalued' quoted from a source that reads
+    'significantly-undervalued' on a single line is a faithful quotation, and
+    normalizing only the haystack reports it as fabricated.
+    """
     if stem not in raw:
         return False
-    needle = normalize(fragment)
-    return any(needle in variant for variant in raw[stem])
+    needles = raw_variants(fragment)
+    return any(needle in variant for needle in needles for variant in raw[stem])
 
 
 def load_pages() -> dict[str, Path]:
