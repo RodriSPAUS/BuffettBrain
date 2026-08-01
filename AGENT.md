@@ -41,8 +41,11 @@ Rules that nothing checks are rules that drift. Every convention in this file an
 | `make raw` | `Raw/` text is intact enough to quote from |
 | `make quote Q="phrase"` | finds a citable passage and prints it unwrapped, with its wikilink |
 
-`scripts/INGEST_PROMPT.md` is the ready-made instruction for handing a single letter to
-any agent, including a cheaper model — the checks above are what make that safe.
+Delegating a single letter to a cheaper model works, and the checks above are what make
+it safe. Do not write it a task-specific prompt: one was tried and measurably degraded the
+output, because a checklist gets optimised as a checklist. Instruct it plainly — "new ingest
+of the YYYY letter; skip steps 4 and 5, we batch propagation at the end" — and let this file
+be the specification. See `LESSONS_LEARNED.md`.
 
 `make quote` is the one to reach for while writing. `Raw/` files are hard-wrapped with
 compounds broken across lines, so a sentence copied out of `grep` output looks correct and

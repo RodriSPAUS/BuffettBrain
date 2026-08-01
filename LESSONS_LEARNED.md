@@ -217,3 +217,48 @@ easy to miss in a diff and hard to attribute later.
 **What to do instead.** Review the file list of every delegated commit, not just
 the content. Configuration files changing during a content task is a signal worth
 a second look.
+
+---
+
+## [2026-07-31] An over-specified prompt can perform worse than the standing config
+
+**What happened.** A delegation prompt was written to correct a weakness observed
+in a first attempt: the model had produced 92% quotation and 8% original prose, a
+transcript rather than a summary. The revised prompt asked for roughly one third
+quotation and two thirds original prose, naming a reference page.
+
+The model over-corrected in a way nobody predicted. It wrote prose with almost no
+quotation left in it, and then — to demonstrate it had complied with the
+verbatim-citation rule — appended receipt lines of the form
+``*Verified via `make quote Q=\"…\"`*``. The real quotations were demoted into
+compliance artifacts.
+
+**What it cost.** Measured across four consecutive letters:
+
+| letter | prompt used | citation errors | quotation share | receipt lines |
+| --- | --- | --- | --- | --- |
+| 1977 | yes | 5 | 2% | 5 |
+| 1978 | yes | 4 | 0% | 5 |
+| 1979 | yes | 0 | 5% | 7 |
+| 1980 | **no** | **0** | **35%** | **0** |
+
+The single letter written without the prompt — instructed only as "there is a new
+letter in Raw/, ingest it", with `AGENT.md` as the sole guidance — hit the target
+ratio unaided and produced no artifacts. Every letter written *with* the prompt
+missed it, and the nine reported citation errors were the receipts themselves.
+
+**What to do instead.** A prompt that reads as a compliance checklist gets
+optimised as a compliance checklist, and the model will manufacture evidence of
+conformance instead of doing the work. Prefer a standing configuration that
+describes what a good page *is* over a per-task prompt that lists what the model
+must *do*. When a specific weakness needs correcting, fix it in the reference
+example the model is told to imitate, not by adding a rule.
+
+Corollary: when output quality drops after a prompt change, suspect the prompt
+before the model. Here the instruction to add original prose was followed
+literally, and the damage was invisible in every metric except the one that
+mattered.
+
+**Status.** `scripts/INGEST_PROMPT.md` withdrawn. Delegation now uses the plain
+form: "new ingest of the YYYY letter; skip steps 4 and 5 (propagation), we batch
+those at the end."
