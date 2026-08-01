@@ -95,12 +95,35 @@ Ingesting one source at a time with the user involved is the default. Batch inge
 acceptable when asked, but the propagation step (4) is not optional in either mode — a summary
 page that updates nothing else is an indexed document, not accumulated knowledge.
 
-**Known failure mode.** Step 4 is skipped more often than it is done, by every agent that has
-worked on this repository. It is the one step with no termination condition and no checker, and
-that combination defeats models regardless of capability — see `LESSONS_LEARNED.md`. When
-ingesting a batch, prefer the inverted form: finish the summaries first, then rebuild each
-`Concepts/` page once from the whole corpus. That version terminates, and `make propagation`
-measures whether it happened.
+#### Propagation has two modes. Know which one you are in.
+
+Step 4 is skipped more often than it is done, by every agent that has worked on this
+repository — including one given no custom prompt at all, only this file. It is the one step
+with no termination condition and no checker, and that combination defeats models regardless
+of capability. See `LESSONS_LEARNED.md`.
+
+The reason is not that propagation is hard. It is that *catching up on a backlog* and
+*keeping a compiled wiki current* are different tasks wearing the same name:
+
+| | Backlog (many sources, nothing compiled) | Steady state (one new source, pages already rich) |
+| --- | --- | --- |
+| Fan-out per source | 0–21 pages, unpredictable | small and obvious |
+| Judgment needed | how does this idea evolve across the whole corpus? | does this source change what the page already says? |
+| Terminates? | no | yes |
+
+**In steady state, propagate normally.** Step 4 applies in full. A single new source lands in
+pages that already trace their idea across decades, so the work is bounded and the decision on
+each page is close to yes/no. This is the default and it is not optional.
+
+**On a backlog, invert and batch.** Do not attempt 48 sources × unpredictable fan-out. Write
+the summaries first, then rebuild each compiled page once from the whole corpus — "rebuild
+`Concepts/Moat` from all 48 letters" is a task that terminates and can be checked. Run it when
+the summaries exist, because the arc of an idea is not visible while you are still writing
+year three.
+
+Either way, `make propagation` reports whether it happened: coverage (sources reaching the
+compiled layer) and depth (distinct sources per page). If that depth does not rise as you
+ingest, propagation is not occurring and nothing else will tell you.
 
 ### 2. Query
 
