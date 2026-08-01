@@ -80,6 +80,8 @@ Core mental models and frameworks distilled from various Buffett sources:
 - [[Concepts/EconomicGoodwill]]
 - [[Concepts/MarginOfSafety]]
 - [[Concepts/MrMarket]]
+- [[Concepts/OwnerEarnings]] — what an owner can actually withdraw *(stub)*
+- [[Concepts/CircleOfCompetence]] — knowing where the boundary is *(stub)*
 
 ---
 
@@ -110,6 +112,8 @@ Profiles of foundational figures who shaped Berkshire’s philosophy:
 
 - [[People/CharlieMunger]]
 - [[People/WarrenBuffett]]
+- [[People/TomMurphy]] — Capital Cities/ABC *(stub)*
+- [[People/HenrySingleton]] — Teledyne *(stub)*
 
 ---
 
