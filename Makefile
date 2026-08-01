@@ -1,7 +1,7 @@
 PY := python3
 S  := scripts
 
-.PHONY: lint lint-strict lint-detail baseline quotes links frontmatter raw help
+.PHONY: lint lint-strict lint-detail baseline quotes links frontmatter raw propagation help
 
 help:
 	@echo "make lint        run every check (do this before closing an ingest)"
@@ -13,6 +13,7 @@ help:
 	@echo "make links       broken wikilinks, phantom sources, orphans, fake anchors"
 	@echo "make frontmatter page metadata against wiki/SCHEMA.md"
 	@echo "make raw         source-extraction quality gate on Raw/"
+	@echo "make propagation are ingested sources reaching the compiled layer?"
 	@echo ""
 	@echo "Check one page or folder:"
 	@echo "  $(PY) $(S)/verify_quotes.py wiki/Sources/1985ltr.md"
@@ -44,6 +45,9 @@ frontmatter:
 
 raw:
 	@cd $(S) && $(PY) check_raw_quality.py
+
+propagation:
+	@cd $(S) && $(PY) check_propagation.py
 
 # One-off passes, not part of `make lint`.
 .PHONY: migrate repair-raw

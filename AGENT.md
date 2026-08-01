@@ -12,6 +12,7 @@ They do not overlap. Each rule lives in exactly one place.
 | `AGENT.md` (this file) | **What the agent does** — the three operations, citation integrity, standing rules of conduct, language handling                  | Deciding how to act       |
 | `wiki/SCHEMA.md`       | **How the wiki is shaped** — directory layout, page structure, frontmatter specifications, linking conventions | Writing or editing a page |
 | `scripts/` + `make lint` | **Whether the rules were actually followed** — the checks that enforce both files                           | Before closing any task   |
+| `LESSONS_LEARNED.md`   | **What has already gone wrong here** — difficulties, rules that failed in practice, and what to do instead        | Before changing how you work, and after any session that hit a problem |
 
 `CLAUDE.md` and `AGENTS.md` in the repository root are pointers to this file, so these
 instructions load in every session without being asked for. They contain no rules of their
@@ -93,6 +94,13 @@ Triggered when a new file lands in `Raw/`.
 Ingesting one source at a time with the user involved is the default. Batch ingestion is
 acceptable when asked, but the propagation step (4) is not optional in either mode — a summary
 page that updates nothing else is an indexed document, not accumulated knowledge.
+
+**Known failure mode.** Step 4 is skipped more often than it is done, by every agent that has
+worked on this repository. It is the one step with no termination condition and no checker, and
+that combination defeats models regardless of capability — see `LESSONS_LEARNED.md`. When
+ingesting a batch, prefer the inverted form: finish the summaries first, then rebuild each
+`Concepts/` page once from the whole corpus. That version terminates, and `make propagation`
+measures whether it happened.
 
 ### 2. Query
 
@@ -188,5 +196,10 @@ is indistinguishable from a real one and propagates into every synthesis built o
 - No content duplication between categories — each idea has one home and is linked from elsewhere
 - **All content in English**, including file and directory names
 - Sources are not limited to annual letters — interviews, speeches, and articles are all valid
+- **Record what goes wrong.** Any session that hits a difficulty, finds a rule that was
+  written but not followed, needs a tool that does not exist, or produces work that has to be
+  redone, appends an entry to `LESSONS_LEARNED.md` before finishing. Append, never rewrite.
+  State the cost in numbers — a lesson without a measured cost is an opinion. This file is
+  the reason the same mistake does not get made twice, here or in the next wiki.
 
 Page structure, frontmatter fields, and directory conventions are specified in `wiki/SCHEMA.md`.
