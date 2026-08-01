@@ -307,3 +307,18 @@
 - `wiki/Sources/` 1984–2024 still fails `make lint`: 204 unverifiable quotations, 695 link errors, 121 frontmatter errors
 - Those summaries are being rewritten by hand; the rest of the wiki is clean
 - 35 of 48 letters are still not cited anywhere in the compiled layer — propagation is the next job
+
+## [2026-08-01] lint | scripts/verify_quotes.py — the checker was skipping half the wiki
+- `QUOTED` was anchored to a single line, so every quotation wrapped across lines went untested: 548 of 1167 checked, **53% never verified**
+- Fixed four coupled defects: span across newlines; drop the length floor from inside the pattern (it made short quotes swallow following prose and desynchronize every pair after); strip blockquote `>` markers but not list markers; keep newlines so `normalize()` can rejoin hyphenated wraps
+- `raw_contains()` now takes both hyphen readings of the needle, not just the haystack
+- Frontmatter, fenced blocks and inline code are excluded — this removes the four false positives recorded in `LESSONS_LEARNED.md` from a delegated model's `Verified via` receipt lines
+- Result: 190 recorded errors → 168 real ones, with 619 previously-invisible quotations now covered
+
+## [2026-08-01] ingest | Sources/1981ltr, 1982ltr, 1983ltr, 1984ltr — rewritten from source
+- Replaced four thin summaries (3.2–8.2 KB) with full readings (19.9–29.0 KB); all quotations verify against `Raw/`
+- Propagation (ingest steps 4 and 5) deliberately skipped and batched for later, per the backlog mode in `AGENT.md`
+- New stubs required by the linking rules: `Concepts/OwnerEarnings`, `Concepts/CircleOfCompetence`, `People/TomMurphy`, `People/HenrySingleton`, `Cases/NebraskaFurnitureMart`, `Cases/BuffaloNews` — all linked from `wiki/index.md`
+- Removed 40 broken links and 533 fabricated `#pN` anchors carried by the old 1983/1984 pages
+- `stability: draft` corrected to a schema value in 1977–1979
+- `make lint` green; baseline re-recorded at 693 known errors (was 755)

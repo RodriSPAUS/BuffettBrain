@@ -262,3 +262,46 @@ mattered.
 **Status.** `scripts/INGEST_PROMPT.md` withdrawn. Delegation now uses the plain
 form: "new ingest of the YYYY letter; skip steps 4 and 5 (propagation), we batch
 those at the end."
+
+---
+
+## [2026-08-01] Test the checker on the shape your content actually has
+
+**What happened.** The citation verifier — the check `AGENT.md` calls
+non-negotiable, the one the whole wiki's value rests on — matched quotations with
+a pattern that could not cross a newline. Wiki pages are wrapped at ~80 columns,
+so most real quotations run over two or three lines. Those were never tested
+against `Raw/` at all. The script had been running green on them for weeks.
+
+It surfaced by accident: a quote failed for an unrelated reason, and the reported
+span turned out to be prose sitting *between* two quotations rather than a
+quotation.
+
+**What it cost.** 619 of 1167 quotations — **53%** — had never been checked. Every
+"clean" verdict the tool had given was over half the corpus. Fixing it exposed
+real defects in pages that had been passing, including two in summaries written
+in this repository by a capable model that believed the checker had confirmed
+them.
+
+Fixing it also required repairing three further defects that only became visible
+once the first was gone, each of which produced false positives:
+
+| defect | symptom |
+| --- | --- |
+| length floor inside the pattern | a short quote skips its own closing mark, swallows the prose after it, and desynchronizes every pair below |
+| stripping list markers from quoted text | Buffett's dashes start wrapped lines; `- men who can recognize` lost the dash and the quote failed |
+| collapsing whitespace before normalizing | destroys the newline `normalize()` needs to rejoin `significantly-\nundervalued` |
+
+**What to do instead.** A checker is content too, and it needs its own test: take
+ten passages you *know* are verbatim, in the exact formatting your pages use —
+wrapped, bulleted, blockquoted, hyphenated across a line break — and confirm the
+tool passes all ten and fails a deliberately altered eleventh. Coverage, not just
+correctness: count how many items the checker actually examined and compare it to
+how many exist. A tool that silently examines half its input is worse than no
+tool, because it produces confident green.
+
+Corollary, and the reason this sat undetected: every earlier lesson here was about
+a checker being *too loud* — the always-red gate, the receipt-line false
+positives. Both were noticed within days because they annoyed someone. A checker
+that is too quiet annoys nobody. Budget review time for the silent failure mode
+specifically; it will not come and find you.
