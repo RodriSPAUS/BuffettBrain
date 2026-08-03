@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check that every quotation in wiki/ appears verbatim in the Raw/ file it cites.
 
-This is the check AGENT.md calls non-negotiable, turned into something that can
+This is the check AGENTS.md calls non-negotiable, turned into something that can
 fail a build. A fabricated quotation is indistinguishable from a real one once
 written, and propagates into every synthesis built on top of it — so the wiki is
 only worth what this script says it is.

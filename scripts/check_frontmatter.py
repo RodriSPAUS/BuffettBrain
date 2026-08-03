@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Enforce the frontmatter contract in wiki/SCHEMA.md.
+"""Enforce the frontmatter contract in AGENTS.md (Part Two).
 
-SCHEMA.md recommends Dataview queries such as
+AGENTS.md (Part Two) recommends Dataview queries such as
 
     TABLE year FROM "wiki" WHERE type = "source-summary" SORT year DESC
 
@@ -41,7 +41,7 @@ ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def main() -> int:
-    report = Report("check_frontmatter: page metadata vs SCHEMA.md")
+    report = Report("check_frontmatter: page metadata vs AGENTS.md (Part Two)")
     pages = load_pages()
 
     for name, path in sorted(pages.items()):
@@ -49,7 +49,7 @@ def main() -> int:
             continue
         folder = name.split("/")[0]
         if folder not in CONTRACT:
-            report.warn(f"{name}: page sits outside the directories SCHEMA.md defines")
+            report.warn(f"{name}: page sits outside the directories AGENTS.md (Part Two) defines")
             continue
 
         expected_type, required = CONTRACT[folder]
@@ -87,7 +87,7 @@ def main() -> int:
 
     for folder in PAGE_DIRS:
         if not (REPO / "wiki" / folder).exists():
-            report.warn(f"wiki/{folder}/ named in SCHEMA.md does not exist")
+            report.warn(f"wiki/{folder}/ named in AGENTS.md (Part Two) does not exist")
 
     return report.finish(limit=60)
 

@@ -18,10 +18,10 @@ However, **responses to user prompts will be provided in the same language as th
 
 - `Raw/` — the source letters, human-curated and not edited by the agent
 - `wiki/` — the compiled layer, written and maintained by the agent
-- `AGENT.md` — what the agent does; `wiki/SCHEMA.md` — how a page is shaped
+- `AGENTS.md` — the whole configuration: Part One what the agent does, Part Two how a page is shaped
 - `scripts/` — the checks that enforce both
 
-The directory structure of `wiki/` is specified in `wiki/SCHEMA.md`. It is documented in one
+The directory structure of `wiki/` is specified in `AGENTS.md` (Part Two). It is documented in one
 place on purpose: three copies of a layout become three different layouts.
 
 ## Checks
@@ -41,7 +41,7 @@ worth exactly what that check says it is.
 
 ## Contributing
 
-All new additions must be in English. Please follow the conventions established in `wiki/SCHEMA.md` and maintain bidirectional linking throughout the knowledge base. Sources can include:
+All new additions must be in English. Please follow the conventions established in `AGENTS.md` (Part Two) and maintain bidirectional linking throughout the knowledge base. Sources can include:
 - Annual shareholder letters (1977-present)
 - Interviews (TV, radio, print)
 - Speeches and presentations

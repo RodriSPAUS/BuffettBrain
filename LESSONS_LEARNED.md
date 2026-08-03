@@ -582,3 +582,68 @@ An LLM produces convincing structure by default. Substance has to be verified
 explicitly. That is where the design effort goes, and it is why nearly every entry
 in this file resolves into the same instruction: build the check, then count what
 the check actually looked at.
+
+---
+
+## [2026-08-03] A reference between config files is a request, not a mechanism
+
+**What happened.** The configuration was split across two files: `AGENT.md` for
+conduct and `wiki/SCHEMA.md` for page structure. `AGENT.md` referred the reader
+onward — *"Page structure, frontmatter fields, and directory conventions are
+specified in `wiki/SCHEMA.md`"* — and root files `CLAUDE.md` and `AGENTS.md`
+pointed at `AGENT.md`. So the chain was:
+
+```
+AGENTS.md ──prose──> AGENT.md ──prose──> wiki/SCHEMA.md
+```
+
+Only the first hop is a mechanism, and only for one tool. `CLAUDE.md` contains
+`@AGENT.md`, which Claude Code *inlines*. Everything else is a sentence asking the
+agent to go and open another file — and an agent that already has instructions in
+context and a task in front of it starts working.
+
+A delegated model made hop one and not hop two. The result split exactly along the
+file boundary: everything governed by `AGENT.md` came out right (English prose,
+verbatim quotations, no transcription, zero citation errors) and everything
+governed by `SCHEMA.md` came out invented (`author`, `source_document`, `link` keys
+that do not exist in the schema; `Highlights / Key Topics Discussed` instead of the
+four canonical sections; zero wikilinks on the page).
+
+**What it cost.** Three letters rewritten three times across two days. The
+diagnostic value was high, though: because the failure fell precisely on the file
+boundary, it identified the mechanism rather than looking like general low quality.
+
+The same defect had already caused a worse failure a day earlier. `AGENTS.md` was
+deleted as an apparent duplicate of `AGENT.md` — a reasonable inference, since it
+contained no rules. With it gone, the delegated model had no configuration at all
+and produced a **transcription** of the letter: 96–98% of sentences copied verbatim
+from `Raw/`. Two files differing by one letter, one of which is load-bearing in a
+way nothing indicates, is a trap for whoever tidies up next.
+
+**What to do instead.**
+
+- **One file, no hops.** The configuration is now a single self-contained
+  `AGENTS.md` — the filename agent CLIs load on their own — with conduct as Part
+  One and form as Part Two. `CLAUDE.md` imports it. `AGENT.md` and `wiki/SCHEMA.md`
+  are gone. Keeping conduct and form separate (the 2026-08-03 entry above) is
+  satisfied by two labelled sections; it never required two files.
+- **Count the hops from the file your tool loads by itself to every rule you rely
+  on.** Any number above zero is a rule that may not arrive. This is the sharper
+  version of *put the configuration where the agent loads it*: being loadable is
+  not enough if what gets loaded is a pointer.
+- **Stop asking a model to reproduce a specification from memory.** The frontmatter
+  is eight fixed keys and the sections are four fixed headings — a template, not a
+  rule. `make new P=Sources/1978ltr` now emits the skeleton with both already
+  correct, so the model writes prose only and *cannot* fail `make frontmatter`,
+  because it never touches the frontmatter. Verified: a generated skeleton passes
+  every check on the day it is created.
+- The generator carries `> TODO:` markers rather than empty slots, per the
+  2026-07-30 entry on templates. Structure may be pre-filled; claims may not. Its
+  hints name link targets in backticks rather than as real wikilinks, so a fresh
+  skeleton does not fail `make links`.
+
+**Postscript, recorded because it is the same class of error.** While testing the
+generator I ran it with `--force` over four completed summaries and destroyed them;
+`git` got them back. `--force` now refuses any file that no longer contains a
+`> TODO:` marker. A tool that scaffolds pages must not be able to delete them —
+and the guard was written only after the tool had already done it once.

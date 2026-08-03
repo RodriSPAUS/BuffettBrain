@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run every wiki check and return a single exit code.
 
-This is the Lint operation from AGENT.md, made executable. Run it before
+This is the Lint operation from AGENTS.md, made executable. Run it before
 closing any ingest.
 
 By default the gate is a ratchet: it compares against scripts/baseline.json and

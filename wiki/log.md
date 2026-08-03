@@ -322,3 +322,18 @@
 - Removed 40 broken links and 533 fabricated `#pN` anchors carried by the old 1983/1984 pages
 - `stability: draft` corrected to a schema value in 1977–1979
 - `make lint` green; baseline re-recorded at 693 known errors (was 755)
+
+## [2026-08-03] config | AGENT.md + wiki/SCHEMA.md merged into AGENTS.md
+- The chain `AGENTS.md -> AGENT.md -> wiki/SCHEMA.md` had two prose hops; delegated agents made the first and not the second, so conduct rules were applied and schema rules were invented
+- Configuration is now one self-contained `AGENTS.md` (Part One conduct, Part Two schema); `CLAUDE.md` imports it; `AGENT.md` and `wiki/SCHEMA.md` deleted
+- References updated in `README.md`, `Makefile`, `wiki/index.md` and all five scripts
+
+## [2026-08-03] tooling | scripts/new_page.py — schema by generation, not by reading
+- `make new P=Sources/1978ltr` emits a skeleton with correct frontmatter and the four canonical sections; the letter's signature date is read out of `Raw/`
+- The model fills prose only and cannot fail `make frontmatter`
+- `--force` refuses any file without a `> TODO:` marker, so it cannot overwrite a finished page
+
+## [2026-08-03] ingest | Sources/1977ltr frontmatter normalised; 1978/1979 scaffolded
+- 1977 content left as written; frontmatter replaced with the schema block (5 errors -> 0)
+- 1978 and 1979 had been deleted, breaking 8 inbound links from `Principles/Fidelity`, `Synthesis/FidelityTimeline`, `Sources/1980ltr` and `index.md`; skeletons restore the targets pending rewrite
+- `make lint` green

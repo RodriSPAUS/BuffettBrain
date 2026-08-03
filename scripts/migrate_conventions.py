@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bring existing pages up to the conventions in AGENT.md and wiki/SCHEMA.md.
+"""Bring existing pages up to the conventions in AGENTS.md and AGENTS.md (Part Two).
 
 The rules were tightened after most of the wiki had already been written, and
 nothing applied them retroactively, so two incompatible styles ended up living
@@ -8,7 +8,7 @@ This is the one-off pass that closes that gap.
 
 What it changes:
 
-  * drops positional anchors (#p4, #p.12). AGENT.md forbids them because Raw/
+  * drops positional anchors (#p4, #p.12). AGENTS.md forbids them because Raw/
     files have no headings or block IDs, so they resolve to nothing.
   * rewrites [[Moat.md]] as [[Concepts/Moat]] -- folder prefix, no extension
   * fills in missing frontmatter keys and canonicalises `type` per directory

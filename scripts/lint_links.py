@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Link hygiene for the wiki: broken targets, phantom sources, orphans, anchors.
 
-Enforces the linking rules in AGENT.md ("Standing Rules") and wiki/SCHEMA.md
+Enforces the linking rules in AGENTS.md ("Standing Rules") and AGENTS.md (Part Two)
 ("Linking Rules"):
 
   * every [[wikilink]] resolves to a page that exists
@@ -59,7 +59,7 @@ def main() -> int:
                 if anchor and FAKE_ANCHOR.match(anchor):
                     report.error(f"{rel}:{lineno} fabricated anchor #{anchor} -> {target}")
 
-                # Raw/ links keep their extension: SCHEMA.md specifies
+                # Raw/ links keep their extension: AGENTS.md (Part Two) specifies
                 # `source: [[Raw/2024ltr.md]]`, pointing at the file itself
                 # rather than at a wiki page.
                 if target.startswith("Raw/"):

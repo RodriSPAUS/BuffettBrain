@@ -1,7 +1,7 @@
 PY := python3
 S  := scripts
 
-.PHONY: lint lint-strict lint-detail baseline quotes links frontmatter raw propagation help
+.PHONY: lint lint-strict lint-detail baseline quotes links frontmatter raw propagation new help
 
 help:
 	@echo "make lint        run every check (do this before closing an ingest)"
@@ -11,15 +11,19 @@ help:
 	@echo "make baseline    re-record the backlog after fixing pages"
 	@echo "make quotes      verify every quotation against the Raw/ file it cites"
 	@echo "make links       broken wikilinks, phantom sources, orphans, fake anchors"
-	@echo "make frontmatter page metadata against wiki/SCHEMA.md"
+	@echo "make frontmatter page metadata against AGENTS.md Part Two"
 	@echo "make raw         source-extraction quality gate on Raw/"
 	@echo "make propagation are ingested sources reaching the compiled layer?"
+	@echo ""
+	@echo "Start a page with the schema already correct (never write frontmatter by hand):"
+	@echo "  make new P=Sources/1978ltr"
+	@echo "  make new P=Concepts/Moat"
 	@echo ""
 	@echo "Check one page or folder:"
 	@echo "  $(PY) $(S)/verify_quotes.py wiki/Sources/1985ltr.md"
 	@echo ""
 	@echo "One-off passes (pass ARGS=--dry-run first):"
-	@echo "  make migrate     apply AGENT.md/SCHEMA.md conventions to existing pages"
+	@echo "  make migrate     apply the AGENTS.md conventions to existing pages"
 	@echo "  make repair-raw  restore word boundaries in mangled Raw/ extractions"
 
 lint:
@@ -57,6 +61,11 @@ migrate:
 
 repair-raw:
 	@cd $(S) && $(PY) repair_raw_spacing.py $(ARGS)
+
+# Scaffold a page: frontmatter and sections pre-filled, prose left as TODO.
+.PHONY: new
+new:
+	@cd $(S) && $(PY) new_page.py "$(P)" $(ARGS)
 
 # Find a citable passage: make quote Q="circle of competence"
 .PHONY: quote
