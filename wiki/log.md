@@ -365,3 +365,8 @@
 - The Cross-References skeleton now lists every existing page grouped by directory, so link targets are copied rather than guessed
 - Replaces the failure mode of `[[Moat]]`, `[[Owner-Earnings]]`, `[[Ajit-Jain]]` — 19 broken links, each a plausible guess at a real page under another name
 - Baseline re-recorded at 799 known errors across 5 checks (was 693 across 4; the rise is the newly-visible structure backlog, not a regression)
+
+## [2026-08-03] tooling | the tag reminder moves into the generated file
+- The 1996 page returned with `tags: [1996, letter]` untouched: `make new` prints the instruction to replace them, but on stdout, and whoever runs the generator is not always whoever fills the page in
+- The skeleton now carries the reminder as a `> TODO:` line in the body, where the writer will see it
+- Result on 1996 with the previous generator: 19 broken links -> 0, invented sections -> the four canonical ones, frontmatter clean. Tags were the one instruction that lived outside the file, and the one that was missed

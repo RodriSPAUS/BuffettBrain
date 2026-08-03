@@ -170,8 +170,18 @@ def build(target: str) -> tuple[Path, str, list[str]]:
             "true of every letter do not count."
         )
         sections = SECTIONS["Sources"]
-        lead = (f"*One sentence on what {year} was about: the headline figure, and the two or\n"
-                f"three arguments the letter is actually built around.*")
+        # The tag reminder lives in the file, not only in this script's terminal
+        # output. The 1996 page came back with `tags: [1996, letter]` untouched --
+        # the generator had said to replace them, but it said so on stdout, and
+        # whoever ran the generator was not the one who filled the page in.
+        lead = (
+            f"*One sentence on what {year} was about: the headline figure, and the two or\n"
+            f"three arguments the letter is actually built around.*\n\n"
+            f"> TODO: replace the placeholder `tags:` above. `make structure` wants at least\n"
+            f"> three that name what THIS letter is about — moat, float, buybacks,\n"
+            f"> loss-reserving, wppss. The year and words true of every letter do not count.\n"
+            f"> Then delete this line."
+        )
         title = f"# {year} Annual Letter Summary"
     else:
         for key in EXTRA[folder]:
