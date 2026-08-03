@@ -337,3 +337,17 @@
 - 1977 content left as written; frontmatter replaced with the schema block (5 errors -> 0)
 - 1978 and 1979 had been deleted, breaking 8 inbound links from `Principles/Fidelity`, `Synthesis/FidelityTimeline`, `Sources/1980ltr` and `index.md`; skeletons restore the targets pending rewrite
 - `make lint` green
+
+## [2026-08-03] config | reverted to two files: AGENTS.md + wiki/SCHEMA.md
+- Yesterday's merge into a single `AGENTS.md` is undone at the owner's request; the schema returns to `wiki/SCHEMA.md`, where the Karpathy pattern's Layer 3 belongs alongside the wiki it describes
+- `AGENT.md` stays deleted: `AGENTS.md` is now the real conduct file rather than a pointer, so the root holds one config file instead of two
+- `AGENTS.md` imports `wiki/SCHEMA.md` with `@` for agents that support it, and states that the schema is instructions rather than a reference; `make new` remains the mechanism that removes the dependency entirely
+
+## [2026-08-03] ingest | Sources/1977ltr, 1978ltr, 1979ltr — written from source
+- Replaced the three delegated attempts (4.1-5.8 KB, no wikilinks, non-schema sections) with full readings: 17.0, 20.5 and 22.5 KB
+- All quotations verify against `Raw/`; 5-10% verbatim overlap outside quotation marks, 34-40 wikilinks each, four canonical sections
+- 1977: the four-point test, insurance stated to have no moat, non-control as an advantage
+- 1978: full consolidation criticised, the SAFECO argument, the policy of concentration
+- 1979: the investor's misery index, Waumbec and turnarounds seldom turning, the long-bond mistake, the restaurant analogy
+- Propagation (ingest steps 4 and 5) deliberately skipped and batched for later
+- `make lint` green

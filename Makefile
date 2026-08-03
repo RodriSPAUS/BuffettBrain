@@ -11,7 +11,7 @@ help:
 	@echo "make baseline    re-record the backlog after fixing pages"
 	@echo "make quotes      verify every quotation against the Raw/ file it cites"
 	@echo "make links       broken wikilinks, phantom sources, orphans, fake anchors"
-	@echo "make frontmatter page metadata against AGENTS.md Part Two"
+	@echo "make frontmatter page metadata against wiki/SCHEMA.md"
 	@echo "make raw         source-extraction quality gate on Raw/"
 	@echo "make propagation are ingested sources reaching the compiled layer?"
 	@echo ""
@@ -23,7 +23,7 @@ help:
 	@echo "  $(PY) $(S)/verify_quotes.py wiki/Sources/1985ltr.md"
 	@echo ""
 	@echo "One-off passes (pass ARGS=--dry-run first):"
-	@echo "  make migrate     apply the AGENTS.md conventions to existing pages"
+	@echo "  make migrate     apply the AGENTS.md / SCHEMA.md conventions to existing pages"
 	@echo "  make repair-raw  restore word boundaries in mangled Raw/ extractions"
 
 lint:

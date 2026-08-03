@@ -18,7 +18,7 @@ However, **responses to user prompts will be provided in the same language as th
 
 - `Raw/` — the source letters, human-curated and not edited by the agent
 - `wiki/` — the compiled layer, written and maintained by the agent
-- `AGENTS.md` — the whole configuration: Part One what the agent does, Part Two how a page is shaped
+- `AGENTS.md` — what the agent does; `wiki/SCHEMA.md` — how a page is shaped
 - `scripts/` — the checks that enforce both
 
 The directory structure of `wiki/` is specified in `AGENTS.md` (Part Two). It is documented in one

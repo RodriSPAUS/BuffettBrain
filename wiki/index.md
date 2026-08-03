@@ -6,8 +6,8 @@ Welcome to the structured, interconnected knowledge base for Warren Buffett's in
 
 ## Navigation
 
-- `AGENTS.md` (Part Two) — How a page is shaped: directory layout, frontmatter, linking conventions.
-- `AGENTS.md` (Part One) — What the agent does: the Ingest / Query / Lint operations and citation rules.
+- [[SCHEMA]] — How a page is shaped: directory layout, frontmatter, linking conventions.
+- `AGENTS.md` — What the agent does: the Ingest / Query / Lint operations and citation rules.
 - `make lint` — Runs those rules as checks. Do this before closing an ingest.
 - [[log]] — Audit log of all ingestion, restructuring, and validation events.
 
@@ -140,4 +140,4 @@ Cross-source thematic analyses, timelines, and comparative insights:
 > his wisdom, that you will find useful." — [[Sources/1987ltr]]
 
 *Every quotation in this wiki is checked against the letter it cites by
-`make lint`. See `AGENTS.md`.*
+`make lint`. See [[SCHEMA]] and `AGENTS.md`.*

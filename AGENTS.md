@@ -2,31 +2,35 @@
 
 Operational configuration for any LLM agent working in this repository. This file is
 provider-agnostic: Claude Code, Codex, Cursor, Qwen or any other agent should read it first.
+It is named `AGENTS.md` because that is the filename agent CLIs load on their own.
 
-**This file is self-contained by design.** It used to be two files, with this one
-referring the reader onward to `wiki/SCHEMA.md` for page structure. That reference was
-a request, not a mechanism, and agents did not follow it: they applied the conduct rules
-from here and then invented their own frontmatter and section headings. The schema is now
-Part Two below. Do not split it out again — see `LESSONS_LEARNED.md`.
+## How the two configuration files divide responsibility
 
-## How this configuration is organised
+They do not overlap. Each rule lives in exactly one place.
 
-Each rule lives in exactly one place.
-
-| Where | Governs | Read it when |
+| File | Governs | Read it when |
 | --- | --- | --- |
-| **Part One** of this file | **What the agent does** — the three operations, citation integrity, standing rules of conduct, language handling | Deciding how to act |
-| **Part Two** of this file | **How the wiki is shaped** — directory layout, page structure, frontmatter specifications, linking conventions | Writing or editing a page |
-| `scripts/` + `make lint` | **Whether the rules were actually followed** — the checks that enforce both parts | Before closing any task |
+| `AGENTS.md` (this file) | **What the agent does** — the three operations, citation integrity, standing rules of conduct, language handling | Deciding how to act |
+| `wiki/SCHEMA.md` | **How the wiki is shaped** — directory layout, page structure, frontmatter specifications, linking conventions | Writing or editing a page |
+| `scripts/` + `make lint` | **Whether the rules were actually followed** — the checks that enforce both files | Before closing any task |
 | `LESSONS_LEARNED.md` | **What has already gone wrong here** — difficulties, rules that failed in practice, and what to do instead | Before changing how you work, and after any session that hit a problem |
 
-`CLAUDE.md` in the repository root imports this file so it loads automatically. It contains
-no rules of its own — do not duplicate anything here into it.
+This is Layer 3 of the pattern in `Karpathy_pattern.md`, split in two because conduct and
+form change at different rates. `CLAUDE.md` imports this file so it loads automatically and
+contains no rules of its own.
 
-**Do not write a page from memory of this schema.** Run `make new-source Y=1978` (or
-`make new-page P=Concepts/Moat`) to get a skeleton with the frontmatter and sections
-already correct, then fill in the prose. The generator is the specification; Part Two
-explains it.
+**`wiki/SCHEMA.md` is part of your instructions, not a reference you may consult.**
+Read it before writing or editing any page. A delegated model that applied the rules
+on this page and then invented its own frontmatter and section headings is what
+`LESSONS_LEARNED.md` records for 2026-08-03; the line below imports the schema for
+agents that support imports, and for those that do not, open it.
+
+@wiki/SCHEMA.md
+
+**Better still, do not write a page from memory of the schema at all.** Run
+`make new P=Sources/1978ltr` (or `make new P=Concepts/Moat`) to get a skeleton with
+the frontmatter and sections already correct, then fill in the prose. The generator is
+the specification made executable; `wiki/SCHEMA.md` explains it.
 
 ## Language Policy
 
@@ -38,7 +42,7 @@ explains it.
 ## Tooling
 
 Rules that nothing checks are rules that drift. Every convention in this file and in
-Part Two has a corresponding check:
+`wiki/SCHEMA.md` has a corresponding check:
 
 | Command | What it enforces |
 | ------- | ---------------- |
@@ -81,7 +85,7 @@ Three layers, per the Karpathy pattern (`Karpathy_pattern.md`):
   `Cases/` holdings · `People/` figures · `Principles/` philosophy · `Synthesis/` cross-source analysis
 - **Agent-owned.** The agent writes and maintains this layer entirely; the human reads it.
 
-**Layer 3 — The Schema** (this file: conduct in Part One, form in Part Two)
+**Layer 3 — The Schema** (`AGENTS.md` + `wiki/SCHEMA.md`)
 
 - The configuration that makes the agent a disciplined wiki maintainer rather than a generic
   chatbot. Co-evolves with the wiki — when a convention changes, update the schema first.
@@ -94,7 +98,7 @@ Triggered when a new file lands in `Raw/`.
 
 1. Read the source in full.
 2. Surface the key takeaways to the user before writing — ingestion is collaborative, not silent.
-3. Write the summary page in `wiki/Sources/` following the schema in Part Two.
+3. Write the summary page in `wiki/Sources/` following `wiki/SCHEMA.md`.
 4. **Propagate.** A single source normally touches 10–15 pages: update every `Concepts/`,
    `Cases/`, `People/`, and `Principles/` page the source bears on. Create new entity pages where
    the source introduces something with no page yet.
@@ -238,137 +242,4 @@ is indistinguishable from a real one and propagates into every synthesis built o
   State the cost in numbers — a lesson without a measured cost is an opinion. This file is
   the reason the same mistake does not get made twice, here or in the next wiki.
 
-Page structure, frontmatter fields, and directory conventions are specified in Part Two, below.
-
----
-
-# Part Two — The Schema
-
-*How the wiki is **shaped**: directory layout, page structure, frontmatter, and linking
-conventions. This was `wiki/SCHEMA.md` until 2026-08-03; it lives here because a schema
-in a separate file does not get read.*
-
-## ✅ Core Principles
-
-- **Source fidelity first**: Every claim must be traceable to an original source (e.g., `Source: [[Sources/2024ltr]]`, `Source: [[Sources/DUKE2024]]`). Never paraphrase without attribution, and never present as a quotation any text that is not verbatim in the cited `Raw/` file — see *Citation Integrity* in Part One.
-- **Obsidian-native**: All links use `[[wikilink]]` syntax. No external URLs in content — only `[[PageName]]` or `[[Sources/2024ltr]]`.
-- **Concept-first organization**: Pages represent *ideas*, not just sources — e.g., `Concepts/Moat.md`, `Concepts/IntrinsicValue.md`, `Concepts/CapitalAllocation.md`. Source summaries (`Sources/2024ltr.md`) exist to feed and update these.
-- **No human edits to wiki/**: This directory is LLM-owned. You curate `Raw/`; the LLM maintains `wiki/`.
-
-## 📁 Directory Structure
-
-```
-wiki/
-├── index.md              # Catalog of all pages (auto-updated on ingest)
-├── log.md                # Append-only chronological log (e.g., "## [2026-07-27] ingest | Sources/2024ltr")
-├── Sources/              # Source summaries (structured by year/content type)
-│   ├── 1977ltr.md        # Source summary page for 1977 annual letter
-│   ├── DUKE2024.md       # Source summary page for Duke University speech 2024
-│   ├── CNBCInterview.md  # Source summary page for CNBC interview
-│   └── ...
-├── Concepts/             # Core mental models and frameworks
-│   ├── Moat.md           # Concept page, seeded from all sources mentioning moats
-│   ├── ManagementQuality.md
-│   ├── CapitalAllocation.md
-│   ├── Float.md
-│   └── ...
-├── Applications/         # Actionable tools and checklists
-│   ├── BusinessQualityChecklist.md
-│   └── RedFlags.md
-├── Cases/                # Deep dives into key holdings and acquisitions
-│   ├── GEICO.md
-│   ├── SeeCandies.md
-│   └── ...
-├── People/               # Profiles of key figures
-│   ├── WarrenBuffett.md
-│   └── CharlieMunger.md
-├── Principles/           # Enduring philosophies
-│   ├── OwnershipMindset.md
-│   └── Fidelity.md
-└── Synthesis/            # Cross-source thematic analyses
-    ├── MoatEvolution.md
-    ├── FidelityTimeline.md
-    └── FloatGrowth.md
-```
-
-## 📝 Page Conventions
-
-### Source Summary Pages (e.g., `Sources/2024ltr.md`, `Sources/DUKE2024.md`)
-
-- YAML frontmatter required:
-  ```yaml
-  ---
-  source: [[Raw/2024ltr.md]]
-  date: 2024-02-24
-  type: source-summary
-  year: 2024
-  sourcetype: annual-letter  # annual-letter, interview, speech, article, etc.
-  ---
-  ```
-- Content sections: `## Key Themes`, `## Notable Quotes`, `## Investment Decisions`, `## Cross-References`
-- Each quote or insight cites the source page it came from (e.g., `[[Sources/2024ltr]]`), and the quoted text itself acts as the locator. Do **not** append positional anchors such as `#p5` or `#section3`: `Raw/` files carry no headings or block IDs, so those anchors resolve to nothing and imply a precision the citation does not have. Use an anchor only once the target file genuinely contains it.
-
-### Concept Pages (e.g., `Concepts/Moat.md`)
-
-- YAML frontmatter:
-  ```yaml
-  ---
-  title: "Moat"
-  type: concept
-  stability: high  # low/medium/high — reflects how consistently Buffett uses this idea
-  tags: [moat, competitive advantage, economic moat]
-  date: 2026-07-27
-  source: [[Sources/2024ltr]]
-  ---
-  ```
-- Structure: `## Definition`, `## Examples from Letters`, `## Contrasts & Nuances`
-- Every example links to its source: e.g., `Coca-Cola (1988) — [[Sources/1988ltr]]`
-
-### Synthesis Pages (e.g., `Synthesis/MoatEvolution.md`)
-
-- YAML frontmatter:
-  ```yaml
-  ---
-  title: "Moat Evolution"
-  type: synthesis
-  stability: medium
-  tags: [cross-source, theme, evolution]
-  date: 2026-07-27
-  source: [[Sources/1988ltr]], [[Sources/2024ltr]], [[Sources/CNBCInterview]]
-  ---
-  ```
-- Structure: Cross-source thematic analysis with explicit links to multiple sources
-- Must reference at least 2 different sources to qualify as synthesis
-
-## 🔗 Linking Rules
-
-- Always link entities: `[[Concepts/Moat]]`, `[[Concepts/ManagementQuality]]`, `[[Concepts/CapitalAllocation]]`
-- Always link sources: `[[Sources/2024ltr]]`, `[[Sources/DUKE2024]]`, `[[Sources/CNBCInterview]]`
-- Always link cases: `[[Cases/GEICO]]`, `[[Cases/SeeCandies]]`
-- Always link people: `[[People/WarrenBuffett]]`, `[[People/CharlieMunger]]`
-- Use relative paths within wiki: `[[Applications/BusinessQualityChecklist]]`, `[[Synthesis/MoatEvolution]]`
-- Never leave a named person, company, or principle unlinked — if no page exists yet, create a stub with `TODO: flesh out`.
-
-## 🧹 Maintenance Workflow
-
-The Ingest, Query and Lint operations are specified in Part One and are not repeated here.
-Part Two governs what a page must look like once one of those operations decides to write it.
-
-Every rule in Part Two is checked by `make lint` — `make frontmatter` for the frontmatter
-specifications above, `make links` for the linking rules below. Run `make quote Q="phrase"` to
-get a passage in citable form before quoting it: `Raw/` files are hard-wrapped with compounds
-split across lines, so text copied from `grep` will not match.
-
-## 🌐 External Tools (Optional but Recommended)
-
-- Use Obsidian **Dataview** plugin with frontmatter queries (e.g., `TABLE year FROM "wiki" WHERE type = "source-summary" SORT year DESC`).
-  These only return complete results while `make frontmatter` passes — a page with a missing or
-  non-canonical `type` silently drops out of every query.
-- Use Obsidian **Graph View** to visualize conceptual centrality (e.g., which concepts are most linked?)
-- Use Obsidian **Outliner** or **Templater** for consistent page scaffolding.
-
-> 💡 This schema evolves. If you adjust a rule (e.g., add `Concepts/RiskManagement.md`), update
-> Part Two first, then update the corresponding check in `scripts/`, then reprocess the wiki.
-> A rule with no check will drift: that is how 26 pages ended up citing `[[1985ltr.md#p0]]`
-> while 10 cited `[[Sources/1985ltr]]`. `scripts/migrate_conventions.py` applies a changed
-> convention to existing pages in one pass.
+Page structure, frontmatter fields, and directory conventions are specified in `wiki/SCHEMA.md`.

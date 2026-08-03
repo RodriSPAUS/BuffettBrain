@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bring existing pages up to the conventions in AGENTS.md and AGENTS.md (Part Two).
+"""Bring existing pages up to the conventions in AGENTS.md and wiki/SCHEMA.md.
 
 The rules were tightened after most of the wiki had already been written, and
 nothing applied them retroactively, so two incompatible styles ended up living
