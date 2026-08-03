@@ -64,8 +64,7 @@ SECTIONS = {
                              "Quote only what `make quote Q=\"...\"` returns."),
         ("## 💬 Notable Quotes", "Six to nine blockquotes. Verbatim, no ellipsis games."),
         ("## 📊 Investment Decisions", "What was bought, sold, declined or written down, with figures."),
-        ("## 🔗 Cross-References", "Wikilinks carrying the folder prefix — `Concepts/Moat`, not `Moat`.\n"
-                                   "A page with no cross-references is an indexed document, not a wiki page."),
+        ("## 🔗 Cross-References", "{MENU}"),
     ],
     "_concept": [
         ("## Definition", "What the idea is, in Buffett's terms."),
@@ -104,6 +103,37 @@ def letter_date(stem: str, year: int) -> tuple[str, bool]:
     return f"{year + 1}-01-01", False
 
 
+def link_menu() -> str:
+    """The pages that actually exist, listed for the writer to choose from.
+
+    Invented link targets are the failure mode this replaces: a delegated page
+    arrived carrying [[Moat]], [[Owner-Earnings]], [[Ajit-Jain]] and
+    [[Tony-Nicely]] -- nineteen broken links, every one a plausible guess at a
+    name. Guessing is unnecessary when the real names are on the page in front
+    of you.
+    """
+    from wikilib import load_pages
+
+    compiled = {"Concepts", "Cases", "People", "Principles", "Applications", "Synthesis"}
+    groups: dict[str, list[str]] = {}
+    for name in sorted(load_pages()):
+        folder = name.split("/")[0]
+        if folder in compiled:
+            groups.setdefault(folder, []).append(name.split("/", 1)[1])
+
+    lines = [
+        "Link the pages this source bears on. Copy the names below verbatim into",
+        "double brackets, folder prefix included and spelling as shown. Do not invent a",
+        "target: if an entity has no page, create a stub for it. A source summary that",
+        "links to no compiled page fails `make structure`.",
+        "",
+    ]
+    for folder in sorted(groups):
+        lines.append(f"  {folder}/ — " + ", ".join(groups[folder]))
+    lines += ["", "  Also link the letters either side of this one: Sources/<year>ltr."]
+    return "\n".join(lines)
+
+
 def build(target: str) -> tuple[Path, str, list[str]]:
     folder, _, stem = target.replace(".md", "").partition("/")
     if folder not in TYPES:
@@ -134,6 +164,11 @@ def build(target: str) -> tuple[Path, str, list[str]]:
         ]
         if not (RAW / f"{stem}.md").exists():
             notes.append(f"Raw/{stem}.md does not exist — a summary with no source is a phantom")
+        notes.append(
+            "replace the placeholder tags: `make structure` wants at least 3 that name "
+            "what this letter is about (moat, float, buybacks...). The year and words "
+            "true of every letter do not count."
+        )
         sections = SECTIONS["Sources"]
         lead = (f"*One sentence on what {year} was about: the headline figure, and the two or\n"
                 f"three arguments the letter is actually built around.*")
@@ -152,7 +187,8 @@ def build(target: str) -> tuple[Path, str, list[str]]:
 
     body = [f"---\n" + "\n".join(fm) + "\n---", "", title, "", lead, ""]
     for heading, hint in sections:
-        body += [heading, "", f"> TODO: {hint}", ""]
+        hint = hint.replace("{MENU}", link_menu())
+        body += [heading, "", "> TODO: " + hint.replace("\n", "\n> "), ""]
 
     return WIKI / folder / f"{stem}.md", "\n".join(body), notes
 

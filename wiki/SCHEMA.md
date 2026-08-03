@@ -55,14 +55,23 @@ wiki/
 - YAML frontmatter required:
   ```yaml
   ---
-  source: [[Raw/2024ltr.md]]
-  date: 2024-02-24
+  title: "2024 Annual Letter"
   type: source-summary
+  stability: high
+  tags: [2024, letter, buybacks, cash-position, succession]   # see Tag Rules
+  date: 2024-02-24
   year: 2024
   sourcetype: annual-letter  # annual-letter, interview, speech, article, etc.
+  source: [[Raw/2024ltr.md]]
   ---
   ```
-- Content sections: `## Key Themes`, `## Notable Quotes`, `## Investment Decisions`, `## Cross-References`
+- Do not write this block by hand. `make new P=Sources/2024ltr` emits it correctly,
+  with the letter's own signature date read out of `Raw/`.
+- Content sections, all four required and checked by `make structure`: `## 🔑 Key Themes`,
+  `## 💬 Notable Quotes`, `## 📊 Investment Decisions`, `## 🔗 Cross-References`
+- **At least one link into the compiled layer** (`Concepts/`, `Cases/`, `People/`,
+  `Principles/`, `Applications/`, `Synthesis/`). A summary that links only to other
+  summaries has been filed, not integrated, and `make structure` fails it.
 - Each quote or insight cites the source page it came from (e.g., `[[Sources/2024ltr]]`), and the quoted text itself acts as the locator. Do **not** append positional anchors such as `#p5` or `#section3`: `Raw/` files carry no headings or block IDs, so those anchors resolve to nothing and imply a precision the citation does not have. Use an anchor only once the target file genuinely contains it.
 
 ### Concept Pages (e.g., `Concepts/Moat.md`)
@@ -97,6 +106,25 @@ wiki/
 - Structure: Cross-source thematic analysis with explicit links to multiple sources
 - Must reference at least 2 different sources to qualify as synthesis
 
+## 🏷️ Tag Rules
+
+Tags exist so Dataview can filter. A tag that is true of every page in the wiki
+filters nothing, so `make structure` requires **at least three tags that say what
+this page is about** and discounts the rest.
+
+- Discounted: the year (it is already the `year:` key), and boilerplate —
+  `annual-letter`, `letter`, `warren-buffett`, `berkshire-hathaway`, `investing`,
+  `summary`, `finance` and similar. See `BOILERPLATE` in `scripts/check_structure.py`
+  for the enforced list.
+- Wanted: what distinguishes this page. `moat`, `float`, `buybacks`, `loss-reserving`,
+  `misery-index`, `nebraska-furniture-mart`, `wppss`.
+- A useful test: could this tag set belong to any other letter? If yes, it is not
+  doing any work.
+
+`tags: [annual-letter, 1995, warren-buffett, berkshire-hathaway]` is the failure this
+rule exists to stop — a real page that would have carried the identical tag set had it
+summarised any of the other 47 letters.
+
 ## 🔗 Linking Rules
 
 - Always link entities: `[[Concepts/Moat]]`, `[[Concepts/ManagementQuality]]`, `[[Concepts/CapitalAllocation]]`
@@ -105,6 +133,11 @@ wiki/
 - Always link people: `[[People/WarrenBuffett]]`, `[[People/CharlieMunger]]`
 - Use relative paths within wiki: `[[Applications/BusinessQualityChecklist]]`, `[[Synthesis/MoatEvolution]]`
 - Never leave a named person, company, or principle unlinked — if no page exists yet, create a stub with `TODO: flesh out`.
+- **Never invent a link target.** `make new` prints every page that exists, grouped by
+  directory, in the Cross-References section of the skeleton; copy from that list. A
+  page that arrived with `[[Moat]]`, `[[Owner-Earnings]]`, `[[Ajit-Jain]]` and
+  `[[Tony-Nicely]]` cost 19 broken links, and every one of them was a plausible guess
+  at a name that already existed in another form.
 
 ## 🧹 Maintenance Workflow
 

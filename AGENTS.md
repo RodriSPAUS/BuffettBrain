@@ -52,6 +52,8 @@ Rules that nothing checks are rules that drift. Every convention in this file an
 | `make quotes` | every quotation appears verbatim in the `Raw/` file it cites |
 | `make links` | no broken wikilinks, phantom sources, missing folder prefixes, fake anchors, orphans |
 | `make frontmatter` | required keys and canonical `type` values per directory |
+| `make structure` | required sections per directory, at least one link into the compiled layer, and tags that say something |
+| `make check P=Sources/1996ltr` | **zero tolerance on one page.** Run it on every page you finish — `make lint` forgives errors a file already had, which is right for the backlog and wrong for a page you just wrote |
 | `make raw` | `Raw/` text is intact enough to quote from |
 | `make quote Q="phrase"` | finds a citable passage and prints it unwrapped, with its wikilink |
 
@@ -105,8 +107,9 @@ Triggered when a new file lands in `Raw/`.
 5. Where the new source contradicts or supersedes an existing claim, say so explicitly on the
    affected page rather than leaving both versions standing.
 6. Update `wiki/index.md` and append to `wiki/log.md`.
-7. **Run `make lint` and fix what it reports.** An ingest is not finished while the
-   checks are failing on the pages it touched.
+7. **Run `make check P=Sources/YYYYltr` on the page you wrote, and fix everything it
+   reports.** It demands zero errors. Then `make lint` for the repository as a whole.
+   An ingest is not finished while either is failing.
 
 Ingesting one source at a time with the user involved is the default. Batch ingestion is
 acceptable when asked, but the propagation step (4) is not optional in either mode — a summary

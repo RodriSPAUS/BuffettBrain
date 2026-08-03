@@ -647,3 +647,61 @@ generator I ran it with `--force` over four completed summaries and destroyed th
 `git` got them back. `--force` now refuses any file that no longer contains a
 `> TODO:` marker. A tool that scaffolds pages must not be able to delete them —
 and the guard was written only after the tool had already done it once.
+
+---
+
+## [2026-08-03] Quality follows the checker, not the instruction — measured
+
+**What happened.** After the configuration was made reachable, a delegated model
+processed the 1995 letter. The result split along a line so clean it is worth
+recording as evidence rather than anecdote:
+
+| aspect of the page | checked by | outcome |
+| --- | --- | --- |
+| quotations verbatim | `make quotes` | **0 errors** |
+| unquoted figures (13 of them) | nothing — verified by hand | **all correct** |
+| frontmatter keys and values | `make frontmatter` | **0 errors** |
+| link *resolution* | `make links` | 19 broken |
+| required sections | **nothing** | 3 of 4 missing |
+| tags | **nothing** | `[annual-letter, 1995, warren-buffett, berkshire-hathaway]` |
+| links into the compiled layer | **nothing** | none at all |
+
+Everything with a checker came out right. Everything without one came out wrong.
+The tags are the purest case: that set would be identical for all 48 letters, so
+it filters nothing, and no Dataview query built on it can return a useful answer.
+
+The link failures are the interesting middle case. `make links` exists, so the
+errors were *reported* — but they were reported into a backlog of 434 known link
+errors, where they sat. Being checked is not the same as being enforced.
+
+**What it cost.** The page needed a rewrite despite having zero fabrications,
+which is the expensive kind of failure: nothing was wrong with the reading of the
+letter, only with the shape of the page. Nineteen invented link targets
+(`[[Moat]]`, `[[Owner-Earnings]]`, `[[Ajit-Jain]]`, `[[Tony-Nicely]]`) — each a
+plausible guess at a page that either exists under a different name or does not
+exist at all.
+
+**What to do instead.** Three changes, all structural, none a fix to the page:
+
+1. **`make structure`.** The rules with no checker now have one: required sections
+   per directory, at least one link into the compiled layer, and at least three
+   tags that are not the year or boilerplate. Verified against the 18 summaries
+   written by hand — zero false positives — and it catches all five defects in the
+   delegated page.
+2. **`make check P=Sources/1996ltr`.** Zero tolerance on a single page. The ratchet
+   forgives errors a file already had, which is correct for a backlog and wrong for
+   a page you just wrote: a page recorded with five errors that comes back from a
+   rewrite with five errors fires nothing. Per-page checking closes that blind spot
+   without giving up the ratchet.
+3. **The generator prints the link menu.** `make new` now lists every page that
+   exists, grouped by directory, inside the Cross-References section. Guessing at a
+   name is unnecessary when the real names are on the page in front of you — and
+   this is cheaper than any rule about link syntax, which is the recurring lesson
+   of this file.
+
+**The generalisation.** `AGENTS.md` has claimed since 2026-07-30 that every
+convention in the schema has a corresponding check. It was not true, and the
+untrue part is exactly the part that failed. When you write that claim, verify it
+literally: list the rules in the schema, list the checks, and diff the two lists.
+The rules that fall through the gap are not random — they are the ones a model
+will get wrong, because nothing has ever told it otherwise.

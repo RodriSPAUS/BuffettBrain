@@ -1,7 +1,7 @@
 PY := python3
 S  := scripts
 
-.PHONY: lint lint-strict lint-detail baseline quotes links frontmatter raw propagation new help
+.PHONY: lint lint-strict lint-detail baseline check quotes links frontmatter structure raw propagation new help
 
 help:
 	@echo "make lint        run every check (do this before closing an ingest)"
@@ -12,6 +12,7 @@ help:
 	@echo "make quotes      verify every quotation against the Raw/ file it cites"
 	@echo "make links       broken wikilinks, phantom sources, orphans, fake anchors"
 	@echo "make frontmatter page metadata against wiki/SCHEMA.md"
+	@echo "make structure   required sections, outbound links, tag quality"
 	@echo "make raw         source-extraction quality gate on Raw/"
 	@echo "make propagation are ingested sources reaching the compiled layer?"
 	@echo ""
@@ -19,8 +20,8 @@ help:
 	@echo "  make new P=Sources/1978ltr"
 	@echo "  make new P=Concepts/Moat"
 	@echo ""
-	@echo "Check one page or folder:"
-	@echo "  $(PY) $(S)/verify_quotes.py wiki/Sources/1985ltr.md"
+	@echo "Check ONE finished page with zero tolerance (do this after each letter):"
+	@echo "  make check P=Sources/1996ltr"
 	@echo ""
 	@echo "One-off passes (pass ARGS=--dry-run first):"
 	@echo "  make migrate     apply the AGENTS.md / SCHEMA.md conventions to existing pages"
@@ -33,10 +34,15 @@ lint-strict:
 	@cd $(S) && $(PY) lint.py --strict
 
 lint-detail:
-	@cd $(S) && $(PY) verify_quotes.py; $(PY) lint_links.py; $(PY) check_frontmatter.py
+	@cd $(S) && $(PY) verify_quotes.py; $(PY) lint_links.py; $(PY) check_frontmatter.py; $(PY) check_structure.py
 
 baseline:
 	@cd $(S) && $(PY) lint.py --record
+
+# Zero tolerance on a single page. The ratchet forgives errors a file already
+# had, which is wrong for a page you just finished writing.
+check:
+	@cd $(S) && $(PY) lint.py --page "$(P)"
 
 quotes:
 	@cd $(S) && $(PY) verify_quotes.py
@@ -46,6 +52,9 @@ links:
 
 frontmatter:
 	@cd $(S) && $(PY) check_frontmatter.py
+
+structure:
+	@cd $(S) && $(PY) check_structure.py
 
 raw:
 	@cd $(S) && $(PY) check_raw_quality.py

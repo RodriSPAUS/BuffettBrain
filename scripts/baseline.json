@@ -1,6 +1,5 @@
 {
   "citation integrity": {
-    "wiki/Sources/1977ltr.md": 1,
     "wiki/Sources/1998ltr.md": 2,
     "wiki/Sources/1999ltr.md": 1,
     "wiki/Sources/2000ltr.md": 7,
@@ -27,7 +26,6 @@
     "wiki/Sources/2024ltr.md": 3
   },
   "frontmatter": {
-    "wiki/Sources/1995ltr.md": 3,
     "wiki/Sources/1996ltr.md": 3,
     "wiki/Sources/1997ltr.md": 3,
     "wiki/Sources/1998ltr.md": 1,
@@ -58,7 +56,7 @@
     "wiki/Sources/2024ltr.md": 3
   },
   "link integrity": {
-    "wiki/Sources/1995ltr.md": 22,
+    "wiki/Sources/1995ltr.md": 14,
     "wiki/Sources/1996ltr.md": 22,
     "wiki/Sources/1997ltr.md": 22,
     "wiki/Sources/1998ltr.md": 9,
@@ -88,5 +86,44 @@
     "wiki/Sources/2022ltr.md": 9,
     "wiki/Sources/2023ltr.md": 9,
     "wiki/Sources/2024ltr.md": 10
+  },
+  "structure": {
+    "wiki/Concepts/EconomicGoodwill.md": 1,
+    "wiki/Concepts/ManagementQuality.md": 2,
+    "wiki/Concepts/MarginOfSafety.md": 1,
+    "wiki/Concepts/Moat.md": 1,
+    "wiki/Concepts/MrMarket.md": 1,
+    "wiki/Principles/Fidelity.md": 1,
+    "wiki/Principles/OwnershipMindset.md": 1,
+    "wiki/Sources/1995ltr.md": 5,
+    "wiki/Sources/1996ltr.md": 2,
+    "wiki/Sources/1997ltr.md": 2,
+    "wiki/Sources/1998ltr.md": 2,
+    "wiki/Sources/1999ltr.md": 2,
+    "wiki/Sources/2000ltr.md": 2,
+    "wiki/Sources/2001ltr.md": 2,
+    "wiki/Sources/2002ltr.md": 2,
+    "wiki/Sources/2003ltr.md": 2,
+    "wiki/Sources/2004ltr.md": 2,
+    "wiki/Sources/2005ltr.md": 2,
+    "wiki/Sources/2006ltr.md": 2,
+    "wiki/Sources/2007ltr.md": 2,
+    "wiki/Sources/2008ltr.md": 1,
+    "wiki/Sources/2009ltr.md": 5,
+    "wiki/Sources/2010ltr.md": 5,
+    "wiki/Sources/2011ltr.md": 5,
+    "wiki/Sources/2012ltr.md": 5,
+    "wiki/Sources/2013ltr.md": 5,
+    "wiki/Sources/2014ltr.md": 5,
+    "wiki/Sources/2015ltr.md": 5,
+    "wiki/Sources/2016ltr.md": 5,
+    "wiki/Sources/2017ltr.md": 5,
+    "wiki/Sources/2018ltr.md": 5,
+    "wiki/Sources/2019ltr.md": 5,
+    "wiki/Sources/2020ltr.md": 5,
+    "wiki/Sources/2021ltr.md": 5,
+    "wiki/Sources/2022ltr.md": 5,
+    "wiki/Sources/2023ltr.md": 5,
+    "wiki/Sources/2024ltr.md": 5
   }
 }

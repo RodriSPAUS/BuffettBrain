@@ -351,3 +351,17 @@
 - 1979: the investor's misery index, Waumbec and turnarounds seldom turning, the long-bond mistake, the restaurant analogy
 - Propagation (ingest steps 4 and 5) deliberately skipped and batched for later
 - `make lint` green
+
+## [2026-08-03] lint | scripts/check_structure.py — the rules nothing was checking
+- Sections, outbound links to the compiled layer, and tag quality had no checker; a delegated 1995 page passed every existing check while missing 3 of 4 sections, linking to no compiled page, and carrying tags identical to what all 48 letters would get
+- `make structure` enforces all three. Zero false positives against the 18 hand-written summaries; catches all 5 defects in the delegated page
+- Tag rule: at least 3 tags that are not the year and not boilerplate (`BOILERPLATE` in the script is the enforced list)
+
+## [2026-08-03] lint | make check P=<page> — zero tolerance on one page
+- The ratchet lets a file keep the errors it already had, so a bad rewrite of a backlog page fires nothing; `make check` ignores the baseline and demands zero on the named page
+- `AGENTS.md` ingest step 7 now requires it on every page written
+
+## [2026-08-03] tooling | make new prints the link menu
+- The Cross-References skeleton now lists every existing page grouped by directory, so link targets are copied rather than guessed
+- Replaces the failure mode of `[[Moat]]`, `[[Owner-Earnings]]`, `[[Ajit-Jain]]` — 19 broken links, each a plausible guess at a real page under another name
+- Baseline re-recorded at 799 known errors across 5 checks (was 693 across 4; the rise is the newly-visible structure backlog, not a regression)
