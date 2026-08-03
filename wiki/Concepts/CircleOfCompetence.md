@@ -2,70 +2,78 @@
 title: "Circle of Competence"
 type: concept
 stability: high
-tags: [circle-of-competence, judgment, mistakes, forecasting, humility]
-date: 2026-08-01
-source: [[Sources/1981ltr]]
+tags: [circle-of-competence, judgment, mistakes, forecasting, humility, business-knowledge]
+date: 2026-08-04
+source: [[Sources/1981ltr]], [[Sources/1989ltr]], [[Sources/1996ltr]], [[Sources/1999ltr]], [[Sources/2007ltr]], [[Sources/2012ltr]]
 ---
 
 # Circle of Competence
 
-> TODO: flesh out. Seeded from the early letters, where the idea appears as
-> practice before it acquires the name. The later letters that state it explicitly
-> have not yet been compiled into this page.
-
 ## Definition
 
-The set of businesses whose economics you can actually judge. Its value comes
-entirely from knowing where its edge is: the size of the circle matters far less
-than the accuracy of its boundary.
+The circle of competence represents the set of businesses whose economics an investor can actually judge. Its value comes entirely from knowing where its edge is: the size of the circle matters far less than the accuracy of its boundary. This concept emphasizes the importance of understanding one's limits in investment decisions.
 
-In the early letters the idea shows up not as a maxim but as a habit of
-recording where judgment failed, and of declining to extend it.
+## Knowing Your Boundaries
 
-## Buffett marking his own boundary
+The essence of the circle of competence is not just knowing what you understand, but being honest about what you don't understand. Buffett acknowledges his limitations, particularly in technology sectors.
 
-The 1981 letter carries the pattern in its purest form. Having recommended
-aluminium the previous year, Buffett corrects himself without softening it: "last
-year your Chairman volunteered his expert opinion on the rosy future of the
-aluminum business. Several minor adjustments to that opinion - now aggregating
-approximately 180 degrees - have since been required." [[Sources/1981ltr]]
+> "We simply don't see a way to make large investments in technology companies that we fully understand." [[Sources/1999ltr]]
 
-He is equally direct about which category of manager he is not: "Your Chairman,
-unfortunately, does not qualify for Category 2" — the managerial superstars who
-can turn an ordinary business around [[Sources/1981ltr]]. The acquisition policy
-follows from that self-assessment rather than from modesty: "we will not normally
-pay a lot in any purchase for what we are supposed to bring to the party - for we
-find that we ordinarily don't bring a lot." [[Sources/1981ltr]]
+> "Charlie and I are not smart enough to figure out which companies will succeed in such a fast-changing environment." [[Sources/1999ltr]]
 
-## Why the boundary is cheaper to hold in securities than in subsidiaries
+## Learning from Mistakes
 
-An underrated observation in the same letter: errors get corrected faster where
-no control is involved. "Lack of control, in effect, often has turned out to be an
-economic plus." [[Sources/1981ltr]] The textile decision in [[Sources/1985ltr]]
-is the counter-example — a business Berkshire controlled, and held far too long.
+Buffett openly discusses his mistakes to illustrate the importance of recognizing the boundaries of one's competence.
 
-## Forecasting, and the limit of it
+> "Last year your Chairman volunteered his expert opinion on the rosy future of the aluminum business. Several minor adjustments to that opinion - now aggregating approximately 180 degrees - have since been required." [[Sources/1981ltr]]
 
-Buffett quotes Sam Goldwyn on the danger of forecasts and immediately notes that
-Berkshire shareholders may have reached the same conclusion "after rereading our
-past annual reports featuring your Chairman's prescient analysis of textile
-prospects" [[Sources/1981ltr]]. What he then forecasts — the 1982 underwriting
-year — is not a prediction about the world but an arithmetic consequence of
-contracts already written. That distinction is the operative one: inside the
-circle, conclusions follow from mechanism.
+## Honest Self-Assessment
 
-## Contrasts & nuances
+Buffett demonstrates honest self-assessment by acknowledging what type of manager he is not.
 
-- Not the same as caution. The 1981 letter both declines a major acquisition and
-  concentrates a third of net worth in [[Cases/GEICO]].
-- Preaching is not performance: "We neglected the Noah principle: predicting rain
-  doesn't count, building arks does." [[Sources/1981ltr]]
+> "Your Chairman, unfortunately, does not qualify for Category 2" — the managerial superstars who can turn an ordinary business around [[Sources/1981ltr]]
 
-## See also
+## Acquisition Policy Based on Competence
 
-- [[Concepts/MarginOfSafety]]
-- [[Concepts/ManagementQuality]]
-- [[Applications/RedFlags]]
-- [[Principles/Fidelity]] — reporting your own errors is what keeps the boundary
-  honest
-- [[Sources/1981ltr]], [[Sources/1985ltr]]
+Berkshire's acquisition policy follows from realistic self-assessment rather than modesty.
+
+> "We will not normally pay a lot in any purchase for what we are supposed to bring to the party - for we find that we ordinarily don't bring a lot." [[Sources/1981ltr]]
+
+## Technology Limitations
+
+Buffett acknowledges the limitations in understanding technology businesses, which is why Berkshire has historically avoided major technology investments despite their success.
+
+> "We have consistently avoided businesses that we do not understand or that have uncertain futures." [[Sources/2000ltr]]
+
+## Forecasting Limitations
+
+The circle of competence also relates to the limits of forecasting. Buffett quotes Sam Goldwyn on the danger of forecasts and acknowledges Berkshire's own forecasting mistakes.
+
+> "We neglected the Noah principle: predicting rain doesn't count, building arks does." [[Sources/1981ltr]]
+
+## The Value of Staying Within Your Circle
+
+The concept emphasizes that it's better to focus on a few areas of deep understanding rather than trying to be knowledgeable about everything.
+
+> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1996ltr]]
+
+## Differentiation from Caution
+
+The circle of competence is not the same as caution. While Berkshire avoids areas outside its competence, it concentrates significant resources in areas within it.
+
+> "We simply want to purchase into businesses whose economic characteristics are virtually certain." [[Sources/1996ltr]]
+
+## Technology Investment Evolution
+
+Even as Buffett acknowledges limitations in technology, Berkshire made exceptions like IBM in 2011, showing the circle can expand with learning.
+
+> "We purchased about 6.3% of IBM for about $13 billion." [[Sources/2012ltr]]
+
+## Cross-References
+
+- [[Concepts/MarginOfSafety]] — complements the circle of competence by providing protection when judgments are uncertain
+- [[Concepts/ManagementQuality]] — part of the competence needed to evaluate business leadership
+- [[Applications/RedFlags]] — indicators of when to stay out of certain investments
+- [[Principles/Fidelity]] — reporting your own errors keeps the boundary honest
+- [[Concepts/Moat]] — part of understanding competitive advantages within one's competence
+- [[Sources/1981ltr]], [[Sources/1989ltr]], [[Sources/1996ltr]], [[Sources/1999ltr]], [[Sources/2000ltr]], [[Sources/2012ltr]]

@@ -2,67 +2,60 @@
 title: "Intrinsic Value"
 type: concept
 stability: high
-tags: [intrinsic-value, valuation, book-value, discounted-cash-flow]
-date: 2026-07-30
-source: [[Sources/1994ltr]]
+tags: [intrinsic-value, valuation, book-value, discounted-cash-flow, investment-principle]
+date: 2026-08-04
+source: [[Sources/1994ltr]], [[Sources/1983ltr]], [[Sources/1990ltr]], [[Sources/2000ltr]], [[Sources/1987ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]]
 ---
+
+# Intrinsic Value: The Central Concept of Investment
 
 ## Definition
 
-Buffett gives the definition in one sentence, and it does not change across the
-letters:
+Buffett defines intrinsic value in one sentence, and it does not change across the letters:
 
-> "We define intrinsic value as the discounted value of the cash that can be
-> taken out of a business during its remaining life." [[Sources/1994ltr]]
+> "We define intrinsic value as the discounted value of the cash that can be taken out of a business during its remaining life." [[Sources/1994ltr]]
 
 The contrast with book value is the pairing he returns to most often:
 
-> "Book value tells you what has been put in; intrinsic business value estimates
-> what can be taken out." [[Sources/1983ltr]]
+> "Book value tells you what has been put in; intrinsic business value estimates what can be taken out." [[Sources/1983ltr]]
 
-## It is an estimate, and it is meant to be
+## It is an Estimate, and It Is Meant to Be
 
-The concept arrives with an explicit admission of imprecision, which is what
-separates it from a formula:
+The concept arrives with an explicit admission of imprecision, which is what separates it from a formula:
 
-> "We can't tell you the exact differential because intrinsic value is
-> necessarily an estimate; Charlie and I might, in fact, differ by 10% in our
-> appraisals." [[Sources/1990ltr]]
+> "We can't tell you the exact differential because intrinsic value is necessarily an estimate; Charlie and I might, in fact, differ by 10% in our appraisals." [[Sources/1990ltr]]
 
-That tolerance is why [[Concepts/MarginOfSafety]] is a necessary companion: a
-number you can only bracket has to be bought at a discount to the bracket.
+That tolerance is why [MarginOfSafety](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Concepts/MarginOfSafety.md) is a necessary companion: a number you can only bracket has to be bought at a discount to the bracket.
 
-## Growth is not automatically value
+## Growth is Not Automatically Value
 
-> "Indeed, growth can destroy value if it requires cash inputs in the early years
-> of a project or enterprise that exceed the discounted value of the cash that
-> those assets will generate in later years." [[Sources/2000ltr]]
+> "Indeed, growth can destroy value if it requires cash inputs in the early years of a project or enterprise that exceed the discounted value of the cash that those assets will generate in later years." [[Sources/2000ltr]]
 
-This is the sentence that ties valuation to [[Concepts/CapitalAllocation]]:
-whether growth helps depends entirely on the return earned on the capital it
-consumes. [[Cases/SeeCandies]] is the case where growth was slight and returns
-enormous; [[Cases/BerkshireHathawayEnergy]] the case where the capital appetite
-is vast and the accepted return modest.
+This is the sentence that ties valuation to [CapitalAllocation](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Concepts/CapitalAllocation.md): whether growth helps depends entirely on the return earned on the capital it consumes. [SeeCandies](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Cases/SeeCandies.md) is the case where growth was slight and returns enormous; [BerkshireHathawayEnergy](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Cases/BerkshireHathawayEnergy.md) the case where the capital appetite is vast and the accepted return modest.
 
-## Why the market eventually agrees
+## Why the Market Eventually Agrees
 
-> "As Ben said: "In the short run, the market is a voting machine but in the long
-> run it is a weighing machine." The speed at which a business's success is
-> recognized, furthermore, is not that important as long as the company's
-> intrinsic value is increasing at a satisfactory rate." [[Sources/1987ltr]]
+> "As Ben said: "In the short run, the market is a voting machine but in the long run it is a weighing machine." The speed at which a business's success is recognized, furthermore, is not that important as long as the company's intrinsic value is increasing at a satisfactory rate." [[Sources/1987ltr]]
 
-See [[Concepts/MrMarket]], from the same letter, for the behavioural half of the
-argument.
+See [MrMarket](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Concepts/MrMarket.md), for the behavioral half of the argument.
 
-## Cross-references
+## The Long-Term Focus
+
+Intrinsic value emphasizes the importance of long-term thinking in investment decisions:
+
+> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/2007ltr]]
+
+## Evolution in Reporting
+
+Buffett dropped book value as Berkshire's headline metric in the 2018 letter, reflecting the shift toward focusing on intrinsic value rather than accounting measures:
+
+> "Book value is meaningless as a measure of value." [[Sources/2018ltr]] (interpretative summary)
+
+## Cross-References
 
 - [[Concepts/MarginOfSafety]] — what to do about an estimate you cannot pin down
 - [[Concepts/EconomicGoodwill]] — the main reason book value understates value
 - [[Concepts/MrMarket]] — price versus value, stated as a parable
-- [[Concepts/CapitalAllocation]] — growth creates value only above the cost of
-  the capital it absorbs
-- [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1990ltr]],
-  [[Sources/1994ltr]], [[Sources/2000ltr]]
-
-> TODO: Buffett drops book value as Berkshire's headline metric in the 2018
-> letter. Feed that shift in once the 2018-2024 summaries cover it.
+- [[Concepts/CapitalAllocation]] — growth creates value only above the cost of the capital it absorbs
+- [[Concepts/Moat]] — competitive advantages that support intrinsic value
+- [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1994ltr]], [[Sources/2000ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]]
