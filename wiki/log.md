@@ -363,7 +363,7 @@
 
 ## [2026-08-03] tooling | make new prints the link menu
 - The Cross-References skeleton now lists every existing page grouped by directory, so link targets are copied rather than guessed
-- Replaces the failure mode of `[[Moat]]`, `[[Owner-Earnings]]`, `[[Ajit-Jain]]` — 19 broken links, each a plausible guess at a real page under another name
+- Replaces the failure mode of `Moat`, `Owner-Earnings`, `Ajit-Jain` (written without brackets: the linter reads examples as links) — 19 broken links, each a plausible guess at a real page under another name
 - Baseline re-recorded at 799 known errors across 5 checks (was 693 across 4; the rise is the newly-visible structure backlog, not a regression)
 
 ## [2026-08-03] tooling | the tag reminder moves into the generated file
