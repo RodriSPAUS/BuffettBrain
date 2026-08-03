@@ -152,6 +152,23 @@ Track it with a number: **distinct sources cited per concept page**. If that mea
 does not rise as you ingest, propagation is not happening, and nothing else will
 tell you.
 
+**Addendum [2026-08-03], from an independent audit of the same repository.**
+Per-page evidence, which is sharper than the corpus-wide figure above:
+
+| concept page | distinct sources cited |
+| --- | --- |
+| `Float` | 1 (2024 only) |
+| `ManagementQuality` | 1 (2024 only) |
+| `Moat` | 2 (2023, 2024) |
+| `CapitalAllocation` | 2 (2023, 2024) |
+| `MrMarket` | 4 |
+
+`Float` citing one letter is the tell. Float appears in nearly every letter since
+the 1970s and is probably the most heavily documented idea in the corpus. The
+concept pages had been seeded from the 2023–2024 letters and then never touched
+again while the other 46 were ingested. The signature of failed propagation is not
+a thin page — it is a page whose citations all share a date.
+
 ---
 
 ## [2026-07-31] Scope your delegation prompt to a whole operation, or name it honestly
@@ -305,3 +322,263 @@ a checker being *too loud* — the always-red gate, the receipt-line false
 positives. Both were noticed within days because they annoyed someone. A checker
 that is too quiet annoys nobody. Budget review time for the silent failure mode
 specifically; it will not come and find you.
+
+---
+
+# Entries from an independent audit
+
+The entries below come from a separate session that audited this repository
+without access to this file. They are added on 2026-08-03 and describe the state
+**before the 2026-07-30 cleanup**. Where a defect has since been fixed, the entry
+says so — the lesson is kept because the next wiki will start where this one did.
+
+Three findings from that audit are not reproduced here because they duplicate
+entries above: *write the linter before the corpus* (covered by *A rule that
+nothing checks is a rule that does not exist*), *propagation never happened*
+(covered by *Propagation is not a procedure step*, whose addendum now carries the
+audit's per-page evidence), and the anchor count, which is already recorded.
+
+---
+
+## [2026-08-03] Fabrication lives in the gap between what the model knows and what is in Raw/
+
+**What happened.** Three pages — `People/CharlieMunger`, `Cases/SeeCandies`,
+`Principles/OwnershipMindset` — cited `[[Sources/1972ltr]]`. No such letter exists;
+the collection starts in 1977. See's Candies was bought in 1972, so the model knew
+the fact, needed a citation for it, and **invented the source that ought to have
+existed**. That is not random error. It is a plausible gap being filled.
+
+The same mechanism produced the line that opened `index.md`: *"The most important
+quality for an investor is temperament, not intellect"* — a widely repeated Buffett
+aphorism that appears in no file in `Raw/`. It was cited as `[[Sources/1977ltr#p1]]`.
+
+**What it cost.** The phantom letter had accumulated 14 inbound links before anyone
+noticed, and the apocryphal quotation sat on the front page of the wiki.
+
+**What to do instead.** The most important rule in the schema is not about format,
+it is about conduct: *if you need a source that is not in `Raw/`, say it is
+missing; do not invent the attribution.* And treat the famous material as the
+high-risk material — the better known a quotation is, the more likely the model
+reproduces it from memory rather than reading it out of your corpus. A checker that
+verifies quotations against the cited file catches the second case; only the rule,
+plus a check that every `[[Sources/X]]` resolves to a real `Raw/` file, catches the
+first.
+
+**Status.** Both fixed on 2026-07-30. `Sources/1972ltr` survives only as a line in
+`wiki/log.md` recording its removal.
+
+---
+
+## [2026-08-03] Do not design a citation format your sources cannot support
+
+**What happened.** `SCHEMA.md` required every insight to carry a paragraph-level
+reference: *"Each insight must have specific source reference (`[[Source#pX-Y]]`)"*.
+The files in `Raw/` have no headings and no block IDs, so there was nothing for
+those anchors to point at. The model did not disobey. It obeyed an impossible rule
+the only way available, by making the numbers up.
+
+**What it cost.** Several hundred anchors resolving to nothing — the same ones
+counted in the 2026-07-30 entry above — spread across the wiki and lending false
+precision to every claim they decorated.
+
+**What to do instead.** Design the citation format *after* looking at what your
+sources actually are. If you want paragraph precision, add real block IDs to the
+`Raw/` files at ingest time; that is cheap and automatable. If you do not, cite the
+page and let **the verbatim text be the locator** — a citation that can be checked
+is worth more than one that looks precise. An unsatisfiable rule does not produce
+visible non-compliance; it produces convincing fake compliance.
+
+**Status.** Fixed. Zero `#pN` anchors remain, and `AGENT.md` now forbids them
+explicitly.
+
+---
+
+## [2026-08-03] Uniform page length is a symptom
+
+**What happened.** Every page in `Cases/` was exactly 38 lines. Every page in
+`People/`, `Principles/` and `Applications/` was exactly 30. That is not
+synthesized knowledge; it is a template being filled in.
+
+**What it cost.** Not measured directly, but it is the visible surface of the
+empty-slot problem recorded on 2026-07-30 — the invented market shares and wrong
+founder names came from exactly these pages.
+
+**What to do instead.** Real knowledge is uneven: some ideas support a long page
+and some support three lines. When every page in a category measures the same,
+open one and read it properly. Length variance is a free, zero-cost health signal
+and it needs no tooling — `wc -l` on a directory is the whole check.
+
+**Status.** Largely fixed: `Cases/` now runs 44–120 lines and `People/` 38–71.
+`Concepts/` still clusters tightly at 64–82, which is worth a look.
+
+---
+
+## [2026-08-03] Unsupervised batch ingestion degrades quality while preserving appearance
+
+**What happened.** Roughly 48 sources were processed in sequence with little
+review. The defects that resulted are all consistent with one pattern: the model
+kept the **form** — frontmatter, section headings, wikilinks, citation syntax —
+long after it had stopped doing the **work** of reading carefully, propagating,
+and contrasting against what was already written.
+
+**What it cost.** Everything else in this file, essentially. Every defect recorded
+here was produced during that run and had to be found afterwards.
+
+**What to do instead.** Karpathy's own advice is to ingest one at a time and stay
+involved, and this repository is a demonstration of why. Do the first five to ten
+sources individually, reading the output — that is where you learn which
+conventions actually work, and where they get written into the schema. Only then,
+and only with the linter running, consider batching.
+
+---
+
+## [2026-08-03] Write the query half of the configuration, not just the ingest half
+
+**What happened.** The original `AGENT.md` described only how to ingest. It said
+nothing about how to answer a question: what to read first, in what voice, how to
+cite, or how to distinguish what the wiki documents from what the model happens to
+know.
+
+**What it cost.** Every session improvised the retrieval behaviour, and the human
+had to restate the role by hand each time. The wiki was being built and not used.
+
+**What to do instead.** Write all three operators — ingest, query, lint — before
+the first ingest. The pattern has three, not one. And put in the query operator the
+rule that prevents the worst failure of a persona-shaped knowledge base: *the
+persona is a reasoning style, not a licence to invent the subject's words*, with an
+explicit obligation to label which part of an answer came from the wiki and which
+from general knowledge.
+
+**Status.** Fixed. `AGENT.md` now specifies all three operations, and the query
+operator carries the boundary rule.
+
+---
+
+## [2026-08-03] Put the configuration where the agent actually loads it
+
+**What happened.** `AGENT.md` is not auto-loaded by Claude Code, which looks for
+`CLAUDE.md`.
+
+**What it cost.** A correct configuration that the agent never read, which is
+identical to having no configuration.
+
+**What to do instead.** Check what filename your tool loads on its own and put the
+file — or a pointer to it — there. Keep the pointer a pointer: no rules of its own,
+or they diverge.
+
+**Status.** Fixed. `CLAUDE.md` exists and does nothing but `@AGENT.md`.
+
+---
+
+## [2026-08-03] Separate how to behave from how to write
+
+**What happened.** `AGENT.md` and `SCHEMA.md` overlapped and contradicted each
+other. `SCHEMA.md` declared itself the single source of truth while `AGENT.md` said
+something different about the same rules.
+
+**What it cost.** Not quantified, but a rule living in two places diverges, and the
+agent then has a defensible reading of either version.
+
+**What to do instead.** One file for conduct — operations, citation integrity — and
+one for form — layout, frontmatter, links. Every rule in exactly one of them, and a
+table at the top of the first saying which is which and when to read it.
+
+**Status.** Fixed. `AGENT.md` opens with that table.
+
+---
+
+## [2026-08-03] Declare the canonical values of your enums
+
+**What happened.** `type: source` (13 files) and `type: source-summary` (29 files)
+coexisted for the same kind of page.
+
+**What it cost.** Under Dataview, a query filtering on `type` silently returns
+about a third of the results and reports no error. Nothing breaks visibly, which is
+why it drifted for months.
+
+**What to do instead.** Enumerate the valid values in the schema and have the
+linter verify them. Frontmatter fields drift precisely because nothing downstream
+complains.
+
+**Status.** Half fixed. `check_frontmatter.py` now enforces a canonical `type` per
+directory, and it reports the drift — but six pages (2019–2024) still carry
+`type: source` and sit in the recorded backlog. Detection is not correction; a
+baseline that permits a known error will permit it forever unless someone works it
+down.
+
+---
+
+## [2026-08-03] The agent writes what it sees, including artifacts of your machine
+
+**What happened.** Absolute Windows paths
+(`file://c:\Users\...\OneDrive - ...`) ended up inside `AGENT.md` and `log.md`, and
+wikilinks pointed at UUID-shaped strings (`[[967a6d21-eb1e-...]]`) that look like
+leaked session identifiers.
+
+**What it cost.** Nothing functional, but all of it is noise to anyone who opens the
+repository on a different machine, and the UUIDs are the kind of thing that turns
+out to be sensitive once it is public.
+
+**What to do instead.** Relative paths always. Before publishing, one grep pass for
+`file://`, `C:\`, `/Users/`, and UUID-shaped links.
+
+**Status.** Fixed. None remain outside this file.
+
+---
+
+## [2026-08-03] What was done right here and should be repeated
+
+Recorded because a file of failures gives a distorted picture of the design, and
+the next wiki should copy these deliberately rather than rediscover them.
+
+- **Git from the first commit.** History, branches, and the ability to audit what
+  changed when. The wiki is plain markdown, so this costs nothing — and every
+  measurement in this file was only possible because the old versions still exist.
+- **Three layers cleanly separated, with `Raw/` immutable.** The distinction is
+  correct and it is the precondition for traceability being checkable at all.
+- **Taxonomy by concept, not by source.** `Concepts/`, `Cases/`, `Principles/` is
+  the right organisation: pages represent ideas, not documents. Source summaries
+  exist to feed them.
+- **`log.md` with a consistent action prefix**, greppable.
+- **YAML frontmatter everywhere**, which keeps Dataview and any future tooling
+  available.
+
+---
+
+## Checklist before starting the next one
+
+Not a lesson — the operational summary of the ones above, in the order you would
+actually do them.
+
+1. Read two or three real sources. **Then** design the citation format around what
+   they can support.
+2. Write all three operators (ingest / query / lint) before the first ingest.
+3. Write the linter before the first ingest. Minimum: quoted text verified
+   literally against the cited `Raw/` file; every `[[Sources/X]]` resolves; `type`
+   values in the allowed enum.
+4. Put the configuration in the filename your agent loads by itself.
+5. State the rule explicitly: a source that does not exist gets reported as
+   missing, never invented.
+6. Ingest the first five to ten one at a time, reading the output. Fold what you
+   learn back into the schema.
+7. Define the accumulation metric — distinct sources cited per concept page — and
+   measure it early, not at the end.
+8. Lint every ten sources. Never save it for later.
+9. Gate the input: mean word length above ~6 characters means the extraction lost
+   its spaces and nothing can be quoted from it.
+10. Count what your checkers examined, not just what they reported.
+
+---
+
+## The underlying lesson
+
+Every defect in this repository is the same kind of defect. The model maintained
+the *appearance* of the system flawlessly — frontmatter, wikilinks, citation
+syntax, section structure, page templates — while ceasing to do the *work*:
+verifying, propagating, contrasting. And the system had no way to notice the
+difference, because nothing checked substance.
+
+An LLM produces convincing structure by default. Substance has to be verified
+explicitly. That is where the design effort goes, and it is why nearly every entry
+in this file resolves into the same instruction: build the check, then count what
+the check actually looked at.
