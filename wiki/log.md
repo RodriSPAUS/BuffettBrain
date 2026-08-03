@@ -375,3 +375,16 @@
 - Coverage was the remaining gap: the 1996 page omitted USAir entirely — 69 lines in which Buffett calls his own analysis of the airline superficial and wrong
 - `make new` extracts the letter's section headings from `Raw/` and puts them in the Key Themes TODO, so a skipped topic is visible rather than silent
 - Two formats handled: column-0 headings with indented body (1977-1996) and bold headings (1997 onwards). 30 of 48 letters yield 4+ headings; the rest print a note telling the writer to list the topics themselves
+
+## [2026-08-03] lint | scripts/check_coverage.py — did the summary leave something out?
+- `make quotes` proves what a summary says is true; nothing proved it said enough. The 1996 page passed every check while omitting USAir (12 mentions in the letter)
+- Compares proper nouns a source repeats 4+ times against everything in `wiki/`. Reports USAir and Borsheim for 1996, nothing for the hand-written pages, 123 warnings corpus-wide
+- Warnings, not errors: some repeated names are genuinely disposable, and forcing all of them in produces pages that list everything and rank nothing
+- Medium-independent by construction — works on a call or video transcript unchanged
+- Wired into `make check P=<page>` and available as `make coverage`
+
+## [2026-08-03] config | what Sources/ is actually for
+- `Karpathy_pattern.md` does not require a summary per source: it appears inside "An example flow" in a document that says everything in it is optional and modular. What it does insist on is integration into the compiled layer
+- `AGENTS.md` now states that a source summary is a **router** into `Raw/`, judged on breadth rather than depth, and that a topic passed over must be named as passed over
+- Ingest gains a step 2: enumerate the source's parts before summarising any of them — sections for a letter, speakers for a call, chapters for a transcript
+- Measured the same day: `Sources/` 504 KB against 156 KB for the compiled layer; `Concepts/Moat` cites 3 of 48 letters

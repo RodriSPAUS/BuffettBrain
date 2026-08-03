@@ -1,7 +1,7 @@
 PY := python3
 S  := scripts
 
-.PHONY: lint lint-strict lint-detail baseline check quotes links frontmatter structure raw propagation new help
+.PHONY: lint lint-strict lint-detail baseline check quotes links frontmatter structure coverage raw propagation new help
 
 help:
 	@echo "make lint        run every check (do this before closing an ingest)"
@@ -13,6 +13,7 @@ help:
 	@echo "make links       broken wikilinks, phantom sources, orphans, fake anchors"
 	@echo "make frontmatter page metadata against wiki/SCHEMA.md"
 	@echo "make structure   required sections, outbound links, tag quality"
+	@echo "make coverage    what the sources talk about that the wiki never mentions"
 	@echo "make raw         source-extraction quality gate on Raw/"
 	@echo "make propagation are ingested sources reaching the compiled layer?"
 	@echo ""
@@ -42,6 +43,7 @@ baseline:
 # Zero tolerance on a single page. The ratchet forgives errors a file already
 # had, which is wrong for a page you just finished writing.
 check:
+	@cd $(S) && $(PY) check_coverage.py "$(P)"
 	@cd $(S) && $(PY) lint.py --page "$(P)"
 
 quotes:
@@ -55,6 +57,9 @@ frontmatter:
 
 structure:
 	@cd $(S) && $(PY) check_structure.py
+
+coverage:
+	@cd $(S) && $(PY) check_coverage.py $(P)
 
 raw:
 	@cd $(S) && $(PY) check_raw_quality.py

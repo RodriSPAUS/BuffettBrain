@@ -705,3 +705,98 @@ untrue part is exactly the part that failed. When you write that claim, verify i
 literally: list the rules in the schema, list the checks, and diff the two lists.
 The rules that fall through the gap are not random — they are the ones a model
 will get wrong, because nothing has ever told it otherwise.
+
+---
+
+## [2026-08-03] We optimised the layer the pattern treats as incidental
+
+**What happened.** The owner asked whether `Karpathy_pattern.md` actually requires
+a summary of each source. It does not. The per-source summary appears once, inside
+a sentence that begins *"An example flow:"*, in a document that closes with
+*"Everything mentioned above is optional and modular — pick what's useful, ignore
+what isn't."*
+
+What the pattern does insist on is the opposite end:
+
+> the LLM doesn't just index it for later retrieval. It reads it, extracts the key
+> information, and **integrates it into the existing wiki** — updating entity
+> pages, revising topic summaries, noting where new data contradicts old claims,
+> strengthening or challenging the evolving synthesis.
+>
+> **the wiki is a persistent, compounding artifact.**
+
+**What it cost.** Measured on the day the question was asked:
+
+| | |
+| --- | --- |
+| `Sources/` — 48 pages | **504 KB** |
+| compiled layer — 28 pages | **156 KB** |
+| `Concepts/Moat` | cites 3 of 48 letters |
+| `Concepts/Float` | cites 4 of 48 |
+| mean sources per compiled page | 3.6, with 25 of 28 pages thin |
+
+Three quarters of the volume sits in the layer the pattern calls optional, and the
+layer it calls the point is starved. The pattern's own description of the failure
+fits exactly: *"the LLM is rediscovering knowledge from scratch on every question.
+There's no accumulation."*
+
+In one session this repository gained five mechanisms — a structure checker, a
+per-page gate, a link menu, a section extractor, a coverage diff — **all of them
+aimed at the quality of source summaries**. Not one of them made the compiled layer
+better. The tooling followed the visible artifact rather than the valuable one.
+
+**What to do instead.**
+
+- **Ask what each layer is for before building checks for it.** `Sources/` is a
+  *router*: the thing that tells you, months later, which of 48 documents bears on a
+  question. `Raw/` stays the source of truth. That answer changes the spec — a router
+  is judged on breadth, not depth, so *cover everything the source covers* matters
+  more than writing well about a third of it. A 29 KB essay on five themes and a 4 KB
+  fact sheet that names all twelve are not obviously ranked the way we assumed.
+- **Judge the wiki by the compiled layer, and measure it from day one.** Distinct
+  sources per compiled page is the number; it was 3.6 after 48 ingests.
+- The reason this happens is in the 2026-07-31 entry: writing a summary terminates
+  and propagation does not. What is new here is that *the same asymmetry captures the
+  tooling*. Bounded work attracts checkers because it is checkable, and every hour
+  spent on checkers for bounded work is an hour not spent on the unbounded work that
+  actually compounds.
+
+---
+
+## [2026-08-03] A test the sources can generate beats a test you have to write
+
+**What happened.** After the 1996 page came back complete-looking and missing
+USAir, the proposal was a benchmark of questions with known answers. The owner
+asked the obvious question: *how do you write the questions without having read
+the sources?* If writing the test requires reading all 48 letters, the test has
+consumed the saving the wiki was supposed to produce.
+
+There was no good answer, so the design changed. Instead of asking questions, diff
+the corpus against the wiki: take the proper nouns a source repeats four or more
+times — a name mentioned that often is a subject, not an aside — and look for them
+anywhere in `wiki/`.
+
+**What it cost.** Nothing; this one is a positive result. On the page written by
+hand it reports nothing. On the delegated page it reports USAir (12 mentions) and
+Borsheim (6) — one of which had been found by reading, and one of which had not.
+Across the corpus it produces 123 warnings, which is a work list nobody had to
+write.
+
+**What to do instead.** Prefer checks a corpus generates over checks a person
+authors. The generated kind needs no maintenance, grows with the collection, and
+cannot go stale. It is also **medium-independent in a way that hand-written rules
+are not**: "the names this source keeps repeating" is a property of text, so the
+same check works on a call transcript or a video with no changes at all. Compare
+the section extractor added the same day — tuned to two layouts of one document
+genre, useless the moment the corpus contains something else. That one is a
+convenience; this one is a design.
+
+Reserve authored questions for what a diff cannot see: whether the page explains
+*why* a passage matters, and whether it connects to what is already known. Those
+need judgment, there are few of them, and they should come from what the owner
+wants to know rather than from what the sources happen to contain.
+
+**Corollary on ad-hockery.** When a fix only works on the corpus in front of you,
+say so in the code. `new_page.py` now carries that admission in its docstring. A
+convenience labelled as a convenience is fine; a convenience mistaken for a design
+is what gets copied into the next project and fails there.

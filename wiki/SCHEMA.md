@@ -69,6 +69,10 @@ wiki/
   with the letter's own signature date read out of `Raw/`.
 - Content sections, all four required and checked by `make structure`: `## 🔑 Key Themes`,
   `## 💬 Notable Quotes`, `## 📊 Investment Decisions`, `## 🔗 Cross-References`
+- **Cover what the source covers.** The page is a router into `Raw/`, so breadth beats
+  depth: a topic the source spends real space on gets at least a line, and a topic
+  deliberately passed over is named as passed over. `make coverage` lists subjects the
+  source repeats that appear nowhere in `wiki/`.
 - **At least one link into the compiled layer** (`Concepts/`, `Cases/`, `People/`,
   `Principles/`, `Applications/`, `Synthesis/`). A summary that links only to other
   summaries has been filed, not integrated, and `make structure` fails it.

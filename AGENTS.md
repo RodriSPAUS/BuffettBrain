@@ -53,6 +53,7 @@ Rules that nothing checks are rules that drift. Every convention in this file an
 | `make links` | no broken wikilinks, phantom sources, missing folder prefixes, fake anchors, orphans |
 | `make frontmatter` | required keys and canonical `type` values per directory |
 | `make structure` | required sections per directory, at least one link into the compiled layer, and tags that say something |
+| `make coverage` | subjects a source repeats that appear nowhere in `wiki/` — the check for *did the summary leave something out*. Warnings, not errors: some repeated names are genuinely disposable |
 | `make check P=Sources/1996ltr` | **zero tolerance on one page.** Run it on every page you finish — `make lint` forgives errors a file already had, which is right for the backlog and wrong for a page you just wrote |
 | `make raw` | `Raw/` text is intact enough to quote from |
 | `make quote Q="phrase"` | finds a citable passage and prints it unwrapped, with its wikilink |
@@ -81,6 +82,19 @@ Three layers, per the Karpathy pattern (`Karpathy_pattern.md`):
   which may only insert whitespace and asserts that the character sequence is unchanged. Never
   edit the wording of a source.
 
+**What `Sources/` is for.** A source summary is not the product. It is the **router**:
+the page that lets you find, months later, which of 48 letters bears on a question, and
+recall enough to know whether to open the original. `Raw/` remains the source of truth,
+and any claim that has to be exact gets taken from there.
+
+That decides what a good summary optimises for. A router is judged on **breadth, not
+depth**: one honest line about USAir sends you to the 1996 letter, whereas five beautiful
+paragraphs on three themes and silence on five others does not. **Cover everything the
+source covers.** Where a topic carries nothing worth recording, say so in a clause rather
+than omitting it silently — an omission and a judgment look identical afterwards, and only
+one of them is a decision. `make coverage` reports names a source repeats that appear
+nowhere in `wiki/`.
+
 **Layer 2 — The Wiki** (`wiki/`)
 
 - `Sources/` structured summaries · `Concepts/` mental models · `Applications/` checklists ·
@@ -99,15 +113,19 @@ Three layers, per the Karpathy pattern (`Karpathy_pattern.md`):
 Triggered when a new file lands in `Raw/`.
 
 1. Read the source in full.
-2. Surface the key takeaways to the user before writing — ingestion is collaborative, not silent.
-3. Write the summary page in `wiki/Sources/` following `wiki/SCHEMA.md`.
-4. **Propagate.** A single source normally touches 10–15 pages: update every `Concepts/`,
+2. **Enumerate its parts before summarising any of them** — sections for a letter, agenda
+   items or speakers for a call, chapters for a transcript — and account for each one.
+   Anything you leave out is left out on purpose and said so. This step is what stops a
+   summary from being an impression of the source rather than a map of it.
+3. Surface the key takeaways to the user before writing — ingestion is collaborative, not silent.
+4. Write the summary page in `wiki/Sources/` following `wiki/SCHEMA.md`.
+5. **Propagate.** A single source normally touches 10–15 pages: update every `Concepts/`,
    `Cases/`, `People/`, and `Principles/` page the source bears on. Create new entity pages where
    the source introduces something with no page yet.
-5. Where the new source contradicts or supersedes an existing claim, say so explicitly on the
+6. Where the new source contradicts or supersedes an existing claim, say so explicitly on the
    affected page rather than leaving both versions standing.
-6. Update `wiki/index.md` and append to `wiki/log.md`.
-7. **Run `make check P=Sources/YYYYltr` on the page you wrote, and fix everything it
+7. Update `wiki/index.md` and append to `wiki/log.md`.
+8. **Run `make check P=Sources/YYYYltr` on the page you wrote, and fix everything it
    reports.** It demands zero errors. Then `make lint` for the repository as a whole.
    An ingest is not finished while either is failing.
 
