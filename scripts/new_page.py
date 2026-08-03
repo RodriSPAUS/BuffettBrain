@@ -61,7 +61,7 @@ SECTIONS = {
     "Sources": [
         ("## 🔑 Key Themes", "One subsection per theme the letter actually develops.\n"
                              "Roughly one third quotation, two thirds your own framing prose.\n"
-                             "Quote only what `make quote Q=\"...\"` returns."),
+                             "Quote only what `make quote Q=\"...\"` returns.\n{SECTIONS}"),
         ("## 💬 Notable Quotes", "Six to nine blockquotes. Verbatim, no ellipsis games."),
         ("## 📊 Investment Decisions", "What was bought, sold, declined or written down, with figures."),
         ("## 🔗 Cross-References", "{MENU}"),
@@ -101,6 +101,58 @@ def letter_date(stem: str, year: int) -> tuple[str, bool]:
             if int(yr) == year + 1:
                 return f"{yr}-{MONTHS.index(month) + 1:02d}-{int(day):02d}", True
     return f"{year + 1}-01-01", False
+
+
+# A section heading in these letters sits at column 0 with a blank line either
+# side, while body text is indented. Rules out table headers and figures.
+NOT_A_HEADING = re.compile(r"[.,;:?!]$|\d{3}|\$|%|^(Year|Included|Berkshire$|Annual Percentage|Source:)")
+
+
+def letter_sections(stem: str) -> list[str]:
+    """The letter's own section headings, so coverage can be checked at a glance.
+
+    Best effort: clean for the 1977-1996 letters, noisier for the later ones whose
+    extraction carries tables. Noise is the acceptable direction of error — a
+    spurious heading is discarded by whoever reads the letter, whereas a missing
+    one is a topic that quietly never gets summarised. The 1996 page skipped
+    USAir, 69 lines in which Buffett calls his own analysis superficial and wrong.
+    """
+    raw = RAW / f"{stem}.md"
+    if not raw.exists():
+        return []
+    text = raw.read_text(encoding="utf-8", errors="replace")
+
+    # 1997 onwards mark headings in bold and stop indenting the body, so the
+    # column-0 rule below finds nothing there. Take the bold lines when a file
+    # has them.
+    bold = [
+        h.strip()
+        for h in re.findall(r"^\*\*([^*\n]{4,60})\*\*$", text, re.M)
+        if not NOT_A_HEADING.search(h.strip())
+        and not h.strip().endswith(":")
+        and "BERKSHIRE HATHAWAY" not in h.upper()
+    ]
+    if len(bold) >= 4:
+        out: list[str] = []
+        for h in bold:
+            if h not in out:
+                out.append(h)
+        return out
+
+    lines = text.split("\n")
+    out = []
+    for i, line in enumerate(lines):
+        if not line or line[0].isspace() or not line[0].isupper():
+            continue
+        heading = line.strip()
+        if not 3 < len(heading) < 61:
+            continue
+        if (lines[i - 1].strip() if i else "") or (lines[i + 1].strip() if i + 1 < len(lines) else ""):
+            continue
+        if NOT_A_HEADING.search(heading) or heading in out:
+            continue
+        out.append(heading)
+    return out
 
 
 def link_menu() -> str:
@@ -169,6 +221,20 @@ def build(target: str) -> tuple[Path, str, list[str]]:
             "what this letter is about (moat, float, buybacks...). The year and words "
             "true of every letter do not count."
         )
+        found_sections = letter_sections(stem)
+        section_list = ""
+        if len(found_sections) < 4:
+            notes.append(
+                "could not read this letter's section headings out of Raw/ (its "
+                "extraction lost them) — read the letter end to end and list its topics "
+                "yourself before summarising"
+            )
+        if found_sections:
+            section_list = (
+                "\n\nThe letter itself is organised under these headings (best effort, read past\n"
+                "any noise). Do not leave one out without deciding it carries nothing:\n\n"
+                + "\n".join(f"  - {s}" for s in found_sections)
+            )
         sections = SECTIONS["Sources"]
         # The tag reminder lives in the file, not only in this script's terminal
         # output. The 1996 page came back with `tags: [1996, letter]` untouched --
@@ -192,12 +258,13 @@ def build(target: str) -> tuple[Path, str, list[str]]:
         if "source: " in fm:
             notes.append("fill `source:` with the [[Sources/X]] pages this page draws on")
         sections = SECTIONS["_concept"]
+        section_list = ""
         lead = "*One sentence on what this page is for.*"
         title = f"# {stem}"
 
     body = [f"---\n" + "\n".join(fm) + "\n---", "", title, "", lead, ""]
     for heading, hint in sections:
-        hint = hint.replace("{MENU}", link_menu())
+        hint = hint.replace("{MENU}", link_menu()).replace("{SECTIONS}", section_list)
         body += [heading, "", "> TODO: " + hint.replace("\n", "\n> "), ""]
 
     return WIKI / folder / f"{stem}.md", "\n".join(body), notes

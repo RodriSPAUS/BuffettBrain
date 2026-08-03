@@ -370,3 +370,8 @@
 - The 1996 page returned with `tags: [1996, letter]` untouched: `make new` prints the instruction to replace them, but on stdout, and whoever runs the generator is not always whoever fills the page in
 - The skeleton now carries the reminder as a `> TODO:` line in the body, where the writer will see it
 - Result on 1996 with the previous generator: 19 broken links -> 0, invented sections -> the four canonical ones, frontmatter clean. Tags were the one instruction that lived outside the file, and the one that was missed
+
+## [2026-08-03] tooling | the skeleton now lists the letter's own section headings
+- Coverage was the remaining gap: the 1996 page omitted USAir entirely — 69 lines in which Buffett calls his own analysis of the airline superficial and wrong
+- `make new` extracts the letter's section headings from `Raw/` and puts them in the Key Themes TODO, so a skipped topic is visible rather than silent
+- Two formats handled: column-0 headings with indented body (1977-1996) and bold headings (1997 onwards). 30 of 48 letters yield 4+ headings; the rest print a note telling the writer to list the topics themselves
