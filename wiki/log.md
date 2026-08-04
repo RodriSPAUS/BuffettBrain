@@ -400,3 +400,13 @@
 ## [2026-08-04] status | Sources/ 1995-2024 carries 711 citation errors
 - 645 UNSUPPORTED, 66 MISATTRIBUTED, across the 30 pages rewritten in the last batch. 1977-1994 remain clean
 - The baseline is deliberately NOT re-recorded: recording it would bless 645 fabricated quotations, which is the one thing the gate exists to prevent
+
+## [2026-08-04] tooling | .githooks/pre-commit — fabrications can no longer be committed
+- `make hooks` installs it. Verifies the staged `wiki/` pages and refuses the commit on any unverifiable quotation, printing what to do for MISATTRIBUTED and UNSUPPORTED
+- The check existed and ran in two places that were both too late: `make quotes` when someone remembers, CI after the push
+- Verified by staging a deliberate fabrication ("Rule number one: never lose money") — refused
+- `--no-verify` bypasses it, for repairs whose intermediate state still fails
+
+## [2026-08-04] ingest | Sources/1995ltr and 1996ltr repaired
+- Both now clean; the unsupported quotations were deleted rather than relocated (30 lines removed, 3 added)
+- Sources/ total: 711 -> 700 citation errors, all in 1997-2024

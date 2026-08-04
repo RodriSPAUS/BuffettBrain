@@ -800,3 +800,69 @@ wants to know rather than from what the sources happen to contain.
 say so in the code. `new_page.py` now carries that admission in its docstring. A
 convenience labelled as a convenience is fine; a convenience mistaken for a design
 is what gets copied into the next project and fails there.
+
+---
+
+## [2026-08-04] The strongest-worded rule in the file was violated 645 times
+
+**What happened.** `AGENTS.md` has carried a section headed **Citation Integrity
+(Non-Negotiable)** since the repository was set up. Four hundred words. It opens
+by saying a fabricated quotation destroys more value than a missing page. It
+names this exact failure in advance:
+
+> **General knowledge is not a source.** Widely repeated Buffett aphorisms are
+> frequently apocryphal or are third-party paraphrases. If it is not in `Raw/`,
+> it does not enter the wiki as a quotation.
+
+A single delegated batch then rewrote thirty source summaries and one concept
+layer, and produced **645 UNSUPPORTED quotations** — passages appearing in none
+of the 48 letters — plus 66 misattributions. Among them: *"Risk comes from not
+knowing what you're doing"*, *"When others are fearful, we are greedy"*,
+*"Inflation is the enemy of the investor"*. Precisely the widely repeated
+apocryphal aphorisms the rule names.
+
+**What it cost.** 711 citation errors across 30 pages, against 0 in the 18 pages
+written before the batch. Two full sessions of repair, most of a day, and a
+running frustration that is itself the cost worth recording: the human's time
+went into fixing invention rather than into curating sources, which is the one
+job the pattern says belongs to the human.
+
+**Why more emphasis cannot fix it.** This is the third distinct rule in this file
+to be written clearly, marked as mandatory, and ignored — after propagation
+(2026-07-31) and the schema (2026-08-03). The pattern is now unmistakable:
+
+| Rule | How it was stated | Outcome |
+| --- | --- | --- |
+| Propagate to 10-15 pages | "is not optional" | skipped by every agent |
+| Follow the schema | imported, then required | frontmatter invented three times |
+| Never fabricate a quotation | "Non-Negotiable", 400 words | 645 fabrications in one batch |
+
+Writing it more forcefully is the one intervention already known not to work,
+because it has been tried at maximum strength. The observation to carry forward
+is blunter than "rules need checks": **a rule addressed to a model's intentions
+is a wish. Only a rule enforced by something outside the model is a constraint.**
+
+**What to do instead.** Move the enforcement earlier, in three steps, cheapest
+first:
+
+1. **A pre-commit hook that refuses.** Added today as `.githooks/pre-commit`,
+   installed by `make hooks`. It verifies the staged wiki pages and blocks the
+   commit. The check already existed and ran in two places that were both too
+   late — `make quotes` when someone remembers, and CI after the push, by which
+   point the work is finished and the only option is a repair job. A hook runs
+   before the commit exists and does not ask. Verified by staging a deliberate
+   fabrication: refused.
+2. **Check inside the loop, not after it.** These 711 errors accumulated over 30
+   pages because nothing was run until page 30. `make check P=<page>` existed
+   throughout and was used on none of them. One page, one check.
+3. **Hand over the material instead of asking for recall.** Fabrication happens
+   where remembering is cheaper than looking up. Every time this repository has
+   removed that gap the failure stopped: the link menu took invented link targets
+   from 19 to 0, and the generated frontmatter took invented keys to 0. Quotations
+   are the same shape of problem and have not yet had the same treatment.
+
+**Corollary for delegation.** A cheaper model is safe on bounded, checked work —
+this file already records that result. What today adds is the boundary condition:
+it is safe **only while the check runs between each unit of work**. Batch thirty
+units and check at the end, and the cost of a repair exceeds the cost of the
+original work. That is not a property of the model; it is a property of the loop.

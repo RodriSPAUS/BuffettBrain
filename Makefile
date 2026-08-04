@@ -1,9 +1,10 @@
 PY := python3
 S  := scripts
 
-.PHONY: lint lint-strict lint-detail baseline check quotes links frontmatter structure coverage raw propagation new help
+.PHONY: hooks lint lint-strict lint-detail baseline check quotes links frontmatter structure coverage raw propagation new help
 
 help:
+	@echo "make hooks       install the pre-commit hook (do this once, per clone)"
 	@echo "make lint        run every check (do this before closing an ingest)"
 	@echo "                 fails only on NEW errors, not on the known backlog"
 	@echo "make lint-strict fail on any error at all, ignoring the baseline"
@@ -27,6 +28,10 @@ help:
 	@echo "One-off passes (pass ARGS=--dry-run first):"
 	@echo "  make migrate     apply the AGENTS.md / SCHEMA.md conventions to existing pages"
 	@echo "  make repair-raw  restore word boundaries in mangled Raw/ extractions"
+
+hooks:
+	@git config core.hooksPath .githooks
+	@echo "pre-commit hook active: commits with unverifiable quotations will be refused"
 
 lint:
 	@cd $(S) && $(PY) lint.py

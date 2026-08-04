@@ -1,0 +1,40 @@
+#!/bin/sh
+# Refuse a commit that introduces an unverifiable quotation.
+#
+# AGENTS.md has carried a section headed "Citation Integrity (Non-Negotiable)"
+# since the beginning. It is 400 words, it names the exact failure -- "Widely
+# repeated Buffett aphorisms are frequently apocryphal... If it is not in Raw/,
+# it does not enter the wiki as a quotation" -- and on 2026-08-04 a single batch
+# of thirty pages arrived carrying 645 quotations that appear in no letter,
+# including those very aphorisms.
+#
+# So the rule is not the problem and rewriting it more forcefully will not help.
+# What was missing is that nothing stopped the commit. `make quotes` runs when
+# someone remembers; CI runs after the push, by which time the work is done and
+# the cost is a repair job. This runs before the commit exists, on the staged
+# files only, and it does not ask.
+#
+# Install with `make hooks` (sets core.hooksPath). Bypass with --no-verify only
+# when you are committing a repair whose intermediate state is still failing.
+
+staged=$(git diff --cached --name-only --diff-filter=ACM | grep '^wiki/.*\.md$' | grep -v '^wiki/log\.md$')
+[ -z "$staged" ] && exit 0
+
+echo "pre-commit: verifying quotations in staged pages"
+# shellcheck disable=SC2086
+if ! (cd scripts && python3 verify_quotes.py $staged); then
+    cat <<'MSG'
+
+COMMIT REFUSED: a staged page quotes text that is not in the letter it cites.
+
+  MISATTRIBUTED  the passage is real; the message names the letter it is in.
+                 Change the [[Sources/XXXXltr]] and nothing else.
+
+  UNSUPPORTED    the passage is in none of the 48 letters. Delete it. Do not
+                 move it to another letter and do not reword it until it passes.
+                 `make quote Q="distinctive phrase"` will hand you a real
+                 passage if one exists.
+
+MSG
+    exit 1
+fi
