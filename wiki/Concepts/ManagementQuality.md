@@ -51,19 +51,15 @@ See [[Principles/Fidelity]] for the full treatment.
 
 Management quality includes the ability to allocate capital effectively:
 
-> "Our goal is to find businesses that will deliver the highest after-tax returns over time." [[Sources/2010ltr]]
-
 ## Long-Term Perspective
 
 Quality management maintains a long-term perspective rather than focusing solely on short-term metrics:
 
-> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/2007ltr]]
+> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1989ltr]]
 
 ## Delegation and Trust
 
 Berkshire's management philosophy emphasizes delegating to capable managers and trusting them to run their operations:
-
-> "We simply want to purchase into businesses whose economic characteristics are virtually certain." [[Sources/2015ltr]]
 
 ## Cross-References
 

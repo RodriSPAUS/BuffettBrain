@@ -39,13 +39,11 @@ The Scott Fetzer purchase in [[Sources/1985ltr]] and its accounting treatment in
 
 Owner earnings emphasize the importance of sustainable cash generation over accounting metrics:
 
-> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/2007ltr]]
+> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1989ltr]]
 
 ## Quality of Earnings
 
 The concept highlights the difference between accounting earnings and economic reality:
-
-> "We simply want to purchase into businesses whose economic characteristics are virtually certain." [[Sources/2012ltr]]
 
 ## Cross-References
 

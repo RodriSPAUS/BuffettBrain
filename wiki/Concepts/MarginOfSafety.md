@@ -21,7 +21,7 @@ The operational form is a rule about how large the gap has to be:
 
 ## Why It Is Required
 
-Because [IntrinsicValue](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Concepts/IntrinsicValue.md) is an estimate that two careful people can disagree about by 10%, a price only slightly below the estimate is not a bargain — it is inside the error bars. The margin is what makes the estimate usable.
+Because [[Concepts/IntrinsicValue]] is an estimate that two careful people can disagree about by 10%, a price only slightly below the estimate is not a bargain — it is inside the error bars. The margin is what makes the estimate usable.
 
 The surrounding condition is stated plainly:
 
@@ -33,25 +33,23 @@ The same discipline governs the insurance operation, where the price is the prem
 
 > "Instead, prices must provide a healthy margin of safety against the societal trends that are forever springing expensive surprises on the insurance industry." [[Sources/1990ltr]]
 
-That is the link to [Float](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Concepts/Float.md): an inadequate premium is a negative margin of safety that reappears later as a positive cost of float.
+That is the link to [[Concepts/Float]]: an inadequate premium is a negative margin of safety that reappears later as a positive cost of float.
 
 ## It Can Disappear From a Market
 
 > "Today's price levels, though, have materially eroded the "margin of safety" that Ben Graham identified as the cornerstone of intelligent investing." [[Sources/1997ltr]]
 
-Written near the top of the late-1990s market, this is the concept used as a warning rather than a screen — the discipline that produces inaction. See [MrMarket](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Concepts/MrMarket.md).
+Written near the top of the late-1990s market, this is the concept used as a warning rather than a screen — the discipline that produces inaction. See [[Concepts/MrMarket]].
 
 ## Risk Management in Practice
 
 The margin of safety principle extends beyond individual stock selection to overall portfolio risk management:
 
-> "Risk comes from not knowing what you're doing." [[Sources/2011ltr]] (interpretative summary)
-
 ## Market Timing and Valuation
 
 During periods of high market valuations, the margin of safety becomes increasingly difficult to achieve:
 
-> "When others are fearful, we are greedy." [[Sources/2020ltr]]
+> "they should try to be fearful when others are greedy and greedy only when others are fearful." [[Sources/2004ltr]]
 
 ## Cross-References
 

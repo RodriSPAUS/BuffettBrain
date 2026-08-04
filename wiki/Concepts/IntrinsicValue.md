@@ -25,31 +25,29 @@ The concept arrives with an explicit admission of imprecision, which is what sep
 
 > "We can't tell you the exact differential because intrinsic value is necessarily an estimate; Charlie and I might, in fact, differ by 10% in our appraisals." [[Sources/1990ltr]]
 
-That tolerance is why [MarginOfSafety](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Concepts/MarginOfSafety.md) is a necessary companion: a number you can only bracket has to be bought at a discount to the bracket.
+That tolerance is why [[Concepts/MarginOfSafety]] is a necessary companion: a number you can only bracket has to be bought at a discount to the bracket.
 
 ## Growth is Not Automatically Value
 
 > "Indeed, growth can destroy value if it requires cash inputs in the early years of a project or enterprise that exceed the discounted value of the cash that those assets will generate in later years." [[Sources/2000ltr]]
 
-This is the sentence that ties valuation to [CapitalAllocation](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Concepts/CapitalAllocation.md): whether growth helps depends entirely on the return earned on the capital it consumes. [SeeCandies](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Cases/SeeCandies.md) is the case where growth was slight and returns enormous; [BerkshireHathawayEnergy](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Cases/BerkshireHathawayEnergy.md) the case where the capital appetite is vast and the accepted return modest.
+This is the sentence that ties valuation to [[Concepts/CapitalAllocation]]: whether growth helps depends entirely on the return earned on the capital it consumes. [[Cases/SeeCandies]] is the case where growth was slight and returns enormous; [[Cases/BerkshireHathawayEnergy]] the case where the capital appetite is vast and the accepted return modest.
 
 ## Why the Market Eventually Agrees
 
 > "As Ben said: "In the short run, the market is a voting machine but in the long run it is a weighing machine." The speed at which a business's success is recognized, furthermore, is not that important as long as the company's intrinsic value is increasing at a satisfactory rate." [[Sources/1987ltr]]
 
-See [MrMarket](file:///c%3A/Users/rbaron/OneDrive%20-%20sice.com/Documentos/Cartera\Brain/wiki/Concepts/MrMarket.md), for the behavioral half of the argument.
+See [[Concepts/MrMarket]], for the behavioral half of the argument.
 
 ## The Long-Term Focus
 
 Intrinsic value emphasizes the importance of long-term thinking in investment decisions:
 
-> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/2007ltr]]
+> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1989ltr]]
 
 ## Evolution in Reporting
 
 Buffett dropped book value as Berkshire's headline metric in the 2018 letter, reflecting the shift toward focusing on intrinsic value rather than accounting measures:
-
-> "Book value is meaningless as a measure of value." [[Sources/2018ltr]] (interpretative summary)
 
 ## Cross-References
 

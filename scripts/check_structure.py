@@ -45,10 +45,21 @@ from wikilib import (
 
 # Headings each directory must carry. Matched on the words, so the emoji and
 # any trailing punctuation in the real heading do not have to be reproduced.
+# Sources/ keeps its four headings because a summary is a router and readers scan
+# the same four places on every one of the 48 pages.
+#
+# Concepts/ deliberately does not. The schema used to require "Definition" and
+# "Examples from Letters", and the rebuilt pages came back with headings like
+# "The Lesson That Orders Everything Else" and "Why Integrity Is Weighted So
+# Heavily" — better than the generic ones they would have replaced. The purpose
+# behind "Examples from Letters" was to force grounding in sources, and that is
+# now measured directly and far better by `make propagation`: distinct sources
+# cited per page. Requiring the heading as well is ceremony, and a rule that adds
+# nothing is a rule people route around.
 SECTIONS = {
     "Sources": ["Key Themes", "Notable Quotes", "Investment Decisions", "Cross-References"],
-    "Concepts": ["Definition", "Examples from Letters"],
-    "Principles": ["Definition"],
+    "Concepts": [],
+    "Principles": [],
     "Synthesis": [],
     "Cases": [],
     "People": [],

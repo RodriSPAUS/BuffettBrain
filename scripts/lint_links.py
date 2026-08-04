@@ -34,6 +34,15 @@ FAKE_ANCHOR = re.compile(r"^p\.?\d+$|^section\d+$", re.IGNORECASE)
 # Placeholder link targets that appear inside documentation examples.
 DOC_PLACEHOLDERS = {"wikilink", "PageName", "SCHEMA", "log", "index"}
 
+# wiki/SCHEMA.md: "No external URLs in content — only [[PageName]] or
+# [[Sources/2024ltr]]." Nothing enforced it, and a delegated rebuild wrote eleven
+# links of the form
+#   [1986 Annual Letter](file:///c%3A/Users/.../OneDrive%20-%20.../1986ltr.md)
+# which resolve on exactly one machine and leak its owner's directory layout.
+# LESSONS_LEARNED records the same defect from an earlier session; it recurred
+# because the rule had no check.
+EXTERNAL_LINK = re.compile(r"\]\((?:file|https?)://[^)]*\)|\b(?:file:///|[A-Z]:\\\\|/Users/)")
+
 
 def main() -> int:
     report = Report("lint_links: wikilink integrity")
@@ -51,6 +60,11 @@ def main() -> int:
         text = path.read_text(encoding="utf-8", errors="replace")
         rel = path.relative_to(REPO).as_posix()
         for lineno, line in enumerate(text.splitlines(), 1):
+            if EXTERNAL_LINK.search(line) and rel != "wiki/log.md":
+                report.error(
+                    f"{rel}:{lineno} external URL or machine path; "
+                    "wiki content links only with [[wikilinks]]"
+                )
             for raw_link in WIKILINK.findall(line):
                 target, anchor = link_target(raw_link)
                 if not target:

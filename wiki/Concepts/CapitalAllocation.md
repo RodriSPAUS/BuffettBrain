@@ -54,19 +54,15 @@ Berkshire's dividend policy reflects their capital allocation philosophy - retai
 
 When shares trade below intrinsic value, repurchases can be the optimal use of capital, creating more value per share for continuing shareholders.
 
-> "A repurchase makes sense if the price is below intrinsic value - and makes no sense if the price is above intrinsic value." [[Sources/2015ltr]]
-
 ## Long-term Perspective in Allocation
 
 Successful capital allocation requires a long-term perspective, focusing on the business's ability to generate returns over time rather than short-term market movements.
 
-> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1996ltr]]
+> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1989ltr]]
 
 ## Inflation Considerations
 
 During inflationary periods, capital allocation becomes even more critical as businesses must determine whether additional capital will generate adequate returns in real terms.
-
-> "Inflation is the enemy of the investor." [[Sources/2022ltr]]
 
 ## Cross-References
 

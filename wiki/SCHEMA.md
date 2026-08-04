@@ -91,7 +91,13 @@ wiki/
   source: [[Sources/2024ltr]]
   ---
   ```
-- Structure: `## Definition`, `## Examples from Letters`, `## Contrasts & Nuances`
+- Structure: open. A concept page needs a definition and grounded examples, but the
+  headings are the writer's — rebuilt pages produced "The Lesson That Orders Everything
+  Else" and "Why Integrity Is Weighted So Heavily", which beat the generic names they
+  replaced. What *is* enforced is grounding: `make propagation` measures distinct sources
+  cited per page, which is what "Examples from Letters" was a proxy for.
+- Unlike `Sources/`, whose four headings are fixed: a summary is a router, and a reader
+  scans the same four places on all 48 of them.
 - Every example links to its source: e.g., `Coca-Cola (1988) — [[Sources/1988ltr]]`
 
 ### Synthesis Pages (e.g., `Synthesis/MoatEvolution.md`)

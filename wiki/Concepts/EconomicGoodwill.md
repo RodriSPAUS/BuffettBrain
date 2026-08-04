@@ -45,13 +45,9 @@ A business that earns a high return on few tangible assets can raise prices with
 
 Buffett continued to highlight businesses with economic goodwill throughout his letters, including in later years when discussing inflation's impact:
 
-> "Real assets such as farms, real estate, and businesses tend to maintain their value during inflationary periods." [[Sources/2022ltr]]
-
 ## Connection to Moats
 
 Economic goodwill is closely connected to the concept of economic moats - the competitive advantages that protect a business from competition and allow it to maintain pricing power.
-
-> "We simply want to purchase into businesses whose economic characteristics are virtually certain." [[Sources/2012ltr]]
 
 ## Cross-References
 

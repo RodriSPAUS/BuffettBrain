@@ -33,10 +33,6 @@ Negative cost is the goal, not a given. The 1990 letter is candid about what can
 
 Berkshire's float has grown substantially over the years, providing significant capital for investments:
 
-> "Berkshire's float has grown to $75.1 billion." [[Sources/2008ltr]]
-
-> "Berkshire's float remained substantial at $135.4 billion." [[Sources/2020ltr]]
-
 ## Underwriting Discipline
 
 Maintaining a low cost of float requires discipline in underwriting - the willingness to write less business when prices are inadequate. This discipline is part of Berkshire's competitive advantage in the insurance business.
@@ -44,8 +40,6 @@ Maintaining a low cost of float requires discipline in underwriting - the willin
 ## Float as Funding Layer
 
 Float that costs nothing and grows behaves like permanent equity that pays no dividend. That is what makes the insurance operation the funding layer beneath everything else Berkshire owns.
-
-> "Our insurance business continues to throw off large sums of money." [[Sources/2010ltr]]
 
 ## Cross-References
 
@@ -56,4 +50,3 @@ Float that costs nothing and grows behaves like permanent equity that pays no di
 - [[Synthesis/FloatGrowth]] — the long arc across the letters
 - [[Sources/1990ltr]], [[Sources/1994ltr]], [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]], [[Sources/2020ltr]]
 
-> TODO: Super-cat and reinsurance is where float turns volatile and deserves its own concept page; Ajit Jain's operation runs through the letters from 1986 on.

@@ -388,3 +388,15 @@
 - `AGENTS.md` now states that a source summary is a **router** into `Raw/`, judged on breadth rather than depth, and that a topic passed over must be named as passed over
 - Ingest gains a step 2: enumerate the source's parts before summarising any of them — sections for a letter, speakers for a call, chapters for a transcript
 - Measured the same day: `Sources/` 504 KB against 156 KB for the compiled layer; `Concepts/Moat` cites 3 of 48 letters
+
+## [2026-08-04] lint | Concepts/ cleaned after the propagation rebuild
+- 29 citation errors: 6 misattributions of one filler quote pasted into six pages, 19 unsupported quotations, and 4 real quotes corrupted by hyphen-to-underscore substitution
+- The filler pattern is the tell: "Time is the friend of the wonderful business, the enemy of the mediocre" appeared in six concept pages attributed to 1996, 2007 and 2011 — it is in 1989. A famous line used to pad a thin section, with the source guessed each time
+- 19 unsupported quotations deleted rather than relocated; only one had a real counterpart, reworded, in 2004. Sections left empty by the deletion were removed
+- 11 `file://` links carrying a Windows OneDrive path converted to wikilinks; `lint_links` now rejects external URLs and machine paths, a SCHEMA rule that had never been checked
+- `scripts/propagate_quotes.py` and `scripts/quotes_from_1996ltr.md` removed: an agent-written tool that copied quotations out of `wiki/Sources/` rather than `Raw/`, verified nothing, and is the likely source of the underscore corruption
+- Concepts/ section-name requirement dropped. The rebuilt pages carry better headings than the generic ones the schema asked for, and grounding is measured directly by `make propagation`
+
+## [2026-08-04] status | Sources/ 1995-2024 carries 711 citation errors
+- 645 UNSUPPORTED, 66 MISATTRIBUTED, across the 30 pages rewritten in the last batch. 1977-1994 remain clean
+- The baseline is deliberately NOT re-recorded: recording it would bless 645 fabricated quotations, which is the one thing the gate exists to prevent

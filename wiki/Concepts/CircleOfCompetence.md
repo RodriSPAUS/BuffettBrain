@@ -17,10 +17,6 @@ The circle of competence represents the set of businesses whose economics an inv
 
 The essence of the circle of competence is not just knowing what you understand, but being honest about what you don't understand. Buffett acknowledges his limitations, particularly in technology sectors.
 
-> "We simply don't see a way to make large investments in technology companies that we fully understand." [[Sources/1999ltr]]
-
-> "Charlie and I are not smart enough to figure out which companies will succeed in such a fast-changing environment." [[Sources/1999ltr]]
-
 ## Learning from Mistakes
 
 Buffett openly discusses his mistakes to illustrate the importance of recognizing the boundaries of one's competence.
@@ -43,8 +39,6 @@ Berkshire's acquisition policy follows from realistic self-assessment rather tha
 
 Buffett acknowledges the limitations in understanding technology businesses, which is why Berkshire has historically avoided major technology investments despite their success.
 
-> "We have consistently avoided businesses that we do not understand or that have uncertain futures." [[Sources/2000ltr]]
-
 ## Forecasting Limitations
 
 The circle of competence also relates to the limits of forecasting. Buffett quotes Sam Goldwyn on the danger of forecasts and acknowledges Berkshire's own forecasting mistakes.
@@ -55,19 +49,15 @@ The circle of competence also relates to the limits of forecasting. Buffett quot
 
 The concept emphasizes that it's better to focus on a few areas of deep understanding rather than trying to be knowledgeable about everything.
 
-> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1996ltr]]
+> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1989ltr]]
 
 ## Differentiation from Caution
 
 The circle of competence is not the same as caution. While Berkshire avoids areas outside its competence, it concentrates significant resources in areas within it.
 
-> "We simply want to purchase into businesses whose economic characteristics are virtually certain." [[Sources/1996ltr]]
-
 ## Technology Investment Evolution
 
 Even as Buffett acknowledges limitations in technology, Berkshire made exceptions like IBM in 2011, showing the circle can expand with learning.
-
-> "We purchased about 6.3% of IBM for about $13 billion." [[Sources/2012ltr]]
 
 ## Cross-References
 
