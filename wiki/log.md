@@ -410,3 +410,16 @@
 ## [2026-08-04] ingest | Sources/1995ltr and 1996ltr repaired
 - Both now clean; the unsupported quotations were deleted rather than relocated (30 lines removed, 3 added)
 - Sources/ total: 711 -> 700 citation errors, all in 1997-2024
+
+## [2026-08-04] lint | scripts/check_figures.py — numbers outside quotation marks
+- `verify_quotes` protects text inside quotes; nothing protected the figures, which is where fabrication does most damage
+- Compares every money figure, percentage and large number on a summary against the numbers in the letter it cites, numerically rather than as strings: a page writes "$21.9 million" where the letter's table says "$21,904,000", and string matching reported 43 correct pages as wrong
+- Reports two levels, mirroring `verify_quotes`: not in this letter (but in another, which cross-references legitimately produce) and in no letter in the corpus
+- Calibration: 0 warnings on the 18 hand-written summaries; 1% of randomly generated figures pass, so a fabricated number is caught roughly 99 times in 100
+- Limitation recorded in the docstring: it cannot catch correct numbers with a wrong conclusion drawn from them
+
+## [2026-08-04] ingest | Sources/2003ltr rewritten
+- The page passed all five checks while stating that Berkshire's 21.0% "outperformed" the S&P's 28.7%. The letter's table marks that year (7.7) — one of Berkshire's worst relative results
+- It also had an empty Notable Quotes section, 0 blockquotes in total, five of eight themes generic enough to fit any letter, and no mention of Clayton Homes or McLane, the year's two acquisitions
+- Rewritten: 2.7 KB to 16.7 KB, 0 to 18 quotations, 22 wikilinks, all checks clean
+- Audit of the repair batch: 1997-2010 have been emptied rather than corrected (0-2 quotations each, 1999 down to 0.8 KB). 2011-2024 still carry their quotations and their errors

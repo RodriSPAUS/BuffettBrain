@@ -1,7 +1,7 @@
 PY := python3
 S  := scripts
 
-.PHONY: hooks lint lint-strict lint-detail baseline check quotes links frontmatter structure coverage raw propagation new help
+.PHONY: hooks figures lint lint-strict lint-detail baseline check quotes links frontmatter structure coverage raw propagation new help
 
 help:
 	@echo "make hooks       install the pre-commit hook (do this once, per clone)"
@@ -15,6 +15,7 @@ help:
 	@echo "make frontmatter page metadata against wiki/SCHEMA.md"
 	@echo "make structure   required sections, outbound links, tag quality"
 	@echo "make coverage    what the sources talk about that the wiki never mentions"
+	@echo "make figures     numbers on a page vs the letter it cites"
 	@echo "make raw         source-extraction quality gate on Raw/"
 	@echo "make propagation are ingested sources reaching the compiled layer?"
 	@echo ""
@@ -49,6 +50,7 @@ baseline:
 # had, which is wrong for a page you just finished writing.
 check:
 	@cd $(S) && $(PY) check_coverage.py "$(P)"
+	@cd $(S) && $(PY) check_figures.py "$(P)"
 	@cd $(S) && $(PY) lint.py --page "$(P)"
 
 quotes:
@@ -65,6 +67,9 @@ structure:
 
 coverage:
 	@cd $(S) && $(PY) check_coverage.py $(P)
+
+figures:
+	@cd $(S) && $(PY) check_figures.py $(P)
 
 raw:
 	@cd $(S) && $(PY) check_raw_quality.py
