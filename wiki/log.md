@@ -441,3 +441,11 @@
 - Covered: the Wagner opening, the two-column table distorted by General Re pro-forma, the 15% ceiling and the $58 billion it implies, taxes and the 59.5% dividend exclusion, GEICO's compensation design and 3%-to-3½% share, the mandate given to managers, Executive Jet, General Re as a structural rather than financial purchase, the three float determinants and the jump to $22,762m, reported earnings, the portfolio with the McDonald's confession, both Accounting sections, reporting, contributions and the meeting
 - 4 KB to 23 KB, 0 to 17 quotations, 30 wikilinks; `make check P=Sources/1998ltr` clean
 - One deliberate `check_figures` warning: the page cites 1997's 354,882 new-policy figure inside a note flagging that the 1998 letter's new-policy column carries a spurious leading digit (1,354,882 for the same year). The in-force column agrees across both letters and is what the page uses
+
+## [2026-08-08] ingest | Sources/1999ltr rewritten from Raw/
+- Replaced a 0.8 KB stub — the smallest page in the wiki — with a full router over all 14 sections
+- The year Buffett grades himself a D: worst absolute and worst relative performance of his tenure, book value per share +0.5%, cost of float positive for the first time at 5.8% after a $1.4 billion underwriting loss
+- Three sections outlast the bad year and are now on the page in full: the two conditions for a share repurchase plus the caveat, the circle-of-competence argument for owning no technology (written at the top of the dot-com market), and the acquisition-accounting proposal — record at fair value, do not amortize, write down only on impairment — that anticipates the rule later adopted
+- Also covered: the Bill Child Boise story, Ajit Jain's four talents, GEICO's optional advertising spend, the FSI/EJA contrast in capital intensity, Jordan's and MidAmerican, Huggins' Law, look-through earnings and the GDP-based market arithmetic
+- 0.8 KB to 27 KB, 0 to 20 quotations, 33 wikilinks; `make check P=Sources/1999ltr` clean with zero warnings
+- Reconciled the GEICO policy table across three letters: 1999 carries the revised series, which confirms the spurious leading digit in the 1998 letter's version flagged during that ingest
