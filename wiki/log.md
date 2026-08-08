@@ -449,3 +449,11 @@
 - Also covered: the Bill Child Boise story, Ajit Jain's four talents, GEICO's optional advertising spend, the FSI/EJA contrast in capital intensity, Jordan's and MidAmerican, Huggins' Law, look-through earnings and the GDP-based market arithmetic
 - 0.8 KB to 27 KB, 0 to 20 quotations, 33 wikilinks; `make check P=Sources/1999ltr` clean with zero warnings
 - Reconciled the GEICO policy table across three letters: 1999 carries the revised series, which confirms the spurious leading digit in the 1998 letter's version flagged during that ingest
+
+## [2026-08-08] ingest | Sources/2000ltr rewritten from Raw/
+- Replaced a 4 KB emptied page; all 12 sections enumerated and covered
+- The acquisition year: eight businesses for about $8 billion, 97% cash, no debt, shares outstanding up one-third of 1% — the follow-through on the 1998 confession about issuing stock. All eight are on the page with terms and sourcing
+- The Aesop section is now carried in full: the three questions, "don't literally think birds, think dollars", and the two corollaries — that yardsticks and growth rates are not valuation, and that growth can destroy value. This is the corpus' clearest statement of how anything is valued
+- Also covered: the speculation passage written as the bubble burst (clocks with no hands, the pin, the Paine Webber-Gallup 19%), the two items that make Berkshire's underwriting incomparable to other insurers (pain-today gain-tomorrow business at $482m, and retroactive reinsurance), the GEICO advertising error dissected in four causes including State Farm's 23% float cost, the Dexter admission, full and fair reporting, and Ralph Schey's $1.03bn on a $230m purchase
+- 4 KB to 30 KB, 0 to 22 quotations, 34 wikilinks; `make check P=Sources/2000ltr` clean
+- One citation error caught and fixed before commit: the raw file renders some em-dashes as the character "¾", and a quotation transcribed with commas in their place failed verification. Quote fragments that do not span the artifact
