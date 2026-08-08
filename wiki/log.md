@@ -478,3 +478,10 @@
 - "I was dead wrong" on General Re in 1998, with the 2002 correction quantified at $1.31 billion
 - 4 KB to 34 KB, 0 to 23 quotations, 34 wikilinks; `make check P=Sources/2002ltr` clean
 - One `check_figures` warning is the deliberate down-scaling floor at 100: the letter states operating earnings of $(47) million in a table denominated in millions, and 47 is below the threshold where a scaled-down match is trusted. The page's figure is correct; the floor is what stops "$44 billion" matching a stray "44"
+
+## [2026-08-08] lint | Sources/2005ltr — accurate but incomplete, patched
+- Reviewed the page written in a parallel session. All 34 quotations verbatim, all figures traceable, all seven checks clean — the citation-integrity problem that dominated the earlier backlog is genuinely gone
+- The gap was coverage, which no check enforces. The letter has ten named sections; the page covered the essays (widening the moat, Gotrocks, Fred Futile, derivatives, succession) and skipped Manufacturing/Service/Retailing almost entirely, gave Investments only as a list of changes with no table, and omitted the annual meeting
+- Concretely absent: the 22.2% return on average tangible net worth against 10.1% on carrying value — the sharpest statement in the letters of the gap between a good business and a good price; the per-category earnings table; Fruit of the Loom at 48.7% of mass-marketer share, up from 44.2%; R. C. Willey's Reno and Sacramento expansion, continuing the never-on-Sunday thread from 1999 and 2001; FlightSafety's 42 training centres and Farnborough; See's more-than-tenfold profit increase under Huggins; and PetroChina, held at $488m cost against $1,915m market
+- Patched: 24.5 KB to 34 KB, 34 to 40 quotations, 18 to 24 wikilinks. `make check` still clean
+- The lesson is about what the checks measure. They protect against invention, not against omission — an accurate page that leaves out a third of the source still fails as a router, and only reading the source end to end catches it
