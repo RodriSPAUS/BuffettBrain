@@ -457,3 +457,16 @@
 - Also covered: the speculation passage written as the bubble burst (clocks with no hands, the pin, the Paine Webber-Gallup 19%), the two items that make Berkshire's underwriting incomparable to other insurers (pain-today gain-tomorrow business at $482m, and retroactive reinsurance), the GEICO advertising error dissected in four causes including State Farm's 23% float cost, the Dexter admission, full and fair reporting, and Ralph Schey's $1.03bn on a $230m purchase
 - 4 KB to 30 KB, 0 to 22 quotations, 34 wikilinks; `make check P=Sources/2000ltr` clean
 - One citation error caught and fixed before commit: the raw file renders some em-dashes as the character "¾", and a quotation transcribed with commas in their place failed verification. Quote fragments that do not span the artifact
+
+## [2026-08-08] ingest | Sources/2001ltr rewritten from Raw/
+- Replaced a 4 KB emptied page; all 13 sections enumerated and covered
+- The only year in the corpus with a loss in net worth, and Buffett names his own error as the cause: General Re took on business without a safeguard he knew was important, and September 11th cost $2.4 billion of underwriting loss on risk that was never paid for
+- Carried in full: the three principles of underwriting; the experience-versus-exposure distinction developed through D&O rather than terrorism; the Noah rule as an admission that he had recognised the risk and not acted; and the takedown of "loss development" as terminology that hides a management error behind a natural-sounding event
+- Also covered: six all-cash acquisitions including MiTek, whose 55 managers bought 10% of the company for cash rather than receiving options; the Fruit of the Loom circle back to Graham-Newman in 1955; float at $35,508m costing 12.8%; the Dexter list of three errors, now longer than last year's; FINOVA and Berkadia; and the charitable-contributions policy stated as a matter of ownership
+- 4 KB to 30 KB, 0 to 20 quotations, 34 wikilinks; `make check P=Sources/2001ltr` clean
+
+## [2026-08-08] lint | scripts/check_coverage.py — sentence openers counted as names
+- The check reported "Additionally" as a subject of the 2001 letter that the wiki had failed to cover
+- The STOP list catches common openers but cannot be complete, and a list that needs a new entry per letter is the kind of rule that drifts
+- Fixed structurally instead: only mid-sentence occurrences count. A real name appears capitalised inside sentences as well as at their start; an adverb almost never does, so position separates them with no maintenance
+- Whole-wiki warnings after the change are all genuine proper nouns — Borsheims, Piccolo, Lloyd, NICO, USAA, Long Bets

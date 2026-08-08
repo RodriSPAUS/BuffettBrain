@@ -52,12 +52,25 @@ STOP = set(
 # Capitalised runs: "USAir", "Nebraska Furniture Mart", "R. C. Willey".
 PROPER = re.compile(r"\b([A-Z][a-zA-Z]{2,}(?:\s+[A-Z][a-zA-Z&.]{1,})*)\b")
 
+# A capital that only ever follows a full stop is a sentence opener, not a name.
+SENTENCE_START = re.compile(r"(?:^|[.!?:;]|\n)\s*$")
+
 
 def subjects(text: str) -> dict[str, int]:
+    """Names the source keeps returning to.
+
+    Only mid-sentence occurrences count. The STOP list below catches the common
+    sentence openers, but no list can be complete -- "Additionally" reached a
+    report as a subject the wiki had failed to cover. A real name appears
+    capitalised in the middle of sentences as well as at their start, whereas an
+    adverb almost never does, so position separates them without maintenance.
+    """
     counts = collections.Counter()
-    for match in PROPER.findall(text):
-        name = match.strip()
+    for match in PROPER.finditer(text):
+        name = match.group(1).strip()
         if len(name) < 4 or name.split()[0] in STOP:
+            continue
+        if SENTENCE_START.search(text[max(0, match.start() - 40): match.start()]):
             continue
         counts[name] += 1
     return {n: c for n, c in counts.items() if c >= MIN_MENTIONS}
