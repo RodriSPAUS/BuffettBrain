@@ -434,3 +434,10 @@
 - `\b\d{1,3}(?:,\d{3})+\b` matched a table cell of 1,392.7 as "1,392", which was then compared against the source's 1392.7 and missed by 0.7 — wider than the tolerance four significant figures allow
 - Two false positives on the first summary that reproduced a dollar table verbatim, and it would have fired on every one after it
 - Fixed by making the decimal part part of the match; whole-wiki warning count unchanged otherwise
+
+## [2026-08-08] ingest | Sources/1998ltr rewritten from Raw/
+- Replaced an emptied page (4 KB, 0 quotations) with a full router covering all 18 sections
+- The letter's own headline correction is now the page's opening: book value per share rose 48.3% but most of that came from issuing shares above book in the General Re and Executive Jet deals, which lifts book value per share without lifting intrinsic value
+- Covered: the Wagner opening, the two-column table distorted by General Re pro-forma, the 15% ceiling and the $58 billion it implies, taxes and the 59.5% dividend exclusion, GEICO's compensation design and 3%-to-3½% share, the mandate given to managers, Executive Jet, General Re as a structural rather than financial purchase, the three float determinants and the jump to $22,762m, reported earnings, the portfolio with the McDonald's confession, both Accounting sections, reporting, contributions and the meeting
+- 4 KB to 23 KB, 0 to 17 quotations, 30 wikilinks; `make check P=Sources/1998ltr` clean
+- One deliberate `check_figures` warning: the page cites 1997's 354,882 new-policy figure inside a note flagging that the 1998 letter's new-policy column carries a spurious leading digit (1,354,882 for the same year). The in-force column agrees across both letters and is what the page uses
