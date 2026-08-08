@@ -1,53 +1,53 @@
 # Warren Buffett Second Brain
 
-This is a structured, interconnected knowledge base for Warren Buffett's investment philosophy and core principles, compiled from various sources including annual letters, interviews, speeches, and articles, organized according to the Karpathy pattern.
-
-## Language Policy
-
-**All content in this knowledge base is in English.** This includes:
-- All wiki pages in the `wiki/` directory
-- All source summaries in `wiki/Sources/` (annual letters, interviews, speeches, etc.)
-- All concept pages in `wiki/Concepts/`
-- All cross-source syntheses in `wiki/Synthesis/`
-- All file names and directory names
-- All comments and documentation
-
-However, **responses to user prompts will be provided in the same language as the user's input**. The system will detect the language of the incoming query and respond in kind, while maintaining all English content standards for the actual knowledge base entries. This allows international users to interact with the system in their native language while preserving the English standard for all stored content and documentation.
+A structured, interconnected knowledge base of Warren Buffett's investment philosophy, compiled
+from annual letters, interviews, speeches and articles, and organised according to the Karpathy
+pattern (`Karpathy_pattern.md`).
 
 ## Layout
 
-- `Raw/` — the source letters, human-curated and not edited by the agent
+- `Raw/` — the sources, human-curated and never edited by the agent
 - `wiki/` — the compiled layer, written and maintained by the agent
-- `AGENTS.md` — what the agent does; `wiki/SCHEMA.md` — how a page is shaped
+- `AGENTS.md` — what the agent does · `wiki/SCHEMA.md` — how a page is shaped
 - `scripts/` — the checks that enforce both
+- `LESSONS_LEARNED.md` — what has already gone wrong here, and what it cost
 
-The directory structure of `wiki/` is specified in `AGENTS.md` (Part Two). It is documented in one
-place on purpose: three copies of a layout become three different layouts.
+The `wiki/` directory structure is specified in `wiki/SCHEMA.md`, in one place on purpose: three
+copies of a layout become three different layouts.
+
+## Getting started
+
+```
+make hooks                             # once per clone — see below
+make lint                              # run before closing any ingest
+make quote Q="circle of competence"    # find a citable passage in Raw/
+make new P=Sources/1978ltr             # start a page with the schema already correct
+make check P=Sources/1978ltr           # zero-tolerance check on one finished page
+make help                              # everything else
+```
+
+`make hooks` installs a pre-commit hook that refuses any commit containing a quotation that is
+not in the letter it cites. It is the only check that runs before the damage exists rather than
+after, so install it first.
 
 ## Checks
 
-```
-make lint                      # run before closing any ingest
-make quote Q="circle of competence"   # find a citable passage in Raw/
-```
-
 `make lint` verifies that every quotation in `wiki/` appears verbatim in the letter it cites,
-that no wikilink is broken, that frontmatter matches the schema, and that the source text is
-intact enough to quote from. It runs on every push via GitHub Actions.
+that no wikilink is broken, that frontmatter matches the schema, that pages carry their required
+sections and meaningful tags, and that the source text is intact enough to quote from. It runs on
+every push via GitHub Actions.
 
-The citation check is the important one. A fabricated quotation is indistinguishable from a
-real one once written and propagates into every synthesis built on top of it, so the wiki is
-worth exactly what that check says it is.
+The citation check is the important one. A fabricated quotation is indistinguishable from a real
+one once written, and propagates into every synthesis built on top of it — so the wiki is worth
+exactly what that check says it is.
 
-## Contributing
+## Language
 
-All new additions must be in English. Please follow the conventions established in `AGENTS.md` (Part Two) and maintain bidirectional linking throughout the knowledge base. Sources can include:
-- Annual shareholder letters (1977-present)
-- Interviews (TV, radio, print)
-- Speeches and presentations
-- Articles and commentary
-- Other Buffett-related materials
+All stored content is English: wiki pages, file names, directory names, comments. Responses to
+prompts come back in whatever language the prompt was written in.
 
-## Purpose
+## Contributing sources
 
-This knowledge base organizes Warren Buffett's investment philosophy, principles, and case studies extracted from various sources. Each concept is linked to its original source for reference and verification.
+Drop a new file in `Raw/` and ask the agent to ingest it. Naming is `YYYYltr.md` for annual
+letters and `EventNameYYYY.md` for everything else. Anything Buffett-related counts: annual
+letters (1977–present), interviews, speeches, articles, meeting transcripts.

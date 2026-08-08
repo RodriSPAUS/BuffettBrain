@@ -1,174 +1,145 @@
-# Warren Buffett Financial Brain — Schema
+# Warren Buffett Second Brain — Schema
 
-*This file defines how the wiki is **shaped**: directory layout, page structure, frontmatter, and linking conventions. It is the authority on how to write a page.*
+*How a page is **shaped**: directory layout, page structure, frontmatter, linking. This file is
+the authority on how to write a page.*
 
-*How the agent **behaves** — the Ingest / Query / Lint operations and the citation-integrity rules — is defined in `AGENTS.md`. The two files do not overlap; consult that one when deciding what to do, this one when writing.*
+*How the agent **behaves** — the Ingest / Query / Lint operations, and the citation-integrity
+rules that override everything here — is in `AGENTS.md`. The two do not overlap: that one when
+deciding what to do, this one when writing.*
+
+**Do not write frontmatter by hand.** `make new P=Sources/2024ltr` emits it correctly, with the
+source's own date read out of `Raw/`, plus the required sections and the list of pages that
+actually exist to link to. This file explains what the generator produces and why.
 
 ## ✅ Core Principles
 
-- **Source fidelity first**: Every claim must be traceable to an original source (e.g., `Source: [[Sources/2024ltr]]`, `Source: [[Sources/DUKE2024]]`). Never paraphrase without attribution, and never present as a quotation any text that is not verbatim in the cited `Raw/` file — see *Citation Integrity* in `AGENTS.md`.
-- **Obsidian-native**: All links use `[[wikilink]]` syntax. No external URLs in content — only `[[PageName]]` or `[[Sources/2024ltr]]`.
-- **Concept-first organization**: Pages represent *ideas*, not just sources — e.g., `Concepts/Moat.md`, `Concepts/IntrinsicValue.md`, `Concepts/CapitalAllocation.md`. Source summaries (`Sources/2024ltr.md`) exist to feed and update these.
-- **No human edits to wiki/**: This directory is LLM-owned. You curate `Raw/`; the LLM maintains `wiki/`.
+- **Source fidelity first.** Every claim traces to a real source — `Source: [[Sources/2024ltr]]`.
+  Never paraphrase without attribution; never present as a quotation text that is not verbatim
+  in the cited `Raw/` file. See *Citation Integrity* in `AGENTS.md`.
+- **Obsidian-native.** All links use `[[wikilink]]` syntax. No external URLs and no filesystem
+  paths in content — only `[[Sources/2024ltr]]` and friends.
+- **Concept-first.** Pages represent *ideas*, not just sources: `Concepts/Moat.md`,
+  `Concepts/IntrinsicValue.md`. Source summaries exist to feed and update these.
+- **No human edits to `wiki/`.** The human curates `Raw/`; the agent maintains `wiki/`.
 
 ## 📁 Directory Structure
 
 ```
 wiki/
-├── index.md              # Catalog of all pages (auto-updated on ingest)
-├── log.md                # Append-only chronological log (e.g., "## [2026-07-27] ingest | Sources/2024ltr")
-├── SCHEMA.md             # This file — wiki structure and page conventions
-├── Sources/              # Source summaries (structured by year/content type)
-│   ├── 1977ltr.md        # Source summary page for 1977 annual letter
-│   ├── DUKE2024.md       # Source summary page for Duke University speech 2024
-│   ├── CNBCInterview.md  # Source summary page for CNBC interview
-│   └── ...
-├── Concepts/             # Core mental models and frameworks
-│   ├── Moat.md           # Concept page, seeded from all sources mentioning moats
-│   ├── ManagementQuality.md
-│   ├── CapitalAllocation.md
-│   ├── Float.md
-│   └── ...
-├── Applications/         # Actionable tools and checklists
-│   ├── BusinessQualityChecklist.md
-│   └── RedFlags.md
-├── Cases/                # Deep dives into key holdings and acquisitions
-│   ├── GEICO.md
-│   ├── SeeCandies.md
-│   └── ...
-├── People/               # Profiles of key figures
-│   ├── WarrenBuffett.md
-│   └── CharlieMunger.md
-├── Principles/           # Enduring philosophies
-│   ├── OwnershipMindset.md
-│   └── Fidelity.md
-└── Synthesis/            # Cross-source thematic analyses
-    ├── MoatEvolution.md
-    ├── FidelityTimeline.md
-    └── FloatGrowth.md
+├── index.md              # Catalog of all pages (updated on ingest)
+├── log.md                # Append-only chronological log: "## [2026-07-27] ingest | Sources/2024ltr"
+├── SCHEMA.md             # This file
+├── Sources/              # One summary per source: 1977ltr.md, DUKE2024.md, CNBCInterview.md
+├── Concepts/             # Mental models: Moat.md, Float.md, CapitalAllocation.md
+├── Applications/         # Checklists and tools: BusinessQualityChecklist.md, RedFlags.md
+├── Cases/                # Holdings and acquisitions: GEICO.md, SeeCandies.md
+├── People/               # Figures: WarrenBuffett.md, CharlieMunger.md
+├── Principles/           # Enduring philosophy: OwnershipMindset.md, Fidelity.md
+└── Synthesis/            # Cross-source themes: MoatEvolution.md, FloatGrowth.md
+```
+
+## 📝 Frontmatter Contract
+
+Every page carries YAML frontmatter. `type` is fixed by the directory — it is what Dataview
+queries filter on, so a wrong or missing one drops the page out of every query silently.
+Enforced by `make frontmatter`.
+
+| Directory | `type` | Required keys |
+| --- | --- | --- |
+| `Sources/` | `source-summary` | `title` `type` `date` `source` `year` `sourcetype` |
+| `Concepts/` | `concept` | `title` `type` `stability` `tags` `date` |
+| `Principles/` | `principle` | `title` `type` `stability` `tags` `date` |
+| `Synthesis/` | `synthesis` | `title` `type` `stability` `tags` `date` `source` |
+| `Cases/` | `case` | `title` `type` `tags` `date` |
+| `People/` | `person` | `title` `type` `tags` `date` |
+| `Applications/` | `application` | `title` `type` `tags` `date` |
+
+- `date` — `YYYY-MM-DD`. On a `Sources/` page it is the source's own date, not today's.
+- `stability` — `low` / `medium` / `high`: how consistently Buffett holds this idea across decades.
+- `sourcetype` — `annual-letter` / `interview` / `speech` / `article` / `meeting` / `book`.
+- `source` — on `Sources/` pages it points at the raw file, `[[Raw/2024ltr.md]]`. Everywhere
+  else it points at wiki source pages, `[[Sources/1988ltr]], [[Sources/2024ltr]]`.
+
+```yaml
+---
+title: "2024 Annual Letter"
+type: source-summary
+stability: high
+tags: [buybacks, cash-position, succession, japanese-trading-houses]
+date: 2024-02-24
+year: 2024
+sourcetype: annual-letter
+source: [[Raw/2024ltr.md]]
+---
 ```
 
 ## 📝 Page Conventions
 
-### Source Summary Pages (e.g., `Sources/2024ltr.md`, `Sources/DUKE2024.md`)
+### Source summaries (`Sources/`)
 
-- YAML frontmatter required:
-  ```yaml
-  ---
-  title: "2024 Annual Letter"
-  type: source-summary
-  stability: high
-  tags: [2024, letter, buybacks, cash-position, succession]   # see Tag Rules
-  date: 2024-02-24
-  year: 2024
-  sourcetype: annual-letter  # annual-letter, interview, speech, article, etc.
-  source: [[Raw/2024ltr.md]]
-  ---
-  ```
-- Do not write this block by hand. `make new P=Sources/2024ltr` emits it correctly,
-  with the letter's own signature date read out of `Raw/`.
-- Content sections, all four required and checked by `make structure`: `## 🔑 Key Themes`,
-  `## 💬 Notable Quotes`, `## 📊 Investment Decisions`, `## 🔗 Cross-References`
-- **Cover what the source covers.** The page is a router into `Raw/`, so breadth beats
-  depth: a topic the source spends real space on gets at least a line, and a topic
-  deliberately passed over is named as passed over. `make coverage` lists subjects the
-  source repeats that appear nowhere in `wiki/`.
-- **At least one link into the compiled layer** (`Concepts/`, `Cases/`, `People/`,
-  `Principles/`, `Applications/`, `Synthesis/`). A summary that links only to other
-  summaries has been filed, not integrated, and `make structure` fails it.
-- Each quote or insight cites the source page it came from (e.g., `[[Sources/2024ltr]]`), and the quoted text itself acts as the locator. Do **not** append positional anchors such as `#p5` or `#section3`: `Raw/` files carry no headings or block IDs, so those anchors resolve to nothing and imply a precision the citation does not have. Use an anchor only once the target file genuinely contains it.
+- **Four sections, all required**, checked by `make structure`: `## 🔑 Key Themes`,
+  `## 💬 Notable Quotes`, `## 📊 Investment Decisions`, `## 🔗 Cross-References`. They are fixed
+  because a summary is a router and a reader scans the same four places on all 48 of them.
+- **Cover what the source covers.** Breadth beats depth: a topic the source spends real space on
+  gets at least a line, and a topic deliberately passed over is named as passed over.
+  `make coverage` lists subjects the source repeats that appear nowhere in `wiki/`.
+- **At least one link into the compiled layer** (`Concepts/`, `Cases/`, `People/`, `Principles/`,
+  `Applications/`, `Synthesis/`). A summary that links only to other summaries has been filed,
+  not integrated; `make structure` fails it.
+- The quoted text is the locator. Do **not** append positional anchors like `#p5` or `#section3`:
+  `Raw/` files carry no headings or block IDs, so they resolve to nothing and imply a precision
+  the citation does not have.
 
-### Concept Pages (e.g., `Concepts/Moat.md`)
+### Concept, Principle, Case, People and Application pages
 
-- YAML frontmatter:
-  ```yaml
-  ---
-  title: "Moat"
-  type: concept
-  stability: high  # low/medium/high — reflects how consistently Buffett uses this idea
-  tags: [moat, competitive advantage, economic moat]
-  date: 2026-07-27
-  source: [[Sources/2024ltr]]
-  ---
-  ```
-- Structure: open. A concept page needs a definition and grounded examples, but the
-  headings are the writer's — rebuilt pages produced "The Lesson That Orders Everything
-  Else" and "Why Integrity Is Weighted So Heavily", which beat the generic names they
-  replaced. What *is* enforced is grounding: `make propagation` measures distinct sources
-  cited per page, which is what "Examples from Letters" was a proxy for.
-- Unlike `Sources/`, whose four headings are fixed: a summary is a router, and a reader
-  scans the same four places on all 48 of them.
-- Every example links to its source: e.g., `Coca-Cola (1988) — [[Sources/1988ltr]]`
+- **Headings are the writer's.** Rebuilt pages produced "The Lesson That Orders Everything Else"
+  and "Why Integrity Is Weighted So Heavily", which beat any generic heading a schema could have
+  mandated. What is enforced instead is grounding: `make propagation` measures distinct sources
+  cited per page, which is what a required "Examples from Letters" heading was only a proxy for.
+- A page still needs a definition and grounded examples, and **every example links to its
+  source**: `Coca-Cola (1988) — [[Sources/1988ltr]]`.
 
-### Synthesis Pages (e.g., `Synthesis/MoatEvolution.md`)
+### Synthesis pages
 
-- YAML frontmatter:
-  ```yaml
-  ---
-  title: "Moat Evolution"
-  type: synthesis
-  stability: medium
-  tags: [cross-source, theme, evolution]
-  date: 2026-07-27
-  source: [[Sources/1988ltr]], [[Sources/2024ltr]], [[Sources/CNBCInterview]]
-  ---
-  ```
-- Structure: Cross-source thematic analysis with explicit links to multiple sources
-- Must reference at least 2 different sources to qualify as synthesis
+- Cross-source thematic analysis, with explicit links to the sources it draws on.
+- **At least 2 different sources**, or it is not a synthesis.
 
 ## 🏷️ Tag Rules
 
-Tags exist so Dataview can filter. A tag that is true of every page in the wiki
-filters nothing, so `make structure` requires **at least three tags that say what
-this page is about** and discounts the rest.
+Tags exist so Dataview can filter. A tag true of every page in the wiki filters nothing, so
+`make structure` requires **at least three tags that say what this page is about** and discounts
+the rest.
 
-- Discounted: the year (it is already the `year:` key), and boilerplate —
-  `annual-letter`, `letter`, `warren-buffett`, `berkshire-hathaway`, `investing`,
-  `summary`, `finance` and similar. See `BOILERPLATE` in `scripts/check_structure.py`
-  for the enforced list.
-- Wanted: what distinguishes this page. `moat`, `float`, `buybacks`, `loss-reserving`,
+- Discounted: the year (already the `year:` key) and boilerplate — `annual-letter`, `letter`,
+  `warren-buffett`, `berkshire-hathaway`, `investing`, `summary`, `finance` and similar. The
+  enforced list is `BOILERPLATE` in `scripts/check_structure.py`.
+- Wanted: what distinguishes this page — `moat`, `float`, `buybacks`, `loss-reserving`,
   `misery-index`, `nebraska-furniture-mart`, `wppss`.
-- A useful test: could this tag set belong to any other letter? If yes, it is not
-  doing any work.
-
-`tags: [annual-letter, 1995, warren-buffett, berkshire-hathaway]` is the failure this
-rule exists to stop — a real page that would have carried the identical tag set had it
-summarised any of the other 47 letters.
+- The test: could this tag set belong to any other page? If yes, it is not doing any work.
+  `tags: [annual-letter, 1995, warren-buffett, berkshire-hathaway]` is the failure this rule
+  exists to stop — it would have fitted any of the other 47 letters equally well.
 
 ## 🔗 Linking Rules
 
-- Always link entities: `[[Concepts/Moat]]`, `[[Concepts/ManagementQuality]]`, `[[Concepts/CapitalAllocation]]`
-- Always link sources: `[[Sources/2024ltr]]`, `[[Sources/DUKE2024]]`, `[[Sources/CNBCInterview]]`
-- Always link cases: `[[Cases/GEICO]]`, `[[Cases/SeeCandies]]`
-- Always link people: `[[People/WarrenBuffett]]`, `[[People/CharlieMunger]]`
-- Use relative paths within wiki: `[[Applications/BusinessQualityChecklist]]`, `[[Synthesis/MoatEvolution]]`
-- Never leave a named person, company, or principle unlinked — if no page exists yet, create a stub with `TODO: flesh out`.
-- **Never invent a link target.** `make new` prints every page that exists, grouped by
-  directory, in the Cross-References section of the skeleton; copy from that list. A
-  page that arrived with `[[Moat]]`, `[[Owner-Earnings]]`, `[[Ajit-Jain]]` and
-  `[[Tony-Nicely]]` cost 19 broken links, and every one of them was a plausible guess
-  at a name that already existed in another form.
+- Link every entity, with its folder prefix: `[[Concepts/Moat]]`, `[[Sources/2024ltr]]`,
+  `[[Cases/GEICO]]`, `[[People/CharlieMunger]]`, `[[Applications/RedFlags]]`,
+  `[[Synthesis/MoatEvolution]]`. Never `[[Moat]]`.
+- Never leave a named person, company or principle unlinked — create a stub with
+  `TODO: flesh out` if no page exists.
+- Links are bidirectional: if A cites B, B references A where relevant.
+- **Never invent a link target.** `make new` prints every existing page, grouped by directory,
+  in the skeleton's Cross-References section — copy from that list. A page that guessed
+  `[[Moat]]`, `[[Owner-Earnings]]` and `[[Ajit-Jain]]` cost 19 broken links, and every guess was
+  a plausible variant of a name that already existed in another form.
+- No external URLs and no filesystem paths (`http://`, `file://`, `C:\...`) anywhere in `wiki/`.
 
-## 🧹 Maintenance Workflow
+## 🌐 Obsidian
 
-The Ingest, Query, and Lint operations are specified in `AGENTS.md` and are not repeated here.
-This file governs what a page must look like once one of those operations decides to write it.
+- **Dataview** for frontmatter queries: `TABLE year FROM "wiki" WHERE type = "source-summary"
+  SORT year DESC`. Complete only while `make frontmatter` passes.
+- **Graph View** to see which concepts are actually central.
 
-Every rule on this page is checked by `make lint` — `make frontmatter` for the frontmatter
-specifications above, `make links` for the linking rules below. Run `make quote Q="phrase"` to
-get a passage in citable form before quoting it: `Raw/` files are hard-wrapped with compounds
-split across lines, so text copied from `grep` will not match.
-
-## 🌐 External Tools (Optional but Recommended)
-
-- Use Obsidian **Dataview** plugin with frontmatter queries (e.g., `TABLE year FROM "wiki" WHERE type = "source-summary" SORT year DESC`).
-  These only return complete results while `make frontmatter` passes — a page with a missing or
-  non-canonical `type` silently drops out of every query.
-- Use Obsidian **Graph View** to visualize conceptual centrality (e.g., which concepts are most linked?)
-- Use Obsidian **Outliner** or **Templater** for consistent page scaffolding.
-
-> 💡 This schema evolves. If you adjust a rule (e.g., add `Concepts/RiskManagement.md`), update
-> this file first, then update the corresponding check in `scripts/`, then reprocess the wiki.
-> A rule with no check will drift: that is how 26 pages ended up citing `[[1985ltr.md#p0]]`
-> while 10 cited `[[Sources/1985ltr]]`. `scripts/migrate_conventions.py` applies a changed
-> convention to existing pages in one pass.
+> 💡 This schema evolves. When a rule changes: update this file first, then the check in
+> `scripts/`, then the pages. A rule with no check drifts — that is how 26 pages ended up citing
+> `[[1985ltr.md#p0]]` while 10 cited `[[Sources/1985ltr]]`. `scripts/migrate_conventions.py`
+> applies a changed convention across existing pages in one pass.
