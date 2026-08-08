@@ -33,7 +33,11 @@ FIGURE = re.compile(
     r"\$\s?[\d,]+(?:\.\d+)?(?:\s?(?:billion|million|thousand))?"
     r"|[\d,]+(?:\.\d+)?\s?(?:billion|million)"
     r"|\d+(?:\.\d+)?\s?%"
-    r"|\b\d{1,3}(?:,\d{3})+\b"
+    # The decimal part is not optional decoration: a table cell reading 1,392.7
+    # matched as "1,392" is then compared against the source's 1392.7 and misses
+    # by 0.7, which is wider than the tolerance four significant figures allow.
+    # Every summary that reproduces a dollar table in thousands hit this.
+    r"|\b\d{1,3}(?:,\d{3})+(?:\.\d+)?\b"
 )
 
 # Years, and small round numbers that mean nothing on their own.

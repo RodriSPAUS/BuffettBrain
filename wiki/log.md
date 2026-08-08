@@ -423,3 +423,14 @@
 - It also had an empty Notable Quotes section, 0 blockquotes in total, five of eight themes generic enough to fit any letter, and no mention of Clayton Homes or McLane, the year's two acquisitions
 - Rewritten: 2.7 KB to 16.7 KB, 0 to 18 quotations, 22 wikilinks, all checks clean
 - Audit of the repair batch: 1997-2010 have been emptied rather than corrected (0-2 quotations each, 1999 down to 0.8 KB). 2011-2024 still carry their quotations and their errors
+
+## [2026-08-08] ingest | Sources/1997ltr rewritten from Raw/
+- Replaced an emptied page (4.1 KB, 0 quotations) whose surviving prose was also wrong: it opened with the Graham partnership-liquidation story and the Mr. Market metaphor, neither of which is in the 1997 letter, and quoted a 33.4% S&P figure that appears only in the facing-page table and therefore not in `Raw/` at all
+- All 15 sections of the letter enumerated and covered: the duck rating, the two-column intrinsic-value table, Ted Williams, the oil/silver/zeros positions, the net-saver argument, the cost of float, super-cat and catastrophe bonds, GEICO, the other primary insurers, reported and look-through earnings, Star Furniture and IDQ, A Confession, the portfolio and the cheery consensus, the convertible preferreds, housekeeping and the meeting
+- 4.1 KB to 24 KB, 0 to 17 quotations, all obtained through `make quote` and verified; 30 wikilinks
+- `make check P=Sources/1997ltr` clean on every check
+
+## [2026-08-08] lint | scripts/check_figures.py — thousands separator ate the decimal
+- `\b\d{1,3}(?:,\d{3})+\b` matched a table cell of 1,392.7 as "1,392", which was then compared against the source's 1392.7 and missed by 0.7 — wider than the tolerance four significant figures allow
+- Two false positives on the first summary that reproduced a dollar table verbatim, and it would have fired on every one after it
+- Fixed by making the decimal part part of the match; whole-wiki warning count unchanged otherwise
