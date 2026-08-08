@@ -470,3 +470,11 @@
 - The STOP list catches common openers but cannot be complete, and a list that needs a new entry per letter is the kind of rule that drifts
 - Fixed structurally instead: only mid-sentence occurrences count. A real name appears capitalised inside sentences as well as at their start; an adverb almost never does, so position separates them with no maintenance
 - Whole-wiki warnings after the change are all genuine proper nouns — Borsheims, Piccolo, Lloyd, NICO, USAA, Long Bets
+
+## [2026-08-08] ingest | Sources/2002ltr rewritten from Raw/
+- Replaced a 4 KB emptied page; all 14 sections enumerated and covered
+- The derivatives letter: "financial weapons of mass destruction", five years before the crisis. The page carries the mechanism, not just the phrase — earnings booked before money moves, mark-to-myth valuation, collateral triggers that fire when a company can least meet them, daisy-chain receivables that correlate under stress, and the absence of any central bank for the industry
+- Also carried in full: the corporate-governance section (why "independent" directors failed, the 62-year mutual-fund case study, boardroom atmosphere, and Buffett's own admission that collegiality trumped independence), the audit committee's four questions, the options-expensing history through the Senate's 88-9 vote, and the three investor tests
+- "I was dead wrong" on General Re in 1998, with the 2002 correction quantified at $1.31 billion
+- 4 KB to 34 KB, 0 to 23 quotations, 34 wikilinks; `make check P=Sources/2002ltr` clean
+- One `check_figures` warning is the deliberate down-scaling floor at 100: the letter states operating earnings of $(47) million in a table denominated in millions, and 47 is below the threshold where a scaled-down match is trusted. The page's figure is correct; the floor is what stops "$44 billion" matching a stray "44"
