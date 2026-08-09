@@ -1059,3 +1059,56 @@ Check the most recently added blockquote first for a quotation that mixes
 quoted and unquoted material without closing the quote mark at the actual end
 of the quoted span; fixing that one imbalance is usually enough to collapse the
 whole error list back to the real ones.
+
+---
+
+## [2026-08-09] `check_figures.py` does not check numbers inside markdown tables — a fabricated float figure sat in `Synthesis/FloatGrowth.md` behind a passing `make check` for an unknown number of sessions
+
+**What happened.** Rebuilding `Synthesis/FloatGrowth.md` as part of a batch-propagation
+pass, the existing table read "1994 | Float grew to $46B, enabling acquisition of GEICO."
+Berkshire's actual average float for 1994, taken straight from the cost-of-float table
+in `Raw/1994ltr.md` (independently verified while rewriting `Sources/1994ltr.md` earlier
+in the same session), was $3,056.6 million — about 15x smaller. The $46 billion figure
+turned out to belong to a completely different sentence in a completely different
+letter: the 2024 letter's own "float has grown from $46 billion to $171 billion" retrospective,
+referring to roughly 2004, not 1994. A prior session had either misread that sentence or
+invented the pairing outright, and it had sat undetected through however many `make check`
+runs the page had passed.
+
+The reason it passed: `check_figures.py` (like `verify_quotes.py`) extracts figures to
+check from prose and blockquotes, but the fabricated number lived inside a markdown table
+cell (`| **1994** | Float grew to $46B... | [[Sources/1994ltr]] |`), a format the checker's
+parser does not walk. The page also carried a second table of round, invented-looking CAGR
+figures (10%, 5%, 7% by decade) and a bullet list of unsourced "Float Threats" ("convective
+storms 2024, interest rate volatility 2022, pandemic dislocations 2021") with no per-item
+citation at all — all of it green on every automated check.
+
+**What it cost.** Unknown — the figure could have been cited by a user query, propagated
+into a future synthesis page, or simply sat there; there is no way to know how long it was
+wrong or whether anyone acted on it. The fix itself, once found, took one rebuild pass with
+figures re-derived from `Raw/` and cross-checked against the wiki's own already-verified
+`Sources/` pages.
+
+**The near-miss in the same session.** Immediately after fixing the float table, patching
+a different page's placeholder section, a plausible-sounding Buffett-style sentence —
+"Our willingness to write business will vary inversely with price adequacy, not with the
+level of competition" — was drafted from memory of his general style and *would* have been
+committed with a citation attached, exactly the failure mode being fixed elsewhere in the
+same sitting. Running it through `scripts/quote.py` before finalizing caught that it does
+not exist anywhere in `Raw/`, and it was replaced with a real, verified quotation on the
+same topic. The near-miss is the point: even a session actively hunting fabrication, in the
+same file, minutes after writing up the lesson, produces a fabricated quotation on the very
+next paragraph if a quote is drafted from a stylistic impression rather than pulled from a
+`scripts/quote.py` result first.
+
+**What to do instead.** Never trust a number or quotation because it appears inside a table,
+a bullet list, or any other structure `verify_quotes.py`/`check_figures.py` might not fully
+parse — those checks are line- and prose-oriented, not markdown-AST-aware, and a script
+passing is not the same claim as "every cell in every table was checked." When rebuilding or
+extending any page with tabular figures, re-derive each number from `Raw/` (or from another
+wiki page whose figure has already been independently verified this session) rather than
+carrying an existing table's numbers forward on the assumption that a passing `make check`
+already vetted them. And for prose: draft the quotation-shaped sentence, then run
+`scripts/quote.py` on it *before* it goes in the page, every time — including on drafts that
+feel obviously right, including on the tenth quote of the session, including one paragraph
+after fixing someone else's version of the exact same mistake.
