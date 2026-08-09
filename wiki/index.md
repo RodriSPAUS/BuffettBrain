@@ -101,7 +101,7 @@ Deep dives into key Berkshire holdings and acquisitions:
 - [[Cases/GEICO]] — the cost-advantage moat, 1980–2024
 - [[Cases/SeeCandies]] — economic goodwill, and why great businesses cannot reinvest
 - [[Cases/BerkshireHathawayEnergy]] — regulated returns on an enormous capital base
-- [[Cases/BNSF]] — the paired regulated business *(stub)*
+- [[Cases/BNSF]] — the paired regulated business, and the "social compact" with regulators
 - [[Cases/ForestRiver]] — how Berkshire actually buys a company
 
 ---
@@ -112,8 +112,8 @@ Profiles of foundational figures who shaped Berkshire’s philosophy:
 
 - [[People/CharlieMunger]]
 - [[People/WarrenBuffett]]
-- [[People/TomMurphy]] — Capital Cities/ABC *(stub)*
-- [[People/HenrySingleton]] — Teledyne *(stub)*
+- [[People/TomMurphy]] — Capital Cities/ABC, and the Disney merger
+- [[People/HenrySingleton]] — Teledyne *(thin by design: the corpus names him only twice)*
 
 ---
 
