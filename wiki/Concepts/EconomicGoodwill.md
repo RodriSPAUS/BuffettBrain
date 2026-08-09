@@ -3,8 +3,8 @@ title: "Economic Goodwill"
 type: concept
 stability: high
 tags: [goodwill, accounting, book-value, inflation, moat, intrinsic-value]
-date: 2026-08-04
-source: [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/2010ltr]], [[Sources/2012ltr]], [[Sources/2022ltr]]
+date: 2026-08-09
+source: [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1999ltr]], [[Sources/2000ltr]], [[Sources/2010ltr]], [[Sources/2012ltr]], [[Sources/2022ltr]]
 ---
 
 # Economic Goodwill
@@ -41,19 +41,58 @@ The measurable form is return on tangible capital:
 
 A business that earns a high return on few tangible assets can raise prices with inflation without having to fund a proportionally larger asset base. A capital-heavy business cannot. That asymmetry is what makes economic goodwill an inflation hedge rather than merely an accounting curiosity.
 
-## Modern Examples and Applications
+## Goodwill is like land, not like a depreciating asset
 
-Buffett continued to highlight businesses with economic goodwill throughout his letters, including in later years when discussing inflation's impact:
+Sixteen years after introducing the concept, and arguing against the FASB's
+1999 proposal to end "pooling of interests" accounting, Buffett states the
+clearest one-line definition of how economic goodwill actually behaves — the
+opposite of most accounting charges, which describe something that reliably
+declines:
 
-## Connection to Moats
+> "In character, economic goodwill is much like land: The value of both assets
+> is sure to fluctuate, but the direction in which value is going to go is in
+> no way ordained." [[Sources/1999ltr]] [[Cases/SeeCandies]]
 
-Economic goodwill is closely connected to the concept of economic moats - the competitive advantages that protect a business from competition and allow it to maintain pricing power.
+He grounds the claim in the same worked example the wiki uses elsewhere: at
+See's, economic goodwill had by then grown irregularly but very substantially
+for 78 years. [[Sources/1999ltr]] The same letter agrees with corporate
+managements on one narrow point — that goodwill amortization charges are
+usually spurious, since (unlike depreciation, which tracks assets that
+invariably deteriorate) economic goodwill just as often grows as shrinks — while
+still rejecting pooling accounting as a worse alternative.
+
+## The negative case: goodwill that evaporates
+
+Economic goodwill is not a one-way ratchet, and the letters record at least one
+case of Buffett writing it off entirely. Reviewing the 1993 Dexter Shoe
+acquisition after years of eroding profitability:
+
+> "I clearly made a mistake in paying what I did for Dexter in 1993.
+> Furthermore, I compounded that mistake in a huge way by using Berkshire
+> shares in payment." [[Sources/2000ltr]]
+
+All remaining accounting goodwill attributable to the Dexter transaction was
+charged off that year — the accounting record catching up, at last, to an
+economic goodwill that had already disappeared. It is the clean negative case
+against every other example on this page: goodwill can be permanently
+destroyed by import competition just as easily as it can be built by a brand.
+
+## Connection to moats
+
+Economic goodwill is the accounting and valuation signature of
+[[Concepts/Moat]] — a moat is the competitive fact (brand strength, cost
+position, switching costs) that keeps a business earning high returns on
+minimal tangible capital; economic goodwill is the resulting gap between what
+that business is worth and what its balance sheet says it is worth. A widening
+moat shows up, years later, as growing economic goodwill; a collapsing one, as
+at Dexter, shows up as a write-off.
 
 ## Cross-References
 
 - [[Concepts/IntrinsicValue]] — what economic goodwill is a component of
 - [[Concepts/Moat]] — the competitive fact that produces it
-- [[Cases/SeeCandies]] — the worked example
+- [[Cases/SeeCandies]] — the worked example, and 78 years of goodwill growth
 - [[Synthesis/MoatEvolution]] — the shift this concept records
 - [[Concepts/CapitalAllocation]] — how goodwill-producing businesses allocate capital
-- [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/2010ltr]], [[Sources/2012ltr]], [[Sources/2022ltr]]
+- [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1999ltr]], [[Sources/2000ltr]],
+  [[Sources/2010ltr]], [[Sources/2012ltr]], [[Sources/2022ltr]]
