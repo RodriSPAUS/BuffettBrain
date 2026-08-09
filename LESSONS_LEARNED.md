@@ -923,3 +923,38 @@ subtotal or "Others" line if it has one. Never compute a residual by subtracting
 a partial sum from a total — the result is indistinguishable from a real cited
 figure until `make check` catches it, and it is faster to transcribe the full
 table once than to debug the arithmetic twice.
+
+---
+
+## [2026-08-09] Straight quotation marks used for emphasis get parsed as citations
+
+**What happened.** While rewriting `Sources/2013ltr`, plain narrative sentences
+used ASCII `"..."` around terms that were never meant as quotations — `"meaningless"`,
+`"Powerhouse Five"`, `"Some Thoughts About Investing,"` — purely for emphasis or
+to name a section title. `verify_quotes.py` does not distinguish intent: any
+`"`/`"`/`"`-delimited span over `MIN_QUOTE` length is checked against `Raw/` as
+if it claimed to be verbatim. One of these happened to almost match a real
+passage and produced a confusing false failure before the cause was traced to
+punctuation style rather than content.
+
+Separately, two *real* quotations in the same page (the GEICO goodwill line, the
+1999 utility-commitments epigraph) failed verification even after fixing curly
+vs. straight apostrophes, because the underlying `Raw/2013ltr.md` text is
+extraction-corrupted at exactly the word the quote spanned — `"to
+beapproaching $20 billion"` and `"restraintsin the utility industry"` are
+missing their mid-word space in the source file itself, so no correctly-spaced
+transcription of that clause can ever pass.
+
+**What it cost.** Two rounds of `verify_quotes.py` failures on a page that was
+otherwise correct — five minutes of grepping `Raw/` to confirm the corruption
+was in the source, not the transcription, each time.
+
+**What to do instead.** Reserve quotation marks in wiki prose for text that is
+actually being cited; use italics or no punctuation at all for emphasis or
+titles. When a real quotation keeps failing verification after the wording is
+double-checked against `Raw/`, grep the exact clause in `Raw/` before assuming
+the transcription is wrong — if the source itself has a missing space at that
+word boundary (a common PDF-extraction artifact, `check_raw_quality.py` does not
+catch it), the fix is to end the quotation mark before the corrupted word and
+continue the sentence in plain prose outside the quote, not to keep tweaking
+apostrophe style.
