@@ -866,3 +866,60 @@ this file already records that result. What today adds is the boundary condition
 it is safe **only while the check runs between each unit of work**. Batch thirty
 units and check at the end, and the cost of a repair exceeds the cost of the
 original work. That is not a property of the model; it is a property of the loop.
+
+---
+
+## [2026-08-09] A `sed` edit inside quoted text can desynchronize every quote after it
+
+**What happened.** While rewriting `Sources/2008ltr`, a fix for one bad quote was
+applied with `sed` instead of `Edit`. The substitution matched twice instead of
+once and left a duplicated paragraph with an unbalanced quotation mark — one `"`
+opened, never closed, before the next real blockquote began.
+
+`verify_quotes.py` pairs quote characters by simple left-to-right scanning, so
+that single stray `"` did not just break the one quote it was in. It shifted
+which characters looked like openers and closers for every quotation later in the
+file, producing garbled, truncated-looking "quotes" that were actually two
+unrelated sentences glued together at the point where the real quote should have
+closed.
+
+**What it cost.** 25 reported errors on a page that, after the actual stray
+character was found and removed, had 4. Most of the diagnosis time went into
+individually re-verifying quotes that were never wrong — the file was clean
+except for one unbalanced `"` from a botched find-and-replace.
+
+**What to do instead.** Never use `sed` (or any regex substitution) to edit prose
+that contains quotation marks; a `"..."` block is exactly the kind of content
+where a partial or double match silently breaks structure that a line-oriented
+tool cannot see. Use `Edit` with enough surrounding context to guarantee a unique,
+single match. And when a citation checker reports an implausibly large number of
+failures on a page that was previously passing, check quote-character parity
+first (count `"` + `“` + `”` per line, verify the running total returns to even
+at the end) before re-verifying each quote individually — an odd total anywhere
+in the file means everything downstream of that point is being mismatched, not
+that dozens of independent quotes are suddenly wrong.
+
+---
+
+## [2026-08-09] A computed "Others" row is not a citable figure
+
+**What happened.** Several investment-holdings tables (2006, 2007, 2008 letters)
+were transcribed by itemizing only the largest few holdings and then adding a
+row labeled "Others," with cost and market values obtained by subtracting the
+itemized rows from the raw table's printed total — arithmetic performed by the
+agent, not a number printed anywhere in `Raw/`. `check_figures` correctly flagged
+these as unsupported: the digits looked exactly like a real figure and were not
+one.
+
+**What it cost.** Three separate check failures across three letters, each
+requiring the table to be redone. In every case the fix was the same: type out
+every row the source actually itemizes, including its own "Others" line with the
+source's own number, rather than collapsing the tail of the table into a
+computed stand-in.
+
+**What to do instead.** When abbreviating a source table for a wiki page, only
+ever keep rows that are printed in the source, verbatim including its own
+subtotal or "Others" line if it has one. Never compute a residual by subtracting
+a partial sum from a total — the result is indistinguishable from a real cited
+figure until `make check` catches it, and it is faster to transcribe the full
+table once than to debug the arithmetic twice.
