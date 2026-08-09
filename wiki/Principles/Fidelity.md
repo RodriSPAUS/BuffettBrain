@@ -3,8 +3,8 @@ title: "Fidelity"
 type: principle
 stability: high
 tags: [fidelity, candour, integrity, alignment, reporting]
-date: 2026-07-30
-source: [[Sources/1983ltr]]
+date: 2026-08-09
+source: [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]], [[Sources/2005ltr]], [[Sources/2024ltr]]
 ---
 
 ## The commitment
@@ -35,6 +35,15 @@ And it is the trait Buffett requires of his successor:
 That second sentence is the actual argument: candour is a defence against
 self-deception before it is a courtesy to owners.
 
+The self-interested reason underneath the ethical one is what Buffett offers as
+proof the standard is durable rather than performative:
+
+> "Our guideline is to tell you the business facts that we would want to know if
+> our positions were reversed. We owe you no less." [[Sources/1983ltr]]
+
+> "the CEO who misleads others in public may eventually mislead himself in
+> private." [[Sources/1983ltr]]
+
 ## Its cost is accepted in advance
 
 Fidelity is expensive, and the 1983 letter says so in the same breath — Berkshire
@@ -43,6 +52,37 @@ will keep a bad business rather than dress up its results:
 > "Nevertheless, gin rummy managerial behavior (discard your least promising
 > business at each turn) is not our style. We would rather have our overall results
 > penalized a bit than engage in it." [[Sources/1983ltr]]
+
+Two years later, candour is turned on Buffett's own record rather than on the
+business — he introduces a major new purchase by first admitting he sold the
+same stock at a fraction of the price:
+
+> "Some of you probably wonder why we are now buying Cap Cities at $172.50 per
+> share given that your Chairman, in a characteristic burst of brilliance, sold
+> Berkshire's holdings in the same company at $43 per share in 1978-80."
+> [[Sources/1985ltr]]
+
+## The promise stated as a transaction, not a sentiment
+
+By 1996, the commitment is compressed into a single line that reads almost like
+a contract term:
+
+> "We do promise you, however, that virtually all of the gains Berkshire makes
+> will end up with shareholders. We are here to make money with you, not off
+> you." [[Sources/1996ltr]]
+
+## Fidelity extended past shareholders, to policyholders
+
+The obligation is not limited to the people who hold the stock. Defending
+Berkshire's aversion to debt even at a cost to return, Buffett grounds the
+policy in promises made decades earlier to people who have no vote at all:
+
+> "There are people who have been permanently injured to whom we owe insurance
+> payments that stretch out for fifty years or more. To these and other
+> constituencies we have promised total security, whatever comes: financial
+> panics, stock-exchange closures (an extended one occurred in 1914) or even
+> domestic nuclear, chemical or biological attacks." [[Sources/2005ltr]]
+> [[Concepts/Float]]
 
 ## On the other side of the relationship
 
@@ -63,6 +103,8 @@ boss".
 
 - [[Principles/OwnershipMindset]] — who the candour is owed to
 - [[Concepts/ManagementQuality]] — fidelity as a hiring criterion
+- [[Concepts/Float]] — the fifty-year insurance promises that shape balance-sheet policy
 - [[People/WarrenBuffett]] — the mistake inventories as candour in practice
 - [[Synthesis/FidelityTimeline]] — the standard traced across the letters
-- [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/2024ltr]]
+- [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]],
+  [[Sources/2005ltr]], [[Sources/2024ltr]]
