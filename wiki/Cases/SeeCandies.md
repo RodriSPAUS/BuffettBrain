@@ -2,8 +2,8 @@
 title: "See's Candies"
 type: case
 tags: [sees, brand, economic-goodwill, capital-allocation, moat]
-date: 2026-07-30
-source: [[Raw/2007ltr.md]]
+date: 2026-08-09
+source: [[Sources/1985ltr]], [[Sources/1989ltr]], [[Sources/1990ltr]], [[Sources/1991ltr]], [[Sources/1999ltr]], [[Sources/2007ltr]]
 ---
 
 ## Why this case matters
@@ -91,12 +91,59 @@ wound up:
 > quality-and-service message to the thousands of employees we need to produce and
 > distribute over 27 million pounds of candy annually." [[Sources/1989ltr]]
 
+A year later, See's set a physical-volume record despite softening mall traffic
+after the invasion of Kuwait, helped by a 5% price increase and Huggins's cost
+discipline [[Sources/1990ltr]] — a small worked example of the pricing power
+described more fully the following year.
+
+## The insight, named directly
+
+The 1991 letter is where Buffett states plainly what the purchase actually
+depended on, and how close it came to not happening at all:
+
+> "In our See's purchase, Charlie and I had one important insight: We saw that
+> the business had untapped pricing power." [[Sources/1991ltr]]
+
+> "First, the transaction was not derailed by our dumb insistence on a $25
+> million price." [[Sources/1991ltr]]
+
+By then the case for treating See's as a funding source rather than a growth
+engine was fully proven: "our beginning base of $7 million has had to be
+supplemented by only $18 million of reinvested earnings. Meanwhile, See's
+remaining pre-tax profits of $410 million were distributed to Blue Chip/Berkshire
+during the 20 years for these companies to deploy (after payment of taxes) in
+whatever way made most sense." [[Sources/1991ltr]] [[Concepts/CapitalAllocation]]
+
+The compensation arrangement with Chuck Huggins is treated as proof that
+simplicity, not contractual complexity, is what a trusted manager actually
+needs:
+
+> "We shook hands with Chuck on a compensation arrangement - conceived in about
+> five minutes and never reduced to a written contract - that remains unchanged
+> to this day." [[Sources/1991ltr]] [[Concepts/ManagementQuality]]
+
+## Economic goodwill "like land," at 78 years
+
+Arguing in 1999 against a FASB proposal to end pooling-of-interests accounting,
+Buffett returns to See's as the standing proof that economic goodwill does not
+behave like a depreciating asset:
+
+> "In character, economic goodwill is much like land: The value of both assets
+> is sure to fluctuate, but the direction in which value is going to go is in
+> no way ordained." [[Sources/1999ltr]] [[Concepts/EconomicGoodwill]]
+
+By 1999, economic goodwill at See's had grown irregularly but very substantially
+for 78 years — dated, notably, from the See family's founding of the business,
+not from Blue Chip's 1972 purchase. [[Sources/1999ltr]]
+
 ## Cross-references
 
-- [[Concepts/EconomicGoodwill]] — See's is the worked example
+- [[Concepts/EconomicGoodwill]] — See's is the worked example, and "like land" at 78 years
 - [[Concepts/CapitalAllocation]] — earnings deployed away from the business that
   generated them
 - [[Concepts/Moat]] — a durable position in a dull industry
+- [[Concepts/ManagementQuality]] — the five-minute handshake compensation deal
 - [[Cases/GEICO]] — the other multi-decade holding, with a cost moat rather than
   a brand moat
-- [[Sources/1985ltr]], [[Sources/1989ltr]], [[Sources/2007ltr]]
+- [[Sources/1985ltr]], [[Sources/1989ltr]], [[Sources/1990ltr]], [[Sources/1991ltr]],
+  [[Sources/1999ltr]], [[Sources/2007ltr]]
