@@ -3,7 +3,7 @@ title: "BNSF"
 type: case
 tags: [bnsf, railroad, regulated, capital-intensive, social-compact]
 date: 2026-08-09
-source: [[Sources/2009ltr]], [[Sources/2010ltr]], [[Sources/2011ltr]], [[Sources/2014ltr]], [[Sources/2020ltr]]
+source: [[Sources/2009ltr]], [[Sources/2010ltr]], [[Sources/2011ltr]], [[Sources/2014ltr]], [[Sources/2015ltr]], [[Sources/2020ltr]]
 ---
 
 ## The acquisition, and the "social compact"
@@ -74,6 +74,22 @@ in 2009:
 
 > "Keep thy shop, and thy shop will keep thee." [[Sources/2011ltr]]
 
+## 2015: a service failure reversed, and a productivity case study
+
+After a rough 2014 marked by service failures, BNSF invested a record $5.8
+billion in capital expenditures during 2015 — nearly three times its annual
+depreciation charge — and posted record pre-tax income of $6.8 billion, up
+$606 million. [[Sources/2015ltr]] Its revenue per ton-mile (just under 3¢) ran
+at least 40% below the other four major U.S. railroads (4.2¢-5.3¢), the
+competitive-cost fact underneath the moat claimed elsewhere on this page.
+
+The same letter uses BNSF as one of four case studies in a long essay on
+productivity: railroads moved 71% more ton-miles in 2015 than in 1996 while
+employing only 4% more workers — a gain Buffett credits broadly to society but
+is careful to note came at a real cost to displaced railroad workers, the same
+argument he applies to Dexter Shoe's laid-off Maine workforce and New
+Bedford's textile-mill workers. [[Sources/2015ltr]] [[Concepts/ManagementQuality]]
+
 ## 2020: the largest owner of domestic fixed assets
 
 A decade after the acquisition, Buffett highlights that Berkshire's
@@ -94,4 +110,4 @@ succeeded by Katie Farmer. [[Sources/2020ltr]]
   on a very large capital base
 - [[Concepts/Moat]]
 - [[Sources/2009ltr]], [[Sources/2010ltr]], [[Sources/2011ltr]], [[Sources/2014ltr]],
-  [[Sources/2020ltr]]
+  [[Sources/2015ltr]], [[Sources/2020ltr]]
