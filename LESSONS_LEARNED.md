@@ -985,3 +985,77 @@ right company under the alphabetical hypothesis, and the reconstructed columns
 sum to the table's own printed totals, the mapping is confirmed. Never publish a
 company/figure pairing from a scrambled table without that cross-check; a number
 being "in `Raw/`" is not the same as it being paired with the right company.
+
+---
+
+## [2026-08-09] `make check` passing does not mean a page covers its source — `check_coverage`'s entity-matching heuristic misses entire missing sections
+
+**What happened.** A user-requested audit of three random pre-1997 `Sources/`
+pages (1983, 1991, 1996) found 1991 and 1996 badly incomplete despite both
+showing `make check` PASS with zero errors and zero (or one trivial) warning.
+1991's page had no coverage at all of "Insurance Operations," "Marketable Common
+Stocks," "Mistake Du Jour" (the $1.4 billion Fannie Mae story), or "Fixed-Income
+Securities" — four of the letter's ten major sections. 1996's page was 67 lines
+against 1287 in `Raw/1996ltr.md` (a 0.05 coverage ratio) and skipped "Taxes,"
+"Sources of Reported Earnings," the full "Common Stock Investments" essay
+("The Inevitables"), "USAir," and "Financings" entirely. A line-count-ratio scan
+of every 1977-1996 letter showed 1985-1996 systematically thin (ratios 0.05-0.21)
+against 1977-1984 (mostly 0.35-0.88), yet every one of the thin pages had been
+passing `make check` for months.
+
+The reason: `check_coverage.py` flags a page only when a *specific named
+entity* it can extract from `Raw/` (a proper noun, a repeated capitalized term)
+is absent from the wiki corpus. A page can omit an entire section — a whole
+segment-earnings table, a whole essay on deferred taxes, a whole insurance
+discussion — and pass silently as long as no individually-flaggable term from
+that section happens to be missing. Breadth of coverage and presence of
+flaggable nouns are different properties, and the checker only measures the
+second.
+
+**What it cost.** Twelve letters (1980, 1985-1996) needed manual audit and, in
+most cases, substantial rewriting — several hundred lines of missing content
+per letter, verified quote-by-quote and re-checked — that would not have been
+caught without a human explicitly asking "are these good enough?" and a
+line-count/header comparison against `Raw/`, rather than trusting the existing
+green `make check` result.
+
+**What to do instead.** `make check` passing is necessary but not sufficient
+evidence of full coverage. Before treating a `Sources/` page as done — whether
+freshly written or inherited from a prior session — run
+`grep -n "^[A-Z][a-zA-Z ,'&-]*$" Raw/YYYYltr.md` (or, if that pattern misses a
+letter's header style, a Python scan for isolated title-case lines bounded by
+blank lines) and confirm every section header it turns up is represented in the
+wiki page. A line-count ratio (`wc -l` on both files) below roughly 0.2 is a
+strong prior that whole sections are missing and warrants the header-diff even
+before reading either file closely. Only after that manual diff — not after a
+clean `make check` — should a page be considered to meet the "cover everything
+the source covers" standard `AGENTS.md` sets for `Sources/` pages.
+
+---
+
+## [2026-08-09] An unbalanced quotation mark anywhere on a page can make `verify_quotes.py` misattribute errors to unrelated, untouched lines later in the file
+
+**What happened.** While augmenting `Sources/1992ltr.md`, one added blockquote
+combined a real quotation with unquoted trailing prose but left a stray closing
+`"` at the very end: `"Practice doesn't make perfect; practice makes
+permanent." And thereafter I revised my strategy ... good prices."` — an odd
+number of quote characters on that line. Running `verify_quotes.py` immediately
+after reported thirteen errors, all on lines far below the edit and all on text
+that had shipped clean in earlier sessions (`"- The condition that decides
+it:"`, `"- With credit assigned by name:"`, and similar bullet lead-ins that
+are not quotations at all). Removing the single stray quote mark made all
+thirteen false errors disappear in one pass, leaving only the genuine issues.
+
+**What it cost.** A few minutes of confusion treating thirteen simultaneous,
+scattered "new" errors as thirteen separate transcription problems before
+noticing they were all downstream of one unbalanced quote mark introduced by
+the edit itself.
+
+**What to do instead.** When `verify_quotes.py` reports a burst of errors on
+lines the current edit did not touch — especially ones that are obviously not
+quotations (bullet lead-ins, section labels) — suspect an odd quote-mark count
+introduced earlier in the file rather than treating each report as independent.
+Check the most recently added blockquote first for a quotation that mixes
+quoted and unquoted material without closing the quote mark at the actual end
+of the quoted span; fixing that one imbalance is usually enough to collapse the
+whole error list back to the real ones.
