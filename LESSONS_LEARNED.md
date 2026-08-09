@@ -958,3 +958,30 @@ word boundary (a common PDF-extraction artifact, `check_raw_quality.py` does not
 catch it), the fix is to end the quotation mark before the corrupted word and
 continue the sentence in plain prose outside the quote, not to keep tweaking
 apostrophe style.
+
+---
+
+## [2026-08-09] Investment-table PDF extraction scrambles rows into separate columns — reconstruct by cross-checking unchanging figures, never assume position order
+
+**What happened.** The 2020 and 2021 `Raw/YYYYltr.md` files extract the top-15
+common-stock table as four flat, separately-ordered lists — company names, then
+ownership percentages, then cost, then market value — with no row markers tying
+a given percentage or dollar figure back to the company it describes. The visual
+table order in the original PDF (largest position first) does not match any of
+these lists' order.
+
+**What it cost.** Nothing yet, but the risk was silent misattribution: pairing
+Bank of America's share count with American Express's cost basis, for instance,
+would produce a page that fabricates nothing checkable by `verify_quotes.py` or
+`check_figures.py` (both numbers exist in `Raw/`) while still being wrong.
+
+**What to do instead.** Re-sort the company-name list alphabetically and assume
+the other three lists are in that same alphabetical order — annual letters have
+printed these tables alphabetically by company for decades. Confirm before
+trusting it: several holdings recur letter to year with unchanging or
+slowly-changing figures (American Express's cost has been a flat $1,287 million
+for over a decade; Moody's cost a flat $248 million) — if those land on the
+right company under the alphabetical hypothesis, and the reconstructed columns
+sum to the table's own printed totals, the mapping is confirmed. Never publish a
+company/figure pairing from a scrambled table without that cross-check; a number
+being "in `Raw/`" is not the same as it being paired with the right company.
