@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [float, insurance, underwriting, cost-of-capital, insurance-business]
 date: 2026-08-04
-source: [[Sources/1994ltr]], [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/1990ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]], [[Sources/2020ltr]]
+source: [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]], [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]], [[Sources/2020ltr]]
 ---
 
 # Float: Insurance-Based Capital for Investment
@@ -31,15 +31,40 @@ Negative cost is the goal, not a given. The 1990 letter is candid about what can
 
 ## Float Growth Over Time
 
-Berkshire's float has grown substantially over the years, providing significant capital for investments:
+Verified yearend and average float figures from 1990 to 2024, and the
+correction of a fabricated $46 billion figure once attached to 1994, are
+traced in full in [[Synthesis/FloatGrowth]].
 
 ## Underwriting Discipline
 
-Maintaining a low cost of float requires discipline in underwriting - the willingness to write less business when prices are inadequate. This discipline is part of Berkshire's competitive advantage in the insurance business.
+Cheap float depends on refusing most of the business offered, not on writing
+as much as possible. Buffett states the ratio directly for Berkshire's
+reinsurance operation:
+
+> "The saying, "a fool and his money are soon invited everywhere," applies in
+> spades in reinsurance, and we actually reject more than 98% of the business
+> we are offered. Our ability to choose between good and bad proposals
+> reflects a management strength that matches our financial strength: Ajit
+> Jain, who runs our reinsurance operation, is simply the best in this
+> business." [[Sources/1992ltr]] [[Concepts/ManagementQuality]]
+
+Without that discipline, float would not be the funding advantage described
+below — it would just be a large pool of money borrowed at whatever the
+underwriting loss happened to cost that year.
 
 ## Float as Funding Layer
 
-Float that costs nothing and grows behaves like permanent equity that pays no dividend. That is what makes the insurance operation the funding layer beneath everything else Berkshire owns.
+Float that costs nothing and grows behaves like permanent equity that pays no
+dividend, without diluting shareholders to raise it. Buffett states the
+comparison directly while walking through what would happen if Berkshire had
+to replace its float with real equity capital instead:
+
+> "Since our float has cost us virtually nothing over the years, it has in
+> effect served as equity." [[Sources/1995ltr]]
+
+That is what makes the insurance operation the funding layer beneath
+everything else Berkshire owns: BNSF, Berkshire Hathaway Energy, and the
+common-stock portfolio are all, in part, float-funded.
 
 ## Cross-References
 
@@ -48,5 +73,7 @@ Float that costs nothing and grows behaves like permanent equity that pays no di
 - [[Concepts/MarginOfSafety]] — the underwriting form of the same idea
 - [[Concepts/ManagementQuality]] — managing insurance operations effectively
 - [[Synthesis/FloatGrowth]] — the long arc across the letters
-- [[Sources/1990ltr]], [[Sources/1994ltr]], [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]], [[Sources/2020ltr]]
+- [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]],
+  [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]],
+  [[Sources/2020ltr]]
 
