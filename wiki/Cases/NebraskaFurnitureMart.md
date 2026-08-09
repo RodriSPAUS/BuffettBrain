@@ -3,15 +3,11 @@ title: "Nebraska Furniture Mart"
 type: case
 stability: medium
 tags: [nebraska-furniture-mart, retail, cost-advantage, moat, management, acquisition]
-date: 2026-08-01
-source: [[Sources/1983ltr]]
+date: 2026-08-09
+source: [[Sources/1983ltr]], [[Sources/1989ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1993ltr]], [[Sources/1995ltr]]
 ---
 
 # Nebraska Furniture Mart
-
-> TODO: flesh out. Seeded from the 1983 and 1984 letters. Later years, the
-> Blumkin succession, and the eventual expansion beyond Omaha are not yet
-> compiled here.
 
 Acquired in 1983 — 90% of the business, with 10% left with the family members in
 management and 10% optioned to key young family managers.
@@ -65,10 +61,63 @@ the country.
 
 See [[Concepts/ManagementQuality]].
 
+## 1989: Mrs. B leaves, at 96, over a carpet dispute
+
+The first crack in the founding story. Rose Blumkin quit in May 1989 after
+disagreeing with the rest of the family over the carpet department — a dispute
+Buffett is candid the family was right about, since carpet sales had fallen 17%
+over three years while the rest of the store grew 24%:
+
+> "You will be pleased to know that Mrs. B continues to make Horatio Alger's
+> heroes look like victims of tired blood." [[Sources/1989ltr]]
+
+At 96 she promptly opened a competing carpet-and-furniture store next door.
+
+## 1990: the See's candy cart, and a "counterrevelation"
+
+Buffett, who had long mocked corporate boasts about "synergy" as "the last
+refuge of scoundrels defending foolish acquisitions," reports being proven
+wrong at his own company:
+
+> "In Berkshire's first synergistic explosion, NFM put a See's candy cart in
+> the store late last year and sold more candy than that moved by some of the
+> full-fledged stores See's operates in California." [[Sources/1990ltr]]
+> [[Cases/SeeCandies]]
+
+## 1992: Mrs. B rejoins, and signs a non-compete this time
+
+Three years after leaving, 99-year-old Mrs. B sold her competing store's
+building and land back to NFM, moving her carpet business to operate alongside
+NFM in the same building — and, this time, signed a non-compete agreement.
+[[Sources/1992ltr]]
+
+Buffett had not asked for a non-compete when she was "only" 89 in 1983 and
+learned the lesson the hard way; getting one at 99 struck him as poetic
+justice rather than an oversight corrected.
+
+## 1993: the 100th birthday, and a day the store stayed open
+
+> "Mrs. B - Rose Blumkin - had her 100th birthday on December 3, 1993. (The
+> candles cost more than the cake.)" [[Sources/1993ltr]]
+
+The store was scheduled to be open that evening, so she postponed her own
+birthday party rather than close early — the same discipline Buffett had
+already praised as central to her character in 1983.
+
+## 1995: the family connection that led to R.C. Willey
+
+NFM's role in the corpus extends beyond its own four walls. It was Irv Blumkin
+— continuing the family's habit of vouching for other operators it respects —
+who connected Buffett to Bill Child of R.C. Willey Home Furnishings, Utah's
+leading furniture retailer, leading to Berkshire's 1995 acquisition of that
+business as well. [[Sources/1995ltr]]
+
 ## See also
 
 - [[Concepts/Moat]] — cost advantage as the durable kind
 - [[Concepts/EconomicGoodwill]] — a business worth far more than its tangible assets
+- [[Concepts/ManagementQuality]] — Mrs. B's discipline, tested across three decades
 - [[Applications/BusinessQualityChecklist]] — the how-would-I-compete-with-it test
-- [[Cases/SeeCandies]] — the other consumer franchise of the same era
-- [[Sources/1983ltr]], [[Sources/1984ltr]]
+- [[Cases/SeeCandies]] — the other consumer franchise of the same era, and the candy-cart story
+- [[Sources/1983ltr]], [[Sources/1984ltr]], [[Sources/1989ltr]], [[Sources/1990ltr]],
+  [[Sources/1992ltr]], [[Sources/1993ltr]], [[Sources/1995ltr]]
