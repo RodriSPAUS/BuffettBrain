@@ -47,4 +47,5 @@ See [[Concepts/MrMarket]], for the behavioral half of the argument.
 - [[Concepts/CapitalAllocation]] — growth creates value only above the cost of the capital it absorbs
 - [[Concepts/Moat]] — competitive advantages that support intrinsic value
 - [[Sources/OwnersManual]] — the canonical definition, and book value's limits
+- [[Sources/1957ltr]], [[Sources/1958ltr]] — "priced above intrinsic value", and Commonwealth Trust at $50 vs $125
 - [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1994ltr]], [[Sources/2000ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]]

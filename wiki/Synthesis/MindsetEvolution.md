@@ -15,17 +15,21 @@ underlying discipline is identical in the first letter and the last. This page
 separates the two. For the narrower story of how the moat concept itself matured,
 see [[Synthesis/MoatEvolution]]; this page is the wider mental arc that contains it.
 
-*Boundary: the corpus is the 1977–2024 letters plus the [[Sources/OwnersManual]].
-Buffett's 1960s partnership years — the pure Graham "cigar-butt" era — are referred
-to inside the letters but are not themselves sources here; claims about them rest on
-what the later letters say about them.*
+*Boundary (updated): the corpus now runs 1957–2024. The Buffett Partnership letters
+[[Sources/1957ltr]]–[[Sources/1960ltr]] are first-hand sources for the early Graham
+era — an earlier version of this page treated that era as general knowledge; it no
+longer is. The 1961–1976 partnership and early-Berkshire years remain a gap.*
 
 ## The change: from cheap to wonderful
 
 The largest shift is in *what* Buffett buys. He begins as a quantitative Graham
-disciple — buy anything statistically cheap against its assets — and abandons it,
-under [[People/CharlieMunger]]'s pressure, for something close to the opposite. He
-dates the surrender explicitly in 1989:
+disciple — buy anything statistically cheap against its assets — and the partnership
+letters show precisely what that looked like: a portfolio split between undervalued
+"generals" and event-driven "work-outs" [[Sources/1957ltr]], and control plays like
+[[Cases/SanbornMap]], where the market priced a company's securities portfolio below
+its own value and handed over the operating business for nothing [[Sources/1960ltr]].
+He then abandons that method, under [[People/CharlieMunger]]'s pressure, for something
+close to the opposite. He dates the surrender explicitly in 1989:
 
 > "I call this the "cigar butt" approach to investing. A cigar butt found on the street that has only one puff left in it may not offer much of a smoke, but the "bargain purchase" will make that puff all profit. Unless you are a liquidator, that kind of approach to buying businesses is foolish." [[Sources/1989ltr]]
 
@@ -103,4 +107,5 @@ he thinks never did.
 - [[Concepts/IntrinsicValue]], [[Concepts/MarginOfSafety]], [[Concepts/MrMarket]] — the constants
 - [[People/CharlieMunger]] — who argued for the shift · [[People/BenGraham]] — where the constants came from
 - [[People/GregAbel]], [[People/AjitJain]] — the succession that closes the arc
-- [[Sources/1981ltr]], [[Sources/1989ltr]], [[Sources/1991ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2014ltr]], [[Sources/2024ltr]], [[Sources/OwnersManual]]
+- [[Cases/SanbornMap]] — the pure-Graham starting point, grounded
+- [[Sources/1957ltr]], [[Sources/1960ltr]], [[Sources/1981ltr]], [[Sources/1989ltr]], [[Sources/1991ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2014ltr]], [[Sources/2024ltr]], [[Sources/OwnersManual]]

@@ -47,6 +47,7 @@ below value. That arc is traced in [[Synthesis/MoatEvolution]] and
 
 ## See also
 
+- [[Cases/SanbornMap]] — Graham's net-net logic applied in practice, 1958–1960
 - [[Concepts/MarginOfSafety]] — Graham's "three words"
 - [[Concepts/MrMarket]] — Graham's allegory
 - [[Concepts/IntrinsicValue]] — voting machine vs weighing machine

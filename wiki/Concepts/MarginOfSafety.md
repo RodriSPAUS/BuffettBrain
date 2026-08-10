@@ -44,6 +44,7 @@ Written near the top of the late-1990s market, this is the concept used as a war
 ## Cross-References
 
 - [[People/BenGraham]] — the "three words" the principle comes from
+- [[Cases/SanbornMap]] — the earliest worked example: a securities portfolio bought below its own value
 - [[Concepts/IntrinsicValue]] — the estimate the margin protects
 - [[Concepts/MrMarket]] — who supplies the price
 - [[Concepts/Float]] — the underwriting form of the same rule

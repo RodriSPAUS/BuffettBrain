@@ -46,6 +46,7 @@ The character is named in 1987, but the diagnosis predates him:
 ## Cross-References
 
 - [[People/BenGraham]] — the allegory's author, "my friend and teacher"
+- [[Sources/1958ltr]], [[Sources/1959ltr]] — the "exuberant" market and "New Era" skepticism, decades before the name
 - [[Concepts/IntrinsicValue]] — the value Mr. Market's price is measured against
 - [[Concepts/MarginOfSafety]] — what you demand when he is not being foolish
 - [[Principles/OwnershipMindset]] — the stance that makes ignoring him possible

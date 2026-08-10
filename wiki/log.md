@@ -545,3 +545,14 @@
 - Substantive multi-source query (how Buffett's thinking evolved). Per the "Filing answers back" rule, filed the answer as [[Synthesis/MindsetEvolution]] rather than leaving it in chat.
 - Thesis: the technique changed completely (cheap→wonderful, RoE→owner earnings, then size forcing float/buybacks/succession) while the discipline never did (intrinsic value, margin of safety, Mr. Market, ownership, candor — the constants the Owner's Manual codifies).
 - Cross-linked with [[Synthesis/MoatEvolution]] (bidirectional) and updated [[index]]. All quotes verified against Raw.
+
+## [2026-08-10] query | "did Buffett invest in aircraft leasing?" → filed Cases/NetJets and Cases/FlightSafety
+- Answer: no dedicated aircraft-leasing investment (nothing like GECAS/AerCap). The nearest is [[Cases/NetJets]] (Executive Jet Aviation, 1998, $725M) — fractional ownership and fleet operation, not leasing; it only owns/leases 23 "core" aircraft for its own fleet. [[Cases/FlightSafety]] (1996) is pilot training; USAir (1989) was an airline, and a mistake.
+- The query exposed two missing Cases (both notable Berkshire aviation subsidiaries with no page); created both, grounded in verified quotes, cross-linked to each other and updated [[index]].
+
+## [2026-08-10] ingest | Sources/1957ltr–1960ltr — the Buffett Partnership letters (new era)
+- First pre-Berkshire sources: the annual letters to limited partners, 1957–1960 (Buffett at 27–30, the pure Graham era). Extended the corpus back twenty years from 1977.
+- Wrote four summaries and created [[Cases/SanbornMap]] (the marquee partnership case: net-net valuation plus a control/governance fight), all grounded in verified quotes.
+- Superseded a claim: [[Synthesis/MindsetEvolution]] previously treated the partnership/Graham era as general knowledge and flagged it as a boundary; that era is now first-hand sourced, so the boundary note and the "cheap to wonderful" opening were rewritten with grounded material ("generals"/"work-outs", Sanborn).
+- Propagated to [[Concepts/MarginOfSafety]], [[Concepts/IntrinsicValue]], [[Concepts/MrMarket]] (the "exuberant"/"New Era" precursors to Mr. Market) and [[People/BenGraham]]; updated [[index]] (source range now 1957–present).
+- Kept each page's figures to its own letter (the 1957 individual-partnership returns vs the 1960 four-year table are different numbers); avoided the OCR-mangled Nebraska Intangibles Tax figure. make check + make lint to follow.

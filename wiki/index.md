@@ -15,9 +15,13 @@ Welcome to the structured, interconnected knowledge base for Warren Buffett's in
 
 ## Source Summaries
 
-Materials from Warren Buffett (1977–present), processed into structured, source-linked summaries:
+Materials from Warren Buffett (1957–present), processed into structured, source-linked summaries:
 
 - [[Sources/OwnersManual]] — *the 14 owner-related business principles (booklet, Jan 1999) — not an annual letter*
+- [[Sources/1957ltr]] — *Buffett Partnership: generals, work-outs, and the Dow benchmark*
+- [[Sources/1958ltr]] — *Buffett Partnership: Commonwealth Trust, the method worked in full*
+- [[Sources/1959ltr]] — *Buffett Partnership: "New Era" skepticism, one holding at 35%*
+- [[Sources/1960ltr]] — *Buffett Partnership: the Sanborn Map case*
 - [[Sources/1977ltr]]
 - [[Sources/1978ltr]]
 - [[Sources/1979ltr]]
@@ -105,6 +109,9 @@ Deep dives into key Berkshire holdings and acquisitions:
 - [[Cases/BerkshireHathawayEnergy]] — regulated returns on an enormous capital base
 - [[Cases/BNSF]] — the paired regulated business, and the "social compact" with regulators
 - [[Cases/ForestRiver]] — how Berkshire actually buys a company
+- [[Cases/NetJets]] — fractional jet ownership (not leasing), acquired 1998
+- [[Cases/FlightSafety]] — the world leader in pilot training, acquired 1996
+- [[Cases/SanbornMap]] — the partnership-era value classic: net-net plus a control fight
 
 ---
 
