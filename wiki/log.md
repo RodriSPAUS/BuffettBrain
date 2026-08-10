@@ -529,3 +529,14 @@
 - Wrote [[Sources/OwnersManual]] (`sourcetype: book`, dated Jan 1999) covering all six parts: intro, the 13 owner-related principles, the added 14th, intrinsic value, purchase-accounting/goodwill, and the managing of Berkshire.
 - Created [[People/BenGraham]] (named in the manual as "the greatest teacher in the history of finance", previously unlinked). Propagated to [[Principles/OwnershipMindset]], [[Principles/Fidelity]], [[Concepts/IntrinsicValue]], [[Concepts/OwnerEarnings]], [[Concepts/EconomicGoodwill]], [[Concepts/ManagementQuality]], [[Concepts/Float]], [[Concepts/MarginOfSafety]], [[Concepts/MrMarket]]; updated [[index]].
 - `check_coverage`, `check_figures`, `verify_quotes`, full `lint`, `lint_links` all clean. Propagation: 49/49 sources reach the compiled layer.
+
+## [2026-08-10] lint | cleanup — removed leftover auto-generated placeholder sections and stale TODOs
+- Deleted ungrounded boilerplate/dangling sections left over from an earlier generated draft (frontmatter-correct but empty: headings ending in a colon with no content, plus the reused filler quotes "Time is the friend of the wonderful business..." and "fearful when others are greedy..." tacked onto pages whose source lists did not even include those letters):
+  - [[Concepts/IntrinsicValue]]: "The Long-Term Focus", "Evolution in Reporting"
+  - [[Concepts/MrMarket]]: "Market Volatility as Opportunity", "Long-Term Perspective"
+  - [[Concepts/OwnerEarnings]]: "Long-Term Focus on Sustainable Earnings", "Quality of Earnings"
+  - [[Concepts/ManagementQuality]]: "Capital Allocation Skills", "Long-Term Perspective", "Delegation and Trust"
+  - [[Concepts/MarginOfSafety]]: "Risk Management in Practice", "Market Timing and Valuation"
+  - [[Concepts/CapitalAllocation]]: "Share Repurchases as Capital Allocation", "Long-term Perspective in Allocation", "Inflation Considerations"
+- Removed four stale `> TODO:` markers that were making finished pages skip `check_structure`/`check_figures` (they count as unfilled skeletons): [[Cases/BerkshireHathawayEnergy]] (BNSF, which now exists), [[Cases/GEICO]], [[People/CharlieMunger]], [[Concepts/CapitalAllocation]].
+- Grounded sections (real quotes tied to each page's own sources) were all kept. `make lint` clean; `check_structure` now reports 0 skeletons (was 4).

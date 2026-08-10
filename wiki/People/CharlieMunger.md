@@ -133,6 +133,3 @@ For the 2014 letter the two wrote separate assessments:
 - [[Sources/1980ltr]], [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2006ltr]],
   [[Sources/2007ltr]], [[Sources/2009ltr]], [[Sources/2014ltr]], [[Sources/2022ltr]],
   [[Sources/2023ltr]]
-
-> TODO: Munger's own 50-year assessment begins on page 39 of the 2014 report and
-> is not yet summarised in [[Sources/2014ltr]].

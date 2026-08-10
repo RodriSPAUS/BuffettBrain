@@ -47,20 +47,6 @@ Alignment, demonstrated by what a manager asks for rather than what he says. Pet
 
 See [[Principles/Fidelity]] for the full treatment.
 
-## Capital Allocation Skills
-
-Management quality includes the ability to allocate capital effectively:
-
-## Long-Term Perspective
-
-Quality management maintains a long-term perspective rather than focusing solely on short-term metrics:
-
-> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1989ltr]]
-
-## Delegation and Trust
-
-Berkshire's management philosophy emphasizes delegating to capable managers and trusting them to run their operations:
-
 ## Cross-References
 
 - [[Concepts/Moat]] — what a business must have before management can matter

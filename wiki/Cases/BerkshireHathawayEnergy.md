@@ -115,7 +115,3 @@ See [[People/WarrenBuffett]] on succession and [[Concepts/ManagementQuality]].
 - [[Sources/1999ltr]], [[Sources/2002ltr]], [[Sources/2003ltr]],
   [[Sources/2014ltr]], [[Sources/2015ltr]], [[Sources/2016ltr]],
   [[Sources/2019ltr]]
-
-> TODO: BNSF has no page of its own yet and is discussed in the same section of
-> every letter from 2010 on. Create [[Cases/BNSF]] and split the regulated
-> businesses across the two.

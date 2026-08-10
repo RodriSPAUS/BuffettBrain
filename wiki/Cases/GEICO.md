@@ -101,6 +101,3 @@ different name on it:
 - [[Sources/1980ltr]], [[Sources/1982ltr]], [[Sources/1986ltr]],
   [[Sources/1995ltr]], [[Sources/1996ltr]], [[Sources/2009ltr]],
   [[Sources/2024ltr]]
-
-> TODO: the 1976 near-failure and the Jack Byrne rescue are referred to across
-> several letters; add them once the pre-1980 summaries carry the detail.

@@ -35,16 +35,6 @@ Under those conditions a business earning 8% or 10% on equity "often has no left
 
 The Scott Fetzer purchase in [[Sources/1985ltr]] and its accounting treatment in [[Sources/1986ltr]] are where this becomes a worked calculation.
 
-## Long-Term Focus on Sustainable Earnings
-
-Owner earnings emphasize the importance of sustainable cash generation over accounting metrics:
-
-> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1989ltr]]
-
-## Quality of Earnings
-
-The concept highlights the difference between accounting earnings and economic reality:
-
 ## Cross-References
 
 - [[Concepts/CapitalAllocation]] — what is done with the earnings once identified

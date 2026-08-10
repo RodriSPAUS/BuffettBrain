@@ -39,16 +39,6 @@ This is the sentence that ties valuation to [[Concepts/CapitalAllocation]]: whet
 
 See [[Concepts/MrMarket]], for the behavioral half of the argument.
 
-## The Long-Term Focus
-
-Intrinsic value emphasizes the importance of long-term thinking in investment decisions:
-
-> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1989ltr]]
-
-## Evolution in Reporting
-
-Buffett dropped book value as Berkshire's headline metric in the 2018 letter, reflecting the shift toward focusing on intrinsic value rather than accounting measures:
-
 ## Cross-References
 
 - [[Concepts/MarginOfSafety]] — what to do about an estimate you cannot pin down

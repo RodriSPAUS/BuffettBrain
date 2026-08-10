@@ -41,16 +41,6 @@ That is the link to [[Concepts/Float]]: an inadequate premium is a negative marg
 
 Written near the top of the late-1990s market, this is the concept used as a warning rather than a screen — the discipline that produces inaction. See [[Concepts/MrMarket]].
 
-## Risk Management in Practice
-
-The margin of safety principle extends beyond individual stock selection to overall portfolio risk management:
-
-## Market Timing and Valuation
-
-During periods of high market valuations, the margin of safety becomes increasingly difficult to achieve:
-
-> "they should try to be fearful when others are greedy and greedy only when others are fearful." [[Sources/2004ltr]]
-
 ## Cross-References
 
 - [[People/BenGraham]] — the "three words" the principle comes from

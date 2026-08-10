@@ -50,20 +50,6 @@ Berkshire's dividend policy reflects their capital allocation philosophy - retai
 
 > "On January 3, 1967, we disbursed our sole payment – $101,755 or 10¢ per A share." [[Sources/2024ltr]]
 
-## Share Repurchases as Capital Allocation
-
-When shares trade below intrinsic value, repurchases can be the optimal use of capital, creating more value per share for continuing shareholders.
-
-## Long-term Perspective in Allocation
-
-Successful capital allocation requires a long-term perspective, focusing on the business's ability to generate returns over time rather than short-term market movements.
-
-> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1989ltr]]
-
-## Inflation Considerations
-
-During inflationary periods, capital allocation becomes even more critical as businesses must determine whether additional capital will generate adequate returns in real terms.
-
 ## Cross-References
 
 - [[Concepts/IntrinsicValue]] — growth adds value only above the cost of the capital it absorbs
@@ -73,5 +59,3 @@ During inflationary periods, capital allocation becomes even more critical as bu
 - [[Cases/BerkshireHathawayEnergy]] — large capital appetite with acceptable returns
 - [[Concepts/MarginOfSafety]] — margin considerations in capital deployment
 - [[Sources/1984ltr]], [[Sources/1987ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2015ltr]], [[Sources/2022ltr]], [[Sources/2024ltr]]
-
-> TODO: Develop additional frameworks for evaluating capital allocation effectiveness across different business cycles.

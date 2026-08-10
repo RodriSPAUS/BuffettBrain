@@ -43,18 +43,6 @@ The character is named in 1987, but the diagnosis predates him:
 
 > "Manic-depressive personalities produce manic-depressive valuations." [[Sources/1983ltr]]
 
-## Market Volatility as Opportunity
-
-Mr. Market's emotional swings create opportunities for patient investors:
-
-> "they should try to be fearful when others are greedy and greedy only when others are fearful." [[Sources/2004ltr]]
-
-## Long-Term Perspective
-
-The market's short-term behavior should not influence long-term investment decisions:
-
-> "Time is the friend of the wonderful business, the enemy of the mediocre." [[Sources/1989ltr]]
-
 ## Cross-References
 
 - [[People/BenGraham]] — the allegory's author, "my friend and teacher"
