@@ -540,3 +540,8 @@
   - [[Concepts/CapitalAllocation]]: "Share Repurchases as Capital Allocation", "Long-term Perspective in Allocation", "Inflation Considerations"
 - Removed four stale `> TODO:` markers that were making finished pages skip `check_structure`/`check_figures` (they count as unfilled skeletons): [[Cases/BerkshireHathawayEnergy]] (BNSF, which now exists), [[Cases/GEICO]], [[People/CharlieMunger]], [[Concepts/CapitalAllocation]].
 - Grounded sections (real quotes tied to each page's own sources) were all kept. `make lint` clean; `check_structure` now reports 0 skeletons (was 4).
+
+## [2026-08-10] query | Buffett's mindset evolution 1977–2024 → filed as Synthesis/MindsetEvolution
+- Substantive multi-source query (how Buffett's thinking evolved). Per the "Filing answers back" rule, filed the answer as [[Synthesis/MindsetEvolution]] rather than leaving it in chat.
+- Thesis: the technique changed completely (cheap→wonderful, RoE→owner earnings, then size forcing float/buybacks/succession) while the discipline never did (intrinsic value, margin of safety, Mr. Market, ownership, candor — the constants the Owner's Manual codifies).
+- Cross-linked with [[Synthesis/MoatEvolution]] (bidirectional) and updated [[index]]. All quotes verified against Raw.

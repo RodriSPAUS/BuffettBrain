@@ -114,6 +114,7 @@ on capital, and it can disappear.
 
 ## Cross-references
 
+- [[Synthesis/MindsetEvolution]] — the wider mental arc this moat story sits inside
 - [[Concepts/Moat]] — the concept page
 - [[Concepts/EconomicGoodwill]] — the balance-sheet counterpart
 - [[Cases/GEICO]] — the cost-advantage moat

@@ -136,6 +136,7 @@ Enduring philosophies that govern capital allocation and stewardship:
 
 Cross-source thematic analyses, timelines, and comparative insights:
 
+- [[Synthesis/MindsetEvolution]] — what changed (technique) and what never did (discipline), 1977–2024
 - [[Synthesis/MoatEvolution]]
 - [[Synthesis/FidelityTimeline]]
 - [[Synthesis/FloatGrowth]]
