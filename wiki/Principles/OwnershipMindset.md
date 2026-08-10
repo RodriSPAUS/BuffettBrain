@@ -115,5 +115,6 @@ Berkshire".
 - [[Concepts/CapitalAllocation]] — what the owner is really delegating
 - [[Principles/Fidelity]] — the duty this mindset creates on the managers' side
 - [[Cases/ForestRiver]] — the principle observed from the seller's side
+- [[Sources/OwnersManual]] — the 14 owner-related principles set down as a numbered constitution
 - [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1989ltr]], [[Sources/1998ltr]],
   [[Sources/2005ltr]], [[Sources/2020ltr]]

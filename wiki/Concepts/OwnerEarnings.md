@@ -51,4 +51,5 @@ The concept highlights the difference between accounting earnings and economic r
 - [[Concepts/EconomicGoodwill]] — why a business that needs little added capital is worth a premium
 - [[Concepts/IntrinsicValue]] — the discounted value of future owner earnings
 - [[Concepts/Moat]] — competitive advantages that support sustainable owner earnings
+- [[Sources/OwnersManual]] — look-through earnings, and preferring $2 unreportable to $1 reportable
 - [[Sources/1980ltr]], [[Sources/1981ltr]], [[Sources/1985ltr]], [[Sources/1986ltr]], [[Sources/2007ltr]], [[Sources/2012ltr]]

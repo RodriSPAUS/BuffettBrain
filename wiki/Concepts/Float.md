@@ -71,8 +71,10 @@ common-stock portfolio are all, in part, float-funded.
 - [[Cases/GEICO]] — the largest contributor to float
 - [[Concepts/CapitalAllocation]] — what the float is used for
 - [[Concepts/MarginOfSafety]] — the underwriting form of the same idea
+- [[People/AjitJain]] — the underwriter of the large-risk and super-cat float
 - [[Concepts/ManagementQuality]] — managing insurance operations effectively
 - [[Synthesis/FloatGrowth]] — the long arc across the letters
+- [[Sources/OwnersManual]] — float and deferred taxes as costless, non-perilous leverage
 - [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]],
   [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]],
   [[Sources/2020ltr]]

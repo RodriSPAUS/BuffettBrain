@@ -94,5 +94,6 @@ at Dexter, shows up as a write-off.
 - [[Cases/SeeCandies]] — the worked example, and 78 years of goodwill growth
 - [[Synthesis/MoatEvolution]] — the shift this concept records
 - [[Concepts/CapitalAllocation]] — how goodwill-producing businesses allocate capital
+- [[Sources/OwnersManual]] — the See's and GEICO goodwill argument, and the EBITDA warning
 - [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1999ltr]], [[Sources/2000ltr]],
   [[Sources/2010ltr]], [[Sources/2012ltr]], [[Sources/2022ltr]]

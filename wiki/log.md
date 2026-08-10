@@ -515,3 +515,17 @@
 - Verified before recording: `python3 scripts/verify_quotes.py` whole-wiki run showed 0 errors, 0 warnings; no known fabrications were live in the wiki at the time of the run, satisfying the standing rule in `AGENTS.md` against baselining over unfixed fabrications
 - `make baseline` recorded 0 known errors across all five checks (raw quality, citation integrity, link integrity, frontmatter, structure) — the backlog carried since the early sessions is now fully closed, not just individually fixed page-by-page
 - This closes the loop opened by the 1977-2024 `Sources/` rewrite and the sixteen-page compiled-layer propagation earlier in this log: every page in the wiki now passes `make check`-equivalent standards with no ratchet forgiveness required
+
+## [2026-08-10] query + propagation | repo review; created 4 compiled-layer pages
+- Review of the whole repo (structure, propagation, coverage, Karpathy-pattern fidelity, readiness for non-letter sources). Repo state: `make lint` clean, 48/48 sources propagated.
+- Finding: the compiled layer was thin/unbalanced against 48 letters — the most-cited holding (Coca-Cola) and three central managers had no page. Created [[Cases/CocaCola]], [[People/AjitJain]], [[People/GregAbel]], [[People/RoseBlumkin]], all grounded in verified quotes via `scripts/quote.py`.
+- Added reciprocal backlinks: [[Cases/NebraskaFurnitureMart]]→Blumkin, [[Cases/BerkshireHathawayEnergy]]→Abel, [[Concepts/Float]]→Ajit, [[Concepts/Moat]]→CocaCola; updated [[index]] (Cases + People).
+- Fixed 5 underscore artifacts in [[Concepts/Moat]] prose (`low_cost`→`low-cost`, etc.) that `make lint` does not catch.
+- Noted but not changed: [[Cases/BerkshireHathawayEnergy]] still carries a stale `> TODO:` about creating BNSF, which already exists — that marker makes `make structure`/`figures` skip the page.
+- `verify_quotes` + full `lint.py`: 0 errors after fixing 3 self-inflicted misattributions (see LESSONS_LEARNED).
+
+## [2026-08-10] ingest | Sources/OwnersManual — first non-letter source (the Owner's Manual booklet)
+- Renamed `Raw/"BERKSHIRE HATHAWAY OWNER MANUAL.md"` → `Raw/OwnersManual.md` (user chose the name): the `verify_quotes` citation regex accepts only `[A-Za-z0-9]`, and the Sources page stem must equal the Raw stem, so a name with spaces cannot be cited.
+- Wrote [[Sources/OwnersManual]] (`sourcetype: book`, dated Jan 1999) covering all six parts: intro, the 13 owner-related principles, the added 14th, intrinsic value, purchase-accounting/goodwill, and the managing of Berkshire.
+- Created [[People/BenGraham]] (named in the manual as "the greatest teacher in the history of finance", previously unlinked). Propagated to [[Principles/OwnershipMindset]], [[Principles/Fidelity]], [[Concepts/IntrinsicValue]], [[Concepts/OwnerEarnings]], [[Concepts/EconomicGoodwill]], [[Concepts/ManagementQuality]], [[Concepts/Float]], [[Concepts/MarginOfSafety]], [[Concepts/MrMarket]]; updated [[index]].
+- `check_coverage`, `check_figures`, `verify_quotes`, full `lint`, `lint_links` all clean. Propagation: 49/49 sources reach the compiled layer.

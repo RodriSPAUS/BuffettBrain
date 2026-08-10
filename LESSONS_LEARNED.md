@@ -1112,3 +1112,48 @@ already vetted them. And for prose: draft the quotation-shaped sentence, then ru
 `scripts/quote.py` on it *before* it goes in the page, every time — including on drafts that
 feel obviously right, including on the tenth quote of the session, including one paragraph
 after fixing someone else's version of the exact same mistake.
+
+## [2026-08-10] Hard-wrapping a quotation away from its `[[Sources/X]]` citation causes false misattribution
+
+Cost: 3 MISATTRIBUTED/UNSUPPORTED errors on the first `verify_quotes` pass over four new
+pages (People/AjitJain, People/GregAbel), one full rework pass to fix.
+
+`verify_quotes` resolves a quote's source by the *trailing* `[[Sources/X]]` on the same
+physical line as the closing quote mark, falling back to the last citation earlier in the
+block. When a quotation is hard-wrapped across lines and its citation lands on the *next*
+line, the trailing search finds nothing and the fallback attributes the quote to whatever
+letter was cited earlier in the paragraph — silently wrong, and it looks like a real
+fabrication in the report. A trailing comma placed *inside* the closing quote mark
+(`...Vice Chairman,"`) is a second, separate trap: it makes the string non-verbatim because
+the source has a period there, not a comma.
+
+How to apply: for any quotation, keep the closing `"` and its `[[Sources/X]]` on one
+unwrapped line — the blockquote form `> "..." [[Sources/X]]` does this by construction and is
+the safe default. Never wrap a quoted passage such that the citation falls to a later line.
+Put sentence punctuation that continues your prose *outside* the quote marks; only include
+punctuation that is actually in the source. This is the inline-prose sibling of the standing
+rule to run `scripts/quote.py` on every quotation before it goes in — the tool confirms the
+words exist, but placement is what tells the checker which letter they came from.
+
+## [2026-08-10] Non-letter ingestion imposes two frictions the letter-shaped tooling was not built for
+
+Cost: one rename of an immutable `Raw/` file; the mandatory "Investment Decisions" section had
+to be reframed for a document that makes no decisions; 7 quotation errors across two
+`verify_quotes` passes before the page went green.
+
+- **The Raw filename is the citation key.** `verify_quotes`' CITATION regex is `[A-Za-z0-9]+`
+  only, and a Sources page is checked against `Raw/<same-stem>.md`. A raw file named
+  "BERKSHIRE HATHAWAY OWNER MANUAL.md" therefore cannot be cited at all. Non-letter sources
+  must be renamed to PascalCase-alphanumeric (e.g. `OwnersManual.md`) *before* ingest, and the
+  Sources page must share that exact stem. Confirm the target name with the user, since it
+  touches the human-owned immutable layer and becomes the permanent citation key.
+- **The four required Sources sections are letter-shaped.** "Investment Decisions" does not fit
+  a principles booklet. Per the schema's own rule (a topic passed over is named as passed
+  over), the section was kept but reframed to list the decisions the manual *references* to
+  illustrate its principles — not left blank, not filled with invented decisions.
+- **Recurrence of the quote-punctuation trap.** The earlier 2026-08-10 lesson already warned
+  that terminal punctuation inside a closing quote must match the source; it recurred anyway
+  (trailing comma/period inside the marks that the source spells as a semicolon or continues
+  past). A quotation's closing `"` must sit exactly where the source's own punctuation sits:
+  end on a real sentence boundary, or carry no terminal punctuation inside the marks. Writing
+  the lesson did not prevent the repeat — running `verify_quotes` on the page did.

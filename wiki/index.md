@@ -17,6 +17,7 @@ Welcome to the structured, interconnected knowledge base for Warren Buffett's in
 
 Materials from Warren Buffett (1977–present), processed into structured, source-linked summaries:
 
+- [[Sources/OwnersManual]] — *the 14 owner-related business principles (booklet, Jan 1999) — not an annual letter*
 - [[Sources/1977ltr]]
 - [[Sources/1978ltr]]
 - [[Sources/1979ltr]]
@@ -99,6 +100,7 @@ Actionable tools and checklists for applying Berkshire principles:
 Deep dives into key Berkshire holdings and acquisitions:
 
 - [[Cases/GEICO]] — the cost-advantage moat, 1980–2024
+- [[Cases/CocaCola]] — the brand moat, and "The Inevitables"
 - [[Cases/SeeCandies]] — economic goodwill, and why great businesses cannot reinvest
 - [[Cases/BerkshireHathawayEnergy]] — regulated returns on an enormous capital base
 - [[Cases/BNSF]] — the paired regulated business, and the "social compact" with regulators
@@ -112,6 +114,10 @@ Profiles of foundational figures who shaped Berkshire’s philosophy:
 
 - [[People/CharlieMunger]]
 - [[People/WarrenBuffett]]
+- [[People/BenGraham]] — Buffett's teacher; Mr. Market and margin of safety
+- [[People/AjitJain]] — insurance and super-cat underwriting; Vice Chairman
+- [[People/GregAbel]] — operations, and the designated CEO successor
+- [[People/RoseBlumkin]] — "Mrs. B", founder of Nebraska Furniture Mart
 - [[People/TomMurphy]] — Capital Cities/ABC, and the Disney merger
 - [[People/HenrySingleton]] — Teledyne *(thin by design: the corpus names him only twice)*
 

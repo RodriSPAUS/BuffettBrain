@@ -116,6 +116,7 @@ business as well. [[Sources/1995ltr]]
 
 - [[Concepts/Moat]] — cost advantage as the durable kind
 - [[Concepts/EconomicGoodwill]] — a business worth far more than its tangible assets
+- [[People/RoseBlumkin]] — the founder, "Mrs. B"
 - [[Concepts/ManagementQuality]] — Mrs. B's discipline, tested across three decades
 - [[Applications/BusinessQualityChecklist]] — the how-would-I-compete-with-it test
 - [[Cases/SeeCandies]] — the other consumer franchise of the same era, and the candy-cart story

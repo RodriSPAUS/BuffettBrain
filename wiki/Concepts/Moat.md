@@ -78,7 +78,7 @@ The default state for most businesses is commodity competition:
 
 ### Businesses vs. Franchises
 Buffett distinguishes between businesses and franchises:
-- **Businesses**: Earn exceptional profits only if they are low_cost operators or if supply is tight, but tightness doesn't last long
+- **Businesses**: Earn exceptional profits only if they are low-cost operators or if supply is tight, but tightness doesn't last long
 - **Franchises**: Can tolerate mis-management and maintain pricing power
 
 ## Strategic Implications
@@ -92,7 +92,7 @@ The moat concept drove Buffett's strategic shift from the "cigar butt" approach 
 ### Capital Allocation Framework
 > "There's no rule that you have to invest money where you've earned it. Indeed, it's often a mistake to do so: Truly great businesses, earning huge returns on tangible assets, can't for any extended period reinvest a large portion of their earnings internally at high rates of return." [[Sources/2007ltr]]
 
-High_return businesses with strong moats often generate more cash than they can profitably reinvest in their own operations.
+High-return businesses with strong moats often generate more cash than they can profitably reinvest in their own operations.
 
 ## Moats Erode Over Time
 
@@ -122,7 +122,7 @@ Capitalism ensures that competitors repeatedly assault any business "castle" ear
 - Customer preference and habit formation
 
 ### Nebraska Furniture Mart
-- Low_cost operator in furniture retail
+- Low-cost operator in furniture retail
 - Exceptional buying power and operational efficiency
 - Local market dominance
 
@@ -183,9 +183,10 @@ Capitalism ensures that competitors repeatedly assault any business "castle" ear
 - [[Sources/2023ltr]]
 - [[Sources/2024ltr]]
 
-- [[Cases/GEICO]] — the cost_advantage moat exemplar
+- [[Cases/GEICO]] — the cost-advantage moat exemplar
 - [[Cases/SeeCandies]] — the franchise moat in a commodity business
-- [[Cases/NebraskaFurnitureMart]] — the low_cost operator model
+- [[Cases/NebraskaFurnitureMart]] — the low-cost operator model
+- [[Cases/CocaCola]] — the brand-and-preference moat, "The Inevitables"
 - [[Concepts/ManagementQuality]] — what moats allow you to tolerate
 - [[Concepts/EconomicGoodwill]] — the balance sheet manifestation of moats
 - [[Synthesis/MoatEvolution]] — how the concept developed across letters

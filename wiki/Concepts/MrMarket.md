@@ -57,6 +57,7 @@ The market's short-term behavior should not influence long-term investment decis
 
 ## Cross-References
 
+- [[People/BenGraham]] — the allegory's author, "my friend and teacher"
 - [[Concepts/IntrinsicValue]] — the value Mr. Market's price is measured against
 - [[Concepts/MarginOfSafety]] — what you demand when he is not being foolish
 - [[Principles/OwnershipMindset]] — the stance that makes ignoring him possible

@@ -56,4 +56,5 @@ Buffett dropped book value as Berkshire's headline metric in the 2018 letter, re
 - [[Concepts/MrMarket]] — price versus value, stated as a parable
 - [[Concepts/CapitalAllocation]] — growth creates value only above the cost of the capital it absorbs
 - [[Concepts/Moat]] — competitive advantages that support intrinsic value
+- [[Sources/OwnersManual]] — the canonical definition, and book value's limits
 - [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1994ltr]], [[Sources/2000ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]]

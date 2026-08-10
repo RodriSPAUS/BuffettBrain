@@ -110,6 +110,7 @@ See [[People/WarrenBuffett]] on succession and [[Concepts/ManagementQuality]].
 
 - [[Concepts/CapitalAllocation]] — the reinvestment branch
 - [[Cases/SeeCandies]] — the opposite case: high returns, no reinvestment room
+- [[People/GregAbel]] — the manager who built and ran it, now CEO successor
 - [[People/WarrenBuffett]] — succession
 - [[Sources/1999ltr]], [[Sources/2002ltr]], [[Sources/2003ltr]],
   [[Sources/2014ltr]], [[Sources/2015ltr]], [[Sources/2016ltr]],

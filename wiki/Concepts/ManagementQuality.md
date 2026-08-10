@@ -67,4 +67,5 @@ Berkshire's management philosophy emphasizes delegating to capable managers and 
 - [[Concepts/CapitalAllocation]] — the specific managerial skill Buffett grades
 - [[Principles/Fidelity]] — the integrity half of the assessment
 - [[Cases/ForestRiver]], [[Cases/GEICO]] — delegation and intervention
+- [[Sources/OwnersManual]] — delegation "almost to the point of abdication" (12 at headquarters)
 - [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2007ltr]], [[Sources/2010ltr]], [[Sources/2015ltr]], [[Sources/2024ltr]]

@@ -106,5 +106,6 @@ boss".
 - [[Concepts/Float]] — the fifty-year insurance promises that shape balance-sheet policy
 - [[People/WarrenBuffett]] — the mistake inventories as candour in practice
 - [[Synthesis/FidelityTimeline]] — the standard traced across the letters
+- [[Sources/OwnersManual]] — candour stated as a governance rule ("how many strokes on each hole")
 - [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]],
   [[Sources/2005ltr]], [[Sources/2024ltr]]

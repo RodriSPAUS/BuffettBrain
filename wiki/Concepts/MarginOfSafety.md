@@ -53,6 +53,7 @@ During periods of high market valuations, the margin of safety becomes increasin
 
 ## Cross-References
 
+- [[People/BenGraham]] — the "three words" the principle comes from
 - [[Concepts/IntrinsicValue]] — the estimate the margin protects
 - [[Concepts/MrMarket]] — who supplies the price
 - [[Concepts/Float]] — the underwriting form of the same rule
