@@ -1186,7 +1186,7 @@ all caught by running `verify_quotes` before anything was committed.
 
 ## [2026-08-11] Correct figure, wrong owner: `check_figures` does not catch misattribution
 
-**What happened.** Reviewing a same-day ingest of [[Sources/1962ltr]] (done by a different model,
+**What happened.** Reviewing a same-day ingest of `Sources/1962ltr` (done by a different model,
 DeepSeek V4 Flash, per the user's request to check its work before committing) against
 `Raw/1962ltr.md` read in full, one sentence attributed the first-half 1962 loss of −32.3% to
 "Wellington Equity Fund" specifically. The letter reports −32.3% as the **average of three** funds
@@ -1204,3 +1204,29 @@ marks) cannot substitute for reading the source paragraph the claim is paraphras
 number is attached to a named entity rather than quoted directly. This is exactly the failure mode
 to watch for when reviewing another model's ingest: check the checkers pass, then separately reread
 the two or three sentences that pin a specific figure to a specific name.
+
+## [2026-08-11] `Raw/1967ltr.md` is a byte-for-byte duplicate of `Raw/1966ltr.md` — a real gap, not a missing ingest
+
+**What happened.** While ingesting the 1966-1970 tail of the partnership backlog, `diff
+Raw/1966ltr.md Raw/1967ltr.md` came back empty and both files report the same line count (597).
+This is a source-archive extraction error, not something an agent can fix: the actual January 24,
+1968 letter (which reports full-year 1967 results, the Diversified Retailing / National Indemnity
+acquisitions, and the worst work-out year in partnership history) is correctly present, but filed
+under `Raw/1968ltr.md` per the archive's send-year naming convention — so the 1967 calendar year's
+own results are not, in fact, missing from the corpus, just filed one year later than a reader would
+guess from the filename alone.
+
+**What it cost.** One diff check (seconds) to confirm before writing a page from a duplicate file.
+Left unchecked, the natural next step — summarizing `Raw/1967ltr.md` as if it held unique content —
+would have produced a `Sources/1967ltr` page that either silently repeated 1965's results under a
+1967 label, or worse, an agent under pressure to fill the slot could have started inventing plausible
+1967-shaped content to match the filename. Neither is acceptable per the citation-integrity rule
+that nothing enters `wiki/` without a `Raw/` file actually saying it.
+
+**What to do instead.** Before summarizing any `Raw/YYYYltr.md`, especially one adjacent to a
+suspiciously identical neighbor, run `diff Raw/(Y)ltr.md Raw/(Y+1)ltr.md` (or eyeball the letter's own
+dateline against the filename). Do not create a `Sources/` page for a `Raw/` file with no unique
+content — file the gap here instead, and point to wherever the real content actually lives
+(`Sources/1968ltr` carries 1967's results). This is a `Raw/` curation problem outside agent scope:
+fixing it requires the human to re-extract the file from the original archive, per `Raw/` being
+human-curated and immutable to agents.

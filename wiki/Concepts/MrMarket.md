@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [mr-market, temperament, price-versus-value, graham, market-psychology]
 date: 2026-08-04
-source: [[Sources/1961ltr]], [[Sources/1987ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+source: [[Sources/1961ltr]], [[Sources/1968ltr]], [[Sources/1969ltr]], [[Sources/1987ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
 ---
 
 # Mr. Market: The Emotional Business Partner
@@ -47,6 +47,18 @@ already the thing you must not bet your conservatism on:
 
 > "Manic-depressive personalities produce manic-depressive valuations." [[Sources/1983ltr]]
 
+By 1968, watching the same crowd from inside a genuine speculative boom, the
+tone sharpens from diagnosis to open alarm — accounting distortion offered as
+a service to the mood, not a symptom of it:
+
+> "To create the proper illusions, it frequently requires accounting distortions (one particularly progressive entrepreneur told me he believed in 'bold, imaginative accounting'), tricks of capitalization and camouflage of the true nature of the operating businesses involved." [[Sources/1968ltr]] [[Applications/RedFlags]]
+
+The clearest ancestor of the 1987 parable in this corpus, though, is not
+Buffett's own writing but Graham's, quoted directly in the letter that ends
+the partnership:
+
+> "As Ben Graham said: 'In the long run, the market is a weighing machine - in the short run, a voting machine.'" [[Sources/1969ltr]] [[People/BenGraham]]
+
 ## Cross-References
 
 - [[People/BenGraham]] — the allegory's author, "my friend and teacher"
@@ -56,4 +68,5 @@ already the thing you must not bet your conservatism on:
 - [[Principles/OwnershipMindset]] — the stance that makes ignoring him possible
 - [[People/WarrenBuffett]] — temperament over intellect
 - [[Concepts/CapitalAllocation]] — allocating capital when Mr. Market offers opportunities
-- [[Sources/1961ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+- [[Applications/RedFlags]] — "bold, imaginative accounting" as a service to the crowd's mood
+- [[Sources/1961ltr]], [[Sources/1968ltr]], [[Sources/1969ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]

@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [margin-of-safety, graham, valuation, risk, investment-principle]
 date: 2026-08-04
-source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]], [[Sources/1966ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
 ---
 
 # Margin of Safety: The Cornerstone of Intelligent Investing
@@ -57,6 +57,38 @@ year-end valuation — 40% off inventories, 15% off receivables, auction value o
 fixed assets — a rule Buffett follows *because* new and old partners transact at
 that price, not despite it. [[Sources/1962ltr]]
 
+By 1963 the rule is generalized into the partnership's stated philosophy — a
+margin large enough that the exit does not have to be skillful, only
+adequate:
+
+> "Never count on making a good sale. Have the purchase price be so
+> attractive that even a mediocre sale gives good results. The better sales
+> will be the frosting on the cake." [[Sources/1963ltr]]
+
+The same idea, applied to work-outs rather than generals, becomes a line
+about the size of the margin itself — thin, but reliable because it is
+contractual rather than hoped-for:
+
+> "A friend refers to this as getting the last nickel after the other fellow
+> has made the first ninety-five cents." [[Sources/1964ltr]]
+
+## Margin of Safety Through Position Size, Not Only Price
+
+Ground Rule 7, written out in the 1966 letter, ties the concept to
+concentration rather than price alone: the size of a position should track
+the certainty of the margin, not the other way around.
+
+> "We might invest up to 40% of our net worth in a single security under
+> conditions coupling an extremely high probability that our facts and
+> reasoning are correct with a very low probability that anything could
+> drastically change the underlying value of the investment."
+> [[Sources/1966ltr]]
+
+This is the same logic later applied to [[Cases/BerkshireHathaway]] and
+[[Cases/NationalIndemnity]]: a large position is safe only when both the
+facts *and* their durability are unusually certain — margin of safety
+compounded, not merely priced.
+
 ## Cross-References
 
 - [[People/BenGraham]] — the "three words" the principle comes from
@@ -67,4 +99,5 @@ that price, not despite it. [[Sources/1962ltr]]
 - [[Concepts/Float]] — the underwriting form of the same rule
 - [[Applications/RedFlags]] — what the absence of a margin looks like
 - [[Concepts/CapitalAllocation]] — applying safety margins to capital deployment
-- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+- [[Cases/BerkshireHathaway]] — the 40%-concentration rule applied in practice
+- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]], [[Sources/1966ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]

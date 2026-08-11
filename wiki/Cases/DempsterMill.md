@@ -3,7 +3,7 @@ title: "Dempster Mill Manufacturing"
 type: case
 tags: [dempster-mill, control-situation, asset-conversion, net-net, partnership-era]
 date: 2026-08-11
-source: [[Sources/1961ltr]], [[Sources/1962ltr]]
+source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]]
 ---
 
 # Dempster Mill Manufacturing Co.
@@ -80,9 +80,39 @@ results are the exception, not the business:
 
 > "I want all partners and prospective partners to realize the results described above are distinctly abnormal and will recur infrequently, if at all." [[Sources/1962ltr]]
 
-How Dempster resolved is told in [[Sources/1963ltr]]; for the partnership-era
-arc, contrast Sanborn (the market pricing securities below their own value) with
-Dempster (an operating business converted to cash through ownership).
+## Harry Bottle — the operator who made the conversion real
+
+The 1962 numbers above describe *what* changed; they do not say who did it.
+Buffett hired an outside operator within a week of first meeting him:
+
+> "On April 17, 1962 I met Harry in Los Angeles, presented a deal which provided for rewards to him based upon our objectives being met, and on April 23rd he was sitting in the president's chair in Beatrice." [[Sources/1963ltr]] [[People/HarryBottle]]
+
+The verdict, a year later, is unqualified:
+
+> "Harry is unquestionably the man of the year." [[Sources/1963ltr]]
+
+Nine specific fixes are itemized in the 1964 letter's appendix — inventory
+cut from over $4 million to under $1 million, administration expense halved,
+five unprofitable branches closed — the concrete mechanism behind the
+discount-to-liquidation numbers turning real. [[Concepts/MarginOfSafety]]
+
+## How it ends — sold on a going-concern basis, 1963
+
+> "A satisfactory sale on a going concern basis of Dempster Mill Manufacturing operating assets was made about a month ago." [[Sources/1963ltr]]
+
+The company, renamed First Beatrice Corp., was left holding mostly cash and
+the securities portfolio built up during the conversion — a realization of
+about $80 per share against an average purchase cost of about $28. Buffett
+draws two morals from the whole episode: that the business rewards patience
+("it is to our advantage to have securities do nothing price wise for months,
+or perhaps years"), and that current holdings are never discussed publicly,
+even with partners, while a position is open. [[Sources/1964ltr]]
+
+For the partnership-era arc, contrast Sanborn (the market pricing securities
+below their own value) with Dempster (an operating business converted to cash
+through ownership) — and see [[Cases/BerkshireHathaway]] for the control
+situation that outlasted the partnership itself, where no outside operator
+like Harry Bottle was ever needed.
 
 ## See also
 
@@ -91,4 +121,6 @@ Dempster (an operating business converted to cash through ownership).
 - [[Concepts/IntrinsicValue]] — the estimate that new and old partners transact on
 - [[Principles/Fidelity]] — why the estimate must be a liquidation price, not a hope
 - [[Synthesis/MindsetEvolution]] — the Graham method at its most active
-- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]]
+- [[People/HarryBottle]] — the operator who made the conversion real
+- [[Cases/BerkshireHathaway]] — the control situation that came next, and outlasted the partnership
+- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]]

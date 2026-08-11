@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [intrinsic-value, valuation, book-value, discounted-cash-flow, investment-principle]
 date: 2026-08-04
-source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1994ltr]], [[Sources/1983ltr]], [[Sources/1990ltr]], [[Sources/2000ltr]], [[Sources/1987ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]]
+source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1965ltr]], [[Sources/1969ltr]], [[Sources/1994ltr]], [[Sources/1983ltr]], [[Sources/1990ltr]], [[Sources/2000ltr]], [[Sources/1987ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]]
 ---
 
 # Intrinsic Value: The Central Concept of Investment
@@ -43,6 +43,20 @@ The resulting $35 per share (against $75 book and ~$50 of working capital) was
 itself a margin of safety — and the 1962 conversion that raised it toward $50
 was value *realized* by selling inventory, not value asserted. [[Sources/1962ltr]]
 
+The same rule is applied to [[Cases/BerkshireHathaway]] the moment control
+passes: value fixed by formula, not by the quoted market price of the stock.
+
+> "We will value our position in Berkshire Hathaway at yearend at a price
+> halfway between net current asset value and book value." [[Sources/1965ltr]]
+
+Four years later, with the carried value and the market price having
+diverged in both directions, Buffett states the principle behind the whole
+approach as bluntly as it appears anywhere in the corpus:
+
+> "We would have done the same thing if the markets had been 15 and 50
+> respectively. ('Price is what you pay. value is what you get')."
+> [[Sources/1969ltr]]
+
 ## Growth is Not Automatically Value
 
 > "Indeed, growth can destroy value if it requires cash inputs in the early years of a project or enterprise that exceed the discounted value of the cash that those assets will generate in later years." [[Sources/2000ltr]]
@@ -63,6 +77,7 @@ See [[Concepts/MrMarket]], for the behavioral half of the argument.
 - [[Concepts/CapitalAllocation]] — growth creates value only above the cost of the capital it absorbs
 - [[Concepts/Moat]] — competitive advantages that support intrinsic value
 - [[Cases/DempsterMill]] — value as what a reasonably short sale would bring; the $35 estimate
+- [[Cases/BerkshireHathaway]] — the halfway-NCAV-and-book rule, and "price is what you pay, value is what you get"
 - [[Sources/OwnersManual]] — the canonical definition, and book value's limits
 - [[Sources/1957ltr]], [[Sources/1958ltr]] — "priced above intrinsic value", and Commonwealth Trust at $50 vs $125
-- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1994ltr]], [[Sources/2000ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]]
+- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1965ltr]], [[Sources/1969ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1994ltr]], [[Sources/2000ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]]

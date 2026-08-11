@@ -4,7 +4,7 @@ type: principle
 stability: high
 tags: [fidelity, candour, integrity, alignment, reporting]
 date: 2026-08-09
-source: [[Sources/1961ltr]], [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]], [[Sources/2005ltr]], [[Sources/2024ltr]]
+source: [[Sources/1961ltr]], [[Sources/1965ltr]], [[Sources/1969ltr]], [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]], [[Sources/2005ltr]], [[Sources/2024ltr]]
 ---
 
 ## The commitment
@@ -62,6 +62,22 @@ same stock at a fraction of the price:
 > Berkshire's holdings in the same company at $43 per share in 1978-80."
 > [[Sources/1985ltr]]
 
+## Owning the mistake, by name, at the end
+
+The partnership's last full year gives the standard its plainest possible
+test: a real loss, entirely Buffett's own misjudgment, reported without
+softening in the same letter that announces his retirement.
+
+> "Our poor experience this year is 100% my fault." [[Sources/1969ltr]]
+
+> "Documenting one's boners is unpleasant business." [[Sources/1969ltr]] [[People/WarrenBuffett]]
+
+The same letter extends candour into a domain with no reporting obligation at
+all — recommending a person, where a wrong call costs Buffett nothing
+personally and could only cost him reputation:
+
+> "In recommending Bill, I am engaging in the sort of activity I have tried to avoid in BPL portfolio activities - a decision where there is nothing to gain (personally) and considerable to lose." [[Sources/1969ltr]] [[People/BillRuane]]
+
 ## The promise stated as a transaction, not a sentiment
 
 By 1996, the commitment is compressed into a single line that reads almost like
@@ -91,7 +107,12 @@ buy in on and old partners sell out on:
 That is the partnership antecedent of the reporting rule at the top of this page:
 state the fact that would hurt you if it came out wrong, because there is no
 "side" to favor. What cannot be painted prettier for one partner must not be
-painted prettier for the other.
+painted prettier for the other. The same discipline is applied again, four
+years later, to a much larger controlling interest — [[Cases/BerkshireHathaway]]
+is valued "at a price halfway between net current asset value and book value"
+[[Sources/1965ltr]] the moment control passes, a fixed formula rather than a
+number chosen to suit whichever side of the transaction Buffett happens to be
+on that year.
 
 ## Fidelity extended past shareholders, to policyholders
 
@@ -129,6 +150,7 @@ boss".
 - [[People/WarrenBuffett]] — the mistake inventories as candour in practice
 - [[Synthesis/FidelityTimeline]] — the standard traced across the letters
 - [[Cases/DempsterMill]] — the valuation with no side to favor
+- [[People/BillRuane]] — recommended with nothing personally to gain and much to lose
 - [[Sources/OwnersManual]] — candour stated as a governance rule ("how many strokes on each hole")
-- [[Sources/1961ltr]], [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]],
+- [[Sources/1961ltr]], [[Sources/1965ltr]], [[Sources/1969ltr]], [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]],
   [[Sources/2005ltr]], [[Sources/2024ltr]]

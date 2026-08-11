@@ -24,7 +24,13 @@ Materials from Warren Buffett (1957–present), processed into structured, sourc
 - [[Sources/1960ltr]] — *Buffett Partnership: the Sanborn Map case*
 - [[Sources/1961ltr]] — *Buffett Partnership: the three-category method, Dempster control, and the ten-year prediction*
 - [[Sources/1962ltr]] — *Buffett Partnership: the prediction checked in a down market; Dempster's conversion*
-- [[Sources/1963ltr]] — *Buffett Partnership: full-year 1962 and the Ground Rules *(stub — next ingest)*
+- [[Sources/1963ltr]] — *Buffett Partnership: the Ground Rules, and Dempster Mill sold*
+- [[Sources/1964ltr]] — *Buffett Partnership: "seven fat years," Texas National Petroleum, Dempster closed*
+- [[Sources/1965ltr]] — *Buffett Partnership: "Our Goal," four categories, and Berkshire Hathaway named*
+- [[Sources/1966ltr]] — *Buffett Partnership: Berkshire's full origin story; closed to new partners*
+- [[Sources/1968ltr]] — *Buffett Partnership: full-year 1967 — National Indemnity acquired, worst work-out year ever*
+- [[Sources/1969ltr]] — *Buffett Partnership: best year ever, then retirement announced; Bill Ruane recommended*
+- [[Sources/1970ltr]] — *the last letter: a bond-buying education, and the wind-down*
 - [[Sources/1977ltr]]
 - [[Sources/1978ltr]]
 - [[Sources/1979ltr]]
@@ -117,6 +123,9 @@ Deep dives into key Berkshire holdings and acquisitions:
 - [[Cases/SanbornMap]] — the partnership-era value classic: net-net plus a control fight
 - [[Cases/DempsterMill]] — the control case: buy cheap, work the assets, convert to cash
 - [[Cases/CommonwealthTrust]] — sold to fund Sanborn; a closed case with an unresolved thread
+- [[Cases/BerkshireHathaway]] — the partnership-era origin: bought at $7.60, control 1965
+- [[Cases/NationalIndemnity]] — acquired 1967, ~20% return on capital
+- [[Cases/HochschildKohn]] — bought 1966, sold 1969; the "cigar butt" Buffett names in 1989
 
 ---
 
@@ -133,6 +142,10 @@ Profiles of foundational figures who shaped Berkshire’s philosophy:
 - [[People/TomMurphy]] — Capital Cities/ABC, and the Disney merger
 - [[People/HenrySingleton]] — Teledyne *(thin by design: the corpus names him only twice)*
 - [[People/BillRuane]] — the manager Buffett entrusted with his own family's money at BPL's dissolution
+- [[People/HarryBottle]] — the outside operator who turned around Dempster Mill
+- [[People/KenChace]] — ran Berkshire Hathaway's textile operation through the whole partnership era
+- [[People/JackRingwalt]] — founded National Indemnity, sold it, kept running it
+- [[People/BenRosner]] — ran Associated Cotton Shops; Buffett's private byword for cost discipline
 
 ---
 
