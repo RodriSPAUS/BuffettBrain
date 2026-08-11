@@ -1157,3 +1157,50 @@ to be reframed for a document that makes no decisions; 7 quotation errors across
   past). A quotation's closing `"` must sit exactly where the source's own punctuation sits:
   end on a real sentence boundary, or carry no terminal punctuation inside the marks. Writing
   the lesson did not prevent the repeat — running `verify_quotes` on the page did.
+## [2026-08-11] `make` does not exist on the Windows box — the documented interface is not the one that runs
+
+**What happened.** `AGENTS.md`, `SCHEMA.md`, the Makefile and the log all reference `make lint`,
+`make check`, `make new`, `make quote`. This machine (Windows, PowerShell, no GNU make) has none of
+it: every invocation failed with "make is not recognized". The checks themselves are plain scripts
+and run correctly as `python scripts/<name>.py` from anywhere under the repo — `make` is only a thin
+wrapper around them. `python` is the real interpreter; `python3` is a WindowsApps shim.
+
+**What it cost.** Several failed `make` invocations; a translation step for every documented command;
+and one near-miss on `quote.py`, whose positional argument looked like `Q="..."` from the Makefile
+(`python scripts/quote.py "the phrase"` is the real call). Zero rework — the checks are unchanged —
+but a log entry that says "make check + make lint to follow" is meaningless on this machine unless
+someone translates it.
+
+**What to do instead.** Translate in advance, once per session: `make new P=X` →
+`python scripts/new_page.py X`; `make quote Q="..."` → `python scripts/quote.py "..."`;
+`make check P=X` → `python scripts/check_coverage.py X` + `python scripts/check_figures.py X` +
+`python scripts/lint.py --page X`; `make lint` → `python scripts/lint.py`. Two generator quirks seen
+this session while using it this way: `letter_date` only accepts dates in `year+1` (correct for
+letters signed in January/February, so the mid-year letter in `Raw/1962ltr.md` falling in the same
+calendar year always falls back to the default date — set it by hand as the generator instructs);
+and a raw that prints "categories of investment" nowhere — the 1962 letter's verbatim text is
+"categories or investment", an apparent extraction artifact that must still be quoted verbatim per
+the Raw-is-truth rule. Recurrence of the punctuation trap, three hits on one page: "(worthwhile.)"
+vs the source's "worthwhile:", "(history.)" vs "history,", "of investment" vs "or investment" —
+all caught by running `verify_quotes` before anything was committed.
+
+## [2026-08-11] Correct figure, wrong owner: `check_figures` does not catch misattribution
+
+**What happened.** Reviewing a same-day ingest of [[Sources/1962ltr]] (done by a different model,
+DeepSeek V4 Flash, per the user's request to check its work before committing) against
+`Raw/1962ltr.md` read in full, one sentence attributed the first-half 1962 loss of −32.3% to
+"Wellington Equity Fund" specifically. The letter reports −32.3% as the **average of three** funds
+(Fidelity Capital, Putnam Growth, Wellington Equity) — Wellington's own figure is never isolated.
+`check_figures` passed the page with zero errors because the digit 32.3 genuinely appears in
+`Raw/1962ltr.md`; the tool checks whether a number exists in the cited source, not what it is
+attached to in the wiki prose.
+
+**What it cost.** Nothing yet — caught before commit by reading the wiki sentence against the
+letter's actual sentence, not by any script. Left uncorrected, it would have been an indistinguishable-
+from-true error: a real number, in the right letter, next to a real fund name, just the wrong one.
+
+**What to do instead.** `check_figures` (and `verify_quotes`, which only checks text inside quotation
+marks) cannot substitute for reading the source paragraph the claim is paraphrasing, whenever a
+number is attached to a named entity rather than quoted directly. This is exactly the failure mode
+to watch for when reviewing another model's ingest: check the checkers pass, then separately reread
+the two or three sentences that pin a specific figure to a specific name.

@@ -4,7 +4,7 @@ type: principle
 stability: high
 tags: [fidelity, candour, integrity, alignment, reporting]
 date: 2026-08-09
-source: [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]], [[Sources/2005ltr]], [[Sources/2024ltr]]
+source: [[Sources/1961ltr]], [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]], [[Sources/2005ltr]], [[Sources/2024ltr]]
 ---
 
 ## The commitment
@@ -71,6 +71,28 @@ a contract term:
 > will end up with shareholders. We are here to make money with you, not off
 > you." [[Sources/1996ltr]]
 
+## The valuation that must be fair from both sides
+
+Fidelity reaches past words into the numbers themselves when one price has to
+serve two parties. Valuing the controlling interest in [[Cases/DempsterMill]],
+Buffett defines the estimate as what a reasonably short sale would bring — not a
+hope, not an eager buyer's price — because the same figure is what new partners
+buy in on and old partners sell out on:
+
+> "The estimated value should not be what we hope it would be worth, or what it
+> might be worth to an eager buyer, etc., but what I would estimate our interest
+> would bring if sold under current conditions in a reasonably short period of
+> time." [[Sources/1961ltr]]
+
+> "This is of particular importance since, in effect, new partners are buying in
+> based upon this price, and old partners are selling a portion of their interest
+> based upon the same price." [[Sources/1961ltr]]
+
+That is the partnership antecedent of the reporting rule at the top of this page:
+state the fact that would hurt you if it came out wrong, because there is no
+"side" to favor. What cannot be painted prettier for one partner must not be
+painted prettier for the other.
+
 ## Fidelity extended past shareholders, to policyholders
 
 The obligation is not limited to the people who hold the stock. Defending
@@ -106,6 +128,7 @@ boss".
 - [[Concepts/Float]] — the fifty-year insurance promises that shape balance-sheet policy
 - [[People/WarrenBuffett]] — the mistake inventories as candour in practice
 - [[Synthesis/FidelityTimeline]] — the standard traced across the letters
+- [[Cases/DempsterMill]] — the valuation with no side to favor
 - [[Sources/OwnersManual]] — candour stated as a governance rule ("how many strokes on each hole")
-- [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]],
+- [[Sources/1961ltr]], [[Sources/1979ltr]], [[Sources/1983ltr]], [[Sources/1985ltr]], [[Sources/1996ltr]],
   [[Sources/2005ltr]], [[Sources/2024ltr]]

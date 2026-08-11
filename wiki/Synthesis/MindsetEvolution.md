@@ -4,7 +4,7 @@ type: synthesis
 stability: high
 tags: [cross-source, quality-over-cheapness, temperament, reinvestment, succession]
 date: 2026-08-10
-source: [[Sources/1981ltr]], [[Sources/1989ltr]], [[Sources/1991ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2014ltr]], [[Sources/2024ltr]], [[Sources/OwnersManual]]
+source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1981ltr]], [[Sources/1989ltr]], [[Sources/1991ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2014ltr]], [[Sources/2024ltr]], [[Sources/OwnersManual]]
 ---
 
 ## What this page traces
@@ -16,18 +16,27 @@ separates the two. For the narrower story of how the moat concept itself matured
 see [[Synthesis/MoatEvolution]]; this page is the wider mental arc that contains it.
 
 *Boundary (updated): the corpus now runs 1957–2024. The Buffett Partnership letters
-[[Sources/1957ltr]]–[[Sources/1960ltr]] are first-hand sources for the early Graham
+[[Sources/1957ltr]]–[[Sources/1962ltr]] are first-hand sources for the early Graham
 era — an earlier version of this page treated that era as general knowledge; it no
-longer is. The 1961–1976 partnership and early-Berkshire years remain a gap.*
+longer is. The 1963–1976 partnership and early-Berkshire years remain a gap.*
 
 ## The change: from cheap to wonderful
 
 The largest shift is in *what* Buffett buys. He begins as a quantitative Graham
 disciple — buy anything statistically cheap against its assets — and the partnership
-letters show precisely what that looked like: a portfolio split between undervalued
-"generals" and event-driven "work-outs" [[Sources/1957ltr]], and control plays like
-[[Cases/SanbornMap]], where the market priced a company's securities portfolio below
-its own value and handed over the operating business for nothing [[Sources/1960ltr]].
+letters show precisely what that looked like. The 1961 letter is where the method
+ceases to be implicit and becomes a written system: three categories — generally
+undervalued "generals", event-driven "work-outs" on a timetable, and "control
+situations" [[Sources/1961ltr]] — with a portfolio split between them, the only
+borrowing done against work-outs (capped at 25% of net worth), and the year-end
+valuation of a controlled asset defined as what a reasonably short sale would bring,
+because new and old partners transact at that same price. [[Sources/1961ltr]]
+[[Cases/DempsterMill]] is the mature form of the third category: a general stock
+bought in 1956 that became majority control in August 1961 and its best year in
+1962 was converting inventory to cash at close to 100 cents on the dollar
+[[Sources/1962ltr]] — where the slightly earlier [[Cases/SanbornMap]] showed the
+market pricing a company's securities portfolio below its own value and handing
+over the operating business for nothing [[Sources/1960ltr]].
 He then abandons that method, under [[People/CharlieMunger]]'s pressure, for something
 close to the opposite. He dates the surrender explicitly in 1989:
 
@@ -108,4 +117,5 @@ he thinks never did.
 - [[People/CharlieMunger]] — who argued for the shift · [[People/BenGraham]] — where the constants came from
 - [[People/GregAbel]], [[People/AjitJain]] — the succession that closes the arc
 - [[Cases/SanbornMap]] — the pure-Graham starting point, grounded
-- [[Sources/1957ltr]], [[Sources/1960ltr]], [[Sources/1981ltr]], [[Sources/1989ltr]], [[Sources/1991ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2014ltr]], [[Sources/2024ltr]], [[Sources/OwnersManual]]
+- [[Cases/DempsterMill]] — the control method's mature, asset-converting form
+- [[Sources/1957ltr]], [[Sources/1960ltr]], [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1981ltr]], [[Sources/1989ltr]], [[Sources/1991ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2014ltr]], [[Sources/2024ltr]], [[Sources/OwnersManual]]

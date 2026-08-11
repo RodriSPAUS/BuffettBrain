@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [margin-of-safety, graham, valuation, risk, investment-principle]
 date: 2026-08-04
-source: [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
 ---
 
 # Margin of Safety: The Cornerstone of Intelligent Investing
@@ -41,13 +41,30 @@ That is the link to [[Concepts/Float]]: an inadequate premium is a negative marg
 
 Written near the top of the late-1990s market, this is the concept used as a warning rather than a screen — the discipline that produces inaction. See [[Concepts/MrMarket]].
 
+## The Partnership-Era Roots: Excess of Value in Every Transaction
+
+The earliest formulations in the corpus come from the Buffett Partnership
+letters, where the margin is defined by the gap between price and the value
+inside the company, and where the operational form is a discount to estimated
+realization:
+
+> "A lot of value can be obtained for the price paid. This substantial excess
+> of value creates a comfortable margin of safety in each transaction."
+> [[Sources/1961ltr]]
+
+For [[Cases/DempsterMill]] the same conservatism is put into numbers for the
+year-end valuation — 40% off inventories, 15% off receivables, auction value of
+fixed assets — a rule Buffett follows *because* new and old partners transact at
+that price, not despite it. [[Sources/1962ltr]]
+
 ## Cross-References
 
 - [[People/BenGraham]] — the "three words" the principle comes from
 - [[Cases/SanbornMap]] — the earliest worked example: a securities portfolio bought below its own value
+- [[Cases/DempsterMill]] — the discount-to-liquidation rule turned into a year-end estimate
 - [[Concepts/IntrinsicValue]] — the estimate the margin protects
 - [[Concepts/MrMarket]] — who supplies the price
 - [[Concepts/Float]] — the underwriting form of the same rule
 - [[Applications/RedFlags]] — what the absence of a margin looks like
 - [[Concepts/CapitalAllocation]] — applying safety margins to capital deployment
-- [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]

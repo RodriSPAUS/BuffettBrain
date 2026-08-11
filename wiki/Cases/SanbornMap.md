@@ -3,7 +3,7 @@ title: "Sanborn Map"
 type: case
 tags: [sanborn-map, control-situation, net-net, insurance-maps, activism]
 date: 2026-08-10
-source: [[Sources/1958ltr]], [[Sources/1959ltr]], [[Sources/1960ltr]]
+source: [[Sources/1958ltr]], [[Sources/1959ltr]], [[Sources/1960ltr]], [[Sources/1961ltr]]
 ---
 
 # Sanborn Map Co.
@@ -55,6 +55,12 @@ Buffett is explicit that control situations like this are the exception:
 
 > "Our bread-and-butter business is buying undervalued securities and selling when the undervaluation is corrected along with investment in special situations where the profit is dependent on corporate rather than market action." [[Sources/1960ltr]]
 
+The 1961 letter does not forget it either: Sanborn is named in the argument
+that bigger funds help control situations precisely *because* such a play needs
+capital — "A 'Sanborn Map' cannot be accomplished without the wherewithal."
+[[Sources/1961ltr]] The same logic, pursued by buying and working a whole
+company, is the subject of [[Cases/DempsterMill]].
+
 Sanborn is the concrete root of ideas the later Berkshire letters state in the
 abstract — margin of safety as downside protection, and the willingness to act as an
 owner rather than a spectator. See [[Synthesis/MindsetEvolution]] for how far this
@@ -66,4 +72,5 @@ starting point is from the "wonderful businesses" era.
 - [[Concepts/IntrinsicValue]] — price versus the value of assets inside the company
 - [[People/BenGraham]] — whose net-net logic this exemplifies
 - [[Principles/OwnershipMindset]] — the board misalignment it exposed
-- [[Sources/1958ltr]], [[Sources/1959ltr]], [[Sources/1960ltr]]
+- [[Cases/DempsterMill]] — the control situation that follows the same logic
+- [[Sources/1958ltr]], [[Sources/1959ltr]], [[Sources/1960ltr]], [[Sources/1961ltr]]

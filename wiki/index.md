@@ -22,6 +22,9 @@ Materials from Warren Buffett (1957–present), processed into structured, sourc
 - [[Sources/1958ltr]] — *Buffett Partnership: Commonwealth Trust, the method worked in full*
 - [[Sources/1959ltr]] — *Buffett Partnership: "New Era" skepticism, one holding at 35%*
 - [[Sources/1960ltr]] — *Buffett Partnership: the Sanborn Map case*
+- [[Sources/1961ltr]] — *Buffett Partnership: the three-category method, Dempster control, and the ten-year prediction*
+- [[Sources/1962ltr]] — *Buffett Partnership: the prediction checked in a down market; Dempster's conversion*
+- [[Sources/1963ltr]] — *Buffett Partnership: full-year 1962 and the Ground Rules *(stub — next ingest)*
 - [[Sources/1977ltr]]
 - [[Sources/1978ltr]]
 - [[Sources/1979ltr]]
@@ -112,6 +115,8 @@ Deep dives into key Berkshire holdings and acquisitions:
 - [[Cases/NetJets]] — fractional jet ownership (not leasing), acquired 1998
 - [[Cases/FlightSafety]] — the world leader in pilot training, acquired 1996
 - [[Cases/SanbornMap]] — the partnership-era value classic: net-net plus a control fight
+- [[Cases/DempsterMill]] — the control case: buy cheap, work the assets, convert to cash
+- [[Cases/CommonwealthTrust]] — sold to fund Sanborn; a closed case with an unresolved thread
 
 ---
 
@@ -127,6 +132,7 @@ Profiles of foundational figures who shaped Berkshire’s philosophy:
 - [[People/RoseBlumkin]] — "Mrs. B", founder of Nebraska Furniture Mart
 - [[People/TomMurphy]] — Capital Cities/ABC, and the Disney merger
 - [[People/HenrySingleton]] — Teledyne *(thin by design: the corpus names him only twice)*
+- [[People/BillRuane]] — the manager Buffett entrusted with his own family's money at BPL's dissolution
 
 ---
 

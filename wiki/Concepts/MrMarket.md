@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [mr-market, temperament, price-versus-value, graham, market-psychology]
 date: 2026-08-04
-source: [[Sources/1987ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+source: [[Sources/1961ltr]], [[Sources/1987ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
 ---
 
 # Mr. Market: The Emotional Business Partner
@@ -37,7 +37,11 @@ That last sentence is the bridge to [[Principles/OwnershipMindset]].
 
 ## Earlier Statements of the Same Idea
 
-The character is named in 1987, but the diagnosis predates him:
+The character is named in 1987, but the diagnosis predates him — and so does the
+shape of the crowd he embodies. In 1961 the "greedy and capricious public" is
+already the thing you must not bet your conservatism on:
+
+> "There is nothing at all conservative, in my opinion, about speculating as to just how high a multiplier a greedy and capricious public will put on earnings." [[Sources/1961ltr]]
 
 > "And fractional-interest purchases can be made in an auction market where prices are set by participants with behavior patterns that sometimes resemble those of an army of manic-depressive lemmings." [[Sources/1982ltr]]
 
@@ -46,10 +50,10 @@ The character is named in 1987, but the diagnosis predates him:
 ## Cross-References
 
 - [[People/BenGraham]] — the allegory's author, "my friend and teacher"
-- [[Sources/1958ltr]], [[Sources/1959ltr]] — the "exuberant" market and "New Era" skepticism, decades before the name
+- [[Sources/1958ltr]], [[Sources/1959ltr]], [[Sources/1961ltr]] — the "exuberant" market, "New Era" skepticism, and the "greedy and capricious public", decades before the name
 - [[Concepts/IntrinsicValue]] — the value Mr. Market's price is measured against
 - [[Concepts/MarginOfSafety]] — what you demand when he is not being foolish
 - [[Principles/OwnershipMindset]] — the stance that makes ignoring him possible
 - [[People/WarrenBuffett]] — temperament over intellect
 - [[Concepts/CapitalAllocation]] — allocating capital when Mr. Market offers opportunities
-- [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+- [[Sources/1961ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
