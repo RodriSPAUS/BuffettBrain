@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [capital-allocation, retained-earnings, reinvestment, dividends, buybacks]
 date: 2026-08-04
-source: [[Sources/1987ltr]], [[Sources/2007ltr]], [[Sources/2015ltr]], [[Sources/2024ltr]]
+source: [[Sources/1987ltr]], [[Sources/2007ltr]], [[Sources/2015ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]], [[Sources/Conference_call_2025]]
 ---
 
 # Capital Allocation: The CEO's Primary Job
@@ -50,6 +50,57 @@ Berkshire's dividend policy reflects their capital allocation philosophy - retai
 
 > "On January 3, 1967, we disbursed our sole payment – $101,755 or 10¢ per A share." [[Sources/2024ltr]]
 
+## Repurchases as a Vote for Shareholders Who Want Out
+
+At the 2021 annual meeting, defending Berkshire's buyback program against a
+senator's charge that repurchases are "market manipulation," Munger draws the
+same moral line Buffett has argued for decades — the difference is whose
+interest the repurchase serves:
+
+> "Well, I -- if you're repurchasing stock just to pull it higher, it's deeply
+> immoral. But if you're repurchasing stock because it's a fair thing to do in
+> the interest of your existing shareholders, it's a highly moral act. And the
+> people who are criticizing it are bonkers." [[Sources/Conference_call_2021]]
+
+Buffett cites a past shareholder vote as evidence the policy matches what
+Berkshire's owners actually want:
+
+> "I think it was something like 97% or something of the shares that said they
+> don't want a dividend." [[Sources/Conference_call_2021]]
+
+## Compounding Through a Company's Own Buybacks: American Express and Apple
+
+At the 2022 meeting Buffett uses American Express to show how a company's own
+repurchases can raise an outside shareholder's stake without that shareholder
+spending another dollar — Berkshire's position grew from about 11.2% in 1998
+to roughly 20% purely through Amex buying in its own stock:
+
+> "We owned, in 1998, it was more than 20 years ago, we owned about 150 million
+> or whether they split whatever it is, they split, they split adjusted, but we
+> owned 150 million shares of American Express." [[Sources/Conference_call_2022]]
+> [[Cases/AmericanExpress]]
+
+The same mechanism applies to Apple, where each 1/10 of 1% rise in Berkshire's
+stake — driven by Apple's own buybacks — adds roughly $100 million in
+attributable earnings.
+
+## The 2025 Buyback Excise Tax
+
+A 1% federal excise tax on corporate share repurchases, introduced after most
+of the letters and calls in this corpus were written, changes the buyback
+calculus directly: Berkshire itself now pays more to repurchase its own stock
+than an outside buyer does, and the same tax falls on portfolio companies like
+Apple:
+
+> "But he spent $100 billion roughly in a year repurchasing shares, and there's
+> a 1% charge attached to that now." [[Sources/Conference_call_2025]]
+
+Buffett states plainly that the higher this charge goes, the less Berkshire
+itself will be able to repurchase — a rare case of a specific piece of tax
+law entering directly into the capital-allocation calculation rather than
+being treated as noise, consistent with his general refusal to let quarterly
+GAAP or tax optics drive decisions. [[Sources/Conference_call_2025]]
+
 ## Cross-References
 
 - [[Concepts/IntrinsicValue]] — growth adds value only above the cost of the capital it absorbs
@@ -57,5 +108,7 @@ Berkshire's dividend policy reflects their capital allocation philosophy - retai
 - [[Concepts/ManagementQuality]] — the skill being assessed
 - [[Cases/SeeCandies]] — high returns with limited reinvestment opportunities
 - [[Cases/BerkshireHathawayEnergy]] — large capital appetite with acceptable returns
+- [[Cases/AmericanExpress]] — the buyback-compounding example
 - [[Concepts/MarginOfSafety]] — margin considerations in capital deployment
-- [[Sources/1984ltr]], [[Sources/1987ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2015ltr]], [[Sources/2022ltr]], [[Sources/2024ltr]]
+- [[Sources/1984ltr]], [[Sources/1987ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2015ltr]], [[Sources/2022ltr]], [[Sources/2024ltr]],
+  [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]], [[Sources/Conference_call_2025]]

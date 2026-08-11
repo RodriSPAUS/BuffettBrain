@@ -1230,3 +1230,30 @@ content — file the gap here instead, and point to wherever the real content ac
 (`Sources/1968ltr` carries 1967's results). This is a `Raw/` curation problem outside agent scope:
 fixing it requires the human to re-extract the file from the original archive, per `Raw/` being
 human-curated and immutable to agents.
+
+---
+
+## [2026-08-11] A citation regex tuned for `1996ltr` breaks on `Conference_call_2021`
+
+**What happened.** Three new Raw/ sources (`Conference_call_2021.md`, `_2022.md`, `_2025.md`) use
+underscores, unlike every other file in `Raw/` and unlike the `EventNameYYYY.md` convention
+`AGENTS.md` documents for non-letter sources. `check_figures.py` and `check_coverage.py` require the
+wiki page stem to equal the `Raw/` stem exactly, so the `Sources/` pages had to mirror the
+underscored name to be checked at all. But `verify_quotes.py`'s `CITATION` regex and
+`check_propagation.py`'s `SOURCE_LINK` regex both matched `[[Sources/X]]` with `[A-Za-z0-9]+` —
+no underscore — so every citation of these pages, explicit or implicit, would have been silently
+truncated at the underscore (`Conference_call_2021` → `Conference`), which is not a key in the
+`raw_stems` set, and reported as a fabricated or misattributed quotation regardless of whether the
+quote was real.
+
+**What it cost.** Caught before any page was written, by reading the checking scripts before writing
+citations rather than after — running `make quotes` on an already-written page would have reported
+every single quote on all three new pages (dozens) as fabricated, and would have kept doing so on
+every future page that cited them, for a reason with nothing to do with the actual wording.
+
+**What to do instead.** When a new source's filename doesn't fit the naming convention the tooling
+assumes (here: alphanumeric-only Raw stems), check the regexes in `scripts/` before writing a single
+page, not after. Widening `[A-Za-z0-9]+` to `[A-Za-z0-9_]+` in both files was the fix: minimal,
+backward-compatible (existing citations are all alnum already), and correct for what's actually on
+disk in `Raw/`. Renaming the Raw files themselves was not an option — `Raw/` is immutable and
+human-curated, and mechanical repair is limited to whitespace, not renames.

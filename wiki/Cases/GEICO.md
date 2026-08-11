@@ -81,6 +81,29 @@ different name on it:
 > "Our insurance business also delivered a major increase in earnings, led by the
 > performance of GEICO." [[Sources/2024ltr]]
 
+## The Todd Combs Turnaround, Told in Real Time
+
+The conference-call Q&As catch the GEICO repair mid-course rather than in
+retrospect. At the 2021 and 2022 meetings, Ajit Jain repeatedly credits
+Progressive with a multi-year head start on telematics-based pricing that
+had opened a real margin and growth gap; by 2025 he reports that gap closed:
+
+> "All this, together with the cost reduction effort that GEICO and Todd gets
+> a lot of credit for, he has basically reduced the workforce by 20,000,
+> starting with something close to 50,000-odd." [[Sources/Conference_call_2025]]
+> [[People/AjitJain]]
+
+The result was seven consecutive quarters with a combined ratio in the 80s —
+GEICO's largest underwriting profit margin in its history — plus $39 billion
+of float. Buffett supplies the long-run scale of the original bet:
+
+> "We paid $50 million for half of GEICO in 1976, what turned out to be half
+> of GEICO, $50 million." [[Sources/Conference_call_2025]]
+
+That original half-stake alone was earning roughly $1 billion a quarter by
+2025 — the compounding case for [[Principles/OwnershipMindset]] made
+concrete.
+
 ## What the case establishes
 
 - A moat can be an *operating* fact — a cost structure competitors cannot copy
@@ -98,6 +121,8 @@ different name on it:
 - [[Concepts/Moat]] — the cost-advantage definition originates here
 - [[Concepts/Float]] — GEICO is the largest single contributor
 - [[Concepts/ManagementQuality]] — Nicely, Simpson, Combs
+- [[People/AjitJain]] — credits the turnaround to Todd Combs
 - [[Sources/1980ltr]], [[Sources/1982ltr]], [[Sources/1986ltr]],
   [[Sources/1995ltr]], [[Sources/1996ltr]], [[Sources/2009ltr]],
-  [[Sources/2024ltr]]
+  [[Sources/2024ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]],
+  [[Sources/Conference_call_2025]]

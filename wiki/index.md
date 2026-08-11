@@ -80,6 +80,12 @@ Materials from Warren Buffett (1957–present), processed into structured, sourc
 - [[Sources/2023ltr]]
 - [[Sources/2024ltr]]
 
+Conference calls and annual-meeting Q&As, transcribed separately from the letters:
+
+- [[Sources/Conference_call_2021]] — first hybrid meeting, LA with Munger; SPACs, Robinhood, crypto, the Precision Castparts mistake owned personally
+- [[Sources/Conference_call_2022]] — back in Omaha; Alleghany, Occidental, Activision, the market as "casino"
+- [[Sources/Conference_call_2025]] — the 60th meeting; the day Buffett recommended Greg Abel as CEO
+
 ---
 
 ## Concept Library
@@ -126,6 +132,10 @@ Deep dives into key Berkshire holdings and acquisitions:
 - [[Cases/BerkshireHathaway]] — the partnership-era origin: bought at $7.60, control 1965
 - [[Cases/NationalIndemnity]] — acquired 1967, ~20% return on capital
 - [[Cases/HochschildKohn]] — bought 1966, sold 1969; the "cigar butt" Buffett names in 1989
+- [[Cases/Alleghany]] — $11.6B acquired in 2022 after a single unsolicited email
+- [[Cases/AmericanExpress]] — an 11.2% stake compounded to 20% through the company's own buybacks
+- [[Cases/OccidentalPetroleum]] — 14% built in two weeks; the "casino" market made concrete
+- [[Cases/JapaneseTradingCompanies]] — the five trading houses, held for 50-100 years
 
 ---
 
@@ -146,6 +156,7 @@ Profiles of foundational figures who shaped Berkshire’s philosophy:
 - [[People/KenChace]] — ran Berkshire Hathaway's textile operation through the whole partnership era
 - [[People/JackRingwalt]] — founded National Indemnity, sold it, kept running it
 - [[People/BenRosner]] — ran Associated Cotton Shops; Buffett's private byword for cost discipline
+- [[People/TimCook]] — Apple; praised for stewarding, not founding, a great business
 
 ---
 
@@ -166,6 +177,7 @@ Cross-source thematic analyses, timelines, and comparative insights:
 - [[Synthesis/MoatEvolution]]
 - [[Synthesis/FidelityTimeline]]
 - [[Synthesis/FloatGrowth]]
+- [[Synthesis/Succession]] — Greg Abel's rise from MidAmerican deputy to CEO designate, 2002–2025
 
 ---
 

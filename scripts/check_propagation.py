@@ -34,7 +34,7 @@ THIN = 6
 # Directories that make up the compiled layer — everything except the summaries.
 COMPILED = ["Concepts", "Cases", "People", "Principles", "Applications", "Synthesis"]
 
-SOURCE_LINK = re.compile(r"\[\[Sources/([A-Za-z0-9]+)")
+SOURCE_LINK = re.compile(r"\[\[Sources/([A-Za-z0-9_]+)")
 
 
 def main() -> int:

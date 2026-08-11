@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [float, insurance, underwriting, cost-of-capital, insurance-business]
 date: 2026-08-04
-source: [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]], [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]], [[Sources/2020ltr]]
+source: [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]], [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
 ---
 
 # Float: Insurance-Based Capital for Investment
@@ -66,6 +66,30 @@ That is what makes the insurance operation the funding layer beneath
 everything else Berkshire owns: BNSF, Berkshire Hathaway Energy, and the
 common-stock portfolio are all, in part, float-funded.
 
+## Pandemic Claims as a Live Test of Underwriting Discipline
+
+The COVID-19 pandemic gave the "cost of float" framework a real-time test.
+At the 2021 annual meeting, with Berkshire reserving about $1.6 billion for
+COVID-19 claims against an industry-wide reserve of $25-30 billion (some
+estimates ran to $100 billion), Ajit Jain frames the whole episode as a
+lesson in how badly the industry — Berkshire included — had priced pandemic
+risk into its float in the first place. [[Sources/Conference_call_2021]]
+[[People/AjitJain]]
+
+## A Negative Cost, Stated as a Number
+
+By 2025 Buffett and Ajit put a precise figure on the discipline described
+above: across Berkshire's combined property-casualty and life insurance
+float, the cost of carrying it is negative — the equivalent of a bank paying
+its depositors to hold their money:
+
+> "So I think if you look at the entire range, including life insurance, our
+> cost of float is 2.2% negative." [[Sources/Conference_call_2025]]
+
+GEICO alone is credited with $39 billion of that float by 2025, on top of
+its own underwriting profit — see [[Cases/GEICO]] for the turnaround under
+Todd Combs that produced it.
+
 ## Cross-References
 
 - [[Cases/GEICO]] — the largest contributor to float
@@ -77,5 +101,5 @@ common-stock portfolio are all, in part, float-funded.
 - [[Sources/OwnersManual]] — float and deferred taxes as costless, non-perilous leverage
 - [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]],
   [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]],
-  [[Sources/2020ltr]]
+  [[Sources/2020ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
 
