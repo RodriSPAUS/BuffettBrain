@@ -96,6 +96,49 @@ designation as successor:
 
 See [[People/WarrenBuffett]] on succession and [[Concepts/ManagementQuality]].
 
+## 2021: The Texas Grid Proposal
+
+Responding to a shareholder question citing Elon Musk's public preference for
+battery storage over new gas-fired capacity, Greg Abel defends BHE's
+proposal — built with Peter Kiewit and Sons, backed by a $4 billion Berkshire
+penalty if the November 2023 delivery date is missed — as designed for the
+kind of multi-day outage battery storage cannot cover:
+
+> "Texas has highlighted that anywhere from $80 billion to $130 billion in
+> incurred losses over that period of time." [[Sources/Conference_call_2021]]
+
+Buffett frames the decision through [[Concepts/MarginOfSafety]] rather than
+pure cost comparison: infrastructure sized for a "one in 30 year event" is
+still worth building because the alternative is worse than the expense.
+
+## 2025: Wildfire Liability and a Falling Valuation
+
+By 2025 the case for BHE has darkened. Buffett explains why Berkshire's two
+purchases of BHE minority stakes implied sharply different valuations — $87
+billion buying 1% from Greg Abel in late 2022, versus $48.8 billion buying
+the Walter Scott family's remaining 8% in 2024, a roughly 44% drop — as a
+broader deterioration in how some states treat regulated utilities, not
+merely PacifiCorp's own wildfire exposure:
+
+> "And we're not in the mood to sell any business, but Berkshire Hathaway
+> Energy is worth considerably less money than it was 2 years ago based on
+> societal factors." [[Sources/Conference_call_2025]]
+
+Abel details a policy shift adopted after the 2020 Oregon wildfires: rather
+than prioritizing keeping the lights on, BHE's utilities now proactively
+de-energize lines when fire risk is high, even though it raises other risks
+(hospitals, emergency services) that must be separately managed:
+
+> "And after those events and as we really looked at how we're going to move
+> forward in managing the assets and reducing that risk, we have clearly
+> recognized as a team that we have to deenergize those assets."
+> [[Sources/Conference_call_2025]]
+
+Both men are explicit that Berkshire will not use shareholder money to absorb
+open-ended wildfire liability as an "insurer of last resort" if the
+underlying economics don't work — a limit on the "unlimited capital" welcome
+described above, once the regulatory bargain stops holding.
+
 ## What the case establishes
 
 - A regulated return is a *low* return accepted in exchange for the right to
@@ -112,6 +155,7 @@ See [[People/WarrenBuffett]] on succession and [[Concepts/ManagementQuality]].
 - [[Cases/SeeCandies]] — the opposite case: high returns, no reinvestment room
 - [[People/GregAbel]] — the manager who built and ran it, now CEO successor
 - [[People/WarrenBuffett]] — succession
+- [[Concepts/MarginOfSafety]] — applied to grid infrastructure, not just price
 - [[Sources/1999ltr]], [[Sources/2002ltr]], [[Sources/2003ltr]],
   [[Sources/2014ltr]], [[Sources/2015ltr]], [[Sources/2016ltr]],
-  [[Sources/2019ltr]]
+  [[Sources/2019ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]

@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [margin-of-safety, graham, valuation, risk, investment-principle]
 date: 2026-08-04
-source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]], [[Sources/1966ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]], [[Sources/1966ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2021]]
 ---
 
 # Margin of Safety: The Cornerstone of Intelligent Investing
@@ -89,6 +89,18 @@ This is the same logic later applied to [[Cases/BerkshireHathaway]] and
 facts *and* their durability are unusually certain — margin of safety
 compounded, not merely priced.
 
+## Applied to Infrastructure, Not Only to Price
+
+Defending Berkshire Hathaway Energy's proposed $9 billion Texas grid
+investment — built for multi-day outages rather than the few hours a battery
+system could cover — against a cheaper alternative Elon Musk had publicly
+favored, Buffett extends the margin-of-safety logic from securities pricing
+to physical infrastructure planning:
+
+> "You don't want to say, "It's well, it's a one in 30 year event, and people
+> die." I mean -- so you want a margin of safety in it." [[Sources/Conference_call_2021]]
+> [[Cases/BerkshireHathawayEnergy]]
+
 ## Cross-References
 
 - [[People/BenGraham]] — the "three words" the principle comes from
@@ -100,4 +112,5 @@ compounded, not merely priced.
 - [[Applications/RedFlags]] — what the absence of a margin looks like
 - [[Concepts/CapitalAllocation]] — applying safety margins to capital deployment
 - [[Cases/BerkshireHathaway]] — the 40%-concentration rule applied in practice
-- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]], [[Sources/1966ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]], [[Sources/1966ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]],
+  [[Sources/Conference_call_2021]]

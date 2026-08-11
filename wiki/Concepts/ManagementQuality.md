@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [management, integrity, compensation, delegation, leadership]
 date: 2026-08-04
-source: [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2024ltr]], [[Sources/2007ltr]], [[Sources/2010ltr]], [[Sources/2015ltr]]
+source: [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2024ltr]], [[Sources/2007ltr]], [[Sources/2010ltr]], [[Sources/2015ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]
 ---
 
 # Management Quality: The Right Leaders for the Right Businesses
@@ -47,6 +47,30 @@ Alignment, demonstrated by what a manager asks for rather than what he says. Pet
 
 See [[Principles/Fidelity]] for the full treatment.
 
+## The Risk Factor Prospectuses Never List
+
+At the 2021 annual meeting, discussing why he isn't troubled by owning
+businesses in industries facing long-run decline (coal, for instance),
+Buffett names the risk that actually determines whether a business survives
+its era well or badly:
+
+> "The #1 risk factor, you never see it, the #1 risk factor is that this
+> business gets the wrong management." [[Sources/Conference_call_2021]]
+
+The danger he describes is specifically a manager who is personable and
+plausible to directors without being competent — someone who can hold a job
+for a decade before the damage becomes visible, precisely because boards
+screen for polish rather than results.
+
+## Decentralization as a Management-Quality Multiplier
+
+Munger connects Berkshire's unusually low corporate overhead directly to
+manager quality rather than treating them as separate topics — the
+freedom from bureaucracy is itself what lets good managers compound:
+
+> "The relative absence of bureaucracy at Berkshire I believe has made the
+> company a lot of extra money for a very, very long time." [[Sources/Conference_call_2022]]
+
 ## Cross-References
 
 - [[Concepts/Moat]] — what a business must have before management can matter
@@ -54,4 +78,5 @@ See [[Principles/Fidelity]] for the full treatment.
 - [[Principles/Fidelity]] — the integrity half of the assessment
 - [[Cases/ForestRiver]], [[Cases/GEICO]] — delegation and intervention
 - [[Sources/OwnersManual]] — delegation "almost to the point of abdication" (12 at headquarters)
-- [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2007ltr]], [[Sources/2010ltr]], [[Sources/2015ltr]], [[Sources/2024ltr]]
+- [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2007ltr]], [[Sources/2010ltr]], [[Sources/2015ltr]], [[Sources/2024ltr]],
+  [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]

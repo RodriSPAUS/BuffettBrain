@@ -102,6 +102,29 @@ purchase (about $20 billion above depreciation) while paying Berkshire $41.8
 billion in cumulative dividends. CEO Carl Ice retired at yearend 2020,
 succeeded by Katie Farmer. [[Sources/2020ltr]]
 
+## 2021-2022: Union Pacific, and a Bridge Named for Munger
+
+Fielding shareholder questions comparing BNSF's operating ratio unfavorably
+against Union Pacific's precision-scheduled railroading, Buffett credits new
+CEO Katie Farmer directly:
+
+> "Katie Farmer's doing an incredible job at BNSF." [[Sources/Conference_call_2021]]
+
+At the 2022 meeting Greg Abel defends BNSF's approach as customer-focused
+rather than purely metrics-driven, while acknowledging the gap; Buffett
+recalls that Munger's early questioning of the railroad's multi-billion-dollar
+annual capital budget is literally built into the network:
+
+> "So the next bridge they bought -- they built, they called the Charles T
+> Munger Bridge." [[Sources/Conference_call_2022]] [[People/CharlieMunger]]
+
+Separately, in 2021, Buffett and Greg Abel discuss the Canadian National and
+Canadian Pacific bids for Kansas City Southern as a modest but real
+competitive threat to BNSF's Mexico traffic, while declining to say Berkshire
+would have matched the price paid — "there's no magic to the Kansas City
+Southern," Buffett says, attributing much of the price to near-zero interest
+rates rather than the asset's own economics. [[Sources/Conference_call_2021]]
+
 ## Cross-references
 
 - [[Cases/BerkshireHathawayEnergy]] — the paired regulated business, and the
@@ -109,5 +132,7 @@ succeeded by Katie Farmer. [[Sources/2020ltr]]
 - [[Concepts/CapitalAllocation]] — why a modest regulated return is acceptable
   on a very large capital base
 - [[Concepts/Moat]]
+- [[People/CharlieMunger]] — namesake of the bridge, and the questioner behind it
 - [[Sources/2009ltr]], [[Sources/2010ltr]], [[Sources/2011ltr]], [[Sources/2014ltr]],
-  [[Sources/2015ltr]], [[Sources/2020ltr]]
+  [[Sources/2015ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2021]],
+  [[Sources/Conference_call_2022]]

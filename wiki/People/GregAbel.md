@@ -3,7 +3,7 @@ title: "Greg Abel"
 type: person
 tags: [succession, berkshire-hathaway-energy, utilities, capital-allocation, operating-management]
 date: 2026-08-10
-source: [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]]
+source: [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
 ---
 
 # Greg Abel
@@ -46,11 +46,51 @@ Berkshire CEO annually owes to owners," and notes that "Greg, our directors and 
 all have a very large investment in Berkshire" — the [[Principles/OwnershipMindset]]
 he wants carried past his own tenure. [[Sources/2024ltr]]
 
+## Introduced at the podium, 2021
+
+Before the 2024 letter names him as successor in print, the conference-call
+Q&As already show the role taking shape in front of shareholders. In 2021
+Buffett introduces him alongside Ajit Jain to the annual-meeting audience:
+
+> "On my right, your left, I have the Vice Chairman in charge of everything
+> except insurance and investments, Greg Abel." [[Sources/Conference_call_2021]]
+
+By the 2025 meeting Abel is fielding capital-allocation questions directly,
+describing an approach he calls unchanged from Buffett's own: protect
+Berkshire's reputation, maintain "a fortress of a balance sheet," and only
+deploy capital — whether into 100%-owned businesses, partial stakes, or
+internal reinvestment — where the multi-decade economics are clearly
+understood. [[Sources/Conference_call_2025]] [[Concepts/CapitalAllocation]]
+
+## May 2025: The Recommendation
+
+At the very end of the 60th annual meeting, with no advance warning to the
+audience or to Abel himself, Buffett tells shareholders he will recommend to
+Berkshire's board the next morning that Abel become CEO at year-end:
+
+> "But I think it's -- the time has arrived where Greg, should become the
+> Chief Executive Officer of the company at year-end." [[Sources/Conference_call_2025]]
+
+Buffett says he expects the board's eleven directors to be unanimous, that he
+intends to keep coming into the office and remain available for major
+decisions, and that Howard Buffett is still slated to become non-executive
+chairman only after Buffett's death — meaning Abel becomes CEO without
+necessarily becoming chairman at the same moment. Buffett frames holding
+every one of his own shares through the transition as, itself, a vote of
+confidence: "I think the prospects of Berkshire will be better under Greg's
+management than mine." [[Sources/Conference_call_2025]] Abel, caught off
+guard on stage, calls the moment simply an honor:
+
+> "But I would always just say it couldn't be more, as I've said in the past,
+> more humbled and honored obviously, to be in this role." [[Sources/Conference_call_2025]]
+
 ## See also
 
 - [[Cases/BerkshireHathawayEnergy]] — the business he built and ran
 - [[People/AjitJain]] — the other Vice Chairman; insurance to Abel's operations
 - [[Concepts/CapitalAllocation]] — the discipline he inherits
 - [[Principles/OwnershipMindset]] — the creed Buffett wants continued
+- [[Synthesis/Succession]] — the full arc from MidAmerican deputy to CEO designate
 - [[People/WarrenBuffett]]
-- [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]]
+- [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]],
+  [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]

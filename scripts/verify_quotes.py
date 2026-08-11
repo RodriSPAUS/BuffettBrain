@@ -36,7 +36,7 @@ MIN_QUOTE = 30
 
 # Quotes are cited either by a [[Sources/X]] link in the same block, or by the
 # page's own identity when the page *is* the summary of that source.
-CITATION = re.compile(r"\[\[Sources/([A-Za-z0-9]+)")
+CITATION = re.compile(r"\[\[Sources/([A-Za-z0-9_]+)")
 
 # Curly or straight double quotes. This deliberately spans newlines: wiki pages
 # are wrapped at ~80 columns, so most real quotations run over two or three lines

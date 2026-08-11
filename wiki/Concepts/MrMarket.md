@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [mr-market, temperament, price-versus-value, graham, market-psychology]
 date: 2026-08-04
-source: [[Sources/1961ltr]], [[Sources/1968ltr]], [[Sources/1969ltr]], [[Sources/1987ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+source: [[Sources/1961ltr]], [[Sources/1968ltr]], [[Sources/1969ltr]], [[Sources/1987ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]
 ---
 
 # Mr. Market: The Emotional Business Partner
@@ -59,6 +59,28 @@ the partnership:
 
 > "As Ben Graham said: 'In the long run, the market is a weighing machine - in the short run, a voting machine.'" [[Sources/1969ltr]] [[People/BenGraham]]
 
+## The Casino, 2021-2022: Mr. Market at His Most Manic
+
+The two pandemic-era annual meetings give the "casino" side of the parable an
+unusually concrete illustration. In 2021 Buffett reads Keynes directly, tying
+Mr. Market's mood swings to the flood of retail trading apps, SPACs and
+options activity of that period:
+
+> "Speculators may do no harm as bubbles on a steady stream of enterprise. But
+> the position is serious when enterprise becomes the bubble on a whirlpool of
+> speculation. When the capital development of the country becomes a
+> by-product of the activities of a casino, the job is likely to be ill-done."
+> [[Sources/Conference_call_2021]]
+
+A year later he offers a live example rather than a metaphor: Berkshire built
+roughly 14% of Occidental Petroleum in about two weeks, something Buffett
+attributes directly to index funds and a few large holders locking up 40% of
+the stock while the rest churned among short-term traders — a market, in his
+telling, no longer behaving like an owner's market at all:
+
+> "We have computers, algorithms trading against other computers."
+> [[Sources/Conference_call_2022]]
+
 ## Cross-References
 
 - [[People/BenGraham]] — the allegory's author, "my friend and teacher"
@@ -69,4 +91,5 @@ the partnership:
 - [[People/WarrenBuffett]] — temperament over intellect
 - [[Concepts/CapitalAllocation]] — allocating capital when Mr. Market offers opportunities
 - [[Applications/RedFlags]] — "bold, imaginative accounting" as a service to the crowd's mood
-- [[Sources/1961ltr]], [[Sources/1968ltr]], [[Sources/1969ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]]
+- [[Sources/1961ltr]], [[Sources/1968ltr]], [[Sources/1969ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]],
+  [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]
