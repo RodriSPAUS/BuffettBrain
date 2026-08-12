@@ -82,6 +82,8 @@ Materials from Warren Buffett (1957–present), processed into structured, sourc
 
 Conference calls and annual-meeting Q&As, transcribed separately from the letters:
 
+- [[Sources/Conference_call_2018]] — the tapeworm and the first Haven venture; Wells Fargo's "cardinal sin"; crypto dismissed as "trading turds"
+- [[Sources/Conference_call_2019]] — buybacks as an intrinsic-value test; Wells Fargo graded against Salomon; "we screwed up" on Google; the $10 billion Occidental weekend
 - [[Sources/Conference_call_2021]] — first hybrid meeting, LA with Munger; SPACs, Robinhood, crypto, the Precision Castparts mistake owned personally
 - [[Sources/Conference_call_2022]] — back in Omaha; Alleghany, Occidental, Activision, the market as "casino"
 - [[Sources/Conference_call_2025]] — the 60th meeting; the day Buffett recommended Greg Abel as CEO
