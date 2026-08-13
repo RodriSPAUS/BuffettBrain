@@ -3,7 +3,7 @@ title: "Greg Abel"
 type: person
 tags: [succession, berkshire-hathaway-energy, utilities, capital-allocation, operating-management]
 date: 2026-08-10
-source: [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
+source: [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
 ---
 
 # Greg Abel
@@ -45,6 +45,28 @@ Buffett adds that "Greg shares the Berkshire creed that a 'report' is what a
 Berkshire CEO annually owes to owners," and notes that "Greg, our directors and I
 all have a very large investment in Berkshire" — the [[Principles/OwnershipMindset]]
 he wants carried past his own tenure. [[Sources/2024ltr]]
+
+## First at the Table: 2019 and 2020
+
+Before the 2021 introduction, the calls already show Abel stepping into the
+role. In 2019 he fields shareholder questions directly for the first time in
+this corpus — on NV Energy customer defections and Iowa rate stability (see
+[[Cases/BerkshireHathawayEnergy]]) — the same day Buffett says of him and Ajit,
+"those guys are better than we are." In 2020, at the first virtual meeting,
+Abel sits on stage in Munger's usual seat, the first vice chairman rather than
+Munger to answer questions beside Buffett. Buffett introduces the remit
+concisely:
+
+> "And Greg is the Vice Chairman in charge of all operations, except insurance." [[Sources/Conference_call_2020]]
+
+Asked whether Berkshire can keep doing opportunistic deals once the founders
+are gone, Abel argues the culture and acumen that let Berkshire act fast will
+outlast them:
+
+> "I fundamentally, without Warren and Charlie at the helm, I don't see the culture of Berkshire changing." [[Sources/Conference_call_2020]]
+
+His answers were measured enough that Buffett quipped, "Well, we got another
+Charlie here." [[Sources/Conference_call_2020]] [[Synthesis/Succession]]
 
 ## Introduced at the podium, 2021
 
@@ -93,4 +115,4 @@ guard on stage, calls the moment simply an honor:
 - [[Synthesis/Succession]] — the full arc from MidAmerican deputy to CEO designate
 - [[People/WarrenBuffett]]
 - [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]],
-  [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
+  [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]

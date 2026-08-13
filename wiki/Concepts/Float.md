@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [float, insurance, underwriting, cost-of-capital, insurance-business]
 date: 2026-08-04
-source: [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]], [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
+source: [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]], [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
 ---
 
 # Float: Insurance-Based Capital for Investment
@@ -76,6 +76,23 @@ lesson in how badly the industry — Berkshire included — had priced pandemic
 risk into its float in the first place. [[Sources/Conference_call_2021]]
 [[People/AjitJain]]
 
+## When Negative Rates Threaten Float Itself (2020)
+
+Float's whole advantage assumes the money can be invested at a positive
+return. A 2020 shareholder puts the inverse case directly: if interest rates
+went negative, collecting premiums upfront would become a cost, and float a
+liability rather than a benefit. Buffett does not dismiss the premise — he
+concedes he has been "wrong so far" in expecting the low-rate, high-debt
+experiment to produce inflation — but answers that the response is to hold
+productive assets, not debt:
+
+> "Well, if we're going to be negative for a long time, you better own equities or you better own something other than debt." [[Sources/Conference_call_2020]]
+
+The point sharpens the "cost of float" framework: costless float is only a
+funding advantage if the assets it funds earn more than nothing, which is why
+Berkshire holds float against equities and whole businesses rather than
+against the low-yielding bonds a standalone insurer would be forced to keep.
+
 ## A Negative Cost, Stated as a Number
 
 By 2025 Buffett and Ajit put a precise figure on the discipline described
@@ -101,5 +118,5 @@ Todd Combs that produced it.
 - [[Sources/OwnersManual]] — float and deferred taxes as costless, non-perilous leverage
 - [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]],
   [[Sources/1997ltr]], [[Sources/2005ltr]], [[Sources/2008ltr]], [[Sources/2010ltr]],
-  [[Sources/2020ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
+  [[Sources/2020ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
 

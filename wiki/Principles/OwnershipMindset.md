@@ -4,7 +4,7 @@ type: principle
 stability: high
 tags: [ownership, owner-partners, long-term, governance, frictional-costs]
 date: 2026-08-09
-source: [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1989ltr]], [[Sources/1998ltr]], [[Sources/2005ltr]], [[Sources/2020ltr]]
+source: [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1989ltr]], [[Sources/1998ltr]], [[Sources/2005ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2020]]
 ---
 
 ## The statement
@@ -81,6 +81,21 @@ relationship:
 > "Although our form is corporate, our attitude is partnership." [[Sources/2020ltr]]
 > [[Sources/1983ltr]]
 
+At the 2020 annual meeting, the same year's letter beside him, Buffett makes
+the point to an audience of new pandemic-era retail investors: a stock is a
+piece of a business, and the owner's mistake is to treat the quote as the thing
+owned:
+
+> "But I hope that really, everybody would buy stocks with the idea that they're buying partnerships in businesses and they wouldn't look at them as chips to move around, up or down." [[Sources/Conference_call_2020]]
+
+The same meeting supplies the ownership logic behind buybacks — Buffett
+distributes his own Berkshire stake to philanthropies that need cash while his
+sister, who wants hers reinvested, is never forced to take a dividend she does
+not want: "I don't force my sister... to take a bunch of money she doesn't
+want." [[Sources/Conference_call_2020]] A repurchase is the owner-partner
+version of a dividend, paid only to the partner who asks for it. See
+[[Concepts/CapitalAllocation]].
+
 ## What erodes the mindset: the Gotrocks parable
 
 The fullest statement of what threatens owner returns is not competition or
@@ -117,4 +132,4 @@ Berkshire".
 - [[Cases/ForestRiver]] — the principle observed from the seller's side
 - [[Sources/OwnersManual]] — the 14 owner-related principles set down as a numbered constitution
 - [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1989ltr]], [[Sources/1998ltr]],
-  [[Sources/2005ltr]], [[Sources/2020ltr]]
+  [[Sources/2005ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2020]]

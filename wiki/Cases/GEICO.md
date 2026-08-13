@@ -104,6 +104,21 @@ That original half-stake alone was earning roughly $1 billion a quarter by
 2025 — the compounding case for [[Principles/OwnershipMindset]] made
 concrete.
 
+## The 2020 Pandemic Giveback
+
+Between the crediting of Progressive's telematics lead and the turnaround's
+payoff, the 2020 meeting catches GEICO handling the pandemic itself. With
+lockdowns cutting driving and accident frequency, GEICO returned money to
+policyholders rather than banking the windfall — the largest such giveback in
+the industry:
+
+> "Our plan will deliver back $2.5 billion roughly or so and recognizing the reduced frequency of accidents during this period." [[Sources/Conference_call_2020]]
+
+Buffett notes GEICO's return (a 15% credit) exceeded competitors', and that
+extended payment deadlines and more uninsured motorists on the road would add
+real cost — an ordinary-year decision made mid-crisis, consistent with the
+long-run underwriting discipline the rest of this page traces.
+
 ## What the case establishes
 
 - A moat can be an *operating* fact — a cost structure competitors cannot copy
@@ -124,5 +139,5 @@ concrete.
 - [[People/AjitJain]] — credits the turnaround to Todd Combs
 - [[Sources/1980ltr]], [[Sources/1982ltr]], [[Sources/1986ltr]],
   [[Sources/1995ltr]], [[Sources/1996ltr]], [[Sources/2009ltr]],
-  [[Sources/2024ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]],
+  [[Sources/2024ltr]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]],
   [[Sources/Conference_call_2025]]

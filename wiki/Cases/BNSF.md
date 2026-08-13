@@ -3,7 +3,7 @@ title: "BNSF"
 type: case
 tags: [bnsf, railroad, regulated, capital-intensive, social-compact]
 date: 2026-08-09
-source: [[Sources/2009ltr]], [[Sources/2010ltr]], [[Sources/2011ltr]], [[Sources/2014ltr]], [[Sources/2015ltr]], [[Sources/2020ltr]]
+source: [[Sources/2009ltr]], [[Sources/2010ltr]], [[Sources/2011ltr]], [[Sources/2014ltr]], [[Sources/2015ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]
 ---
 
 ## The acquisition, and the "social compact"
@@ -102,6 +102,17 @@ purchase (about $20 billion above depreciation) while paying Berkshire $41.8
 billion in cumulative dividends. CEO Carl Ice retired at yearend 2020,
 succeeded by Katie Farmer. [[Sources/2020ltr]]
 
+## 2019: the Operating-Ratio Gap, and "Copping" What Works
+
+The Union Pacific comparison that recurs in 2021-2022 is first put to Buffett in
+2019, when a shareholder notes BNSF's operating ratio trails Union Pacific's by
+more than 400 basis points. Buffett credits the four other North American
+railroads that adopted Hunter Harrison's precision-scheduled model with sharply
+improved margins, and says Berkshire will borrow whatever works while still
+weighing the service tradeoffs:
+
+> "...we are not above copping anything that is successful." [[Sources/Conference_call_2019]]
+
 ## 2021-2022: Union Pacific, and a Bridge Named for Munger
 
 Fielding shareholder questions comparing BNSF's operating ratio unfavorably
@@ -134,5 +145,5 @@ rates rather than the asset's own economics. [[Sources/Conference_call_2021]]
 - [[Concepts/Moat]]
 - [[People/CharlieMunger]] — namesake of the bridge, and the questioner behind it
 - [[Sources/2009ltr]], [[Sources/2010ltr]], [[Sources/2011ltr]], [[Sources/2014ltr]],
-  [[Sources/2015ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2021]],
+  [[Sources/2015ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2021]],
   [[Sources/Conference_call_2022]]

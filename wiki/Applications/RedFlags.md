@@ -3,7 +3,7 @@ title: "Red Flags"
 type: application
 tags: [red flag, risk, warning, danger, institutional-imperative]
 date: 2026-08-09
-source: [[Sources/1983ltr]], [[Sources/1984ltr]], [[Sources/1989ltr]], [[Sources/1994ltr]], [[Sources/2007ltr]], [[Sources/2024ltr]]
+source: [[Sources/1983ltr]], [[Sources/1984ltr]], [[Sources/1989ltr]], [[Sources/1994ltr]], [[Sources/2007ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]]
 ---
 
 ## Purpose
@@ -96,7 +96,35 @@ Buffett applies the same warning to public and corporate pension assumptions
 alike — a "fuse" long enough that the officials who set the assumption will be
 gone before the bill arrives.
 
-## 7. Fidelity failures in a hired manager
+## 7. Leverage — a string of numbers multiplied by one zero
+
+The flag Buffett applies to Berkshire's own conduct as strictly as to any
+target. At the 2020 meeting he reduces the case against borrowed money to
+arithmetic: any product of numbers becomes zero if a single term is zero, and
+leverage is what supplies that term at the worst moment:
+
+> "And there's no reason to use borrowed money to participate in the American tailwind, but there's every other reason to participate." [[Sources/Conference_call_2020]]
+
+The 2019 meeting supplies the case study — Long-Term Capital Management, whose
+principals had every advantage except a margin against ruin:
+
+> "And I mean really, really smart people working with their own money and with years and years of experience of what they were doing and it all turned to pumpkins and mice in 1998." [[Sources/Conference_call_2019]] [[Concepts/MarginOfSafety]]
+
+## 8. Buybacks used as fashion, or funded by the whole balance sheet
+
+Repurchases are legitimate only below intrinsic value and after growth and
+solvency needs are met (see [[Concepts/CapitalAllocation]]). Two failure modes
+were named at the 2020 meeting. Buffett flags repurchasing "because it's
+fashionable" rather than because the stock is cheap — stupid, in his word,
+though not immoral. Greg Abel flags the balance-sheet version, spending every
+dollar of borrowing capacity on buybacks and leaving no cushion:
+
+> "...their financial engineering was just a little extreme and too cute that effectively you're using every ounce of your balance sheet to buy back stock at a time where you're really creating no cushion for your business for any type of event or bump in the road." [[Sources/Conference_call_2020]]
+
+A buyback program announced as a fixed dollar figure, with no reference to
+price or to the reserve it consumes, is the checkable form of both.
+
+## 9. Fidelity failures in a hired manager
 
 Distinct from a capital-allocation mistake, and weighted differently:
 
@@ -123,4 +151,4 @@ Distinct from a capital-allocation mistake, and weighted differently:
 - [[People/CharlieMunger]] — the "aim a little to the right" correction discipline
 - [[People/WarrenBuffett]] — the mistake inventories these flags are meant to prevent
 - [[Sources/1983ltr]], [[Sources/1984ltr]], [[Sources/1989ltr]], [[Sources/1994ltr]],
-  [[Sources/2007ltr]], [[Sources/2024ltr]]
+  [[Sources/2007ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]]

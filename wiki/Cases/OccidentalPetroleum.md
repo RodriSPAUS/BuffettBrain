@@ -3,7 +3,7 @@ title: "Occidental Petroleum"
 type: case
 date: 2026-08-11
 tags: [occidental-petroleum, index-fund-lockup, speculative-market, oil-and-gas]
-source: [[Sources/Conference_call_2022]]
+source: [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2022]]
 ---
 
 # Occidental Petroleum
@@ -36,13 +36,36 @@ Buffett calls the speed itself the real evidence of a "casino" market — a
 company that had existed for decades changing hands at that pace, he argues,
 "is not investment."
 
-## Prior History: The Preferred Stock
+## The 2019 Weekend: How the Preferred Was Committed
 
-The 2022 conversation also revisits Berkshire's earlier $10 billion Occidental
-preferred stock and warrants, acquired to help fund the 2019 Anadarko
-acquisition; by the end of the first quarter of 2020 that stake had been
-marked down to about $5.5 billion, a $4.5 billion unrealized loss, before oil
-prices recovered.
+The $10 billion preferred position has its own origin story, told at the 2019
+meeting. Berkshire's speed and balance sheet let it agree to finance
+Occidental's bid for Anadarko over a single weekend, at a moment when Anadarko's
+board favored a rival Chevron offer:
+
+> "But if there are any $10 billion or $20 billion or maybe even $50 billion 2-day transactions that are in the world, well, let me know, think of Berkshire Hathaway, for sure, in terms of what number to call." [[Sources/Conference_call_2019]]
+
+Buffett confirms the timeline again in 2020:
+
+> "Our commitment was made on a Sunday when the management of Anadarko favored Chevron." [[Sources/Conference_call_2020]]
+
+## The 2020 Admission: "A Mistake So Far"
+
+By the 2020 meeting the position had turned sharply against Berkshire. Oil had
+briefly traded at minus $37 a barrel on the expiring May contract, and Buffett
+concedes the whole investment rests on the oil price, not on any operational
+edge — the Anadarko deal simply does not work at the prices then prevailing:
+
+> "It certainly doesn't work at minus $37 a barrel, but it doesn't work at $20 a barrel." [[Sources/Conference_call_2020]]
+
+He owns the outcome directly, grouping himself with every Oxy shareholder:
+
+> "And to that extent, if you're an Oxy shareholder or any shareholder in any oil-producing company, you'll join me in having made a mistake so far in terms of where oil prices went and who knows where they go in the future." [[Sources/Conference_call_2020]]
+
+The 2022 conversation revisits the same preferred: by the end of the first
+quarter of 2020 the stake had been marked down to about $5.5 billion, a $4.5
+billion unrealized loss, before oil prices recovered and Berkshire began
+building its large common-stock position — the "two weeks" episode below.
 
 ## What the case establishes
 
@@ -56,5 +79,6 @@ prices recovered.
 ## See also
 
 - [[Concepts/MrMarket]] — the "casino" argument this case illustrates
+- [[Concepts/CircleOfCompetence]] — the oil-price dependence owned as a mistake
 - [[People/WarrenBuffett]]
-- [[Sources/Conference_call_2022]]
+- [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2022]]

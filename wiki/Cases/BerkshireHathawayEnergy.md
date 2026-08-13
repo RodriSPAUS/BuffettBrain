@@ -96,6 +96,34 @@ designation as successor:
 
 See [[People/WarrenBuffett]] on succession and [[Concepts/ManagementQuality]].
 
+## 2019: NV Energy, Iowa, and Rate Stability
+
+The 2019 meeting is where Greg Abel first answers a shareholder directly, on a
+detailed question about Nevada casinos leaving NV Energy's system. Abel reports
+five customers left in roughly five years, the utility recovered substantial
+exit fees, and the driver was customers no longer wanting to bear the cost of
+the state's renewable mandate after their contract period. He contrasts this
+with Iowa, where rates have not risen since Berkshire acquired the utility in
+1999 and were not expected to rise again before 2030 or 2031 — the rate
+stability that is BHE's version of the low-cost regulatory bargain traced
+above. [[Sources/Conference_call_2019]] [[People/GregAbel]]
+
+## 2020: "A Way to Stay Real Rich"
+
+At the first virtual meeting, walking through BHE's capital program — roughly
+$40 billion of projects over the coming decade, about half maintenance and half
+incremental growth (wind, solar, transmission), with another ~$30 billion
+nearly ready — Buffett gives the business its most memorable one-line
+description, and the reason a modest regulated return is worth having on this
+scale:
+
+> "I've always said about the energy business, it's not a way to get real rich, but it's a way to stay real rich." [[Sources/Conference_call_2020]]
+
+He and Abel note a transmission project begun with the 2008 PacifiCorp purchase
+reaches service only in 2020 — the decade-long horizons that make Berkshire's
+patient, dividend-free capital "almost uniquely" suited to the work. See
+[[Concepts/CapitalAllocation]].
+
 ## 2021: The Texas Grid Proposal
 
 Responding to a shareholder question citing Elon Musk's public preference for
@@ -158,4 +186,4 @@ described above, once the regulatory bargain stops holding.
 - [[Concepts/MarginOfSafety]] — applied to grid infrastructure, not just price
 - [[Sources/1999ltr]], [[Sources/2002ltr]], [[Sources/2003ltr]],
   [[Sources/2014ltr]], [[Sources/2015ltr]], [[Sources/2016ltr]],
-  [[Sources/2019ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
+  [[Sources/2019ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]

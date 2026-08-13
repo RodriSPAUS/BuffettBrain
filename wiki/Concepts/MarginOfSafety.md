@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [margin-of-safety, graham, valuation, risk, investment-principle]
 date: 2026-08-04
-source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]], [[Sources/1966ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2021]]
+source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]], [[Sources/1966ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]]
 ---
 
 # Margin of Safety: The Cornerstone of Intelligent Investing
@@ -101,6 +101,27 @@ to physical infrastructure planning:
 > die." I mean -- so you want a margin of safety in it." [[Sources/Conference_call_2021]]
 > [[Cases/BerkshireHathawayEnergy]]
 
+## The Balance Sheet as a Margin of Safety (2020)
+
+At the first virtual meeting, in the middle of the COVID crash, Buffett applies
+the same principle to Berkshire's own solvency rather than to a purchase price.
+The company's roughly $125 billion of cash and Treasury bills is not an
+opinion on the market but a margin held against events that arrive together —
+his standing image is a record hurricane followed a month later by a record
+earthquake:
+
+> "We prepare ourselves for problems that sometimes create their own momentum." [[Sources/Conference_call_2020]]
+
+That is why Berkshire holds only Treasury bills (never commercial paper),
+relies on no bank lines, and refuses leverage — a single zero in a chain of
+multiplied numbers zeroes the whole product. The March 2020 near-freeze of the
+credit markets, when even investment-grade issuers briefly could not raise
+money before the Fed intervened on March 23, is the concrete event the margin
+exists for: Berkshire's rule is never to depend on rescue, and the cash cushion
+is the underwriting-style margin of safety that makes that possible. See
+[[Sources/Conference_call_2020]] and [[Applications/RedFlags]] on the leverage
+side of the same discipline.
+
 ## Cross-References
 
 - [[People/BenGraham]] — the "three words" the principle comes from
@@ -113,4 +134,4 @@ to physical infrastructure planning:
 - [[Concepts/CapitalAllocation]] — applying safety margins to capital deployment
 - [[Cases/BerkshireHathaway]] — the 40%-concentration rule applied in practice
 - [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1963ltr]], [[Sources/1964ltr]], [[Sources/1966ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1997ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]],
-  [[Sources/Conference_call_2021]]
+  [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]]

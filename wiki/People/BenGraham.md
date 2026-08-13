@@ -3,7 +3,7 @@ title: "Ben Graham"
 type: person
 tags: [margin-of-safety, mr-market, value-investing, intelligent-investor, teacher]
 date: 2026-08-10
-source: [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1993ltr]], [[Sources/OwnersManual]]
+source: [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1993ltr]], [[Sources/OwnersManual]], [[Sources/Conference_call_2020]]
 ---
 
 # Ben Graham
@@ -45,6 +45,20 @@ departure in technique that never discards Graham's underlying discipline of pri
 below value. That arc is traced in [[Synthesis/MoatEvolution]] and
 [[Concepts/Moat]].
 
+## "One of the 3 Smartest People" (2020)
+
+Asked at the 2020 meeting to name the other two of the three smartest people he
+has met, Buffett declines — "I'm smart enough not to name the other 2" — but the
+exchange confirms where Graham stands in his estimate, and adds a detail about
+the man rather than the method:
+
+> "And Ben Graham, one of the things he said he liked to do every day was he wanted to do something creative, something generous and something foolish." [[Sources/Conference_call_2020]]
+
+Buffett attaches a caution he repeats often: that raw intelligence, of which
+Graham had an abundance, "does not always translate into rationality and
+behavioral success or wisdom" — the same separation of temperament from IQ that
+runs through [[People/WarrenBuffett]] and [[Concepts/MrMarket]].
+
 ## See also
 
 - [[Cases/SanbornMap]] — Graham's net-net logic applied in practice, 1958–1960
@@ -53,4 +67,4 @@ below value. That arc is traced in [[Synthesis/MoatEvolution]] and
 - [[Concepts/IntrinsicValue]] — voting machine vs weighing machine
 - [[People/WarrenBuffett]] — the student
 - [[People/CharlieMunger]] — who pushed Buffett beyond pure Graham
-- [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1993ltr]], [[Sources/OwnersManual]]
+- [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1992ltr]], [[Sources/1993ltr]], [[Sources/OwnersManual]], [[Sources/Conference_call_2020]]

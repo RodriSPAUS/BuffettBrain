@@ -3,7 +3,7 @@ title: "Charlie Munger"
 type: person
 tags: [munger, partner, vice-chairman, quality-over-cheapness, inversion]
 date: 2026-08-09
-source: [[Sources/1980ltr]], [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2006ltr]], [[Sources/2009ltr]], [[Sources/2014ltr]], [[Sources/2022ltr]], [[Sources/2023ltr]]
+source: [[Sources/1980ltr]], [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2006ltr]], [[Sources/2009ltr]], [[Sources/2014ltr]], [[Sources/2022ltr]], [[Sources/2023ltr]], [[Sources/Conference_call_2018]], [[Sources/Conference_call_2019]]
 ---
 
 ## Role
@@ -123,6 +123,24 @@ For the 2014 letter the two wrote separate assessments:
 > views of what has happened at Berkshire during the past 50 years and what each
 > expects during the next 50." [[Sources/2014ltr]]
 
+## At the Meetings: Crypto, and the Google Miss (2018–2019)
+
+The annual-meeting Q&As catch Munger's bluntness in real time, unedited by the
+letters. On cryptocurrency in 2018 he is unrestrained:
+
+> "And so to me, it's just dementia and I think the people who are rational traders, they go into trading crypto currencies, it's just disgusting." [[Sources/Conference_call_2018]]
+
+> "It's like somebody else is trading turds and you decide I can't be left out." [[Sources/Conference_call_2018]]
+
+The same directness turns inward a year later. Pressed twice on why Berkshire
+missed Google despite watching its advertising economics from inside GEICO,
+Munger owns the error without softening it — the sharpest self-criticism either
+man offers in this corpus:
+
+> "We screwed up." [[Sources/Conference_call_2019]]
+
+> "But I feel like a horse's ass for not identifying Google better." [[Sources/Conference_call_2019]] [[Concepts/CircleOfCompetence]]
+
 ## Cross-references
 
 - [[People/WarrenBuffett]]
@@ -132,4 +150,4 @@ For the 2014 letter the two wrote separate assessments:
 - [[Applications/RedFlags]] — the "aim a little to the right" correction discipline
 - [[Sources/1980ltr]], [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2006ltr]],
   [[Sources/2007ltr]], [[Sources/2009ltr]], [[Sources/2014ltr]], [[Sources/2022ltr]],
-  [[Sources/2023ltr]]
+  [[Sources/2023ltr]], [[Sources/Conference_call_2018]], [[Sources/Conference_call_2019]]

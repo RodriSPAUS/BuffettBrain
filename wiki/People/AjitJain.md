@@ -3,7 +3,7 @@ title: "Ajit Jain"
 type: person
 tags: [insurance, super-catastrophe, reinsurance, underwriting-discipline, succession]
 date: 2026-08-10
-source: [[Sources/1998ltr]], [[Sources/2009ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
+source: [[Sources/1998ltr]], [[Sources/2009ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
 ---
 
 # Ajit Jain
@@ -50,6 +50,24 @@ Greg Abel of everything else — changes Buffett calls overdue. [[Sources/2018lt
 [[Concepts/ManagementQuality]]
 
 > "Berkshire is now far better managed than when I alone was supervising operations." [[Sources/2018ltr]]
+
+## The Acid Test (2019), and "One of a Kind" (2020)
+
+The 2019 meeting is where Ajit answers shareholders directly for the first time
+in this corpus, describing how he prices catastrophe risk that has no actuarial
+precedent. The final step is not a model:
+
+> "And then finally, the absolute acid test is, I pick up the phone and call Warren." [[Sources/Conference_call_2019]]
+
+Buffett estimates Ajit has personally added more than $50 billion to Berkshire's
+balance sheet since walking into his office uninvited in the mid-1980s, and
+calls the skill "not very teachable." In 2020, when a shareholder notices Ajit
+was left off the list of future capital allocators, Buffett clarifies the
+division of labor — Ajit's genius is insurance, not investing:
+
+> "But his job is not capital allocation, it's evaluating insurance risk." [[Sources/Conference_call_2020]]
+
+> "Anybody will tell you that's had any contact with him and particularly anybody in the insurance business where they know him well, he is absolutely one of a kind." [[Sources/Conference_call_2020]]
 
 ## Pandemic Risk, Underpriced by the Whole Industry
 
@@ -101,4 +119,4 @@ float business, judging their leverage and credit risk unattractive:
 - [[People/GregAbel]] — the other half of the operating leadership, and the CEO successor
 - [[People/WarrenBuffett]]
 - [[Sources/1998ltr]], [[Sources/2009ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]],
-  [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
+  [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]

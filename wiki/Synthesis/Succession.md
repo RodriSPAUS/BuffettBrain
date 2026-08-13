@@ -4,7 +4,7 @@ type: synthesis
 stability: high
 tags: [succession, greg-abel, ajit-jain, ceo-transition, board-governance]
 date: 2026-08-11
-source: [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
+source: [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
 ---
 
 ## What this page traces
@@ -24,6 +24,8 @@ traces that arc end to end, alongside the parallel elevation of
 | **2014** | Abel and Jain jointly ranked "world-class" against any external CEO candidate | [[Sources/2014ltr]] |
 | **2017** | Board elects both as directors and Vice Chairmen | [[Sources/2017ltr]] |
 | **2018** | Abel given authority over all non-insurance operations; Jain over all insurance | [[Sources/2018ltr]] |
+| **May 2019** | Abel and Jain field shareholder questions directly for the first time; Buffett: "those guys are better than we are" | [[Sources/Conference_call_2019]] |
+| **May 2020** | Abel sits on stage in Munger's seat at the first virtual meeting; Buffett names Abel, Combs and Weschler as the capital-allocation successors | [[Sources/Conference_call_2020]] |
 | **May 2021** | Both introduced to shareholders by name, on stage, as the operating leadership | [[Sources/Conference_call_2021]] |
 | **2024** | Buffett states in print that Abel will become CEO and write the letters | [[Sources/2024ltr]] |
 | **May 2025** | Buffett recommends to the board that Abel become CEO at year-end | [[Sources/Conference_call_2025]] |
@@ -42,6 +44,25 @@ hire Berkshire could have made:
 
 > "Ajit Jain and Greg Abel are proven performers who would probably be
 > under-described as 'world-class.'" [[Sources/2014ltr]]
+
+## Fielding Questions: 2019 and 2020
+
+The 2021 Los Angeles introduction was itself the endpoint of a two-year warm-up
+visible in the calls. In 2019 Abel and Jain answer shareholder questions
+directly for the first time in this corpus — Abel on NV Energy, Jain on pricing
+catastrophe risk — and Buffett rates them above himself and Munger without
+qualification:
+
+> "Those guys are better than we are." [[Sources/Conference_call_2019]]
+
+In 2020, at the first virtual meeting, Abel physically takes Munger's seat
+beside Buffett, the first time a vice chairman rather than Munger fielded
+questions. Asked who will allocate Berkshire's capital afterward, Buffett names
+Abel together with investment managers Todd Combs and Ted Weschler — and, when a
+shareholder notices Ajit Jain was omitted, clarifies that Jain's domain is
+insurance, not capital allocation ([[People/AjitJain]]). The division of the
+successor roles — Abel and the two investment managers on capital, Jain on
+underwriting — is stated in that exchange more plainly than in any letter.
 
 ## Introduced to Shareholders, 2021
 
@@ -104,4 +125,4 @@ specific date and a formal board recommendation:
 - [[People/WarrenBuffett]] — the succession statement in his own words
 - [[Cases/BerkshireHathawayEnergy]] — the business Abel built before taking on the whole company
 - [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]],
-  [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]
+  [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]

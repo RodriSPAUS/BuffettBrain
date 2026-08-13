@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [management, integrity, compensation, delegation, leadership]
 date: 2026-08-04
-source: [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2024ltr]], [[Sources/2007ltr]], [[Sources/2010ltr]], [[Sources/2015ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]
+source: [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2024ltr]], [[Sources/2007ltr]], [[Sources/2010ltr]], [[Sources/2015ltr]], [[Sources/Conference_call_2018]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]
 ---
 
 # Management Quality: The Right Leaders for the Right Businesses
@@ -62,6 +62,27 @@ plausible to directors without being competent — someone who can hold a job
 for a decade before the damage becomes visible, precisely because boards
 screen for polish rather than results.
 
+## The Cardinal Sin: Wells Fargo Graded Across Two Meetings
+
+The clearest recent case study in management integrity is one Buffett returns
+to twice. At the 2018 meeting he separates the original bad incentive system at
+Wells Fargo — which pushed employees to open accounts that did not exist — from
+the deeper failure of not fixing it once it was known:
+
+> "But if ignoring the fact that they had a faulty incentive system, which was incenting people to do things that were kind of crazy like opening nonexisting accounts, et cetera, and that is a cardinal sin at Berkshire." [[Sources/Conference_call_2018]]
+
+In 2019 he sharpens the point by analogy to his own turn running Salomon in the
+1991 bond-trading scandal, where CEO John Gutfreund's failure was inaction
+after the problem surfaced, not the original wrongdoing:
+
+> "Because essentially, he heard about a pyromaniac and he let him even keep the box of matches." [[Sources/Conference_call_2019]]
+
+The management-quality test in both cases is not whether a problem occurs — they
+always do at scale — but how fast the person in charge moves once they know.
+Buffett pairs this against companies that recovered *because* their managers
+acted: American Express after the 1963 salad-oil fraud ([[Cases/AmericanExpress]])
+and GEICO after its 1976 under-reserving near-bankruptcy ([[Cases/GEICO]]).
+
 ## Decentralization as a Management-Quality Multiplier
 
 Munger connects Berkshire's unusually low corporate overhead directly to
@@ -79,4 +100,4 @@ freedom from bureaucracy is itself what lets good managers compound:
 - [[Cases/ForestRiver]], [[Cases/GEICO]] — delegation and intervention
 - [[Sources/OwnersManual]] — delegation "almost to the point of abdication" (12 at headquarters)
 - [[Sources/1989ltr]], [[Sources/1993ltr]], [[Sources/2007ltr]], [[Sources/2010ltr]], [[Sources/2015ltr]], [[Sources/2024ltr]],
-  [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]
+  [[Sources/Conference_call_2018]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]

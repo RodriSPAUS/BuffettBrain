@@ -3,7 +3,7 @@ title: "See's Candies"
 type: case
 tags: [sees, brand, economic-goodwill, capital-allocation, moat]
 date: 2026-08-09
-source: [[Sources/1985ltr]], [[Sources/1989ltr]], [[Sources/1990ltr]], [[Sources/1991ltr]], [[Sources/1999ltr]], [[Sources/2007ltr]]
+source: [[Sources/1985ltr]], [[Sources/1989ltr]], [[Sources/1990ltr]], [[Sources/1991ltr]], [[Sources/1999ltr]], [[Sources/2007ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]]
 ---
 
 ## Why this case matters
@@ -136,6 +136,26 @@ By 1999, economic goodwill at See's had grown irregularly but very substantially
 for 78 years — dated, notably, from the See family's founding of the business,
 not from Blue Chip's 1972 purchase. [[Sources/1999ltr]]
 
+## Why It Never Scaled — and Never Needed To (2019–2020)
+
+The conference calls close the loop on the growth question the letters leave
+implicit. Asked in 2019 why See's never became a national or global brand
+despite decades of strong returns, Munger says the failure was structural, not
+managerial — regional taste differences and the fact that boxed chocolate is
+overwhelmingly a gift, rarely bought to eat oneself:
+
+> "Well, we failed in turning our old candy company into Mars or HERSHEY'S for the same reason that you failed to get the Nobel Prize in physics and achieve immortality." [[Sources/Conference_call_2019]] [[People/CharlieMunger]]
+
+But the inability to scale is exactly what makes See's the model capital-light
+business, a point Buffett makes directly in 2020 while contrasting it with the
+capital-hungry railroad and energy operations:
+
+> "I mean See's never required capital." [[Sources/Conference_call_2020]]
+
+That is the whole case in one line: a business that cannot reinvest its own
+earnings, and therefore hands them to Berkshire to deploy elsewhere, is worth
+more than one that must consume capital to grow. See [[Concepts/CapitalAllocation]].
+
 ## Cross-references
 
 - [[Concepts/EconomicGoodwill]] — See's is the worked example, and "like land" at 78 years
@@ -146,4 +166,4 @@ not from Blue Chip's 1972 purchase. [[Sources/1999ltr]]
 - [[Cases/GEICO]] — the other multi-decade holding, with a cost moat rather than
   a brand moat
 - [[Sources/1985ltr]], [[Sources/1989ltr]], [[Sources/1990ltr]], [[Sources/1991ltr]],
-  [[Sources/1999ltr]], [[Sources/2007ltr]]
+  [[Sources/1999ltr]], [[Sources/2007ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]]

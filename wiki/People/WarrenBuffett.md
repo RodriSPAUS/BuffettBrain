@@ -3,7 +3,7 @@ title: "Warren Buffett"
 type: person
 tags: [buffett, chairman, candour, mistakes, succession]
 date: 2026-08-09
-source: [[Sources/1977ltr]], [[Sources/1980ltr]], [[Sources/1985ltr]], [[Sources/1989ltr]], [[Sources/1991ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2024ltr]]
+source: [[Sources/1977ltr]], [[Sources/1980ltr]], [[Sources/1985ltr]], [[Sources/1989ltr]], [[Sources/1991ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2020]]
 ---
 
 ## The scoreboard he insisted on from letter one
@@ -72,6 +72,18 @@ Fannie Mae:
 
 > "But I'll make more mistakes in the future – you can bet on that."
 > [[Sources/2007ltr]]
+
+**May 2020** — the same candour, live and unedited, at the first virtual
+meeting. Having bought roughly 10% of the four major U.S. airlines and then sold
+the entire stake at a loss during the COVID shutdown, Buffett refuses to spread
+the blame:
+
+> "And I'm the one who made the decision." [[Sources/Conference_call_2020]] [[Concepts/CircleOfCompetence]]
+
+He is careful to separate the error from the four CEOs, framing it as a
+low-probability event that materialized rather than a management failure — the
+same "mistake of assessing future economics" category the 2024 letter would
+later formalize.
 
 **2024** — formalised into a named section, with the two categories the rest of
 this wiki is organised around:
@@ -157,4 +169,4 @@ Abel enters the letters two decades earlier as a utility manager — see
 - [[Applications/BusinessQualityChecklist]] — the four-part test, stated in 1977
 - [[Sources/1977ltr]], [[Sources/1980ltr]], [[Sources/1985ltr]], [[Sources/1989ltr]],
   [[Sources/1991ltr]], [[Sources/1994ltr]], [[Sources/1995ltr]], [[Sources/1996ltr]],
-  [[Sources/2007ltr]], [[Sources/2024ltr]]
+  [[Sources/2007ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2020]]

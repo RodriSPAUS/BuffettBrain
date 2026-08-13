@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [mr-market, temperament, price-versus-value, graham, market-psychology]
 date: 2026-08-04
-source: [[Sources/1961ltr]], [[Sources/1968ltr]], [[Sources/1969ltr]], [[Sources/1987ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]
+source: [[Sources/1961ltr]], [[Sources/1968ltr]], [[Sources/1969ltr]], [[Sources/1987ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]
 ---
 
 # Mr. Market: The Emotional Business Partner
@@ -59,6 +59,23 @@ the partnership:
 
 > "As Ben Graham said: 'In the long run, the market is a weighing machine - in the short run, a voting machine.'" [[Sources/1969ltr]] [[People/BenGraham]]
 
+## The Farm and the Obliging Neighbor (2020)
+
+In the prepared monologue of the first virtual meeting, at the height of the
+COVID crash, Buffett restates the whole parable in agricultural terms. Imagine
+owning a 160-acre farm bought for what it will produce, next to an identical
+farm whose owner — "a manic depressive" who "drinks, maybe smokes a little
+pot" — shouts a different price to buy or sell every single day. Stocks give
+you exactly that neighbor, and the discipline is to see the quote as an option,
+never an instruction:
+
+> "Now the only thing you have to do is to remember that this guy next door is there to serve you and not to instruct you." [[Sources/Conference_call_2020]]
+
+It is the 1987 rule — "Mr. Market is there to serve you, not to guide you" —
+spoken to an audience watching Berkshire's own stock fall, and it feeds
+directly into the same meeting's advice that most people should simply own a
+cross-section of America and stop watching the quote. [[Principles/OwnershipMindset]]
+
 ## The Casino, 2021-2022: Mr. Market at His Most Manic
 
 The two pandemic-era annual meetings give the "casino" side of the parable an
@@ -92,4 +109,4 @@ telling, no longer behaving like an owner's market at all:
 - [[Concepts/CapitalAllocation]] — allocating capital when Mr. Market offers opportunities
 - [[Applications/RedFlags]] — "bold, imaginative accounting" as a service to the crowd's mood
 - [[Sources/1961ltr]], [[Sources/1968ltr]], [[Sources/1969ltr]], [[Sources/1982ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/2008ltr]], [[Sources/2011ltr]], [[Sources/2020ltr]],
-  [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]
+  [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]]

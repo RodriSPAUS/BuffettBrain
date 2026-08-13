@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [capital-allocation, retained-earnings, reinvestment, dividends, buybacks]
 date: 2026-08-04
-source: [[Sources/1987ltr]], [[Sources/2007ltr]], [[Sources/2015ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]], [[Sources/Conference_call_2025]]
+source: [[Sources/1987ltr]], [[Sources/2007ltr]], [[Sources/2015ltr]], [[Sources/2024ltr]], [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]], [[Sources/Conference_call_2025]]
 ---
 
 # Capital Allocation: The CEO's Primary Job
@@ -68,6 +68,30 @@ Berkshire's owners actually want:
 > "I think it was something like 97% or something of the shares that said they
 > don't want a dividend." [[Sources/Conference_call_2021]]
 
+## The Test Behind the Repurchase: Same Moment Before and After (2019–2020)
+
+The 2021 "moral act" defense rests on a mechanical test Buffett had spelled
+out at the two prior meetings. In 2019 he states the only condition that makes
+a repurchase legitimate — that it leave the non-selling owners better off the
+instant it is done:
+
+> "...the real thing is to buy stock, repurchase shares only when you think you're doing it and at a price where the remaining shareholders have had -- are worth more the moment after you repurchased it than they were the moment before." [[Sources/Conference_call_2019]]
+
+In 2020 he reduces it to a three-partner thought experiment — three people who
+jointly own a McDonald's franchise, one of whom wants cash while the other two
+want to reinvest. Buying out a slice of the first partner's stake, rather than
+forcing a full dividend on all three, distributes capital only to the owner who
+wants it, and raises the other two's ownership. The guiding principle is
+price:
+
+> "And to my knowledge, JPMorgan, Jamie Dimon said it once and we've said it various times, we will repurchase shares when it's to the advantage of the continuing shareholder to have us do so." [[Sources/Conference_call_2020]]
+
+The mirror image is overpayment on acquisitions: the same year Berkshire wrote
+down Kraft Heinz, Buffett names the error as one of price, not business
+quality — "you can turn any investment into a bad deal by paying too much":
+
+> "We paid too much money for Kraft." [[Sources/Conference_call_2019]]
+
 ## Compounding Through a Company's Own Buybacks: American Express and Apple
 
 At the 2022 meeting Buffett uses American Express to show how a company's own
@@ -111,4 +135,4 @@ GAAP or tax optics drive decisions. [[Sources/Conference_call_2025]]
 - [[Cases/AmericanExpress]] — the buyback-compounding example
 - [[Concepts/MarginOfSafety]] — margin considerations in capital deployment
 - [[Sources/1984ltr]], [[Sources/1987ltr]], [[Sources/1996ltr]], [[Sources/2007ltr]], [[Sources/2015ltr]], [[Sources/2022ltr]], [[Sources/2024ltr]],
-  [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]], [[Sources/Conference_call_2025]]
+  [[Sources/Conference_call_2019]], [[Sources/Conference_call_2020]], [[Sources/Conference_call_2021]], [[Sources/Conference_call_2022]], [[Sources/Conference_call_2025]]

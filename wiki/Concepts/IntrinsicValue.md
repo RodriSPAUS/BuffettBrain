@@ -4,7 +4,7 @@ type: concept
 stability: high
 tags: [intrinsic-value, valuation, book-value, discounted-cash-flow, investment-principle]
 date: 2026-08-04
-source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1965ltr]], [[Sources/1969ltr]], [[Sources/1994ltr]], [[Sources/1983ltr]], [[Sources/1990ltr]], [[Sources/2000ltr]], [[Sources/1987ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]]
+source: [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1965ltr]], [[Sources/1969ltr]], [[Sources/1994ltr]], [[Sources/1983ltr]], [[Sources/1990ltr]], [[Sources/2000ltr]], [[Sources/1987ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]], [[Sources/Conference_call_2019]]
 ---
 
 # Intrinsic Value: The Central Concept of Investment
@@ -63,6 +63,21 @@ approach as bluntly as it appears anywhere in the corpus:
 
 This is the sentence that ties valuation to [[Concepts/CapitalAllocation]]: whether growth helps depends entirely on the return earned on the capital it consumes. [[Cases/SeeCandies]] is the case where growth was slight and returns enormous; [[Cases/BerkshireHathawayEnergy]] the case where the capital appetite is vast and the accepted return modest.
 
+## "All Investing Is Value Investing" (2019)
+
+Asked at the 2019 meeting whether buying Amazon and StoneCo signaled a move
+away from value investing, Buffett rejects the category split entirely. Every
+purchase — a bank stock below book, or a company at a high reported multiple —
+reduces to the same estimate of cash out over time:
+
+> "In the end, it all goes back to Aesop, who in 600 BC said that a bird in the hand is worth 2 in the bush." [[Sources/Conference_call_2019]]
+
+The only variables, he says, are how many birds are in the bush, how sure you
+are they are there, and how long until you get them — never whether the
+calculation itself changes. It is the 1994 definition ("the discounted value of
+the cash that can be taken out of a business") restated as a rebuttal to the
+growth-versus-value dichotomy. [[Concepts/CapitalAllocation]]
+
 ## Why the Market Eventually Agrees
 
 > "As Ben said: "In the short run, the market is a voting machine but in the long run it is a weighing machine." The speed at which a business's success is recognized, furthermore, is not that important as long as the company's intrinsic value is increasing at a satisfactory rate." [[Sources/1987ltr]]
@@ -80,4 +95,4 @@ See [[Concepts/MrMarket]], for the behavioral half of the argument.
 - [[Cases/BerkshireHathaway]] — the halfway-NCAV-and-book rule, and "price is what you pay, value is what you get"
 - [[Sources/OwnersManual]] — the canonical definition, and book value's limits
 - [[Sources/1957ltr]], [[Sources/1958ltr]] — "priced above intrinsic value", and Commonwealth Trust at $50 vs $125
-- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1965ltr]], [[Sources/1969ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1994ltr]], [[Sources/2000ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]]
+- [[Sources/1961ltr]], [[Sources/1962ltr]], [[Sources/1965ltr]], [[Sources/1969ltr]], [[Sources/1983ltr]], [[Sources/1987ltr]], [[Sources/1990ltr]], [[Sources/1994ltr]], [[Sources/2000ltr]], [[Sources/2007ltr]], [[Sources/2018ltr]], [[Sources/Conference_call_2019]]
