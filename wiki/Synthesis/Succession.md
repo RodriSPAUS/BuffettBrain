@@ -103,5 +103,6 @@ specific date and a formal board recommendation:
 - [[People/AjitJain]] — elevated to run all of insurance in parallel
 - [[People/WarrenBuffett]] — the succession statement in his own words
 - [[Cases/BerkshireHathawayEnergy]] — the business Abel built before taking on the whole company
+- [[Synthesis/LettersVsConferenceCalls]] — the 2019 conference call's live succession moment, versus the same year's letter stating only abstract readiness factors
 - [[Sources/2002ltr]], [[Sources/2014ltr]], [[Sources/2017ltr]], [[Sources/2018ltr]], [[Sources/2024ltr]],
   [[Sources/Conference_call_2021]], [[Sources/Conference_call_2025]]

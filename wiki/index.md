@@ -180,6 +180,7 @@ Cross-source thematic analyses, timelines, and comparative insights:
 - [[Synthesis/FidelityTimeline]]
 - [[Synthesis/FloatGrowth]]
 - [[Synthesis/Succession]] — Greg Abel's rise from MidAmerican deputy to CEO designate, 2002–2025
+- [[Synthesis/LettersVsConferenceCalls]] — testing 2018–2019 for redundancy: overlap is real but thin, most call content has no letter counterpart
 
 ---
 
