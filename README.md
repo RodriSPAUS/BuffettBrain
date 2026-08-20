@@ -78,12 +78,71 @@ The citation check is the important one. A fabricated quotation is indistinguish
 one once written, and propagates into every synthesis built on top of it — so the wiki is worth
 exactly what that check says it is.
 
-## Use it with an AI agent
+## How to use it (even if you have zero experience)
 
-The repo is written for an LLM agent (Claude Code, Codex, Cursor, or similar) to maintain and
-query directly — `AGENTS.md` is the entry point any agent reads first. Point one at this repo and
-you can ask investment questions in Buffett's analytical voice with every claim cited, or hand it
-a new letter/interview/transcript to ingest and watch it propagate through the wiki.
+This repository is **LLM-agnostic**: it does not depend on any specific model or tool. It works
+with Claude, GPT, Gemini, Llama, or whatever LLM you prefer, as long as the tool can read local
+files and follow the instructions in `AGENTS.md`.
+
+The core idea is simple: open the folder and point an AI coding agent at it. The agent reads
+`AGENTS.md` first and then knows how to answer questions or maintain the wiki while keeping every
+quote 100% accurate.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/RodriSPAUS/BuffettBrain.git
+cd BuffettBrain
+make hooks          # recommended — installs the safety check for quotes
+```
+
+### 2. Open it in your editor / tool of choice
+
+#### Option A — Claude Code (recommended for most people)
+
+1. Install [Claude Code](https://claude.ai/code) if you haven't already.
+2. Open a terminal inside the `BuffettBrain` folder.
+3. Run:
+   ```bash
+   claude
+   ```
+4. Claude Code will automatically detect `AGENTS.md` / `CLAUDE.md` and load the instructions.
+5. Start asking questions, for example:
+   - "What does Buffett say about moats? Cite the sources."
+   - "Summarize the Coca-Cola case and how it fits the philosophy."
+   - "Ingest this new interview I just dropped into Raw/."
+
+#### Option B — VS Code + AI extension
+
+You can use any of these combinations:
+
+| Tool | How to connect |
+|------|----------------|
+| **Cursor** | Open the folder with Cursor → it reads `AGENTS.md` automatically |
+| **Continue.dev** (VS Code extension) | Open the folder → point Continue at the workspace |
+| **GitHub Copilot Chat / Copilot Workspace** | Open the folder and start a chat in the workspace context |
+| **Aider, Codex CLI, or similar** | Run the tool from inside the repo directory |
+
+In all cases the agent should start by reading `AGENTS.md`. If it doesn't, just tell it:
+
+> Read AGENTS.md and follow those instructions for this repository.
+
+#### Option C — Obsidian (for browsing without AI)
+
+The `wiki/` folder is fully compatible with [Obsidian](https://obsidian.md). Just open the
+`BuffettBrain` folder as a vault. You get graph view, backlinks and the full knowledge network
+without needing any LLM.
+
+### 3. What you can do once connected
+
+- **Query** — Ask any investment question. The agent answers in Buffett's analytical voice and
+  cites real pages (`[[Sources/1996ltr]]`, `[[Concepts/Moat]]`, etc.).
+- **Ingest** — Drop a new letter, interview or transcript into the `Raw/` folder and tell the
+  agent to ingest it. It will create the summary, update related concept/case pages and keep
+  everything linked.
+- **Lint / maintain** — Ask the agent to run the checks (`make lint`) and fix any issues.
+
+You never need to understand the internal structure. Just talk to the agent in natural language.
 
 ## Language
 
